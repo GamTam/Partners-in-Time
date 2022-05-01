@@ -53,6 +53,7 @@ public class marioController : MonoBehaviour
             prevMoveAngle = moveAngle;
         }
 
+        Debug.Log("Cam: " + cam.eulerAngles.y + " Mar: " + transform.eulerAngles.y);
         facing = SetFacing(cam.eulerAngles.y - transform.eulerAngles.y);
         
         SetAnimation();
@@ -73,6 +74,11 @@ public class marioController : MonoBehaviour
     
     private string SetFacing(float moveAngle)
     {
+        while (moveAngle < 0)
+        {
+            moveAngle += 360;
+        }
+        
         if (moveAngle < 22.5 || moveAngle > 337.5)  return "_down";
         if (moveAngle < 67.5)   return "_downRight";
         if (moveAngle < 112.5)  return "_right";
