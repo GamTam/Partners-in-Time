@@ -15,6 +15,7 @@ public class marioController : MonoBehaviour
     private float moveAngle;
     private float prevMoveAngle;
     private string facing = "_down";
+    private Transform cam;
     
     // Animation States
     private const string MARIO_STAND_BABY = "m_bm_stand";
@@ -34,6 +35,7 @@ public class marioController : MonoBehaviour
 
         // Misc. Setup
         RB = GetComponent<Rigidbody>();
+        cam = Camera.main.transform;
     }
 
     private void Update()
@@ -51,10 +53,10 @@ public class marioController : MonoBehaviour
             prevMoveAngle = moveAngle;
         }
 
-        facing = SetFacing(prevMoveAngle);
+        facing = SetFacing(cam.eulerAngles.y - transform.eulerAngles.y);
         
         SetAnimation();
-        transform.eulerAngles = new Vector3(transform.rotation.x, prevMoveAngle, transform.rotation.z);
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, prevMoveAngle, transform.eulerAngles.z);
     }
 
     private void SetAnimation()
@@ -72,13 +74,13 @@ public class marioController : MonoBehaviour
     private string SetFacing(float moveAngle)
     {
         if (moveAngle < 22.5 || moveAngle > 337.5)  return "_down";
-        if (moveAngle < 67.5)   return "_downLeft";
-        if (moveAngle < 112.5)  return "_left";
-        if (moveAngle < 157.5)  return "_upLeft";
+        if (moveAngle < 67.5)   return "_downRight";
+        if (moveAngle < 112.5)  return "_right";
+        if (moveAngle < 157.5)  return "_upRight";
         if (moveAngle < 202.5)  return "_up";
-        if (moveAngle < 247.5)  return "_upRight";
-        if (moveAngle < 292.5)  return "_right";
-        if (moveAngle <= 337.5) return "_downRight";
+        if (moveAngle < 247.5)  return "_upLeft";
+        if (moveAngle < 292.5)  return "_left";
+        if (moveAngle <= 337.5) return "_downLeft";
 
         return null;
     }
