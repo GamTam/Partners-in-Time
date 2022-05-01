@@ -703,6 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d80f9cb8a7f12a84db79a8444f4a08de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parentRot: {fileID: 0}
 --- !u!1 &609010873
 GameObject:
   m_ObjectHideFlags: 1
@@ -840,12 +841,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097153015}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d4497276dd21e745b220fc40e4e398b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
+  dasd: 
+  moveAngle: 0
   animator: {fileID: 463006565}
 --- !u!54 &1097153019
 Rigidbody:
