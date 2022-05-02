@@ -41,9 +41,19 @@ public class marioController : MonoBehaviour
     private void Update()
     {
         Vector3 forceMove = new Vector3(moveVector.ReadValue<Vector2>().x, 0, moveVector.ReadValue<Vector2>().y);
-        RB.velocity = forceMove * moveSpeed;
+        Vector3 newMove = new Vector3(0f, 0f, 0f);
+
+        if (forceMove.magnitude >= 0.1f)
+        {
+            float targetAngle = Mathf.Atan2(-forceMove.x, -forceMove.y) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+
+            newMove = Quaternion.Euler(-forceMove.x, targetAngle, -forceMove.y) * Vector3.forward;
+        }
         
-        moveAngle = Mathf.Rad2Deg * Mathf.Atan2(forceMove.x, forceMove.z) + 180;
+        RB.velocity = newMove * moveSpeed;
+        
+        moveAngle = Mathf.Rad2Deg * Mathf.Atan2(newMove.x, newMove.z) + 180;
         if (forceMove == Vector3.zero)
         {
             moveAngle = 0;
