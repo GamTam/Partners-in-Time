@@ -49,13 +49,11 @@ public class marioController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
             newMove = Quaternion.Euler(forceMove.x, targetAngle, forceMove.z) * Vector3.forward;
-            Debug.Log("newMove: " + newMove + " forceMove: " + forceMove + " targetAngle: " + targetAngle);
-            moveAngle = targetAngle + 180;
+            moveAngle = targetAngle;
         }
         
         RB.velocity = newMove * moveSpeed;
         
-        // moveAngle = Mathf.Rad2Deg * Mathf.Atan2(newMove.x, newMove.z);
         if (forceMove == Vector3.zero)
         {
             moveAngle = 0;
