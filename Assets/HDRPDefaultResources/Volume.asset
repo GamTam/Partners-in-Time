@@ -45,10 +45,10 @@ MonoBehaviour:
     m_Value: 0
   top:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.19780254, b: 1, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
   middle:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.10221863, b: 0.5471698, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
   bottom:
     m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 1}

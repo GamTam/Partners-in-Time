@@ -77,7 +77,7 @@
                 {
                     "name": "up",
                     "id": "f7f87bbe-b13d-448b-9cdb-d59fbdb7ad8b",
-                    "path": "<Keyboard>/#(w)",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "OmniControlScheme",
@@ -238,6 +238,17 @@
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "7aed2355-89b0-4891-b675-51f0b49a31d9",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

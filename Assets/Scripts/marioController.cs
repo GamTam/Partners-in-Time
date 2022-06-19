@@ -40,7 +40,7 @@ public class marioController : MonoBehaviour
 
     private void Update()
     {
-        Vector3 forceMove = new Vector3(moveVector.ReadValue<Vector2>().x, 0, moveVector.ReadValue<Vector2>().y);
+        Vector3 forceMove = new Vector3(moveVector.ReadValue<Vector2>().x, 0, moveVector.ReadValue<Vector2>().y).normalized;
         Vector3 newMove = new Vector3(0f, 0f, 0f);
 
         if (forceMove.magnitude >= 0.1f)
@@ -63,7 +63,7 @@ public class marioController : MonoBehaviour
             prevMoveAngle = moveAngle;
         }
 
-        Debug.Log("Cam: " + cam.eulerAngles.y + " Mar: " + transform.eulerAngles.y);
+        Debug.Log("newMove: " + newMove + " forceMove: " + forceMove);
         facing = SetFacing(cam.eulerAngles.y - transform.eulerAngles.y);
         
         SetAnimation();
