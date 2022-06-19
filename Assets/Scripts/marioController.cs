@@ -45,15 +45,17 @@ public class marioController : MonoBehaviour
 
         if (forceMove.magnitude >= 0.1f)
         {
-            float targetAngle = Mathf.Atan2(-forceMove.x, -forceMove.y) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float targetAngle = Mathf.Atan2(forceMove.x, forceMove.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
-            newMove = Quaternion.Euler(-forceMove.x, targetAngle, -forceMove.y) * Vector3.forward;
+            newMove = Quaternion.Euler(forceMove.x, targetAngle, forceMove.z) * Vector3.forward;
+            Debug.Log("newMove: " + newMove + " forceMove: " + forceMove + " targetAngle: " + targetAngle);
+            moveAngle = targetAngle + 180;
         }
         
         RB.velocity = newMove * moveSpeed;
         
-        moveAngle = Mathf.Rad2Deg * Mathf.Atan2(newMove.x, newMove.z) + 180;
+        // moveAngle = Mathf.Rad2Deg * Mathf.Atan2(newMove.x, newMove.z);
         if (forceMove == Vector3.zero)
         {
             moveAngle = 0;
@@ -62,8 +64,7 @@ public class marioController : MonoBehaviour
         {
             prevMoveAngle = moveAngle;
         }
-
-        Debug.Log("newMove: " + newMove + " forceMove: " + forceMove);
+        
         facing = SetFacing(cam.eulerAngles.y - transform.eulerAngles.y);
         
         SetAnimation();
@@ -89,14 +90,14 @@ public class marioController : MonoBehaviour
             moveAngle += 360;
         }
         
-        if (moveAngle < 22.5 || moveAngle > 337.5)  return "_down";
-        if (moveAngle < 67.5)   return "_downRight";
-        if (moveAngle < 112.5)  return "_right";
-        if (moveAngle < 157.5)  return "_upRight";
-        if (moveAngle < 202.5)  return "_up";
-        if (moveAngle < 247.5)  return "_upLeft";
-        if (moveAngle < 292.5)  return "_left";
-        if (moveAngle <= 337.5) return "_downLeft";
+        if (moveAngle < 22.5 || moveAngle > 337.5)  return "_up";
+        if (moveAngle < 67.5)   return "_upLeft";
+        if (moveAngle < 112.5)  return "_left";
+        if (moveAngle < 157.5)  return "_downLeft";
+        if (moveAngle < 202.5)  return "_down";
+        if (moveAngle < 247.5)  return "_downRight";
+        if (moveAngle < 292.5)  return "_right";
+        if (moveAngle <= 337.5) return "_upRight";
 
         return null;
     }
