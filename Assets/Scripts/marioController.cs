@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,27 +14,12 @@ public class marioController : MonoBehaviour
     // Sprites
     private float moveAngle;
     private float prevMoveAngle;
+    private string facing = "_down";
+    private Transform cam;
     
     // Animation States
-    private const string MARIO_STAND_BABY_UP          = "m_bm_stand_up";
-    private const string MARIO_STAND_BABY_DOWN        = "m_bm_stand_down";
-    private const string MARIO_STAND_BABY_LEFT        = "m_bm_stand_left";
-    private const string MARIO_STAND_BABY_RIGHT       = "m_bm_stand_right";
-    
-    private const string MARIO_STAND_BABY_DOWN_RIGHT = "m_bm_stand_downRight";
-    private const string MARIO_STAND_BABY_DOWN_LEFT  = "m_bm_stand_downLeft";
-    private const string MARIO_STAND_BABY_UP_RIGHT   = "m_bm_stand_upRight";
-    private const string MARIO_STAND_BABY_UP_LEFT    = "m_bm_stand_upLeft";
-    
-    private const string MARIO_WALK_BABY_UP          = "m_bm_walk_up";
-    private const string MARIO_WALK_BABY_DOWN        = "m_bm_walk_down";
-    private const string MARIO_WALK_BABY_LEFT        = "m_bm_walk_left";
-    private const string MARIO_WALK_BABY_RIGHT       = "m_bm_walk_right";
-    
-    private const string MARIO_WALK_BABY_DOWN_RIGHT  = "m_bm_walk_downRight";
-    private const string MARIO_WALK_BABY_DOWN_LEFT   = "m_bm_walk_downLeft";
-    private const string MARIO_WALK_BABY_UP_RIGHT    = "m_bm_walk_upRight";
-    private const string MARIO_WALK_BABY_UP_LEFT     = "m_bm_walk_upLeft";
+    private const string MARIO_STAND_BABY = "m_bm_stand";
+    private const string MARIO_WALK_BABY  = "m_bm_walk";
 
     // Misc.
     private Rigidbody RB;
@@ -53,14 +35,27 @@ public class marioController : MonoBehaviour
 
         // Misc. Setup
         RB = GetComponent<Rigidbody>();
+        cam = Camera.main.transform;
     }
 
     private void Update()
     {
-        Vector3 forceMove = new Vector3(moveVector.ReadValue<Vector2>().x, 0, moveVector.ReadValue<Vector2>().y);
-        RB.velocity = forceMove * moveSpeed;
+        Vector3 forceMove = new Vector3(moveVector.ReadValue<Vector2>().x, 0, moveVector.ReadValue<Vector2>().y).normalized;
+        Vector3 newMove = new Vector3(0f, 0f, 0f);
+
+        if (forceMove.magnitude >= 0.1f)
+        {
+            float targetAngle = Mathf.Atan2(forceMove.x, forceMove.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+
+            newMove = Quaternion.Euler(forceMove.x, targetAngle, forceMove.z) * Vector3.forward;
+            Debug.Log("newMove: " + newMove + " forceMove: " + forceMove + " targetAngle: " + targetAngle);
+            moveAngle = targetAngle + 180;
+        }
         
-        moveAngle = Mathf.Rad2Deg * Mathf.Atan2(forceMove.z, forceMove.x) + 180;
+        RB.velocity = newMove * moveSpeed;
+        
+        // moveAngle = Mathf.Rad2Deg * Mathf.Atan2(newMove.x, newMove.z);
         if (forceMove == Vector3.zero)
         {
             moveAngle = 0;
@@ -70,50 +65,40 @@ public class marioController : MonoBehaviour
             prevMoveAngle = moveAngle;
         }
         
+        facing = SetFacing(cam.eulerAngles.y - transform.eulerAngles.y);
+        
         SetAnimation();
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, prevMoveAngle, transform.eulerAngles.z);
     }
 
     private void SetAnimation()
     {
         if (moveAngle != 0)
         {
-            if (moveAngle < 22.5 || moveAngle > 337.5) {
-                animator.Play(MARIO_WALK_BABY_LEFT);
-            } else if (moveAngle < 67.5) {
-                animator.Play(MARIO_WALK_BABY_DOWN_LEFT);
-            } else if (moveAngle < 112.5) {
-                animator.Play(MARIO_WALK_BABY_DOWN);
-            } else if (moveAngle < 157.5) {
-                animator.Play(MARIO_WALK_BABY_DOWN_RIGHT);
-            } else if (moveAngle < 202.5) {
-                animator.Play(MARIO_WALK_BABY_RIGHT);
-            } else if (moveAngle < 247.5) {
-                animator.Play(MARIO_WALK_BABY_UP_RIGHT);
-            } else if (moveAngle < 292.5) {
-                animator.Play(MARIO_WALK_BABY_UP);
-            } else if (moveAngle <= 337.5) {
-                animator.Play(MARIO_WALK_BABY_UP_LEFT);
-            }
+            animator.Play(MARIO_WALK_BABY + facing);
         }
         else
         {
-            if (prevMoveAngle < 22.5 || prevMoveAngle > 337.5) {
-                animator.Play(MARIO_STAND_BABY_LEFT);
-            } else if (prevMoveAngle < 67.5) {
-                animator.Play(MARIO_STAND_BABY_DOWN_LEFT);
-            } else if (prevMoveAngle < 112.5) {
-                animator.Play(MARIO_STAND_BABY_DOWN);
-            } else if (prevMoveAngle < 157.5) {
-                animator.Play(MARIO_STAND_BABY_DOWN_RIGHT);
-            } else if (prevMoveAngle < 202.5) {
-                animator.Play(MARIO_STAND_BABY_RIGHT);
-            } else if (prevMoveAngle < 247.5) {
-                animator.Play(MARIO_STAND_BABY_UP_RIGHT);
-            } else if (prevMoveAngle < 292.5) {
-                animator.Play(MARIO_STAND_BABY_UP);
-            } else if (prevMoveAngle <= 337.5) {
-                animator.Play(MARIO_STAND_BABY_UP_LEFT);
-            }
+            animator.Play(MARIO_STAND_BABY + facing);
         }
+    }
+    
+    private string SetFacing(float moveAngle)
+    {
+        while (moveAngle < 0)
+        {
+            moveAngle += 360;
+        }
+        
+        if (moveAngle < 22.5 || moveAngle > 337.5)  return "_up";
+        if (moveAngle < 67.5)   return "_upLeft";
+        if (moveAngle < 112.5)  return "_left";
+        if (moveAngle < 157.5)  return "_downLeft";
+        if (moveAngle < 202.5)  return "_down";
+        if (moveAngle < 247.5)  return "_downRight";
+        if (moveAngle < 292.5)  return "_right";
+        if (moveAngle <= 337.5) return "_upRight";
+
+        return null;
     }
 }
