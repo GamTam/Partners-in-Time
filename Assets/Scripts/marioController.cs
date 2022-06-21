@@ -10,6 +10,9 @@ public class marioController : MonoBehaviour
 
     // Stats
     [SerializeField] private int moveSpeed = 5;
+    [SerializeField] private float gravSpeed = 5;
+    [SerializeField] private int maxGrav = 10;
+    [SerializeField] private float activeGrav = 0f;
     
     // Sprites
     private float moveAngle;
@@ -52,6 +55,16 @@ public class marioController : MonoBehaviour
             moveAngle = targetAngle;
             
             controller.Move(newMove * moveSpeed * Time.deltaTime);
+        }
+
+        if (!controller.isGrounded)
+        {
+            activeGrav = activeGrav < maxGrav ? activeGrav + gravSpeed * Time.deltaTime : maxGrav;
+            controller.Move(new Vector3(0, -activeGrav, 0f));
+        }
+        else
+        {
+            activeGrav = 0;
         }
 
         if (forceMove == Vector3.zero)
