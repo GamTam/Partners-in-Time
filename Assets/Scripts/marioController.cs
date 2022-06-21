@@ -22,7 +22,7 @@ public class marioController : MonoBehaviour
     private const string MARIO_WALK_BABY  = "m_bm_walk";
 
     // Misc.
-    private Rigidbody RB;
+    private CharacterController controller;
     [SerializeField] private Animator animator;
 
     private void Awake()
@@ -34,7 +34,7 @@ public class marioController : MonoBehaviour
         moveVector = playerInput.actions["move"];
 
         // Misc. Setup
-        RB = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
         cam = Camera.main.transform;
     }
 
@@ -48,12 +48,12 @@ public class marioController : MonoBehaviour
             float targetAngle = Mathf.Atan2(forceMove.x, forceMove.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
-            newMove = Quaternion.Euler(forceMove.x, targetAngle, forceMove.z) * Vector3.forward;
+            newMove = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             moveAngle = targetAngle;
+            
+            controller.Move(newMove * moveSpeed * Time.deltaTime);
         }
-        
-        RB.velocity = newMove * moveSpeed;
-        
+
         if (forceMove == Vector3.zero)
         {
             moveAngle = 0;
