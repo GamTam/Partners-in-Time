@@ -21,8 +21,8 @@ public class marioController : MonoBehaviour
     private Transform cam;
     
     // Animation States
-    private const string MARIO_STAND_BABY = "m_bm_stand";
-    private const string MARIO_WALK_BABY  = "m_bm_walk";
+    private const string MARIO_STAND = "m_stand";
+    private const string MARIO_WALK  = "m_walk";
 
     // Misc.
     private CharacterController controller;
@@ -86,11 +86,13 @@ public class marioController : MonoBehaviour
     {
         if (moveAngle != 0)
         {
-            animator.Play(MARIO_WALK_BABY + facing);
+            Debug.Log(MARIO_WALK + facing);
+            animator.Play(MARIO_WALK + facing);
         }
         else
         {
-            animator.Play(MARIO_STAND_BABY + facing);
+            Debug.Log(MARIO_STAND + facing);
+            animator.Play(MARIO_STAND + facing);
         }
     }
     
@@ -101,14 +103,14 @@ public class marioController : MonoBehaviour
             moveAngle += 360;
         }
         
-        if (moveAngle < 22.5 || moveAngle > 337.5)  return "_up";
-        if (moveAngle < 67.5)   return "_upLeft";
-        if (moveAngle < 112.5)  return "_left";
-        if (moveAngle < 157.5)  return "_downLeft";
-        if (moveAngle < 202.5)  return "_down";
-        if (moveAngle < 247.5)  return "_downRight";
-        if (moveAngle < 292.5)  return "_right";
-        if (moveAngle <= 337.5) return "_upRight";
+        if (moveAngle < 22.5 || moveAngle > 337.5)  return "_u";
+        if (moveAngle < 67.5)   return "_ul";
+        if (moveAngle < 112.5)  return "_l";
+        if (moveAngle < 157.5)  return "_dl";
+        if (moveAngle < 202.5)  return "_d";
+        if (moveAngle < 247.5)  return "_dr";
+        if (moveAngle < 292.5)  return "_r";
+        if (moveAngle <= 337.5) return "_ur";
 
         return null;
     }
