@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class marioController : MonoBehaviour
+public class MarioController : Billboard
 {
     // Input
     private PlayerInput playerInput;
@@ -13,23 +13,19 @@ public class marioController : MonoBehaviour
     [SerializeField] private float gravSpeed = 5;
     [SerializeField] private int maxGrav = 10;
     [SerializeField] private float activeGrav = 0f;
-    
-    // Sprites
-    private float moveAngle;
-    private float prevMoveAngle;
-    private string facing = "_down";
-    private Transform cam;
-    
+
     // Animation States
     private const string MARIO_STAND = "m_stand";
     private const string MARIO_WALK  = "m_walk";
 
     // Misc.
     private CharacterController controller;
-    [SerializeField] private Animator animator;
+    [SerializeField] private GameObject child;
 
     private void Awake()
     {
+        base.Init(child);
+        
         // Input Setup
         playerInput = GetComponent<PlayerInput>();
         
@@ -38,7 +34,6 @@ public class marioController : MonoBehaviour
 
         // Misc. Setup
         controller = GetComponent<CharacterController>();
-        cam = Camera.main.transform;
     }
 
     private void Update()
@@ -75,43 +70,19 @@ public class marioController : MonoBehaviour
         {
             prevMoveAngle = moveAngle;
         }
-        
-        facing = SetFacing(cam.eulerAngles.y - transform.eulerAngles.y);
-        
-        SetAnimation();
+
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, prevMoveAngle, transform.eulerAngles.z);
     }
-
-    private void SetAnimation()
+    
+    protected override void SetAnimation()
     {
         if (moveAngle != 0)
         {
-            Debug.Log(MARIO_WALK + facing);
             animator.Play(MARIO_WALK + facing);
         }
         else
         {
-            Debug.Log(MARIO_STAND + facing);
             animator.Play(MARIO_STAND + facing);
         }
-    }
-    
-    private string SetFacing(float moveAngle)
-    {
-        while (moveAngle < 0)
-        {
-            moveAngle += 360;
-        }
-        
-        if (moveAngle < 22.5 || moveAngle > 337.5)  return "_u";
-        if (moveAngle < 67.5)   return "_ul";
-        if (moveAngle < 112.5)  return "_l";
-        if (moveAngle < 157.5)  return "_dl";
-        if (moveAngle < 202.5)  return "_d";
-        if (moveAngle < 247.5)  return "_dr";
-        if (moveAngle < 292.5)  return "_r";
-        if (moveAngle <= 337.5) return "_ur";
-
-        return null;
     }
 }
