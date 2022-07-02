@@ -64,7 +64,7 @@ public class MarioController : Billboard
 
         if (forceMove == Vector3.zero)
         {
-            moveAngle = 0;
+            moveAngle = float.MinValue;
         }
         else
         {
@@ -76,7 +76,7 @@ public class MarioController : Billboard
     
     protected override void SetAnimation()
     {
-        if (moveAngle != 0)
+        if (moveAngle != float.MinValue)
         {
             animator.Play(MARIO_WALK + facing);
         }
