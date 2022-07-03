@@ -61,7 +61,6 @@ public class MarioOverworldStateMachine : Billboard
     void Update()
     {
         _currentState.UpdateStates();
-        Debug.Log(_moveAngle);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
     }
 
