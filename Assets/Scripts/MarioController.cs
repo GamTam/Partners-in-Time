@@ -1,40 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MarioController : Billboard
+public class MarioController
 {
-    // Input
-    private PlayerInput _playerInput;
-    private InputAction _action;
-    private InputAction _moveVector;
+    
 
-    // Stats
-    [SerializeField] private int moveSpeed = 5;
-    [SerializeField] private float gravSpeed = 5;
-    [SerializeField] private int maxGrav = 10;
-    [SerializeField] private float activeGrav = 0f;
-
-    // Animation States
-    private const string MarioStand = "m_stand";
-    private const string MarioWalk  = "m_walk";
-
-    // Misc.
-    private CharacterController _controller;
-    [SerializeField] private GameObject child;
-
-    private void Awake()
-    {
-        base.Init(child);
-        
-        // Input Setup
-        _playerInput = GetComponent<PlayerInput>();
-        
-        _action = _playerInput.actions["m_action"];
-        _moveVector = _playerInput.actions["move"];
-
-        // Misc. Setup
-        _controller = GetComponent<CharacterController>();
-    }
+    /*
 
     private void Update()
     {
@@ -84,5 +55,5 @@ public class MarioController : Billboard
         {
             Animator.Play(MarioStand + Facing);
         }
-    }
+    }*/
 }

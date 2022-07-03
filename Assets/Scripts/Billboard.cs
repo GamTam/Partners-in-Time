@@ -5,21 +5,21 @@ public abstract class Billboard : MonoBehaviour
     // Sprites
     protected float MoveAngle;
     protected float PrevMoveAngle;
-    protected string Facing = "_down";
+    protected string _facing = "_down";
     protected Transform Cam;
     protected Transform Sprite;
-    protected Animator Animator;
+    protected Animator _animator;
 
     protected void Init(GameObject child)
     {
         Sprite = child.transform;
-        Animator = child.GetComponent<Animator>();
+        _animator = child.GetComponent<Animator>();
         Cam = Camera.main.transform;
     }
 
     protected void LateUpdate()
     {
-        Facing = SetFacing(Cam.eulerAngles.y - transform.eulerAngles.y);
+        _facing = SetFacing(Cam.eulerAngles.y - transform.eulerAngles.y);
         
         SetAnimation();
         

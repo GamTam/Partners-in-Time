@@ -17,6 +17,6 @@ public class TestNPC : Billboard
 
     protected override void SetAnimation()
     {
-        Animator.Play(STAND + Facing);
+        _animator.Play(STAND + _facing);
     }
 }
