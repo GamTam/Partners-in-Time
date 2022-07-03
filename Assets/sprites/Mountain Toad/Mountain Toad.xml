@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:5199d6eda2c7ea316bc26c341ed80952:a494188310edc836d871ca0701b268b0:ef948912620a03bcb5cc39d047f2b94d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Mountain Toad.png" width="486" height="448">
+    <sprite n="mnt_todd_stand_d_1.png" x="264" y="194" w="32" h="50"/>
+    <sprite n="mnt_todd_stand_d_2.png" x="296" y="194" w="32" h="50"/>
+    <sprite n="mnt_todd_stand_d_3.png" x="328" y="194" w="32" h="50"/>
+    <sprite n="mnt_todd_stand_d_4.png" x="360" y="194" w="32" h="50"/>
+    <sprite n="mnt_todd_stand_d_5.png" x="392" y="194" w="32" h="50"/>
+    <sprite n="mnt_todd_stand_d_6.png" x="424" y="194" w="32" h="50"/>
+    <sprite n="mnt_todd_stand_dl_1.png" x="136" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dl_2.png" x="169" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dl_3.png" x="202" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dl_4.png" x="235" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dl_5.png" x="268" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dl_6.png" x="301" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dr_1.png" x="334" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dr_2.png" x="367" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dr_3.png" x="400" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dr_4.png" x="433" y="96" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dr_5.png" x="0" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_dr_6.png" x="33" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_stand_l_1.png" x="0" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_l_2.png" x="34" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_l_3.png" x="68" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_l_4.png" x="102" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_l_5.png" x="136" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_l_6.png" x="170" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_r_1.png" x="204" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_r_2.png" x="238" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_r_3.png" x="272" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_r_4.png" x="306" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_r_5.png" x="340" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_r_6.png" x="374" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_stand_u_1.png" x="320" y="244" w="32" h="51"/>
+    <sprite n="mnt_todd_stand_u_2.png" x="352" y="244" w="32" h="51"/>
+    <sprite n="mnt_todd_stand_u_3.png" x="384" y="244" w="32" h="51"/>
+    <sprite n="mnt_todd_stand_u_4.png" x="416" y="244" w="32" h="51"/>
+    <sprite n="mnt_todd_stand_u_5.png" x="448" y="244" w="32" h="51"/>
+    <sprite n="mnt_todd_stand_u_6.png" x="0" y="295" w="32" h="51"/>
+    <sprite n="mnt_todd_stand_ul_1.png" x="32" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ul_2.png" x="65" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ul_3.png" x="98" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ul_4.png" x="131" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ul_5.png" x="164" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ul_6.png" x="197" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ur_1.png" x="230" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ur_2.png" x="263" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ur_3.png" x="296" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ur_4.png" x="329" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ur_5.png" x="362" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_stand_ur_6.png" x="395" y="295" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_d_1.png" x="0" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_2.png" x="64" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_3.png" x="96" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_4.png" x="128" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_5.png" x="160" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_6.png" x="192" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_7.png" x="224" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_8.png" x="256" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_9.png" x="288" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_d_10.png" x="32" y="244" w="32" h="50"/>
+    <sprite n="mnt_todd_walk_dl_1.png" x="66" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_2.png" x="132" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_3.png" x="165" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_4.png" x="198" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_5.png" x="231" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_6.png" x="264" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_7.png" x="297" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_8.png" x="330" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_9.png" x="363" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dl_10.png" x="99" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_1.png" x="396" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_2.png" x="0" y="194" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_3.png" x="33" y="194" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_4.png" x="66" y="194" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_5.png" x="99" y="194" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_6.png" x="132" y="194" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_7.png" x="165" y="194" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_8.png" x="198" y="194" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_9.png" x="231" y="194" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_dr_10.png" x="429" y="145" w="33" h="49"/>
+    <sprite n="mnt_todd_walk_l_1.png" x="408" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_2.png" x="0" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_3.png" x="34" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_4.png" x="68" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_5.png" x="102" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_6.png" x="136" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_7.png" x="170" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_8.png" x="204" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_9.png" x="238" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_l_10.png" x="442" y="0" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_1.png" x="272" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_2.png" x="340" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_3.png" x="374" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_4.png" x="408" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_5.png" x="442" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_6.png" x="0" y="96" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_7.png" x="34" y="96" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_8.png" x="68" y="96" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_9.png" x="102" y="96" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_r_10.png" x="306" y="48" w="34" h="48"/>
+    <sprite n="mnt_todd_walk_u_1.png" x="428" y="295" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_2.png" x="32" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_3.png" x="64" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_4.png" x="96" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_5.png" x="128" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_6.png" x="160" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_7.png" x="192" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_8.png" x="224" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_9.png" x="256" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_u_10.png" x="0" y="346" w="32" h="51"/>
+    <sprite n="mnt_todd_walk_ul_1.png" x="288" y="346" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_2.png" x="354" y="346" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_3.png" x="387" y="346" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_4.png" x="420" y="346" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_5.png" x="453" y="346" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_6.png" x="0" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_7.png" x="33" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_8.png" x="66" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_9.png" x="99" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ul_10.png" x="321" y="346" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_1.png" x="132" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_2.png" x="198" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_3.png" x="231" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_4.png" x="264" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_5.png" x="297" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_6.png" x="330" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_7.png" x="363" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_8.png" x="396" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_9.png" x="429" y="397" w="33" h="51"/>
+    <sprite n="mnt_todd_walk_ur_10.png" x="165" y="397" w="33" h="51"/>
+</TextureAtlas>
