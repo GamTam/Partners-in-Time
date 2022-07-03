@@ -3,10 +3,10 @@ using UnityEngine;
 public abstract class Billboard : MonoBehaviour
 {
     // Sprites
-    protected float MoveAngle;
-    protected float PrevMoveAngle;
+    protected float _moveAngle;
+    protected float _displayAngle;
     protected string _facing = "_down";
-    protected Transform Cam;
+    protected Transform _cam;
     protected Transform Sprite;
     protected Animator _animator;
 
@@ -14,18 +14,18 @@ public abstract class Billboard : MonoBehaviour
     {
         Sprite = child.transform;
         _animator = child.GetComponent<Animator>();
-        Cam = Camera.main.transform;
+        _cam = Camera.main.transform;
     }
 
     protected void LateUpdate()
     {
-        _facing = SetFacing(Cam.eulerAngles.y - transform.eulerAngles.y);
+        _facing = SetFacing(_cam.eulerAngles.y - transform.eulerAngles.y);
         
         SetAnimation();
         
         Quaternion rot = Sprite.transform.rotation;
         
-        Sprite.transform.rotation = Cam.rotation;
+        Sprite.transform.rotation = _cam.rotation;
         
         // sprite.transform.rotation = Quaternion.Euler(rot.eulerAngles.x, sprite.transform.rotation.eulerAngles.y, rot.eulerAngles.z);
     }

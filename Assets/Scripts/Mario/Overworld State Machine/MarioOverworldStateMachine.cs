@@ -32,6 +32,10 @@ public class MarioOverworldStateMachine : Billboard
     public Animator Animator { get { return _animator; } }
     public string Facing { get { return _facing; } }
     public Vector2 MoveVector { get {return _moveVector.ReadValue<Vector2>().normalized; } }
+    public float MoveAngle {get {return _moveAngle;} set {_moveAngle = value;} }
+    public CharacterController Controller {get {return _controller;}}
+    public int MoveSpeed {get {return moveSpeed;}}
+    public Transform Cam {get {return _cam;}}
     
     private void Awake()
     {
@@ -57,6 +61,8 @@ public class MarioOverworldStateMachine : Billboard
     void Update()
     {
         _currentState.UpdateStates();
+        Debug.Log(_moveAngle);
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
     }
 
     protected override void SetAnimation()
