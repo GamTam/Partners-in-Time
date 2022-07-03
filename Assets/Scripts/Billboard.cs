@@ -3,29 +3,29 @@ using UnityEngine;
 public abstract class Billboard : MonoBehaviour
 {
     // Sprites
-    protected float moveAngle;
-    protected float prevMoveAngle;
-    protected string facing = "_down";
-    protected Transform cam;
-    protected Transform sprite;
-    protected Animator animator;
+    protected float MoveAngle;
+    protected float PrevMoveAngle;
+    protected string Facing = "_down";
+    protected Transform Cam;
+    protected Transform Sprite;
+    protected Animator Animator;
 
     protected void Init(GameObject child)
     {
-        sprite = child.transform;
-        animator = child.GetComponent<Animator>();
-        cam = Camera.main.transform;
+        Sprite = child.transform;
+        Animator = child.GetComponent<Animator>();
+        Cam = Camera.main.transform;
     }
 
     protected void LateUpdate()
     {
-        facing = SetFacing(cam.eulerAngles.y - transform.eulerAngles.y);
+        Facing = SetFacing(Cam.eulerAngles.y - transform.eulerAngles.y);
         
         SetAnimation();
         
-        Quaternion rot = sprite.transform.rotation;
+        Quaternion rot = Sprite.transform.rotation;
         
-        sprite.transform.rotation = cam.rotation;
+        Sprite.transform.rotation = Cam.rotation;
         
         // sprite.transform.rotation = Quaternion.Euler(rot.eulerAngles.x, sprite.transform.rotation.eulerAngles.y, rot.eulerAngles.z);
     }

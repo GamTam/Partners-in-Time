@@ -4,9 +4,9 @@ using UnityEngine.InputSystem;
 public class MarioController : Billboard
 {
     // Input
-    private PlayerInput playerInput;
-    private InputAction action;
-    private InputAction moveVector;
+    private PlayerInput _playerInput;
+    private InputAction _action;
+    private InputAction _moveVector;
 
     // Stats
     [SerializeField] private int moveSpeed = 5;
@@ -15,11 +15,11 @@ public class MarioController : Billboard
     [SerializeField] private float activeGrav = 0f;
 
     // Animation States
-    private const string MARIO_STAND = "m_stand";
-    private const string MARIO_WALK  = "m_walk";
+    private const string MarioStand = "m_stand";
+    private const string MarioWalk  = "m_walk";
 
     // Misc.
-    private CharacterController controller;
+    private CharacterController _controller;
     [SerializeField] private GameObject child;
 
     private void Awake()
@@ -27,35 +27,35 @@ public class MarioController : Billboard
         base.Init(child);
         
         // Input Setup
-        playerInput = GetComponent<PlayerInput>();
+        _playerInput = GetComponent<PlayerInput>();
         
-        action = playerInput.actions["m_action"];
-        moveVector = playerInput.actions["move"];
+        _action = _playerInput.actions["m_action"];
+        _moveVector = _playerInput.actions["move"];
 
         // Misc. Setup
-        controller = GetComponent<CharacterController>();
+        _controller = GetComponent<CharacterController>();
     }
 
     private void Update()
     {
-        Vector3 forceMove = new Vector3(moveVector.ReadValue<Vector2>().x, 0, moveVector.ReadValue<Vector2>().y).normalized;
+        Vector3 forceMove = new Vector3(_moveVector.ReadValue<Vector2>().x, 0, _moveVector.ReadValue<Vector2>().y).normalized;
         Vector3 newMove = new Vector3(0f, 0f, 0f);
 
         if (forceMove.magnitude >= 0.1f)
         {
-            float targetAngle = Mathf.Atan2(forceMove.x, forceMove.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float targetAngle = Mathf.Atan2(forceMove.x, forceMove.z) * Mathf.Rad2Deg + Cam.eulerAngles.y;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
             newMove = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            moveAngle = targetAngle;
+            MoveAngle = targetAngle;
             
-            controller.Move(newMove * moveSpeed * Time.deltaTime);
+            _controller.Move(newMove * moveSpeed * Time.deltaTime);
         }
 
-        if (!controller.isGrounded)
+        if (!_controller.isGrounded)
         {
             activeGrav = activeGrav < maxGrav ? activeGrav + gravSpeed * Time.deltaTime : maxGrav;
-            controller.Move(new Vector3(0, -activeGrav, 0f));
+            _controller.Move(new Vector3(0, -activeGrav, 0f));
         }
         else
         {
@@ -64,25 +64,25 @@ public class MarioController : Billboard
 
         if (forceMove == Vector3.zero)
         {
-            moveAngle = float.MinValue;
+            MoveAngle = float.MinValue;
         }
         else
         {
-            prevMoveAngle = moveAngle;
+            PrevMoveAngle = MoveAngle;
         }
 
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, prevMoveAngle, transform.eulerAngles.z);
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, PrevMoveAngle, transform.eulerAngles.z);
     }
     
     protected override void SetAnimation()
     {
-        if (moveAngle != float.MinValue)
+        if (MoveAngle != float.MinValue)
         {
-            animator.Play(MARIO_WALK + facing);
+            Animator.Play(MarioWalk + Facing);
         }
         else
         {
-            animator.Play(MARIO_STAND + facing);
+            Animator.Play(MarioStand + Facing);
         }
     }
 }

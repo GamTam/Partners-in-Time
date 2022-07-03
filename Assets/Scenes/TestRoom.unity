@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 4
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -36067,7 +36067,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27490
+  m_Name: pb_Mesh27886
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36900,7 +36900,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27528
+  m_Name: pb_Mesh27924
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37405,6 +37405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1275422785}
   - component: {fileID: 1275422786}
+  - component: {fileID: 1275422787}
   m_Layer: 0
   m_Name: Mountain Toad
   m_TagString: Player
@@ -37441,6 +37442,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 1784671982}
+--- !u!136 &1275422787
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275422783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.6787655
+  m_Direction: 1
+  m_Center: {x: 0.03, y: 1.4356447, z: -0}
 --- !u!1 &1290949060
 GameObject:
   m_ObjectHideFlags: 0
@@ -37798,7 +37813,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27470
+  m_Name: pb_Mesh27866
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38320,6 +38335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1672499367}
   - component: {fileID: 1672499366}
+  - component: {fileID: 1672499368}
   m_Layer: 0
   m_Name: Mountain Toad (1)
   m_TagString: Player
@@ -38356,6 +38372,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!136 &1672499368
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672499365}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.6787655
+  m_Direction: 1
+  m_Center: {x: 0.03, y: 1.4356447, z: -0}
 --- !u!1 &1784671982
 GameObject:
   m_ObjectHideFlags: 0
@@ -38726,11 +38756,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -678066104
-      Data2: 1183668973
-      Data3: 1917164418
-      Data4: 439669328
-    Path: event:/Music/Area Music/Thwomp Volcano
+      Data1: 1404076253
+      Data2: 1090376252
+      Data3: 995049856
+      Data4: -96065635
+    Path: event:/Music/Areas/Thwomp Volcano
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -39154,6 +39184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110346871}
   - component: {fileID: 2110346870}
+  - component: {fileID: 2110346872}
   m_Layer: 0
   m_Name: Mountain Toad (2)
   m_TagString: Player
@@ -39190,6 +39221,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!136 &2110346872
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110346869}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.6787655
+  m_Direction: 1
+  m_Center: {x: 0.03, y: 1.4356447, z: -0}
 --- !u!1 &2122419717
 GameObject:
   m_ObjectHideFlags: 0
