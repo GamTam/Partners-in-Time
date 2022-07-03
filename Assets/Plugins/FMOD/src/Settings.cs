@@ -6,8 +6,6 @@ using System.Linq;
 using System.Text.RegularExpressions;
 #if UNITY_EDITOR
 using UnityEditor;
-using UnityEditor.Build;
-using UnityEditor.Build.Reporting;
 #endif
 
 namespace FMODUnity
