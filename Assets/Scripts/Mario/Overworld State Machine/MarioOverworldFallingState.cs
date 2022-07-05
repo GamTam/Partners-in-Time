@@ -29,10 +29,8 @@ public class MarioOverworldFallingState : MarioOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.Controller.isGrounded)
-        {
-            SwitchState(_factory.Grounded());
-        }
+        if (!_ctx.Controller.isGrounded) return;
+        SwitchState(_ctx.MoveVector.magnitude > Globals.deadZone ? _factory.Grounded() : _factory.Landing());
     }
 
     public override void InitializeSubState()

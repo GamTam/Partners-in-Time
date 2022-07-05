@@ -31,4 +31,9 @@ public class MarioOverworldStateFactory
     {
         return new MarioOverworldFallingState(_context, this);
     }
+    
+    public MarioOverworldLandingState Landing()
+    {
+        return new MarioOverworldLandingState(_context, this);
+    }
 }
