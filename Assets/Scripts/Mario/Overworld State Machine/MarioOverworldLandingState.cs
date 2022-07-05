@@ -30,6 +30,9 @@ public class MarioOverworldLandingState : MarioOverworldBaseState
             _ctx.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         {
             SwitchState(_factory.Grounded());
+        } else if (_ctx.Jump)
+        {
+            SwitchState(_factory.Jump());
         }
     }
 
