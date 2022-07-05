@@ -121,7 +121,7 @@
                 {
                     "name": "",
                     "id": "e9323672-865b-42d9-b899-3dd4e62a6bc7",
-                    "path": "<Keyboard>/m",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -143,7 +143,7 @@
                 {
                     "name": "",
                     "id": "32d0d7b0-3f3d-43ea-8373-77648fb3b6aa",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "OmniControlScheme",

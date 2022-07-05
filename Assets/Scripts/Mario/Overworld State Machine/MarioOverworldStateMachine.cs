@@ -11,13 +11,18 @@ public class MarioOverworldStateMachine : Billboard
 
     // Stats
     [SerializeField] private int moveSpeed = 5;
-    [SerializeField] private float gravSpeed = 5;
-    [SerializeField] private int maxGrav = 10;
-    [SerializeField] private float activeGrav = 0f;
 
     //State Machine
     private MarioOverworldBaseState _currentState;
     private MarioOverworldStateFactory _states;
+
+    // Jump
+    private float _velocity;
+    private float _gravity;
+    private float _initialJumpVelocity;
+    private float _fallMultiplier = 2f;
+    private float _maxJumpHeight = 4f;
+    private float _maxJumpTime = 0.75f;
 
     // Misc.
     private CharacterController _controller;
@@ -33,6 +38,10 @@ public class MarioOverworldStateMachine : Billboard
     public CharacterController Controller {get {return _controller;}}
     public int MoveSpeed {get {return moveSpeed;}}
     public Transform Cam {get {return _cam;}}
+    public float InitialJumpVelocity {get {return _initialJumpVelocity;}}
+    public float Gravity {get {return _gravity;}}
+    public float FallMultiplier {get {return _fallMultiplier;}}
+    public float Velocity {get {return _velocity;} set {_velocity = value;}}
     
     private void Awake()
     {
@@ -44,6 +53,10 @@ public class MarioOverworldStateMachine : Billboard
         _action = _playerInput.actions["m_action"];
         _jump = _playerInput.actions["jump"];
         _moveVector = _playerInput.actions["move"];
+        
+        // Jump Setup
+        _gravity = (-2 * _maxJumpHeight) / Mathf.Pow(_maxJumpTime / 2, 2);
+        _initialJumpVelocity = (2 * _maxJumpHeight) / (_maxJumpTime / 2);
 
         // Misc. Setup
         _controller = GetComponent<CharacterController>();
@@ -53,8 +66,7 @@ public class MarioOverworldStateMachine : Billboard
         _currentState = _states.Grounded();
         _currentState.EnterState();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         _currentState.UpdateStates();

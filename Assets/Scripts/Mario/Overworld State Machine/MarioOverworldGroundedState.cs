@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class MarioOverworldGroundedState : MarioOverworldBaseState
 {
     public MarioOverworldGroundedState(MarioOverworldStateMachine currentContext, MarioOverworldStateFactory marioOverworldStateFactory) 
@@ -5,12 +7,14 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState
     
     public override void EnterState()
     {
+        _ctx.Velocity = _ctx.Gravity;
         _isRootState = true;
         InitializeSubState();
     }
 
     public override void UpdateState()
     {
+        _ctx.Controller.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
         CheckSwitchStates();
     }
 
@@ -22,6 +26,11 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState
         if (_ctx.Jump)
         {
             SwitchState(_factory.Jump());
+        }
+        else if (!_ctx.Controller.isGrounded)
+        {
+            _ctx.Velocity = 0;
+            SwitchState(_factory.Falling());
         }
     }
 
