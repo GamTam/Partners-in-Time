@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.XR;
 
-public class MarioOverworldGroundedState : MarioOverworldBaseState
+public class MarioOverworldGroundedState : MarioOverworldBaseState, IMarioOverworldRootState
 {
     public MarioOverworldGroundedState(MarioOverworldStateMachine currentContext, MarioOverworldStateFactory marioOverworldStateFactory) 
         : base(currentContext, marioOverworldStateFactory) {}
@@ -14,7 +15,7 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState
 
     public override void UpdateState()
     {
-        _ctx.Controller.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
+        HandleGravity();
         CheckSwitchStates();
     }
 
@@ -49,5 +50,10 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState
     public override void AnimateState()
     {
         _currentSubState.AnimateState();
+    }
+
+    public void HandleGravity()
+    {
+        _ctx.Controller.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
     }
 }

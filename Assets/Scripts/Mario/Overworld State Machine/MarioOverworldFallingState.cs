@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MarioOverworldFallingState : MarioOverworldBaseState
+public class MarioOverworldFallingState : MarioOverworldBaseState, IMarioOverworldRootState
 {
     public MarioOverworldFallingState(MarioOverworldStateMachine currentContext, MarioOverworldStateFactory marioOverworldStateFactory) 
         : base(currentContext, marioOverworldStateFactory)
@@ -15,10 +15,7 @@ public class MarioOverworldFallingState : MarioOverworldBaseState
 
     public override void UpdateState()
     {
-        float prevVel = _ctx.Velocity;
-        _ctx.Velocity = _ctx.Velocity + _ctx.Gravity * Time.deltaTime * _ctx.FallMultiplier;
-        float avgVel = (prevVel + _ctx.Velocity) / 2;
-        _ctx.Controller.Move(new Vector3(0f, avgVel * Time.deltaTime));
+        HandleGravity();
         CheckSwitchStates();
     }
 
@@ -48,5 +45,13 @@ public class MarioOverworldFallingState : MarioOverworldBaseState
     public override void AnimateState()
     {
         _ctx.Animator.Play("m_fall" + _ctx.Facing);
+    }
+
+    public void HandleGravity()
+    {
+        float prevVel = _ctx.Velocity;
+        _ctx.Velocity = _ctx.Velocity + _ctx.Gravity * Time.deltaTime * _ctx.FallMultiplier;
+        float avgVel = (prevVel + _ctx.Velocity) / 2;
+        _ctx.Controller.Move(new Vector3(0f, avgVel * Time.deltaTime));
     }
 }

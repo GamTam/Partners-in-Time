@@ -109,7 +109,7 @@ TextureImporter:
         serializedVersion: 2
         x: 148
         y: 661
-        width: 36
+        width: 39
         height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -128,9 +128,9 @@ TextureImporter:
       name: m_fall_d_2.png
       rect:
         serializedVersion: 2
-        x: 184
+        x: 187
         y: 661
-        width: 36
+        width: 39
         height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -149,7 +149,7 @@ TextureImporter:
       name: m_fall_dl_1.png
       rect:
         serializedVersion: 2
-        x: 220
+        x: 226
         y: 661
         width: 40
         height: 50
@@ -170,7 +170,7 @@ TextureImporter:
       name: m_fall_dl_2.png
       rect:
         serializedVersion: 2
-        x: 260
+        x: 266
         y: 661
         width: 40
         height: 50
@@ -191,7 +191,7 @@ TextureImporter:
       name: m_fall_dr_1.png
       rect:
         serializedVersion: 2
-        x: 300
+        x: 306
         y: 661
         width: 40
         height: 50
@@ -212,7 +212,7 @@ TextureImporter:
       name: m_fall_dr_2.png
       rect:
         serializedVersion: 2
-        x: 340
+        x: 346
         y: 661
         width: 40
         height: 50
@@ -233,7 +233,7 @@ TextureImporter:
       name: m_fall_l_1.png
       rect:
         serializedVersion: 2
-        x: 380
+        x: 425
         y: 660
         width: 35
         height: 51
@@ -254,7 +254,7 @@ TextureImporter:
       name: m_fall_l_2.png
       rect:
         serializedVersion: 2
-        x: 415
+        x: 460
         y: 660
         width: 35
         height: 51
@@ -275,8 +275,8 @@ TextureImporter:
       name: m_fall_r_1.png
       rect:
         serializedVersion: 2
-        x: 450
-        y: 660
+        x: 0
+        y: 609
         width: 35
         height: 51
       alignment: 7
@@ -296,7 +296,7 @@ TextureImporter:
       name: m_fall_r_2.png
       rect:
         serializedVersion: 2
-        x: 0
+        x: 35
         y: 609
         width: 35
         height: 51
@@ -443,10 +443,10 @@ TextureImporter:
       name: m_jump_d.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 609
-        width: 36
-        height: 51
+        x: 386
+        y: 661
+        width: 39
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -695,7 +695,7 @@ TextureImporter:
       name: m_land_dl_1.png
       rect:
         serializedVersion: 2
-        x: 71
+        x: 70
         y: 609
         width: 40
         height: 51
@@ -716,7 +716,7 @@ TextureImporter:
       name: m_land_dl_2.png
       rect:
         serializedVersion: 2
-        x: 111
+        x: 110
         y: 609
         width: 40
         height: 51
@@ -737,7 +737,7 @@ TextureImporter:
       name: m_land_dl_3.png
       rect:
         serializedVersion: 2
-        x: 151
+        x: 150
         y: 609
         width: 40
         height: 51
@@ -758,7 +758,7 @@ TextureImporter:
       name: m_land_dl_4.png
       rect:
         serializedVersion: 2
-        x: 191
+        x: 190
         y: 609
         width: 40
         height: 51
@@ -779,7 +779,7 @@ TextureImporter:
       name: m_land_dr_1.png
       rect:
         serializedVersion: 2
-        x: 231
+        x: 230
         y: 609
         width: 40
         height: 51
@@ -800,7 +800,7 @@ TextureImporter:
       name: m_land_dr_2.png
       rect:
         serializedVersion: 2
-        x: 271
+        x: 270
         y: 609
         width: 40
         height: 51
@@ -821,7 +821,7 @@ TextureImporter:
       name: m_land_dr_3.png
       rect:
         serializedVersion: 2
-        x: 311
+        x: 310
         y: 609
         width: 40
         height: 51
@@ -842,7 +842,7 @@ TextureImporter:
       name: m_land_dr_4.png
       rect:
         serializedVersion: 2
-        x: 351
+        x: 350
         y: 609
         width: 40
         height: 51
@@ -1031,7 +1031,7 @@ TextureImporter:
       name: m_land_u_1.png
       rect:
         serializedVersion: 2
-        x: 391
+        x: 390
         y: 609
         width: 33
         height: 51
@@ -1052,7 +1052,7 @@ TextureImporter:
       name: m_land_u_2.png
       rect:
         serializedVersion: 2
-        x: 424
+        x: 423
         y: 609
         width: 33
         height: 51
@@ -1073,7 +1073,7 @@ TextureImporter:
       name: m_land_u_3.png
       rect:
         serializedVersion: 2
-        x: 457
+        x: 456
         y: 609
         width: 33
         height: 51

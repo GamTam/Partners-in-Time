@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MarioOverworldJumpState : MarioOverworldBaseState
+public class MarioOverworldJumpState : MarioOverworldBaseState, IMarioOverworldRootState
 {
     public MarioOverworldJumpState(MarioOverworldStateMachine currentContext, MarioOverworldStateFactory marioOverworldStateFactory) 
         : base(currentContext, marioOverworldStateFactory) {}
@@ -14,10 +14,7 @@ public class MarioOverworldJumpState : MarioOverworldBaseState
 
     public override void UpdateState()
     {
-        float prevVel = _ctx.Velocity;
-        _ctx.Velocity = _ctx.Velocity + _ctx.Gravity * Time.deltaTime;
-        float avgVel = (prevVel + _ctx.Velocity) / 2;
-        _ctx.Controller.Move(new Vector3(0f, avgVel * Time.deltaTime));
+        HandleGravity();
         CheckSwitchStates();
     }
 
@@ -53,5 +50,13 @@ public class MarioOverworldJumpState : MarioOverworldBaseState
     public override void AnimateState()
     {
        _ctx.Animator.Play("m_jump" + _ctx.Facing);
+    }
+
+    public void HandleGravity()
+    {
+        float prevVel = _ctx.Velocity;
+        _ctx.Velocity = _ctx.Velocity + _ctx.Gravity * Time.deltaTime;
+        float avgVel = (prevVel + _ctx.Velocity) / 2;
+        _ctx.Controller.Move(new Vector3(0f, avgVel * Time.deltaTime));
     }
 }

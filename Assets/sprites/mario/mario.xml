@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:291b6ab578e4558d4118e8b73d984560:86dbe6685f66834e71b27ce3ab693b19:449bb94310ef258f029da43f0864c42f$ -->
+<!-- $TexturePacker:SmartUpdate:05dd3847c430228838be3c0911089064:61dc3e5af1a83d2a8f51b1c7cc12567c:449bb94310ef258f029da43f0864c42f$ -->
 <!--Format:
 n  => name of the sprite
 x  => sprite x pos in texture
@@ -19,165 +19,165 @@ vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
 verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
 triangles  => sprite triangulation, 3 vertex indices per triangle
 -->
-<TextureAtlas imagePath="mario.png" width="493" height="711">
-    <sprite n="m_fall_d_1.png" x="148" y="0" w="36" h="50" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_d_2.png" x="184" y="0" w="36" h="50" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_dl_1.png" x="220" y="0" w="40" h="50" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_dl_2.png" x="260" y="0" w="40" h="50" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_dr_1.png" x="300" y="0" w="40" h="50" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_dr_2.png" x="340" y="0" w="40" h="50" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_l_1.png" x="380" y="0" w="35" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_l_2.png" x="415" y="0" w="35" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_r_1.png" x="450" y="0" w="35" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_r_2.png" x="0" y="51" w="35" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_u_1.png" x="347" y="102" w="37" h="53" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_u_2.png" x="384" y="102" w="37" h="53" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_ul_1.png" x="109" y="155" w="34" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_ul_2.png" x="143" y="155" w="34" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_ur_1.png" x="177" y="155" w="34" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_fall_ur_2.png" x="211" y="155" w="34" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_jump_d.png" x="35" y="51" w="36" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_jump_dl.png" x="245" y="155" w="36" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_jump_dr.png" x="281" y="155" w="36" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_jump_l.png" x="421" y="102" w="36" h="53" pX="0.5" pY="0.5"/>
-    <sprite n="m_jump_r.png" x="457" y="102" w="36" h="53" pX="0.5" pY="0.5"/>
-    <sprite n="m_jump_u.png" x="0" y="155" w="37" h="53" pX="0.5" pY="0.5"/>
-    <sprite n="m_jump_ul.png" x="37" y="155" w="36" h="53" pX="0.5" pY="0.5"/>
-    <sprite n="m_jump_ur.png" x="73" y="155" w="36" h="53" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_d_1.png" x="0" y="0" w="37" h="49" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_d_2.png" x="37" y="0" w="37" h="49" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_d_3.png" x="74" y="0" w="37" h="49" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_d_4.png" x="111" y="0" w="37" h="49" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_dl_1.png" x="71" y="51" w="40" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_dl_2.png" x="111" y="51" w="40" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_dl_3.png" x="151" y="51" w="40" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_dl_4.png" x="191" y="51" w="40" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_dr_1.png" x="231" y="51" w="40" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_dr_2.png" x="271" y="51" w="40" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_dr_3.png" x="311" y="51" w="40" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_dr_4.png" x="351" y="51" w="40" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_l_1.png" x="33" y="102" w="31" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_l_2.png" x="64" y="102" w="31" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_l_3.png" x="95" y="102" w="31" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_l_4.png" x="126" y="102" w="31" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_r_1.png" x="157" y="102" w="31" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_r_2.png" x="188" y="102" w="31" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_r_3.png" x="219" y="102" w="31" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_r_4.png" x="250" y="102" w="31" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_u_1.png" x="391" y="51" w="33" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_u_2.png" x="424" y="51" w="33" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_u_3.png" x="457" y="51" w="33" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_u_4.png" x="0" y="102" w="33" h="51" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_ul_1.png" x="317" y="155" w="30" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_ul_2.png" x="347" y="155" w="30" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_ul_3.png" x="377" y="155" w="30" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_ul_4.png" x="407" y="155" w="30" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_ur_1.png" x="437" y="155" w="30" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_ur_2.png" x="0" y="209" w="30" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_ur_3.png" x="30" y="209" w="30" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_land_ur_4.png" x="60" y="209" w="30" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_stand_d.png" x="281" y="102" w="33" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_stand_dl.png" x="90" y="209" w="32" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_stand_dr.png" x="122" y="209" w="32" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_stand_l.png" x="195" y="263" w="32" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_stand_r.png" x="227" y="263" w="32" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_stand_u.png" x="314" y="102" w="33" h="52" pX="0.5" pY="0.5"/>
-    <sprite n="m_stand_ul.png" x="154" y="209" w="32" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_stand_ur.png" x="186" y="209" w="32" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_1.png" x="259" y="263" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_2.png" x="423" y="263" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_3.png" x="0" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_4.png" x="41" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_5.png" x="82" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_6.png" x="123" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_7.png" x="164" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_8.png" x="205" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_9.png" x="246" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_10.png" x="300" y="263" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_11.png" x="341" y="263" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_d_12.png" x="382" y="263" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_1.png" x="287" y="428" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_2.png" x="0" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_3.png" x="44" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_4.png" x="88" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_5.png" x="132" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_6.png" x="176" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_7.png" x="220" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_8.png" x="264" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_9.png" x="308" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_10.png" x="331" y="428" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_11.png" x="375" y="428" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dl_12.png" x="419" y="428" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_1.png" x="352" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_2.png" x="44" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_3.png" x="88" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_4.png" x="132" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_5.png" x="176" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_6.png" x="220" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_7.png" x="264" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_8.png" x="308" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_9.png" x="352" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_10.png" x="396" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_11.png" x="440" y="484" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_dr_12.png" x="0" y="540" w="44" h="56" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_1.png" x="396" y="540" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_2.png" x="88" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_3.png" x="132" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_4.png" x="176" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_5.png" x="220" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_6.png" x="264" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_7.png" x="308" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_8.png" x="352" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_9.png" x="396" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_10.png" x="440" y="540" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_11.png" x="0" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_l_12.png" x="44" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_1.png" x="440" y="597" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_2.png" x="132" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_3.png" x="176" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_4.png" x="220" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_5.png" x="264" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_6.png" x="308" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_7.png" x="352" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_8.png" x="396" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_9.png" x="440" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_10.png" x="0" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_11.png" x="44" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_r_12.png" x="88" y="654" w="44" h="57" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_1.png" x="218" y="209" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_2.png" x="374" y="209" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_3.png" x="413" y="209" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_4.png" x="452" y="209" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_5.png" x="0" y="263" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_6.png" x="39" y="263" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_7.png" x="78" y="263" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_8.png" x="117" y="263" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_9.png" x="156" y="263" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_10.png" x="257" y="209" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_11.png" x="296" y="209" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_u_12.png" x="335" y="209" w="39" h="54" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_1.png" x="287" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_2.png" x="451" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_3.png" x="0" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_4.png" x="41" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_5.png" x="82" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_6.png" x="123" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_7.png" x="164" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_8.png" x="205" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_9.png" x="246" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_10.png" x="328" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_11.png" x="369" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ul_12.png" x="410" y="318" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_1.png" x="287" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_2.png" x="451" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_3.png" x="0" y="428" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_4.png" x="41" y="428" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_5.png" x="82" y="428" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_6.png" x="123" y="428" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_7.png" x="164" y="428" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_8.png" x="205" y="428" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_9.png" x="246" y="428" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_10.png" x="328" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_11.png" x="369" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
-    <sprite n="m_walk_ur_12.png" x="410" y="373" w="41" h="55" pX="0.5" pY="0.5"/>
+<TextureAtlas imagePath="mario.png" width="495" height="711">
+    <sprite n="m_fall_d_1.png" x="148" y="0" w="39" h="50"/>
+    <sprite n="m_fall_d_2.png" x="187" y="0" w="39" h="50"/>
+    <sprite n="m_fall_dl_1.png" x="226" y="0" w="40" h="50"/>
+    <sprite n="m_fall_dl_2.png" x="266" y="0" w="40" h="50"/>
+    <sprite n="m_fall_dr_1.png" x="306" y="0" w="40" h="50"/>
+    <sprite n="m_fall_dr_2.png" x="346" y="0" w="40" h="50"/>
+    <sprite n="m_fall_l_1.png" x="425" y="0" w="35" h="51"/>
+    <sprite n="m_fall_l_2.png" x="460" y="0" w="35" h="51"/>
+    <sprite n="m_fall_r_1.png" x="0" y="51" w="35" h="51"/>
+    <sprite n="m_fall_r_2.png" x="35" y="51" w="35" h="51"/>
+    <sprite n="m_fall_u_1.png" x="347" y="102" w="37" h="53"/>
+    <sprite n="m_fall_u_2.png" x="384" y="102" w="37" h="53"/>
+    <sprite n="m_fall_ul_1.png" x="109" y="155" w="34" h="54"/>
+    <sprite n="m_fall_ul_2.png" x="143" y="155" w="34" h="54"/>
+    <sprite n="m_fall_ur_1.png" x="177" y="155" w="34" h="54"/>
+    <sprite n="m_fall_ur_2.png" x="211" y="155" w="34" h="54"/>
+    <sprite n="m_jump_d.png" x="386" y="0" w="39" h="50"/>
+    <sprite n="m_jump_dl.png" x="245" y="155" w="36" h="54"/>
+    <sprite n="m_jump_dr.png" x="281" y="155" w="36" h="54"/>
+    <sprite n="m_jump_l.png" x="421" y="102" w="36" h="53"/>
+    <sprite n="m_jump_r.png" x="457" y="102" w="36" h="53"/>
+    <sprite n="m_jump_u.png" x="0" y="155" w="37" h="53"/>
+    <sprite n="m_jump_ul.png" x="37" y="155" w="36" h="53"/>
+    <sprite n="m_jump_ur.png" x="73" y="155" w="36" h="53"/>
+    <sprite n="m_land_d_1.png" x="0" y="0" w="37" h="49"/>
+    <sprite n="m_land_d_2.png" x="37" y="0" w="37" h="49"/>
+    <sprite n="m_land_d_3.png" x="74" y="0" w="37" h="49"/>
+    <sprite n="m_land_d_4.png" x="111" y="0" w="37" h="49"/>
+    <sprite n="m_land_dl_1.png" x="70" y="51" w="40" h="51"/>
+    <sprite n="m_land_dl_2.png" x="110" y="51" w="40" h="51"/>
+    <sprite n="m_land_dl_3.png" x="150" y="51" w="40" h="51"/>
+    <sprite n="m_land_dl_4.png" x="190" y="51" w="40" h="51"/>
+    <sprite n="m_land_dr_1.png" x="230" y="51" w="40" h="51"/>
+    <sprite n="m_land_dr_2.png" x="270" y="51" w="40" h="51"/>
+    <sprite n="m_land_dr_3.png" x="310" y="51" w="40" h="51"/>
+    <sprite n="m_land_dr_4.png" x="350" y="51" w="40" h="51"/>
+    <sprite n="m_land_l_1.png" x="33" y="102" w="31" h="52"/>
+    <sprite n="m_land_l_2.png" x="64" y="102" w="31" h="52"/>
+    <sprite n="m_land_l_3.png" x="95" y="102" w="31" h="52"/>
+    <sprite n="m_land_l_4.png" x="126" y="102" w="31" h="52"/>
+    <sprite n="m_land_r_1.png" x="157" y="102" w="31" h="52"/>
+    <sprite n="m_land_r_2.png" x="188" y="102" w="31" h="52"/>
+    <sprite n="m_land_r_3.png" x="219" y="102" w="31" h="52"/>
+    <sprite n="m_land_r_4.png" x="250" y="102" w="31" h="52"/>
+    <sprite n="m_land_u_1.png" x="390" y="51" w="33" h="51"/>
+    <sprite n="m_land_u_2.png" x="423" y="51" w="33" h="51"/>
+    <sprite n="m_land_u_3.png" x="456" y="51" w="33" h="51"/>
+    <sprite n="m_land_u_4.png" x="0" y="102" w="33" h="51"/>
+    <sprite n="m_land_ul_1.png" x="317" y="155" w="30" h="54"/>
+    <sprite n="m_land_ul_2.png" x="347" y="155" w="30" h="54"/>
+    <sprite n="m_land_ul_3.png" x="377" y="155" w="30" h="54"/>
+    <sprite n="m_land_ul_4.png" x="407" y="155" w="30" h="54"/>
+    <sprite n="m_land_ur_1.png" x="437" y="155" w="30" h="54"/>
+    <sprite n="m_land_ur_2.png" x="0" y="209" w="30" h="54"/>
+    <sprite n="m_land_ur_3.png" x="30" y="209" w="30" h="54"/>
+    <sprite n="m_land_ur_4.png" x="60" y="209" w="30" h="54"/>
+    <sprite n="m_stand_d.png" x="281" y="102" w="33" h="52"/>
+    <sprite n="m_stand_dl.png" x="90" y="209" w="32" h="54"/>
+    <sprite n="m_stand_dr.png" x="122" y="209" w="32" h="54"/>
+    <sprite n="m_stand_l.png" x="195" y="263" w="32" h="55"/>
+    <sprite n="m_stand_r.png" x="227" y="263" w="32" h="55"/>
+    <sprite n="m_stand_u.png" x="314" y="102" w="33" h="52"/>
+    <sprite n="m_stand_ul.png" x="154" y="209" w="32" h="54"/>
+    <sprite n="m_stand_ur.png" x="186" y="209" w="32" h="54"/>
+    <sprite n="m_walk_d_1.png" x="259" y="263" w="41" h="55"/>
+    <sprite n="m_walk_d_2.png" x="423" y="263" w="41" h="55"/>
+    <sprite n="m_walk_d_3.png" x="0" y="318" w="41" h="55"/>
+    <sprite n="m_walk_d_4.png" x="41" y="318" w="41" h="55"/>
+    <sprite n="m_walk_d_5.png" x="82" y="318" w="41" h="55"/>
+    <sprite n="m_walk_d_6.png" x="123" y="318" w="41" h="55"/>
+    <sprite n="m_walk_d_7.png" x="164" y="318" w="41" h="55"/>
+    <sprite n="m_walk_d_8.png" x="205" y="318" w="41" h="55"/>
+    <sprite n="m_walk_d_9.png" x="246" y="318" w="41" h="55"/>
+    <sprite n="m_walk_d_10.png" x="300" y="263" w="41" h="55"/>
+    <sprite n="m_walk_d_11.png" x="341" y="263" w="41" h="55"/>
+    <sprite n="m_walk_d_12.png" x="382" y="263" w="41" h="55"/>
+    <sprite n="m_walk_dl_1.png" x="287" y="428" w="44" h="56"/>
+    <sprite n="m_walk_dl_2.png" x="0" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dl_3.png" x="44" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dl_4.png" x="88" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dl_5.png" x="132" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dl_6.png" x="176" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dl_7.png" x="220" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dl_8.png" x="264" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dl_9.png" x="308" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dl_10.png" x="331" y="428" w="44" h="56"/>
+    <sprite n="m_walk_dl_11.png" x="375" y="428" w="44" h="56"/>
+    <sprite n="m_walk_dl_12.png" x="419" y="428" w="44" h="56"/>
+    <sprite n="m_walk_dr_1.png" x="352" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dr_2.png" x="44" y="540" w="44" h="56"/>
+    <sprite n="m_walk_dr_3.png" x="88" y="540" w="44" h="56"/>
+    <sprite n="m_walk_dr_4.png" x="132" y="540" w="44" h="56"/>
+    <sprite n="m_walk_dr_5.png" x="176" y="540" w="44" h="56"/>
+    <sprite n="m_walk_dr_6.png" x="220" y="540" w="44" h="56"/>
+    <sprite n="m_walk_dr_7.png" x="264" y="540" w="44" h="56"/>
+    <sprite n="m_walk_dr_8.png" x="308" y="540" w="44" h="56"/>
+    <sprite n="m_walk_dr_9.png" x="352" y="540" w="44" h="56"/>
+    <sprite n="m_walk_dr_10.png" x="396" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dr_11.png" x="440" y="484" w="44" h="56"/>
+    <sprite n="m_walk_dr_12.png" x="0" y="540" w="44" h="56"/>
+    <sprite n="m_walk_l_1.png" x="396" y="540" w="44" h="57"/>
+    <sprite n="m_walk_l_2.png" x="88" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_3.png" x="132" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_4.png" x="176" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_5.png" x="220" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_6.png" x="264" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_7.png" x="308" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_8.png" x="352" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_9.png" x="396" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_10.png" x="440" y="540" w="44" h="57"/>
+    <sprite n="m_walk_l_11.png" x="0" y="597" w="44" h="57"/>
+    <sprite n="m_walk_l_12.png" x="44" y="597" w="44" h="57"/>
+    <sprite n="m_walk_r_1.png" x="440" y="597" w="44" h="57"/>
+    <sprite n="m_walk_r_2.png" x="132" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_3.png" x="176" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_4.png" x="220" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_5.png" x="264" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_6.png" x="308" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_7.png" x="352" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_8.png" x="396" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_9.png" x="440" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_10.png" x="0" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_11.png" x="44" y="654" w="44" h="57"/>
+    <sprite n="m_walk_r_12.png" x="88" y="654" w="44" h="57"/>
+    <sprite n="m_walk_u_1.png" x="218" y="209" w="39" h="54"/>
+    <sprite n="m_walk_u_2.png" x="374" y="209" w="39" h="54"/>
+    <sprite n="m_walk_u_3.png" x="413" y="209" w="39" h="54"/>
+    <sprite n="m_walk_u_4.png" x="452" y="209" w="39" h="54"/>
+    <sprite n="m_walk_u_5.png" x="0" y="263" w="39" h="54"/>
+    <sprite n="m_walk_u_6.png" x="39" y="263" w="39" h="54"/>
+    <sprite n="m_walk_u_7.png" x="78" y="263" w="39" h="54"/>
+    <sprite n="m_walk_u_8.png" x="117" y="263" w="39" h="54"/>
+    <sprite n="m_walk_u_9.png" x="156" y="263" w="39" h="54"/>
+    <sprite n="m_walk_u_10.png" x="257" y="209" w="39" h="54"/>
+    <sprite n="m_walk_u_11.png" x="296" y="209" w="39" h="54"/>
+    <sprite n="m_walk_u_12.png" x="335" y="209" w="39" h="54"/>
+    <sprite n="m_walk_ul_1.png" x="287" y="318" w="41" h="55"/>
+    <sprite n="m_walk_ul_2.png" x="451" y="318" w="41" h="55"/>
+    <sprite n="m_walk_ul_3.png" x="0" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ul_4.png" x="41" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ul_5.png" x="82" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ul_6.png" x="123" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ul_7.png" x="164" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ul_8.png" x="205" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ul_9.png" x="246" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ul_10.png" x="328" y="318" w="41" h="55"/>
+    <sprite n="m_walk_ul_11.png" x="369" y="318" w="41" h="55"/>
+    <sprite n="m_walk_ul_12.png" x="410" y="318" w="41" h="55"/>
+    <sprite n="m_walk_ur_1.png" x="287" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ur_2.png" x="451" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ur_3.png" x="0" y="428" w="41" h="55"/>
+    <sprite n="m_walk_ur_4.png" x="41" y="428" w="41" h="55"/>
+    <sprite n="m_walk_ur_5.png" x="82" y="428" w="41" h="55"/>
+    <sprite n="m_walk_ur_6.png" x="123" y="428" w="41" h="55"/>
+    <sprite n="m_walk_ur_7.png" x="164" y="428" w="41" h="55"/>
+    <sprite n="m_walk_ur_8.png" x="205" y="428" w="41" h="55"/>
+    <sprite n="m_walk_ur_9.png" x="246" y="428" w="41" h="55"/>
+    <sprite n="m_walk_ur_10.png" x="328" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ur_11.png" x="369" y="373" w="41" h="55"/>
+    <sprite n="m_walk_ur_12.png" x="410" y="373" w="41" h="55"/>
 </TextureAtlas>
