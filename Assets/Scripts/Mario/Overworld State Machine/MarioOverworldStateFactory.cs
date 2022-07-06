@@ -9,7 +9,8 @@ public class MarioOverworldStateFactory
         Jump,
         Grounded,
         Falling,
-        Landing
+        Landing,
+        SpinAndJump
     }
     
     private MarioOverworldStateMachine _context;
@@ -24,6 +25,7 @@ public class MarioOverworldStateFactory
         _states[States.Grounded] = new MarioOverworldGroundedState(_context, this);
         _states[States.Falling] = new MarioOverworldFallingState(_context, this);
         _states[States.Landing] = new MarioOverworldLandingState(_context, this);
+        _states[States.SpinAndJump] = new MarioOverworldSpinAndJumpState(_context, this);
     }
 
     public MarioOverworldBaseState Idle()
@@ -54,5 +56,10 @@ public class MarioOverworldStateFactory
     public MarioOverworldBaseState Landing()
     {
         return _states[States.Landing];
+    }
+
+    public MarioOverworldBaseState SpinAndJump()
+    {
+        return _states[States.SpinAndJump];
     }
 }

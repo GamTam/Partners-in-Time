@@ -15,6 +15,15 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState, IMarioOverwo
 
     public override void UpdateState()
     {
+        if (_ctx.SwitchAction)
+        {
+            _ctx.CurrentAction += 1;
+            if (_ctx.CurrentAction > _ctx.Actions.Count - 1)
+            {
+                _ctx.CurrentAction = 0;
+            }
+            Debug.Log(_ctx.Actions[_ctx.CurrentAction]);
+        }
         HandleGravity();
         CheckSwitchStates();
     }
@@ -27,6 +36,18 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState, IMarioOverwo
         if (_ctx.Jump)
         {
             SwitchState(_factory.Jump());
+        }
+        else if (_ctx.Action)
+        {
+            switch (_ctx.Actions[_ctx.CurrentAction])
+            {
+                case "jump":
+                    SwitchState(_factory.Jump());
+                    break;
+                case "spin and jump":
+                    SwitchState(_factory.SpinAndJump());
+                    break;
+            }
         }
         else if (!_ctx.Controller.isGrounded)
         {

@@ -66,8 +66,8 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
-    resizeAlgorithm: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -108,7 +108,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 148
-        y: 661
+        y: 347
         width: 39
         height: 50
       alignment: 7
@@ -129,7 +129,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 187
-        y: 661
+        y: 347
         width: 39
         height: 50
       alignment: 7
@@ -150,7 +150,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 226
-        y: 661
+        y: 347
         width: 40
         height: 50
       alignment: 7
@@ -171,7 +171,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 266
-        y: 661
+        y: 347
         width: 40
         height: 50
       alignment: 7
@@ -192,7 +192,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 306
-        y: 661
+        y: 347
         width: 40
         height: 50
       alignment: 7
@@ -213,7 +213,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 346
-        y: 661
+        y: 347
         width: 40
         height: 50
       alignment: 7
@@ -234,7 +234,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 425
-        y: 660
+        y: 346
         width: 35
         height: 51
       alignment: 7
@@ -255,7 +255,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 460
-        y: 660
+        y: 346
         width: 35
         height: 51
       alignment: 7
@@ -275,8 +275,8 @@ TextureImporter:
       name: m_fall_r_1.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 609
+        x: 495
+        y: 346
         width: 35
         height: 51
       alignment: 7
@@ -296,8 +296,8 @@ TextureImporter:
       name: m_fall_r_2.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 609
+        x: 530
+        y: 346
         width: 35
         height: 51
       alignment: 7
@@ -318,7 +318,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 347
-        y: 556
+        y: 293
         width: 37
         height: 53
       alignment: 7
@@ -339,7 +339,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 556
+        y: 293
         width: 37
         height: 53
       alignment: 7
@@ -359,8 +359,8 @@ TextureImporter:
       name: m_fall_ul_1.png
       rect:
         serializedVersion: 2
-        x: 109
-        y: 502
+        x: 602
+        y: 292
         width: 34
         height: 54
       alignment: 7
@@ -380,8 +380,8 @@ TextureImporter:
       name: m_fall_ul_2.png
       rect:
         serializedVersion: 2
-        x: 143
-        y: 502
+        x: 636
+        y: 292
         width: 34
         height: 54
       alignment: 7
@@ -401,8 +401,8 @@ TextureImporter:
       name: m_fall_ur_1.png
       rect:
         serializedVersion: 2
-        x: 177
-        y: 502
+        x: 670
+        y: 292
         width: 34
         height: 54
       alignment: 7
@@ -422,8 +422,8 @@ TextureImporter:
       name: m_fall_ur_2.png
       rect:
         serializedVersion: 2
-        x: 211
-        y: 502
+        x: 704
+        y: 292
         width: 34
         height: 54
       alignment: 7
@@ -444,7 +444,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 386
-        y: 661
+        y: 347
         width: 39
         height: 50
       alignment: 7
@@ -464,8 +464,8 @@ TextureImporter:
       name: m_jump_dl.png
       rect:
         serializedVersion: 2
-        x: 245
-        y: 502
+        x: 738
+        y: 292
         width: 36
         height: 54
       alignment: 7
@@ -485,8 +485,8 @@ TextureImporter:
       name: m_jump_dr.png
       rect:
         serializedVersion: 2
-        x: 281
-        y: 502
+        x: 774
+        y: 292
         width: 36
         height: 54
       alignment: 7
@@ -507,7 +507,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 421
-        y: 556
+        y: 293
         width: 36
         height: 53
       alignment: 7
@@ -528,7 +528,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 457
-        y: 556
+        y: 293
         width: 36
         height: 53
       alignment: 7
@@ -548,8 +548,8 @@ TextureImporter:
       name: m_jump_u.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 503
+        x: 493
+        y: 293
         width: 37
         height: 53
       alignment: 7
@@ -569,8 +569,8 @@ TextureImporter:
       name: m_jump_ul.png
       rect:
         serializedVersion: 2
-        x: 37
-        y: 503
+        x: 530
+        y: 293
         width: 36
         height: 53
       alignment: 7
@@ -590,8 +590,8 @@ TextureImporter:
       name: m_jump_ur.png
       rect:
         serializedVersion: 2
-        x: 73
-        y: 503
+        x: 566
+        y: 293
         width: 36
         height: 53
       alignment: 7
@@ -612,7 +612,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 662
+        y: 348
         width: 37
         height: 49
       alignment: 7
@@ -633,7 +633,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 662
+        y: 348
         width: 37
         height: 49
       alignment: 7
@@ -654,7 +654,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 74
-        y: 662
+        y: 348
         width: 37
         height: 49
       alignment: 7
@@ -675,7 +675,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 111
-        y: 662
+        y: 348
         width: 37
         height: 49
       alignment: 7
@@ -695,8 +695,8 @@ TextureImporter:
       name: m_land_dl_1.png
       rect:
         serializedVersion: 2
-        x: 70
-        y: 609
+        x: 565
+        y: 346
         width: 40
         height: 51
       alignment: 7
@@ -716,8 +716,8 @@ TextureImporter:
       name: m_land_dl_2.png
       rect:
         serializedVersion: 2
-        x: 110
-        y: 609
+        x: 605
+        y: 346
         width: 40
         height: 51
       alignment: 7
@@ -737,8 +737,8 @@ TextureImporter:
       name: m_land_dl_3.png
       rect:
         serializedVersion: 2
-        x: 150
-        y: 609
+        x: 645
+        y: 346
         width: 40
         height: 51
       alignment: 7
@@ -758,8 +758,8 @@ TextureImporter:
       name: m_land_dl_4.png
       rect:
         serializedVersion: 2
-        x: 190
-        y: 609
+        x: 685
+        y: 346
         width: 40
         height: 51
       alignment: 7
@@ -779,8 +779,8 @@ TextureImporter:
       name: m_land_dr_1.png
       rect:
         serializedVersion: 2
-        x: 230
-        y: 609
+        x: 725
+        y: 346
         width: 40
         height: 51
       alignment: 7
@@ -800,8 +800,8 @@ TextureImporter:
       name: m_land_dr_2.png
       rect:
         serializedVersion: 2
-        x: 270
-        y: 609
+        x: 765
+        y: 346
         width: 40
         height: 51
       alignment: 7
@@ -821,8 +821,8 @@ TextureImporter:
       name: m_land_dr_3.png
       rect:
         serializedVersion: 2
-        x: 310
-        y: 609
+        x: 805
+        y: 346
         width: 40
         height: 51
       alignment: 7
@@ -842,8 +842,8 @@ TextureImporter:
       name: m_land_dr_4.png
       rect:
         serializedVersion: 2
-        x: 350
-        y: 609
+        x: 845
+        y: 346
         width: 40
         height: 51
       alignment: 7
@@ -864,7 +864,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 557
+        y: 294
         width: 31
         height: 52
       alignment: 7
@@ -885,7 +885,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 557
+        y: 294
         width: 31
         height: 52
       alignment: 7
@@ -906,7 +906,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 95
-        y: 557
+        y: 294
         width: 31
         height: 52
       alignment: 7
@@ -927,7 +927,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 126
-        y: 557
+        y: 294
         width: 31
         height: 52
       alignment: 7
@@ -948,7 +948,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 157
-        y: 557
+        y: 294
         width: 31
         height: 52
       alignment: 7
@@ -969,7 +969,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 188
-        y: 557
+        y: 294
         width: 31
         height: 52
       alignment: 7
@@ -990,7 +990,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 219
-        y: 557
+        y: 294
         width: 31
         height: 52
       alignment: 7
@@ -1011,7 +1011,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 250
-        y: 557
+        y: 294
         width: 31
         height: 52
       alignment: 7
@@ -1031,8 +1031,8 @@ TextureImporter:
       name: m_land_u_1.png
       rect:
         serializedVersion: 2
-        x: 390
-        y: 609
+        x: 885
+        y: 346
         width: 33
         height: 51
       alignment: 7
@@ -1052,8 +1052,8 @@ TextureImporter:
       name: m_land_u_2.png
       rect:
         serializedVersion: 2
-        x: 423
-        y: 609
+        x: 918
+        y: 346
         width: 33
         height: 51
       alignment: 7
@@ -1073,8 +1073,8 @@ TextureImporter:
       name: m_land_u_3.png
       rect:
         serializedVersion: 2
-        x: 456
-        y: 609
+        x: 951
+        y: 346
         width: 33
         height: 51
       alignment: 7
@@ -1095,7 +1095,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 558
+        y: 295
         width: 33
         height: 51
       alignment: 7
@@ -1115,8 +1115,8 @@ TextureImporter:
       name: m_land_ul_1.png
       rect:
         serializedVersion: 2
-        x: 317
-        y: 502
+        x: 810
+        y: 292
         width: 30
         height: 54
       alignment: 7
@@ -1136,8 +1136,8 @@ TextureImporter:
       name: m_land_ul_2.png
       rect:
         serializedVersion: 2
-        x: 347
-        y: 502
+        x: 840
+        y: 292
         width: 30
         height: 54
       alignment: 7
@@ -1157,8 +1157,8 @@ TextureImporter:
       name: m_land_ul_3.png
       rect:
         serializedVersion: 2
-        x: 377
-        y: 502
+        x: 870
+        y: 292
         width: 30
         height: 54
       alignment: 7
@@ -1178,8 +1178,8 @@ TextureImporter:
       name: m_land_ul_4.png
       rect:
         serializedVersion: 2
-        x: 407
-        y: 502
+        x: 900
+        y: 292
         width: 30
         height: 54
       alignment: 7
@@ -1199,8 +1199,8 @@ TextureImporter:
       name: m_land_ur_1.png
       rect:
         serializedVersion: 2
-        x: 437
-        y: 502
+        x: 930
+        y: 292
         width: 30
         height: 54
       alignment: 7
@@ -1220,8 +1220,8 @@ TextureImporter:
       name: m_land_ur_2.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 448
+        x: 960
+        y: 292
         width: 30
         height: 54
       alignment: 7
@@ -1241,8 +1241,8 @@ TextureImporter:
       name: m_land_ur_3.png
       rect:
         serializedVersion: 2
-        x: 30
-        y: 448
+        x: 0
+        y: 238
         width: 30
         height: 54
       alignment: 7
@@ -1262,8 +1262,8 @@ TextureImporter:
       name: m_land_ur_4.png
       rect:
         serializedVersion: 2
-        x: 60
-        y: 448
+        x: 30
+        y: 238
         width: 30
         height: 54
       alignment: 7
@@ -1280,11 +1280,431 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: m_spin_and_jump_1.png
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e801dc8f511e7a0800000000000000
+      internalID: -6349769841279201670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_2.png
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a59f98ae761afaeb0800000000000000
+      internalID: -4706365617890264742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_3.png
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ba5abcdb854c210800000000000000
+      internalID: 1352303360306686754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_4.png
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87585222d29431160800000000000000
+      internalID: 6995015104431752568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_5.png
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c84dc2beea8bca80800000000000000
+      internalID: -8445503918396585784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_6.png
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b54bc7fd3179480800000000000000
+      internalID: -8892617088628925559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_7.png
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1b72edd0b412fa0800000000000000
+      internalID: -5827293919906909758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_8.png
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a08fc64e3016290800000000000000
+      internalID: -7899027991815517652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_9.png
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc294af3018bd3390800000000000000
+      internalID: -7836905396628057395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_10.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793e6d3e284e26c90800000000000000
+      internalID: -7177923605255756905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_11.png
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28d71f0b8846e5d0800000000000000
+      internalID: -3033657536896575443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_12.png
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c9043e8c7e76ac0800000000000000
+      internalID: -3861863305454773119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_13.png
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba535d02ee596eb0800000000000000
+      internalID: -4726142008969438530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_14.png
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48083304c2bb90eb0800000000000000
+      internalID: -4753062132982775676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_15.png
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d68a39b36131ea0800000000000000
+      internalID: -5903350241416417975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_16.png
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc0bb248a992b5b0800000000000000
+      internalID: -5354048059036988199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_17.png
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d927b1c9275348b0800000000000000
+      internalID: -5169192110435915304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_18.png
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c412dbe22879a13b0800000000000000
+      internalID: -5540949806140284596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_19.png
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d346bb30e5002d80800000000000000
+      internalID: -8277609654474357808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_spin_and_jump_20.png
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 33
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd6f32a1a7b3e6b0800000000000000
+      internalID: -5268165234253664819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: m_stand_d.png
       rect:
         serializedVersion: 2
         x: 281
-        y: 557
+        y: 294
         width: 33
         height: 52
       alignment: 7
@@ -1304,8 +1724,8 @@ TextureImporter:
       name: m_stand_dl.png
       rect:
         serializedVersion: 2
-        x: 90
-        y: 448
+        x: 60
+        y: 238
         width: 32
         height: 54
       alignment: 7
@@ -1325,8 +1745,8 @@ TextureImporter:
       name: m_stand_dr.png
       rect:
         serializedVersion: 2
-        x: 122
-        y: 448
+        x: 92
+        y: 238
         width: 32
         height: 54
       alignment: 7
@@ -1346,8 +1766,8 @@ TextureImporter:
       name: m_stand_l.png
       rect:
         serializedVersion: 2
-        x: 195
-        y: 393
+        x: 656
+        y: 237
         width: 32
         height: 55
       alignment: 7
@@ -1367,8 +1787,8 @@ TextureImporter:
       name: m_stand_r.png
       rect:
         serializedVersion: 2
-        x: 227
-        y: 393
+        x: 688
+        y: 237
         width: 32
         height: 55
       alignment: 7
@@ -1389,7 +1809,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 314
-        y: 557
+        y: 294
         width: 33
         height: 52
       alignment: 7
@@ -1409,8 +1829,8 @@ TextureImporter:
       name: m_stand_ul.png
       rect:
         serializedVersion: 2
-        x: 154
-        y: 448
+        x: 124
+        y: 238
         width: 32
         height: 54
       alignment: 7
@@ -1430,8 +1850,8 @@ TextureImporter:
       name: m_stand_ur.png
       rect:
         serializedVersion: 2
-        x: 186
-        y: 448
+        x: 156
+        y: 238
         width: 32
         height: 54
       alignment: 7
@@ -1451,8 +1871,8 @@ TextureImporter:
       name: m_walk_d_1.png
       rect:
         serializedVersion: 2
-        x: 259
-        y: 393
+        x: 720
+        y: 237
         width: 41
         height: 55
       alignment: 7
@@ -1472,8 +1892,8 @@ TextureImporter:
       name: m_walk_d_2.png
       rect:
         serializedVersion: 2
-        x: 423
-        y: 393
+        x: 884
+        y: 237
         width: 41
         height: 55
       alignment: 7
@@ -1493,8 +1913,8 @@ TextureImporter:
       name: m_walk_d_3.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 338
+        x: 925
+        y: 237
         width: 41
         height: 55
       alignment: 7
@@ -1514,8 +1934,8 @@ TextureImporter:
       name: m_walk_d_4.png
       rect:
         serializedVersion: 2
-        x: 41
-        y: 338
+        x: 966
+        y: 237
         width: 41
         height: 55
       alignment: 7
@@ -1535,8 +1955,8 @@ TextureImporter:
       name: m_walk_d_5.png
       rect:
         serializedVersion: 2
-        x: 82
-        y: 338
+        x: 0
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -1556,8 +1976,8 @@ TextureImporter:
       name: m_walk_d_6.png
       rect:
         serializedVersion: 2
-        x: 123
-        y: 338
+        x: 41
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -1577,8 +1997,8 @@ TextureImporter:
       name: m_walk_d_7.png
       rect:
         serializedVersion: 2
-        x: 164
-        y: 338
+        x: 82
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -1598,8 +2018,8 @@ TextureImporter:
       name: m_walk_d_8.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 338
+        x: 123
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -1619,8 +2039,8 @@ TextureImporter:
       name: m_walk_d_9.png
       rect:
         serializedVersion: 2
-        x: 246
-        y: 338
+        x: 164
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -1640,8 +2060,8 @@ TextureImporter:
       name: m_walk_d_10.png
       rect:
         serializedVersion: 2
-        x: 300
-        y: 393
+        x: 761
+        y: 237
         width: 41
         height: 55
       alignment: 7
@@ -1661,8 +2081,8 @@ TextureImporter:
       name: m_walk_d_11.png
       rect:
         serializedVersion: 2
-        x: 341
-        y: 393
+        x: 802
+        y: 237
         width: 41
         height: 55
       alignment: 7
@@ -1682,8 +2102,8 @@ TextureImporter:
       name: m_walk_d_12.png
       rect:
         serializedVersion: 2
-        x: 382
-        y: 393
+        x: 843
+        y: 237
         width: 41
         height: 55
       alignment: 7
@@ -1703,8 +2123,8 @@ TextureImporter:
       name: m_walk_dl_1.png
       rect:
         serializedVersion: 2
-        x: 287
-        y: 227
+        x: 205
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1724,8 +2144,8 @@ TextureImporter:
       name: m_walk_dl_2.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 171
+        x: 381
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1745,8 +2165,8 @@ TextureImporter:
       name: m_walk_dl_3.png
       rect:
         serializedVersion: 2
-        x: 44
-        y: 171
+        x: 425
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1766,8 +2186,8 @@ TextureImporter:
       name: m_walk_dl_4.png
       rect:
         serializedVersion: 2
-        x: 88
-        y: 171
+        x: 469
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1787,8 +2207,8 @@ TextureImporter:
       name: m_walk_dl_5.png
       rect:
         serializedVersion: 2
-        x: 132
-        y: 171
+        x: 513
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1808,8 +2228,8 @@ TextureImporter:
       name: m_walk_dl_6.png
       rect:
         serializedVersion: 2
-        x: 176
-        y: 171
+        x: 557
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1829,8 +2249,8 @@ TextureImporter:
       name: m_walk_dl_7.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 171
+        x: 601
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1850,8 +2270,8 @@ TextureImporter:
       name: m_walk_dl_8.png
       rect:
         serializedVersion: 2
-        x: 264
-        y: 171
+        x: 645
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1871,8 +2291,8 @@ TextureImporter:
       name: m_walk_dl_9.png
       rect:
         serializedVersion: 2
-        x: 308
-        y: 171
+        x: 689
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1892,8 +2312,8 @@ TextureImporter:
       name: m_walk_dl_10.png
       rect:
         serializedVersion: 2
-        x: 331
-        y: 227
+        x: 249
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1913,8 +2333,8 @@ TextureImporter:
       name: m_walk_dl_11.png
       rect:
         serializedVersion: 2
-        x: 375
-        y: 227
+        x: 293
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1934,8 +2354,8 @@ TextureImporter:
       name: m_walk_dl_12.png
       rect:
         serializedVersion: 2
-        x: 419
-        y: 227
+        x: 337
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1955,8 +2375,8 @@ TextureImporter:
       name: m_walk_dr_1.png
       rect:
         serializedVersion: 2
-        x: 352
-        y: 171
+        x: 733
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1976,8 +2396,8 @@ TextureImporter:
       name: m_walk_dr_2.png
       rect:
         serializedVersion: 2
-        x: 44
-        y: 115
+        x: 909
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -1997,8 +2417,8 @@ TextureImporter:
       name: m_walk_dr_3.png
       rect:
         serializedVersion: 2
-        x: 88
-        y: 115
+        x: 953
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -2018,8 +2438,8 @@ TextureImporter:
       name: m_walk_dr_4.png
       rect:
         serializedVersion: 2
-        x: 132
-        y: 115
+        x: 0
+        y: 70
         width: 44
         height: 56
       alignment: 7
@@ -2039,8 +2459,8 @@ TextureImporter:
       name: m_walk_dr_5.png
       rect:
         serializedVersion: 2
-        x: 176
-        y: 115
+        x: 44
+        y: 70
         width: 44
         height: 56
       alignment: 7
@@ -2060,8 +2480,8 @@ TextureImporter:
       name: m_walk_dr_6.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 115
+        x: 88
+        y: 70
         width: 44
         height: 56
       alignment: 7
@@ -2081,8 +2501,8 @@ TextureImporter:
       name: m_walk_dr_7.png
       rect:
         serializedVersion: 2
-        x: 264
-        y: 115
+        x: 132
+        y: 70
         width: 44
         height: 56
       alignment: 7
@@ -2102,8 +2522,8 @@ TextureImporter:
       name: m_walk_dr_8.png
       rect:
         serializedVersion: 2
-        x: 308
-        y: 115
+        x: 176
+        y: 70
         width: 44
         height: 56
       alignment: 7
@@ -2123,8 +2543,8 @@ TextureImporter:
       name: m_walk_dr_9.png
       rect:
         serializedVersion: 2
-        x: 352
-        y: 115
+        x: 220
+        y: 70
         width: 44
         height: 56
       alignment: 7
@@ -2144,8 +2564,8 @@ TextureImporter:
       name: m_walk_dr_10.png
       rect:
         serializedVersion: 2
-        x: 396
-        y: 171
+        x: 777
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -2165,8 +2585,8 @@ TextureImporter:
       name: m_walk_dr_11.png
       rect:
         serializedVersion: 2
-        x: 440
-        y: 171
+        x: 821
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -2186,8 +2606,8 @@ TextureImporter:
       name: m_walk_dr_12.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 115
+        x: 865
+        y: 126
         width: 44
         height: 56
       alignment: 7
@@ -2207,8 +2627,8 @@ TextureImporter:
       name: m_walk_l_1.png
       rect:
         serializedVersion: 2
-        x: 396
-        y: 114
+        x: 264
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2228,8 +2648,8 @@ TextureImporter:
       name: m_walk_l_2.png
       rect:
         serializedVersion: 2
-        x: 88
-        y: 57
+        x: 440
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2249,8 +2669,8 @@ TextureImporter:
       name: m_walk_l_3.png
       rect:
         serializedVersion: 2
-        x: 132
-        y: 57
+        x: 484
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2270,8 +2690,8 @@ TextureImporter:
       name: m_walk_l_4.png
       rect:
         serializedVersion: 2
-        x: 176
-        y: 57
+        x: 528
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2291,8 +2711,8 @@ TextureImporter:
       name: m_walk_l_5.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 57
+        x: 572
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2312,8 +2732,8 @@ TextureImporter:
       name: m_walk_l_6.png
       rect:
         serializedVersion: 2
-        x: 264
-        y: 57
+        x: 616
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2333,8 +2753,8 @@ TextureImporter:
       name: m_walk_l_7.png
       rect:
         serializedVersion: 2
-        x: 308
-        y: 57
+        x: 660
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2354,8 +2774,8 @@ TextureImporter:
       name: m_walk_l_8.png
       rect:
         serializedVersion: 2
-        x: 352
-        y: 57
+        x: 704
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2375,8 +2795,8 @@ TextureImporter:
       name: m_walk_l_9.png
       rect:
         serializedVersion: 2
-        x: 396
-        y: 57
+        x: 748
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2396,8 +2816,8 @@ TextureImporter:
       name: m_walk_l_10.png
       rect:
         serializedVersion: 2
-        x: 440
-        y: 114
+        x: 308
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2417,8 +2837,8 @@ TextureImporter:
       name: m_walk_l_11.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 57
+        x: 352
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2438,8 +2858,8 @@ TextureImporter:
       name: m_walk_l_12.png
       rect:
         serializedVersion: 2
-        x: 44
-        y: 57
+        x: 396
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2459,8 +2879,8 @@ TextureImporter:
       name: m_walk_r_1.png
       rect:
         serializedVersion: 2
-        x: 440
-        y: 57
+        x: 792
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2480,8 +2900,8 @@ TextureImporter:
       name: m_walk_r_2.png
       rect:
         serializedVersion: 2
-        x: 132
-        y: 0
+        x: 968
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2501,8 +2921,8 @@ TextureImporter:
       name: m_walk_r_3.png
       rect:
         serializedVersion: 2
-        x: 176
-        y: 0
+        x: 0
+        y: 12
         width: 44
         height: 57
       alignment: 7
@@ -2522,8 +2942,8 @@ TextureImporter:
       name: m_walk_r_4.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 0
+        x: 44
+        y: 12
         width: 44
         height: 57
       alignment: 7
@@ -2543,8 +2963,8 @@ TextureImporter:
       name: m_walk_r_5.png
       rect:
         serializedVersion: 2
-        x: 264
-        y: 0
+        x: 88
+        y: 12
         width: 44
         height: 57
       alignment: 7
@@ -2564,8 +2984,8 @@ TextureImporter:
       name: m_walk_r_6.png
       rect:
         serializedVersion: 2
-        x: 308
-        y: 0
+        x: 132
+        y: 12
         width: 44
         height: 57
       alignment: 7
@@ -2585,8 +3005,8 @@ TextureImporter:
       name: m_walk_r_7.png
       rect:
         serializedVersion: 2
-        x: 352
-        y: 0
+        x: 176
+        y: 12
         width: 44
         height: 57
       alignment: 7
@@ -2606,8 +3026,8 @@ TextureImporter:
       name: m_walk_r_8.png
       rect:
         serializedVersion: 2
-        x: 396
-        y: 0
+        x: 220
+        y: 12
         width: 44
         height: 57
       alignment: 7
@@ -2627,8 +3047,8 @@ TextureImporter:
       name: m_walk_r_9.png
       rect:
         serializedVersion: 2
-        x: 440
-        y: 0
+        x: 264
+        y: 12
         width: 44
         height: 57
       alignment: 7
@@ -2648,8 +3068,8 @@ TextureImporter:
       name: m_walk_r_10.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 836
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2669,8 +3089,8 @@ TextureImporter:
       name: m_walk_r_11.png
       rect:
         serializedVersion: 2
-        x: 44
-        y: 0
+        x: 880
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2690,8 +3110,8 @@ TextureImporter:
       name: m_walk_r_12.png
       rect:
         serializedVersion: 2
-        x: 88
-        y: 0
+        x: 924
+        y: 69
         width: 44
         height: 57
       alignment: 7
@@ -2711,8 +3131,8 @@ TextureImporter:
       name: m_walk_u_1.png
       rect:
         serializedVersion: 2
-        x: 218
-        y: 448
+        x: 188
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2732,8 +3152,8 @@ TextureImporter:
       name: m_walk_u_2.png
       rect:
         serializedVersion: 2
-        x: 374
-        y: 448
+        x: 344
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2753,8 +3173,8 @@ TextureImporter:
       name: m_walk_u_3.png
       rect:
         serializedVersion: 2
-        x: 413
-        y: 448
+        x: 383
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2774,8 +3194,8 @@ TextureImporter:
       name: m_walk_u_4.png
       rect:
         serializedVersion: 2
-        x: 452
-        y: 448
+        x: 422
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2795,8 +3215,8 @@ TextureImporter:
       name: m_walk_u_5.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 394
+        x: 461
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2816,8 +3236,8 @@ TextureImporter:
       name: m_walk_u_6.png
       rect:
         serializedVersion: 2
-        x: 39
-        y: 394
+        x: 500
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2837,8 +3257,8 @@ TextureImporter:
       name: m_walk_u_7.png
       rect:
         serializedVersion: 2
-        x: 78
-        y: 394
+        x: 539
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2858,8 +3278,8 @@ TextureImporter:
       name: m_walk_u_8.png
       rect:
         serializedVersion: 2
-        x: 117
-        y: 394
+        x: 578
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2879,8 +3299,8 @@ TextureImporter:
       name: m_walk_u_9.png
       rect:
         serializedVersion: 2
-        x: 156
-        y: 394
+        x: 617
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2900,8 +3320,8 @@ TextureImporter:
       name: m_walk_u_10.png
       rect:
         serializedVersion: 2
-        x: 257
-        y: 448
+        x: 227
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2921,8 +3341,8 @@ TextureImporter:
       name: m_walk_u_11.png
       rect:
         serializedVersion: 2
-        x: 296
-        y: 448
+        x: 266
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2942,8 +3362,8 @@ TextureImporter:
       name: m_walk_u_12.png
       rect:
         serializedVersion: 2
-        x: 335
-        y: 448
+        x: 305
+        y: 238
         width: 39
         height: 54
       alignment: 7
@@ -2963,8 +3383,8 @@ TextureImporter:
       name: m_walk_ul_1.png
       rect:
         serializedVersion: 2
-        x: 287
-        y: 338
+        x: 205
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -2984,8 +3404,8 @@ TextureImporter:
       name: m_walk_ul_2.png
       rect:
         serializedVersion: 2
-        x: 451
-        y: 338
+        x: 369
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3005,8 +3425,8 @@ TextureImporter:
       name: m_walk_ul_3.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 283
+        x: 410
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3026,8 +3446,8 @@ TextureImporter:
       name: m_walk_ul_4.png
       rect:
         serializedVersion: 2
-        x: 41
-        y: 283
+        x: 451
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3047,8 +3467,8 @@ TextureImporter:
       name: m_walk_ul_5.png
       rect:
         serializedVersion: 2
-        x: 82
-        y: 283
+        x: 492
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3068,8 +3488,8 @@ TextureImporter:
       name: m_walk_ul_6.png
       rect:
         serializedVersion: 2
-        x: 123
-        y: 283
+        x: 533
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3089,8 +3509,8 @@ TextureImporter:
       name: m_walk_ul_7.png
       rect:
         serializedVersion: 2
-        x: 164
-        y: 283
+        x: 574
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3110,8 +3530,8 @@ TextureImporter:
       name: m_walk_ul_8.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 283
+        x: 615
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3131,8 +3551,8 @@ TextureImporter:
       name: m_walk_ul_9.png
       rect:
         serializedVersion: 2
-        x: 246
-        y: 283
+        x: 656
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3152,8 +3572,8 @@ TextureImporter:
       name: m_walk_ul_10.png
       rect:
         serializedVersion: 2
-        x: 328
-        y: 338
+        x: 246
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3173,8 +3593,8 @@ TextureImporter:
       name: m_walk_ul_11.png
       rect:
         serializedVersion: 2
-        x: 369
-        y: 338
+        x: 287
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3194,8 +3614,8 @@ TextureImporter:
       name: m_walk_ul_12.png
       rect:
         serializedVersion: 2
-        x: 410
-        y: 338
+        x: 328
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3215,8 +3635,8 @@ TextureImporter:
       name: m_walk_ur_1.png
       rect:
         serializedVersion: 2
-        x: 287
-        y: 283
+        x: 697
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3236,8 +3656,8 @@ TextureImporter:
       name: m_walk_ur_2.png
       rect:
         serializedVersion: 2
-        x: 451
-        y: 283
+        x: 861
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3257,8 +3677,8 @@ TextureImporter:
       name: m_walk_ur_3.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 228
+        x: 902
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3278,8 +3698,8 @@ TextureImporter:
       name: m_walk_ur_4.png
       rect:
         serializedVersion: 2
-        x: 41
-        y: 228
+        x: 943
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3299,8 +3719,8 @@ TextureImporter:
       name: m_walk_ur_5.png
       rect:
         serializedVersion: 2
-        x: 82
-        y: 228
+        x: 0
+        y: 127
         width: 41
         height: 55
       alignment: 7
@@ -3320,8 +3740,8 @@ TextureImporter:
       name: m_walk_ur_6.png
       rect:
         serializedVersion: 2
-        x: 123
-        y: 228
+        x: 41
+        y: 127
         width: 41
         height: 55
       alignment: 7
@@ -3341,8 +3761,8 @@ TextureImporter:
       name: m_walk_ur_7.png
       rect:
         serializedVersion: 2
-        x: 164
-        y: 228
+        x: 82
+        y: 127
         width: 41
         height: 55
       alignment: 7
@@ -3362,8 +3782,8 @@ TextureImporter:
       name: m_walk_ur_8.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 228
+        x: 123
+        y: 127
         width: 41
         height: 55
       alignment: 7
@@ -3383,8 +3803,8 @@ TextureImporter:
       name: m_walk_ur_9.png
       rect:
         serializedVersion: 2
-        x: 246
-        y: 228
+        x: 164
+        y: 127
         width: 41
         height: 55
       alignment: 7
@@ -3404,8 +3824,8 @@ TextureImporter:
       name: m_walk_ur_10.png
       rect:
         serializedVersion: 2
-        x: 328
-        y: 283
+        x: 738
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3425,8 +3845,8 @@ TextureImporter:
       name: m_walk_ur_11.png
       rect:
         serializedVersion: 2
-        x: 369
-        y: 283
+        x: 779
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3446,8 +3866,8 @@ TextureImporter:
       name: m_walk_ur_12.png
       rect:
         serializedVersion: 2
-        x: 410
-        y: 283
+        x: 820
+        y: 182
         width: 41
         height: 55
       alignment: 7
@@ -3466,7 +3886,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -3474,166 +3894,186 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      m_fall_l_2.png: 7979091098718107363
       m_fall_r_2.png: -1685947714686791586
       m_land_dr_3.png: 2156742931308186174
-      m_land_ur_3.png: -2748200414534031674
       m_walk_r_4.png: -6437538146309503635
       m_land_ul_2.png: -2299238169796030904
-      m_land_d_2.png: -7872491054710106535
-      m_stand_l.png: -7248729613573835725
+      m_spin_and_jump_2.png: -4706365617890264742
       m_fall_ur_2.png: -2894999331721965630
       m_jump_d.png: 6449484332728419594
-      m_walk_l_3.png: -1502735972586629674
       m_jump_ur.png: -2423949862613773435
-      m_land_ur_2.png: -930494672879218294
       m_land_dr_1.png: 8515732248324399817
       m_walk_l_10.png: -3468542601613549239
       m_land_r_1.png: 5138159756133637203
-      m_walk_ul_7.png: 281214574585430371
       m_jump_dr.png: 5275233301521713570
       m_walk_d_5.png: 3422545160821547364
-      m_land_u_3.png: -6740085930042427377
-      m_walk_d_2.png: -6561746029528417455
-      m_walk_ul_10.png: -3196241937659293627
-      m_walk_dl_12.png: 7934751599032066370
-      m_land_l_4.png: -8098363039714903759
       m_walk_dr_7.png: 5636907890825626022
-      m_fall_l_1.png: -5084223355024995752
-      m_walk_dl_10.png: -8908610401722455935
       m_land_l_2.png: -8077637760921988913
-      m_walk_l_8.png: 7765144665596094955
+      m_spin_and_jump_11.png: -3033657536896575443
       m_walk_d_12.png: 5324695768643782558
+      m_spin_and_jump_13.png: -4726142008969438530
       m_stand_ul.png: 3041232018107685504
       m_walk_l_1.png: -5298205384241364881
       m_walk_u_5.png: -3609301524052177023
-      m_walk_u_8.png: 6400655150411793939
       m_walk_ul_4.png: 5544806034335067890
       m_walk_d_9.png: -1862489741517756211
-      m_walk_d_7.png: -3025365749134585780
-      m_land_dl_1.png: -4746859155617910616
+      m_spin_and_jump_8.png: -7899027991815517652
       m_walk_dr_1.png: -7084458687801012046
-      m_walk_l_12.png: -4503149522164692098
+      m_spin_and_jump_7.png: -5827293919906909758
       m_walk_l_4.png: 3735617675041552381
-      m_fall_d_1.png: -525189442644408439
       m_walk_u_6.png: 5376920671065915062
-      m_walk_d_8.png: -4033624925103741997
-      m_walk_r_7.png: -1051072575248671636
       m_land_r_2.png: 2077060843856192473
       m_walk_dl_5.png: 285509586546612856
-      m_walk_ur_4.png: 3336981738539655446
       m_walk_dl_6.png: -7812353040855104938
+      m_walk_u_9.png: 1640745909100859375
       m_walk_dl_11.png: -5158998264338886086
       m_walk_dr_3.png: 7006890198865588800
       m_fall_d_2.png: 6761516551580578815
-      m_walk_u_9.png: 1640745909100859375
-      m_land_ur_1.png: -8670325357357954098
-      m_walk_l_5.png: -9039459028466725021
-      m_walk_l_11.png: -3287591716822501740
       m_walk_l_7.png: -1780792864737347286
-      m_land_l_1.png: 5758736289263470802
+      m_walk_l_5.png: -9039459028466725021
       m_walk_r_11.png: 6833534280593331202
       m_walk_u_11.png: -7380139336706574118
       m_walk_ul_12.png: 7616111672733507029
-      m_walk_ur_11.png: 3661253462563804540
-      m_walk_ur_10.png: 4748034875595182557
+      m_spin_and_jump_10.png: -7177923605255756905
+      m_spin_and_jump_12.png: -3861863305454773119
       m_land_d_1.png: 8978017793817211883
-      m_walk_u_12.png: 3624421432519961664
-      m_walk_dl_9.png: -9014018425802203139
       m_walk_r_10.png: 966525002446298271
-      m_walk_u_1.png: -7470770967666703037
-      m_fall_u_2.png: -2789652597450295348
       m_walk_dr_6.png: -1883153533854669731
       m_walk_dl_3.png: 5748922325408433908
       m_stand_r.png: 6953285113462190922
-      m_walk_ur_1.png: 1259035710772947054
       m_walk_ur_12.png: 5730242923669241739
       m_fall_ul_1.png: 6144810158309835138
       m_walk_d_4.png: -5087250441734682126
-      m_walk_ur_6.png: -7836955403380907339
       m_walk_ul_3.png: 7535482212288181926
-      m_walk_ur_3.png: 5407858453802090772
       m_land_dr_2.png: 7283241969848269747
-      m_walk_ul_8.png: 5701371993001335147
       m_walk_dl_7.png: -4821758377550741022
       m_land_d_3.png: 6946777393042728048
-      m_land_ul_4.png: -570156794504662164
       m_stand_dr.png: -1562446838693296607
-      m_fall_r_1.png: -9011466719764831447
       m_walk_r_3.png: -6400509757271725448
-      m_fall_ur_1.png: 915952979228724193
+      m_fall_r_1.png: -9011466719764831447
+      m_spin_and_jump_17.png: -5169192110435915304
       m_walk_dl_4.png: -5834804536894082016
       m_fall_u_1.png: 619227810687707187
-      m_walk_d_6.png: -1943890307192010699
+      m_spin_and_jump_9.png: -7836905396628057395
       m_walk_ur_2.png: -4633591526675079353
-      m_walk_ur_7.png: -5274880547046861083
-      m_walk_ul_9.png: 5001524547368394948
+      m_spin_and_jump_20.png: -5268165234253664819
       m_walk_l_9.png: 771051376094894459
       m_land_dr_4.png: -3232517816572793573
       m_walk_u_4.png: -3765171205647960299
       m_walk_d_1.png: -4068848808985177392
-      m_fall_dl_2.png: -6859531261214723054
-      m_land_u_2.png: -2205205034494530250
-      m_land_r_3.png: 1822887903185077567
+      m_walk_dr_8.png: -2574843712844039894
       m_walk_dl_2.png: -355289943147137561
-      m_land_ul_3.png: 7726115434242244130
       m_walk_ul_1.png: 1885760141724201701
       m_land_ul_1.png: -6360206855001106694
-      m_walk_dr_8.png: -2574843712844039894
-      m_jump_dl.png: 4241809237703722375
-      m_walk_u_10.png: -318062332259440413
-      m_walk_l_6.png: -7701727916860128644
-      m_walk_ul_5.png: 2279705867404433005
       m_walk_r_2.png: 7235300143605054005
-      m_land_dl_2.png: -942688804944463051
+      m_walk_ul_5.png: 2279705867404433005
       m_walk_dl_8.png: -4589547296328993137
-      m_land_l_3.png: -7460226528287167941
       m_walk_dr_11.png: -6669750049435267686
-      m_stand_dl.png: -546447217837067273
-      m_walk_ur_8.png: 7801505824622954803
+      m_spin_and_jump_18.png: -5540949806140284596
       m_walk_dr_12.png: -3570623418189572684
-      m_stand_ur.png: 71289259061750003
       m_walk_r_1.png: 8921016650598168272
       m_walk_ul_11.png: -3884548570444925858
-      m_walk_dr_9.png: 4756739393090281056
       m_walk_ur_9.png: -5061792902723506727
       m_land_d_4.png: 7221531368122087622
       m_walk_ur_5.png: 7623460286425494268
       m_fall_dr_1.png: -7002279912177590215
       m_jump_r.png: 1275999515924641142
       m_land_dl_3.png: -1262475898489574131
-      m_jump_ul.png: -2677141673131122975
-      m_fall_ul_2.png: 8197805659578502871
       m_walk_l_2.png: 7598804607576678160
-      m_walk_r_6.png: -4762077362211620307
       m_fall_dr_2.png: 7795421629407600918
-      m_walk_d_11.png: 2325551871957433974
-      m_walk_r_8.png: -3507921498580630923
-      m_land_u_4.png: 4471853244741468511
       m_land_ur_4.png: 3140315617886721068
-      m_walk_u_3.png: -125329369152743309
+      m_spin_and_jump_4.png: 6995015104431752568
       m_walk_dl_1.png: 9201930723685888696
       m_walk_d_3.png: 577701139279862391
       m_land_dl_4.png: -8648381515682912649
       m_stand_u.png: -6788801062939999211
       m_land_r_4.png: -4387737274632399541
-      m_walk_dr_5.png: -1183493749858289344
       m_walk_ul_6.png: 1475216530018375246
-      m_jump_u.png: 2213458120304014928
-      m_land_u_1.png: -6618823733959481078
+      m_spin_and_jump_1.png: -6349769841279201670
       m_walk_u_7.png: 3944786287733544495
-      m_fall_dl_1.png: 8872264573039632296
-      m_walk_r_5.png: 4996824216550165460
-      m_stand_d.png: -5169014580346603312
-      m_walk_r_9.png: 6818492391852950816
       m_walk_dr_4.png: -7067344203905307661
       m_walk_dr_10.png: -5092038901413793931
-      m_walk_r_12.png: -9040393310238551169
-      m_walk_u_2.png: 5710412575197663587
       m_walk_d_10.png: 8868805279812170587
       m_walk_ul_2.png: 3209396548684330737
       m_walk_dr_2.png: 3288605826045830932
       m_jump_l.png: -5765001447316507240
+      m_fall_l_2.png: 7979091098718107363
+      m_land_ur_3.png: -2748200414534031674
+      m_land_d_2.png: -7872491054710106535
+      m_stand_l.png: -7248729613573835725
+      m_walk_l_3.png: -1502735972586629674
+      m_land_ur_2.png: -930494672879218294
+      m_walk_ul_7.png: 281214574585430371
+      m_land_u_3.png: -6740085930042427377
+      m_walk_d_2.png: -6561746029528417455
+      m_walk_ul_10.png: -3196241937659293627
+      m_walk_dl_12.png: 7934751599032066370
+      m_land_l_4.png: -8098363039714903759
+      m_spin_and_jump_3.png: 1352303360306686754
+      m_fall_l_1.png: -5084223355024995752
+      m_walk_dl_10.png: -8908610401722455935
+      m_walk_l_8.png: 7765144665596094955
+      m_walk_u_8.png: 6400655150411793939
+      m_walk_d_7.png: -3025365749134585780
+      m_land_dl_1.png: -4746859155617910616
+      m_walk_l_12.png: -4503149522164692098
+      m_fall_d_1.png: -525189442644408439
+      m_spin_and_jump_19.png: -8277609654474357808
+      m_walk_d_8.png: -4033624925103741997
+      m_walk_r_7.png: -1051072575248671636
+      m_walk_ur_4.png: 3336981738539655446
+      m_walk_ur_10.png: 4748034875595182557
+      m_spin_and_jump_16.png: -5354048059036988199
+      m_land_ur_1.png: -8670325357357954098
+      m_walk_l_11.png: -3287591716822501740
+      m_land_l_1.png: 5758736289263470802
+      m_walk_ur_11.png: 3661253462563804540
+      m_walk_u_12.png: 3624421432519961664
+      m_walk_dl_9.png: -9014018425802203139
+      m_walk_ur_1.png: 1259035710772947054
+      m_walk_u_1.png: -7470770967666703037
+      m_fall_u_2.png: -2789652597450295348
+      m_walk_ur_6.png: -7836955403380907339
+      m_walk_ur_3.png: 5407858453802090772
+      m_walk_ul_8.png: 5701371993001335147
+      m_land_ul_4.png: -570156794504662164
+      m_fall_ur_1.png: 915952979228724193
+      m_walk_d_6.png: -1943890307192010699
+      m_spin_and_jump_14.png: -4753062132982775676
+      m_walk_ur_7.png: -5274880547046861083
+      m_walk_ul_9.png: 5001524547368394948
+      m_fall_dl_2.png: -6859531261214723054
+      m_land_u_2.png: -2205205034494530250
+      m_land_r_3.png: 1822887903185077567
+      m_walk_ur_8.png: 7801505824622954803
+      m_walk_u_10.png: -318062332259440413
+      m_land_ul_3.png: 7726115434242244130
+      m_jump_dl.png: 4241809237703722375
+      m_walk_l_6.png: -7701727916860128644
+      m_land_dl_2.png: -942688804944463051
+      m_land_l_3.png: -7460226528287167941
+      m_stand_dl.png: -546447217837067273
+      m_spin_and_jump_6.png: -8892617088628925559
+      m_stand_ur.png: 71289259061750003
+      m_walk_dr_9.png: 4756739393090281056
+      m_jump_ul.png: -2677141673131122975
+      m_fall_ul_2.png: 8197805659578502871
+      m_walk_r_6.png: -4762077362211620307
+      m_walk_d_11.png: 2325551871957433974
+      m_walk_r_8.png: -3507921498580630923
+      m_land_u_4.png: 4471853244741468511
+      m_walk_u_3.png: -125329369152743309
+      m_walk_dr_5.png: -1183493749858289344
+      m_jump_u.png: 2213458120304014928
+      m_land_u_1.png: -6618823733959481078
+      m_fall_dl_1.png: 8872264573039632296
+      m_walk_r_5.png: 4996824216550165460
+      m_stand_d.png: -5169014580346603312
+      m_walk_r_9.png: 6818492391852950816
+      m_spin_and_jump_5.png: -8445503918396585784
+      m_spin_and_jump_15.png: -5903350241416417975
+      m_walk_r_12.png: -9040393310238551169
+      m_walk_u_2.png: 5710412575197663587
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
