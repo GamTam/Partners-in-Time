@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -31,6 +32,7 @@ public class MarioOverworldStateMachine : Billboard
     // Misc.
     private CharacterController _controller;
     [SerializeField] private GameObject child;
+    [SerializeField] private TMP_Text _debugData;
     
     // Getters and Setters
     public MarioOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
@@ -81,6 +83,7 @@ public class MarioOverworldStateMachine : Billboard
     void Update()
     {
         _currentState.UpdateStates();
+        _debugData.SetText("Current Ability: " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
     }
 
