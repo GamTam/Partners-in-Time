@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:e5415060a7197c962c752d77f1b21e2c:2ade28248a77ea13188c223413a481ed:fdd572c4b38862faabd2cb3fcb43f0b9$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Luigi.png" width="507" height="712">
+    <sprite n="l_fall_d_1.png" x="99" y="111" w="32" h="57"/>
+    <sprite n="l_fall_d_2.png" x="131" y="111" w="32" h="57"/>
+    <sprite n="l_fall_dl_1.png" x="34" y="55" w="35" h="56"/>
+    <sprite n="l_fall_dl_2.png" x="69" y="55" w="35" h="56"/>
+    <sprite n="l_fall_dr_1.png" x="104" y="55" w="35" h="56"/>
+    <sprite n="l_fall_dr_2.png" x="139" y="55" w="35" h="56"/>
+    <sprite n="l_fall_l_1.png" x="174" y="55" w="37" h="56"/>
+    <sprite n="l_fall_l_2.png" x="211" y="55" w="37" h="56"/>
+    <sprite n="l_fall_r_1.png" x="248" y="55" w="37" h="56"/>
+    <sprite n="l_fall_r_2.png" x="285" y="55" w="37" h="56"/>
+    <sprite n="l_fall_u_1.png" x="236" y="168" w="33" h="58"/>
+    <sprite n="l_fall_u_2.png" x="269" y="168" w="33" h="58"/>
+    <sprite n="l_fall_ul_1.png" x="366" y="168" w="35" h="59"/>
+    <sprite n="l_fall_ul_2.png" x="401" y="168" w="35" h="59"/>
+    <sprite n="l_fall_ur_1.png" x="436" y="168" w="35" h="59"/>
+    <sprite n="l_fall_ur_2.png" x="471" y="168" w="35" h="59"/>
+    <sprite n="l_jump_d.png" x="322" y="55" w="32" h="56"/>
+    <sprite n="l_jump_dl.png" x="302" y="168" w="32" h="58"/>
+    <sprite n="l_jump_dr.png" x="354" y="55" w="37" h="56"/>
+    <sprite n="l_jump_l.png" x="391" y="55" w="40" h="56"/>
+    <sprite n="l_jump_r.png" x="0" y="0" w="40" h="54"/>
+    <sprite n="l_jump_u.png" x="176" y="0" w="34" h="55"/>
+    <sprite n="l_jump_ul.png" x="431" y="55" w="36" h="56"/>
+    <sprite n="l_jump_ur.png" x="210" y="0" w="35" h="55"/>
+    <sprite n="l_land_d_1.png" x="40" y="0" w="34" h="54"/>
+    <sprite n="l_land_d_2.png" x="74" y="0" w="34" h="54"/>
+    <sprite n="l_land_d_3.png" x="108" y="0" w="34" h="54"/>
+    <sprite n="l_land_d_4.png" x="142" y="0" w="34" h="54"/>
+    <sprite n="l_land_dl_1.png" x="163" y="111" w="34" h="57"/>
+    <sprite n="l_land_dl_2.png" x="197" y="111" w="34" h="57"/>
+    <sprite n="l_land_dl_3.png" x="231" y="111" w="34" h="57"/>
+    <sprite n="l_land_dl_4.png" x="265" y="111" w="34" h="57"/>
+    <sprite n="l_land_dr_1.png" x="299" y="111" w="34" h="57"/>
+    <sprite n="l_land_dr_2.png" x="333" y="111" w="34" h="57"/>
+    <sprite n="l_land_dr_3.png" x="367" y="111" w="34" h="57"/>
+    <sprite n="l_land_dr_4.png" x="401" y="111" w="34" h="57"/>
+    <sprite n="l_land_l_1.png" x="245" y="0" w="34" h="55"/>
+    <sprite n="l_land_l_2.png" x="279" y="0" w="34" h="55"/>
+    <sprite n="l_land_l_3.png" x="313" y="0" w="34" h="55"/>
+    <sprite n="l_land_l_4.png" x="347" y="0" w="34" h="55"/>
+    <sprite n="l_land_r_1.png" x="381" y="0" w="34" h="55"/>
+    <sprite n="l_land_r_2.png" x="415" y="0" w="34" h="55"/>
+    <sprite n="l_land_r_3.png" x="449" y="0" w="34" h="55"/>
+    <sprite n="l_land_r_4.png" x="0" y="55" w="34" h="55"/>
+    <sprite n="l_land_u_1.png" x="467" y="55" w="33" h="56"/>
+    <sprite n="l_land_u_2.png" x="0" y="111" w="33" h="56"/>
+    <sprite n="l_land_u_3.png" x="33" y="111" w="33" h="56"/>
+    <sprite n="l_land_u_4.png" x="66" y="111" w="33" h="56"/>
+    <sprite n="l_land_ul_1.png" x="435" y="111" w="34" h="57"/>
+    <sprite n="l_land_ul_2.png" x="469" y="111" w="34" h="57"/>
+    <sprite n="l_land_ul_3.png" x="0" y="168" w="34" h="57"/>
+    <sprite n="l_land_ul_4.png" x="34" y="168" w="34" h="57"/>
+    <sprite n="l_land_ur_1.png" x="68" y="168" w="34" h="57"/>
+    <sprite n="l_land_ur_2.png" x="102" y="168" w="34" h="57"/>
+    <sprite n="l_land_ur_3.png" x="136" y="168" w="34" h="57"/>
+    <sprite n="l_land_ur_4.png" x="170" y="168" w="34" h="57"/>
+    <sprite n="l_stand_d.png" x="204" y="168" w="32" h="57"/>
+    <sprite n="l_stand_dl.png" x="64" y="227" w="34" h="60"/>
+    <sprite n="l_stand_dr.png" x="98" y="227" w="34" h="60"/>
+    <sprite n="l_stand_l.png" x="132" y="227" w="32" h="60"/>
+    <sprite n="l_stand_r.png" x="164" y="227" w="32" h="60"/>
+    <sprite n="l_stand_u.png" x="334" y="168" w="32" h="58"/>
+    <sprite n="l_stand_ul.png" x="0" y="227" w="32" h="59"/>
+    <sprite n="l_stand_ur.png" x="32" y="227" w="32" h="59"/>
+    <sprite n="l_walk_d_1.png" x="196" y="227" w="32" h="60"/>
+    <sprite n="l_walk_d_2.png" x="324" y="227" w="32" h="60"/>
+    <sprite n="l_walk_d_3.png" x="356" y="227" w="32" h="60"/>
+    <sprite n="l_walk_d_4.png" x="388" y="227" w="32" h="60"/>
+    <sprite n="l_walk_d_5.png" x="420" y="227" w="32" h="60"/>
+    <sprite n="l_walk_d_6.png" x="452" y="227" w="32" h="60"/>
+    <sprite n="l_walk_d_7.png" x="0" y="287" w="32" h="60"/>
+    <sprite n="l_walk_d_8.png" x="32" y="287" w="32" h="60"/>
+    <sprite n="l_walk_d_9.png" x="64" y="287" w="32" h="60"/>
+    <sprite n="l_walk_d_10.png" x="228" y="227" w="32" h="60"/>
+    <sprite n="l_walk_d_11.png" x="260" y="227" w="32" h="60"/>
+    <sprite n="l_walk_d_12.png" x="292" y="227" w="32" h="60"/>
+    <sprite n="l_walk_dl_1.png" x="429" y="407" w="43" h="61"/>
+    <sprite n="l_walk_dl_2.png" x="129" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_3.png" x="172" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_4.png" x="215" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_5.png" x="258" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_6.png" x="301" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_7.png" x="344" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_8.png" x="387" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_9.png" x="430" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_10.png" x="0" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_11.png" x="43" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dl_12.png" x="86" y="468" w="43" h="61"/>
+    <sprite n="l_walk_dr_1.png" x="0" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_2.png" x="172" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_3.png" x="215" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_4.png" x="258" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_5.png" x="301" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_6.png" x="344" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_7.png" x="387" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_8.png" x="430" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_9.png" x="0" y="590" w="43" h="61"/>
+    <sprite n="l_walk_dr_10.png" x="43" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_11.png" x="86" y="529" w="43" h="61"/>
+    <sprite n="l_walk_dr_12.png" x="129" y="529" w="43" h="61"/>
+    <sprite n="l_walk_l_1.png" x="43" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_2.png" x="199" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_3.png" x="238" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_4.png" x="277" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_5.png" x="316" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_6.png" x="355" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_7.png" x="394" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_8.png" x="433" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_9.png" x="0" y="651" w="39" h="61"/>
+    <sprite n="l_walk_l_10.png" x="82" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_11.png" x="121" y="590" w="39" h="61"/>
+    <sprite n="l_walk_l_12.png" x="160" y="590" w="39" h="61"/>
+    <sprite n="l_walk_r_1.png" x="39" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_2.png" x="195" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_3.png" x="234" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_4.png" x="273" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_5.png" x="312" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_6.png" x="351" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_7.png" x="390" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_8.png" x="429" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_9.png" x="468" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_10.png" x="78" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_11.png" x="117" y="651" w="39" h="61"/>
+    <sprite n="l_walk_r_12.png" x="156" y="651" w="39" h="61"/>
+    <sprite n="l_walk_u_1.png" x="96" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_2.png" x="224" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_3.png" x="256" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_4.png" x="288" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_5.png" x="320" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_6.png" x="352" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_7.png" x="384" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_8.png" x="416" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_9.png" x="448" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_10.png" x="128" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_11.png" x="160" y="287" w="32" h="60"/>
+    <sprite n="l_walk_u_12.png" x="192" y="287" w="32" h="60"/>
+    <sprite n="l_walk_ul_1.png" x="0" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_2.png" x="156" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_3.png" x="195" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_5.png" x="234" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_6.png" x="273" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_7.png" x="312" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_9.png" x="351" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_10.png" x="39" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_11.png" x="78" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ul_12.png" x="117" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ur_1.png" x="390" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ur_2.png" x="39" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_3.png" x="78" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_4-1.png" x="117" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_4.png" x="156" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_5.png" x="195" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_6.png" x="234" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_7.png" x="273" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_8-1.png" x="312" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_8.png" x="351" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_9.png" x="390" y="407" w="39" h="60"/>
+    <sprite n="l_walk_ur_10.png" x="429" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ur_11.png" x="468" y="347" w="39" h="60"/>
+    <sprite n="l_walk_ur_12.png" x="0" y="407" w="39" h="60"/>
+</TextureAtlas>
