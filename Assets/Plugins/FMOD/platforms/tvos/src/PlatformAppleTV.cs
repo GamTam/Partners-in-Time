@@ -72,13 +72,6 @@ namespace FMODUnity
         }
 #endif
 
-#if !UNITY_EDITOR
-        public override void LoadPlugins(FMOD.System coreSystem, Action<FMOD.RESULT, string> reportResult)
-        {
-            PlatformIOS.StaticLoadPlugins(this, coreSystem, reportResult);
-        }
-#endif
-
 #if UNITY_EDITOR
         public override OutputType[] ValidOutputTypes
         {

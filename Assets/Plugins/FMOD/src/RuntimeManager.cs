@@ -801,7 +801,7 @@ retry:
 #if !UNITY_EDITOR
                 if (!string.IsNullOrEmpty(Settings.Instance.TargetSubFolder))
                 {
-                    bankFolder = RuntimeUtils.GetCommonPlatformPath(Path.Combine(bankFolder, Settings.Instance.TargetSubFolder));
+                    bankFolder = RuntimeUtils.GetCommonPlatformPath(bankFolder + Settings.Instance.TargetSubFolder);
                 }
 #endif
 
