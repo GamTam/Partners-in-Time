@@ -1,23 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MarioOverworldJumpState : MarioOverworldBaseState
+public class MarioOverworldJumpState : MarioOverworldBaseState, IMarioOverworldRootState
 {
-    private float _timer;
     public MarioOverworldJumpState(MarioOverworldStateMachine currentContext, MarioOverworldStateFactory marioOverworldStateFactory) 
         : base(currentContext, marioOverworldStateFactory) {}
     
     public override void EnterState()
     {
+        _ctx.Velocity = _ctx.InitialJumpVelocity;
         _isRootState = true;
         InitializeSubState();
-        _timer = 5f;
     }
 
     public override void UpdateState()
     {
-        _timer -= Time.deltaTime;
+        HandleGravity();
         CheckSwitchStates();
     }
 
@@ -28,7 +25,11 @@ public class MarioOverworldJumpState : MarioOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_timer <= 0)
+        if (_ctx.Velocity <= 0f)
+        {
+            SwitchState(_factory.Falling());
+        }
+        else if (_ctx.Controller.isGrounded)
         {
             SwitchState(_factory.Grounded());
         }
@@ -48,6 +49,14 @@ public class MarioOverworldJumpState : MarioOverworldBaseState
 
     public override void AnimateState()
     {
-        
+       _ctx.Animator.Play("m_jump" + _ctx.Facing);
+    }
+
+    public void HandleGravity()
+    {
+        float prevVel = _ctx.Velocity;
+        _ctx.Velocity = _ctx.Velocity + _ctx.Gravity * Time.deltaTime;
+        float avgVel = (prevVel + _ctx.Velocity) / 2;
+        _ctx.Controller.Move(new Vector3(0f, avgVel * Time.deltaTime));
     }
 }

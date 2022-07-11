@@ -1,9 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using UnityEngine;
 
@@ -805,7 +801,7 @@ retry:
 #if !UNITY_EDITOR
                 if (!string.IsNullOrEmpty(Settings.Instance.TargetSubFolder))
                 {
-                    bankFolder = RuntimeUtils.GetCommonPlatformPath(Path.Combine(bankFolder, Settings.Instance.TargetSubFolder));
+                    bankFolder = RuntimeUtils.GetCommonPlatformPath(bankFolder + Settings.Instance.TargetSubFolder);
                 }
 #endif
 

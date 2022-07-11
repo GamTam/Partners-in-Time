@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -70,13 +69,6 @@ namespace FMODUnity
         public override bool SupportsAdditionalCPP(BuildTarget target)
         {
             return PlatformIOS.StaticSupportsAdditionalCpp();
-        }
-#endif
-
-#if !UNITY_EDITOR
-        public override void LoadPlugins(FMOD.System coreSystem, Action<FMOD.RESULT, string> reportResult)
-        {
-            PlatformIOS.StaticLoadPlugins(this, coreSystem, reportResult);
         }
 #endif
 

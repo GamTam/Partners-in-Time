@@ -14,7 +14,6 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using System.Collections;
 
 namespace FMODUnityResonance
 {

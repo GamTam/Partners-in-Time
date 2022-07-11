@@ -1,0 +1,3642 @@
+fileFormatVersion: 2
+guid: c540848f1702abe4ebbf4481710fb995
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: l_fall_d_1.png
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 544
+        width: 32
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70a0046c72e3d410800000000000000
+      internalID: 1500792124726091902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_d_2.png
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 544
+        width: 32
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303e11367831a0070800000000000000
+      internalID: 8073286754218664707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_dl_1.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 601
+        width: 35
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb06259ec54c616d0800000000000000
+      internalID: -3020010596774813509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_dl_2.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 601
+        width: 35
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42010d512a012790800000000000000
+      internalID: -7556747561340435893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_dr_1.png
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 601
+        width: 35
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54749e73530c2010800000000000000
+      internalID: 1165310060722943066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_dr_2.png
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 601
+        width: 35
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a501b02f0c4eb2ee0800000000000000
+      internalID: -1284681751338479526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_l_1.png
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 601
+        width: 37
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d4620e8c38576e0800000000000000
+      internalID: -1840419973933675243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_l_2.png
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 601
+        width: 37
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd9f1418f770b570800000000000000
+      internalID: 8480410005711855098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_r_1.png
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 601
+        width: 37
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff5c1764a34091d0800000000000000
+      internalID: -3346100149752668168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_r_2.png
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 601
+        width: 37
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b41a58a01c07490800000000000000
+      internalID: -7750482707768849510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_u_1.png
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 486
+        width: 33
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3883553b474249950800000000000000
+      internalID: 6454824249572276355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_u_2.png
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 486
+        width: 33
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791b121434c089ec0800000000000000
+      internalID: -3560082022441307753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_ul_1.png
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 485
+        width: 35
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a0e520b9fcab120800000000000000
+      internalID: 2430483213586401883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_ul_2.png
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 485
+        width: 35
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f0747a7ad7f27a0800000000000000
+      internalID: -6399758386450723036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_ur_1.png
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 485
+        width: 35
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b3f8eef1892b150800000000000000
+      internalID: 5886934925840431978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_fall_ur_2.png
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 485
+        width: 35
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d45e3edfb42e8a80800000000000000
+      internalID: -8462786243296602924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_jump_d.png
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 601
+        width: 32
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75ab2417791b4b00800000000000000
+      internalID: 813772156900713850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_jump_dl.png
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 486
+        width: 32
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee5b9e86180beb20800000000000000
+      internalID: 3164632056132755169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_jump_dr.png
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 601
+        width: 37
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29351c4bbcab3760800000000000000
+      internalID: 7438729129967827242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_jump_l.png
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 601
+        width: 40
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b79282eb345e0e60800000000000000
+      internalID: 7930368610026035125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_jump_r.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 658
+        width: 40
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb922be98aae6410800000000000000
+      internalID: 1472301637528886198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_jump_u.png
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 657
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808c8715ac5685160800000000000000
+      internalID: 7014468339254216712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_jump_ul.png
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 601
+        width: 36
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfce809b6d8f2d130800000000000000
+      internalID: 3590205454078766333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_jump_ur.png
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 657
+        width: 35
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d302d43e36b377dc0800000000000000
+      internalID: -3641376473504473027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_d_1.png
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 658
+        width: 34
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e89d670420fe330800000000000000
+      internalID: 3742212291263303233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_d_2.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 658
+        width: 34
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1f904829ed4e9c0800000000000000
+      internalID: -3898746656534171160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_d_3.png
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 658
+        width: 34
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75025a206fddf4f00800000000000000
+      internalID: 1103344482405130327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_d_4.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 658
+        width: 34
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d69befb795790b00800000000000000
+      internalID: 795296103828002519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_dl_1.png
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fd1630f0b6e7870800000000000000
+      internalID: 8682494843842322257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_dl_2.png
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5ffc6e6b6e0a7c0800000000000000
+      internalID: -4061993190657362436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_dl_3.png
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b858aaee6752250800000000000000
+      internalID: 5919268052683557758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_dl_4.png
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34b7eb4af3c45b00800000000000000
+      internalID: 816492912243618877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_dr_1.png
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2255a3e12e4f6300800000000000000
+      internalID: 247502411988816430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_dr_2.png
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2840c610dfaf770800000000000000
+      internalID: 8645500617240117920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_dr_3.png
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecd32d9b3248fca0800000000000000
+      internalID: -5982959281154827038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_dr_4.png
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfdf2d594a3822c0800000000000000
+      internalID: -4456247744512663619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_l_1.png
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 657
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512b055fed8e1a160800000000000000
+      internalID: 7035160137225515541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_l_2.png
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 657
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e6b64f9d35abdf0800000000000000
+      internalID: -163726240871911841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_l_3.png
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 657
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b294b8e7085a1ae80800000000000000
+      internalID: -8169066277775914709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_l_4.png
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 657
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3597a760e77fe180800000000000000
+      internalID: -9083910117687585475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_r_1.png
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 657
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c56a82179d24790800000000000000
+      internalID: -7547230945483006942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_r_2.png
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 657
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c3d4fb8b12cd2e0800000000000000
+      internalID: -2099766248894284742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_r_3.png
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 657
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e574c1ba3967a20800000000000000
+      internalID: 3059795359967960648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_r_4.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 602
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2cdecfbf02225b0800000000000000
+      internalID: -5394713136984112425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_u_1.png
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 601
+        width: 33
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bc6ea615ee18b10800000000000000
+      internalID: 1982127344473000756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_u_2.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 545
+        width: 33
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084dd8acae2f1a660800000000000000
+      internalID: 7395459153353626752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_u_3.png
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 545
+        width: 33
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d3cbb8494932660800000000000000
+      internalID: 7359889581773962512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_u_4.png
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 545
+        width: 33
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16a301b354c4d5b0800000000000000
+      internalID: -5344430994050800099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_ul_1.png
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e4b3600a6bcd8a0800000000000000
+      internalID: -6278942982045741473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_ul_2.png
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 544
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cfb21c2fd6cf9c0800000000000000
+      internalID: -3892115088564552579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_ul_3.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 487
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834cac4eeed010530800000000000000
+      internalID: 3819349278678762552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_ul_4.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 487
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4291778b6535bd60800000000000000
+      internalID: 7905283456868913739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_ur_1.png
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 487
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33ae2664c9579fe0800000000000000
+      internalID: -1182377677098671297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_ur_2.png
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 487
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3758ad98dbcdce790800000000000000
+      internalID: -7499376572858989197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_ur_3.png
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 487
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b82854217f5aee0800000000000000
+      internalID: -1250321663677789302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_land_ur_4.png
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 487
+        width: 34
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce33403fd04c51610800000000000000
+      internalID: 1591393607536096236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_stand_d.png
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 487
+        width: 32
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39855072636340680800000000000000
+      internalID: -8789840966509569901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_stand_dl.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 425
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62605546d783a13b0800000000000000
+      internalID: -5541054280320612826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_stand_dr.png
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 425
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e1d2e2f1ff3b0e0800000000000000
+      internalID: -2255178478998708734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_stand_l.png
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b764d5b296e0f80800000000000000
+      internalID: -8138451841642497277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_stand_r.png
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebe2395d2266b030800000000000000
+      internalID: 3510100906491440107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_stand_u.png
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 486
+        width: 32
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9469150c5ed85bf30800000000000000
+      internalID: 4590731413087688265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_stand_ul.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 426
+        width: 32
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2631939da737f600800000000000000
+      internalID: 501931102119736878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_stand_ur.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 426
+        width: 32
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8622fafce1df226a0800000000000000
+      internalID: -6475335005430144408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_1.png
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece5cbde912c62140800000000000000
+      internalID: 4694653078198836942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_2.png
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4a347239d01afc0800000000000000
+      internalID: -3485489710937955135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_3.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5967c3e435b80b8d0800000000000000
+      internalID: -2832610975704910187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_4.png
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d719dd7ccd414b0800000000000000
+      internalID: -5470504896374407895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_5.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09d3aec71a871df0800000000000000
+      internalID: -209547022793713397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_6.png
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95038d4ae650c760800000000000000
+      internalID: 7476070945757791645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_7.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025eed17961e67890800000000000000
+      internalID: -7460527889694399200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_8.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72301cfde68829530800000000000000
+      internalID: 3860297840391684903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_9.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb39833a0e9bb990800000000000000
+      internalID: -7369122598610191419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_10.png
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746626a528279cbe0800000000000000
+      internalID: -1456507100289931705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_11.png
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a24484e7998a1960800000000000000
+      internalID: 7573517008843850400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_d_12.png
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 425
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc2e047774487190800000000000000
+      internalID: -7964540661165839162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_1.png
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 244
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6aa331a1ea8fa70800000000000000
+      internalID: 8861023693866444503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_2.png
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14549843e6c9cbaf0800000000000000
+      internalID: -379256271464217279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_3.png
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505f2caf4d84308b0800000000000000
+      internalID: -5187222266223332091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_4.png
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0e4cad9bd94f5f0800000000000000
+      internalID: -723780218534960907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_5.png
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c824d5858e3fc80800000000000000
+      internalID: -8290027022839542697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_6.png
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5c26abc81075480800000000000000
+      internalID: -8910651633795152428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_7.png
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57b4f35ffdc6d360800000000000000
+      internalID: 7194163951279847263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_8.png
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f5f09e2cb104c00800000000000000
+      internalID: 882736050912321438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_9.png
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433819283b95872b0800000000000000
+      internalID: -5586616710228507852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_10.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b440fc11f799630800000000000000
+      internalID: 3934315463949175564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_11.png
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b96c73286fe7ca0800000000000000
+      internalID: -6017101012978459782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dl_12.png
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 183
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5311f72cf7312e0800000000000000
+      internalID: -2156239323248118293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10904db89c81e4f0800000000000000
+      internalID: -801204671057194980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_2.png
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c708ec711d31d87f0800000000000000
+      internalID: -608808585856647044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_3.png
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ff83deba3a01380800000000000000
+      internalID: -9002515696298950819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_4.png
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7bdda23646ee740800000000000000
+      internalID: 5183190598233733029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_5.png
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4f9b2439616a240800000000000000
+      internalID: 4802550874372699371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_6.png
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c91eba34a03f240800000000000000
+      internalID: 4824210911606709397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_7.png
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1adbcb7dc37071c20800000000000000
+      internalID: 3177016020032077217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_8.png
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ef9de47344f7b20800000000000000
+      internalID: 3134298870009953792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_9.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dec25eb214be2aa0800000000000000
+      internalID: -6183807245737603375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_10.png
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8daa3477c9c3f200800000000000000
+      internalID: 212735465902222733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_11.png
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb714f3585658640800000000000000
+      internalID: 5081579377523784684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_dr_12.png
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 122
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5bba77ee4e649a0800000000000000
+      internalID: -6249055720068893228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_1.png
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb72547e9f7ed5370800000000000000
+      internalID: 8313055547708745662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_2.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6215cd34261f160800000000000000
+      internalID: 7057530134664914610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_3.png
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce2c53debd1e5b10800000000000000
+      internalID: 1972046392261881537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_4.png
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6dfc65f3c47a240800000000000000
+      internalID: 4802891362537035426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_5.png
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f417569dfbdc2fb0800000000000000
+      internalID: -4671116831294548744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_6.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c563f88334f8a69d0800000000000000
+      internalID: -2780252301073369508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_7.png
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5bf1d33cf093870800000000000000
+      internalID: 8662972689442387443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_8.png
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f1f7fcdfaefeea0800000000000000
+      internalID: -5841191815847403684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_9.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0f1747b564060c0800000000000000
+      internalID: -4584587062053572358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_10.png
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6256307c4afc18050800000000000000
+      internalID: 5801146101650384166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_11.png
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f05f290ef0e7b0a0800000000000000
+      internalID: -6865771725222620941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_l_12.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 61
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09bee0c2b750470f0800000000000000
+      internalID: -1120264380730119280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_1.png
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693060c9309453b20800000000000000
+      internalID: 3113474997247935382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_2.png
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d55c0c298c2b7f70800000000000000
+      internalID: 9185984832613406165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_3.png
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7b3db36977f6620800000000000000
+      internalID: 2769563782988675063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_4.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9fb35d1a5274420800000000000000
+      internalID: 2614099485709302215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_5.png
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc340d21f9ade7360800000000000000
+      internalID: 7169408033570702283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_6.png
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac43a1401f61c1b30800000000000000
+      internalID: 4259304571997402314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_7.png
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bbde36d0a9afca0800000000000000
+      internalID: -5982299772706505906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_8.png
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5a8e09d719572c0800000000000000
+      internalID: -4434478289588279856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_9.png
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a7e022a6100c420800000000000000
+      internalID: 2648118136243387003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_10.png
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd516d999e85b240800000000000000
+      internalID: 4806904967709416926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_11.png
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ef7601d06e03160800000000000000
+      internalID: 7003350364345335432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_r_12.png
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b519bbbd83e8d9a30800000000000000
+      internalID: 4223688400399208795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_1.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10eced587ebe038c0800000000000000
+      internalID: -4021455087625908735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_2.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d967e3d38a5baa920800000000000000
+      internalID: 3002411835782493853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_3.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca1804594558fbc0800000000000000
+      internalID: -3749152916355147064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_4.png
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c7405afb0e0edb0800000000000000
+      internalID: -4764561292046074764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_5.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2149ff4ad738cb580800000000000000
+      internalID: -8810022195381169134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_6.png
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a4bc65b88c52970800000000000000
+      internalID: 8729603953509747269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_7.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248aa47e2a9bf0bf0800000000000000
+      internalID: -355861736222709694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_8.png
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72625b5e3b8ba1b80800000000000000
+      internalID: -8423217070250580441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_9.png
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac344d137bf9f7f80800000000000000
+      internalID: -8106585195079777334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_10.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9daa843177d88ac0800000000000000
+      internalID: -3852592600002679397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_11.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a515b1bc8ec09dc0800000000000000
+      internalID: -3634177795615812187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_u_12.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 365
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd74437ea543f7c0800000000000000
+      internalID: -4038807825260708421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e166ba5f1781f97a0800000000000000
+      internalID: -6368344470346570210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_2.png
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41678ac4fffb1320800000000000000
+      internalID: 2529897042533638478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_3.png
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e11a0e9261668f0800000000000000
+      internalID: -547725935560810923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_5.png
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c130b1c795c9cb9f0800000000000000
+      internalID: -451313954495724772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_6.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dbdc857d67e71b30800000000000000
+      internalID: 4258126430011710424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_7.png
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebc9ff1ce28273f0800000000000000
+      internalID: -904516624487691290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_9.png
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7594594461e49a550800000000000000
+      internalID: 6172550621834856791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_10.png
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2924af1d052992700800000000000000
+      internalID: 516104508128510610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_11.png
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a967e9c033922f0800000000000000
+      internalID: -997209713194657133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ul_12.png
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e889f65139b4ab0800000000000000
+      internalID: -5022759239125791095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_1.png
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab41d1b2582a5350800000000000000
+      internalID: 6006157388687690656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_2.png
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00c61ffd13c044e0800000000000000
+      internalID: -1999383700951351285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_3.png
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1e3f9d50ee26c20800000000000000
+      internalID: 3198380394285359591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_4-1.png
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9e3ae41702c1100800000000000000
+      internalID: 79974564408584643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_4.png
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd564bdb1973b4e90800000000000000
+      internalID: -7040472493371136547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_5.png
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26a00eb8b68ad530800000000000000
+      internalID: 3880562156952921645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_6.png
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9674753cfcb6731c0800000000000000
+      internalID: -4524028760590694551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_7.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f023b23d54002f340800000000000000
+      internalID: 4895976044800717327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_8-1.png
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2325afe438a4df0800000000000000
+      internalID: -195199258606816563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_8.png
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99032ebccaa76370800000000000000
+      internalID: 8315803033302927773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_9.png
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b1908c97d854e90800000000000000
+      internalID: -7042066888137303178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_10.png
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b815ee723df4580800000000000000
+      internalID: -8840615375049487544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_11.png
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 305
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca8e2218896e3300800000000000000
+      internalID: 233740263811353282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l_walk_ur_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 245
+        width: 39
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec25ca53d1bb64c0800000000000000
+      internalID: -4293142298448548639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      l_walk_ur_8.png: 8315803033302927773
+      l_walk_dl_8.png: 882736050912321438
+      l_walk_ul_6.png: 4258126430011710424
+      l_stand_ul.png: 501931102119736878
+      l_jump_ul.png: 3590205454078766333
+      l_land_ur_3.png: -1250321663677789302
+      l_walk_dr_9.png: -6183807245737603375
+      l_walk_dl_10.png: 3934315463949175564
+      l_jump_d.png: 813772156900713850
+      l_land_dl_2.png: -4061993190657362436
+      l_walk_ul_12.png: -5022759239125791095
+      l_walk_u_6.png: 8729603953509747269
+      l_walk_d_11.png: 7573517008843850400
+      l_land_ul_1.png: -6278942982045741473
+      l_jump_u.png: 7014468339254216712
+      l_land_dl_1.png: 8682494843842322257
+      l_land_dr_1.png: 247502411988816430
+      l_walk_l_8.png: -5841191815847403684
+      l_land_dr_3.png: -5982959281154827038
+      l_walk_ur_4.png: -7040472493371136547
+      l_walk_dl_11.png: -6017101012978459782
+      l_jump_ur.png: -3641376473504473027
+      l_walk_u_9.png: -8106585195079777334
+      l_walk_dr_7.png: 3177016020032077217
+      l_fall_r_2.png: -7750482707768849510
+      l_walk_l_6.png: -2780252301073369508
+      l_walk_dr_1.png: -801204671057194980
+      l_fall_u_2.png: -3560082022441307753
+      l_walk_l_11.png: -6865771725222620941
+      l_walk_r_9.png: 2648118136243387003
+      l_walk_ur_1.png: 6006157388687690656
+      l_walk_l_5.png: -4671116831294548744
+      l_land_r_1.png: -7547230945483006942
+      l_stand_ur.png: -6475335005430144408
+      l_walk_d_8.png: 3860297840391684903
+      l_fall_dl_1.png: -3020010596774813509
+      l_walk_dl_3.png: -5187222266223332091
+      l_walk_dr_2.png: -608808585856647044
+      l_walk_l_12.png: -1120264380730119280
+      l_walk_r_12.png: 4223688400399208795
+      l_land_r_2.png: -2099766248894284742
+      l_fall_d_2.png: 8073286754218664707
+      l_walk_d_6.png: 7476070945757791645
+      l_walk_dr_4.png: 5183190598233733029
+      l_fall_l_2.png: 8480410005711855098
+      l_walk_r_6.png: 4259304571997402314
+      l_walk_u_8.png: -8423217070250580441
+      l_walk_u_1.png: -4021455087625908735
+      l_walk_ul_2.png: 2529897042533638478
+      l_land_dr_4.png: -4456247744512663619
+      l_walk_u_10.png: -3852592600002679397
+      l_land_l_3.png: -8169066277775914709
+      l_walk_r_11.png: 7003350364345335432
+      l_land_ul_4.png: 7905283456868913739
+      l_walk_u_2.png: 3002411835782493853
+      l_walk_ur_9.png: -7042066888137303178
+      l_walk_u_3.png: -3749152916355147064
+      l_walk_ur_2.png: -1999383700951351285
+      l_land_l_1.png: 7035160137225515541
+      l_land_u_1.png: 1982127344473000756
+      l_walk_d_3.png: -2832610975704910187
+      l_walk_u_5.png: -8810022195381169134
+      l_walk_u_11.png: -3634177795615812187
+      l_fall_ul_1.png: 2430483213586401883
+      l_walk_l_1.png: 8313055547708745662
+      l_walk_ur_5.png: 3880562156952921645
+      l_land_l_2.png: -163726240871911841
+      l_land_d_4.png: 795296103828002519
+      l_walk_u_4.png: -4764561292046074764
+      l_land_l_4.png: -9083910117687585475
+      l_land_dl_4.png: 816492912243618877
+      l_walk_ul_10.png: 516104508128510610
+      l_fall_l_1.png: -1840419973933675243
+      l_walk_dr_10.png: 212735465902222733
+      l_walk_d_4.png: -5470504896374407895
+      l_land_ur_2.png: -7499376572858989197
+      l_walk_ur_7.png: 4895976044800717327
+      l_walk_ur_8-1.png: -195199258606816563
+      l_land_d_1.png: 3742212291263303233
+      l_walk_d_10.png: -1456507100289931705
+      l_fall_dl_2.png: -7556747561340435893
+      l_walk_l_4.png: 4802891362537035426
+      l_land_ur_1.png: -1182377677098671297
+      l_fall_r_1.png: -3346100149752668168
+      l_jump_r.png: 1472301637528886198
+      l_walk_dl_1.png: 8861023693866444503
+      l_jump_l.png: 7930368610026035125
+      l_walk_d_12.png: -7964540661165839162
+      l_jump_dl.png: 3164632056132755169
+      l_walk_dl_2.png: -379256271464217279
+      l_walk_ur_10.png: -8840615375049487544
+      l_walk_dl_5.png: -8290027022839542697
+      l_walk_r_1.png: 3113474997247935382
+      l_walk_l_3.png: 1972046392261881537
+      l_walk_d_2.png: -3485489710937955135
+      l_fall_dr_1.png: 1165310060722943066
+      l_walk_r_4.png: 2614099485709302215
+      l_fall_u_1.png: 6454824249572276355
+      l_walk_dr_12.png: -6249055720068893228
+      l_land_d_3.png: 1103344482405130327
+      l_walk_d_1.png: 4694653078198836942
+      l_walk_dl_9.png: -5586616710228507852
+      l_walk_l_10.png: 5801146101650384166
+      l_walk_r_7.png: -5982299772706505906
+      l_land_ul_3.png: 3819349278678762552
+      l_stand_u.png: 4590731413087688265
+      l_fall_ur_2.png: -8462786243296602924
+      l_walk_ul_9.png: 6172550621834856791
+      l_stand_l.png: -8138451841642497277
+      l_land_r_4.png: -5394713136984112425
+      l_land_ur_4.png: 1591393607536096236
+      l_walk_d_9.png: -7369122598610191419
+      l_walk_r_10.png: 4806904967709416926
+      l_land_ul_2.png: -3892115088564552579
+      l_walk_d_7.png: -7460527889694399200
+      l_walk_ul_11.png: -997209713194657133
+      l_walk_r_8.png: -4434478289588279856
+      l_land_u_2.png: 7395459153353626752
+      l_walk_dl_12.png: -2156239323248118293
+      l_stand_dr.png: -2255178478998708734
+      l_stand_dl.png: -5541054280320612826
+      l_land_dl_3.png: 5919268052683557758
+      l_walk_dr_8.png: 3134298870009953792
+      l_walk_dr_11.png: 5081579377523784684
+      l_walk_ul_1.png: -6368344470346570210
+      l_walk_r_3.png: 2769563782988675063
+      l_walk_l_7.png: 8662972689442387443
+      l_land_d_2.png: -3898746656534171160
+      l_walk_d_5.png: -209547022793713397
+      l_land_r_3.png: 3059795359967960648
+      l_walk_dl_7.png: 7194163951279847263
+      l_walk_ur_6.png: -4524028760590694551
+      l_walk_l_9.png: -4584587062053572358
+      l_stand_d.png: -8789840966509569901
+      l_walk_ur_4-1.png: 79974564408584643
+      l_fall_d_1.png: 1500792124726091902
+      l_fall_ur_1.png: 5886934925840431978
+      l_walk_dr_3.png: -9002515696298950819
+      l_walk_dl_4.png: -723780218534960907
+      l_walk_ul_5.png: -451313954495724772
+      l_walk_ur_11.png: 233740263811353282
+      l_jump_dr.png: 7438729129967827242
+      l_walk_u_12.png: -4038807825260708421
+      l_walk_ul_7.png: -904516624487691290
+      l_fall_dr_2.png: -1284681751338479526
+      l_walk_u_7.png: -355861736222709694
+      l_walk_dl_6.png: -8910651633795152428
+      l_walk_r_2.png: 9185984832613406165
+      l_walk_ul_3.png: -547725935560810923
+      l_walk_ur_12.png: -4293142298448548639
+      l_land_u_3.png: 7359889581773962512
+      l_walk_dr_5.png: 4802550874372699371
+      l_land_u_4.png: -5344430994050800099
+      l_walk_l_2.png: 7057530134664914610
+      l_fall_ul_2.png: -6399758386450723036
+      l_land_dr_2.png: 8645500617240117920
+      l_walk_ur_3.png: 3198380394285359591
+      l_stand_r.png: 3510100906491440107
+      l_walk_r_5.png: 7169408033570702283
+      l_walk_dr_6.png: 4824210911606709397
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

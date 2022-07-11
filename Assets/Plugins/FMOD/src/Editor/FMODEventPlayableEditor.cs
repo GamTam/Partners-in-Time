@@ -4,10 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Timeline;
 using UnityEngine;
-using UnityEngine.Timeline;
-using System;
 using System.Linq;
-using System.Reflection;
 
 namespace FMODUnity
 {
