@@ -3143,6 +3143,10 @@ MonoBehaviour:
     m_AtlasIndex: 0
   m_CharacterTable:
   - m_ElementType: 1
+    m_Unicode: 10
+    m_GlyphIndex: 1
+    m_Scale: 1
+  - m_ElementType: 1
     m_Unicode: 32
     m_GlyphIndex: 1
     m_Scale: 1

@@ -32470,7 +32470,6 @@ GameObject:
   m_Component:
   - component: {fileID: 263155428}
   - component: {fileID: 263155429}
-  - component: {fileID: 263155426}
   - component: {fileID: 263155425}
   m_Layer: 6
   m_Name: Luigi
@@ -32497,60 +32496,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &263155426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263155424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: b7fc835fbafbfd6429cc1ddf343bf086, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: bfd3cb2e-33b8-461b-b289-db1650c4ded3
-    m_ActionName: Overworld/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 633934e5-17ff-408e-9beb-e5d1581e3883
-    m_ActionName: Overworld/m_action[/Keyboard/m]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c4ad9e8a-5b51-45eb-8885-cf42a0663600
-    m_ActionName: Overworld/l_action[/Keyboard/l]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 44c4b23c-9f56-4231-a91f-c8507184e408
-    m_ActionName: Overworld/jump[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 0086aca1-ffc4-4277-bcb6-7ce07e4b2320
-    m_ActionName: Overworld/Camera[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: bbb07b4b-0eb1-4533-9edf-e22644339494
-    m_ActionName: Overworld/switch_action[/Keyboard/shift]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Overworld
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!4 &263155428
 Transform:
   m_ObjectHideFlags: 0
@@ -36375,56 +36320,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &932561185
-GameObject:
+--- !u!1001 &784702449
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 932561187}
-  - component: {fileID: 932561186}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &932561186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932561185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadEvent: 1
-  UnloadEvent: 2
-  Banks:
-  - Music
-  CollisionTag: 
-  PreloadSamples: 0
---- !u!4 &932561187
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 959333155}
+    m_Modifications:
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4634145
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4634145
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4634145
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -947.85364
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -522.53705
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9254667
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.378829
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000015923927
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000000065182744
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761265, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425939761265, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.68333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.68333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.68333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -250.37083
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9254667
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.378829
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000015923927
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000065182744
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 647.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204593425965419011, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 254.58057
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+--- !u!4 &784702450 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8204593425939761264, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
+  m_PrefabInstance: {fileID: 784702449}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932561185}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.738533, y: -0.19869375, z: -8.682985}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959333151
 GameObject:
   m_ObjectHideFlags: 0
@@ -36519,8 +36548,9 @@ RectTransform:
   m_Children:
   - {fileID: 1380163674}
   - {fileID: 197809451}
+  - {fileID: 784702450}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -36985,7 +37015,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1097153016}
   - component: {fileID: 1097153018}
-  - component: {fileID: 1097153017}
   - component: {fileID: 1097153019}
   - component: {fileID: 1097153020}
   - component: {fileID: 1097153021}
@@ -37012,60 +37041,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1097153017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097153015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: b7fc835fbafbfd6429cc1ddf343bf086, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: bfd3cb2e-33b8-461b-b289-db1650c4ded3
-    m_ActionName: Overworld/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 633934e5-17ff-408e-9beb-e5d1581e3883
-    m_ActionName: Overworld/m_action[/Keyboard/m]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c4ad9e8a-5b51-45eb-8885-cf42a0663600
-    m_ActionName: Overworld/l_action[/Keyboard/l]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 44c4b23c-9f56-4231-a91f-c8507184e408
-    m_ActionName: Overworld/jump[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 0086aca1-ffc4-4277-bcb6-7ce07e4b2320
-    m_ActionName: Overworld/Camera[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: bbb07b4b-0eb1-4533-9edf-e22644339494
-    m_ActionName: Overworld/switch_action[/Keyboard/shift]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Overworld
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &1097153018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37942,7 +37917,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29172
+  m_Name: pb_Mesh48094
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38241,7 +38216,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29192
+  m_Name: pb_Mesh48108
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38445,7 +38420,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1477718339
 MonoBehaviour:
@@ -38705,7 +38680,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29230
+  m_Name: pb_Mesh48178
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39172,6 +39147,7 @@ GameObject:
   - component: {fileID: 1800496812}
   - component: {fileID: 1800496815}
   - component: {fileID: 1800496816}
+  - component: {fileID: 1800496819}
   - component: {fileID: 1800496817}
   - component: {fileID: 1800496818}
   m_Layer: 0
@@ -39231,7 +39207,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
-  m_LocalRotation: {x: 0.378829, y: -0.000000015923927, z: 0.0000000065182744, w: 0.9254667}
+  m_LocalRotation: {x: 0.378829, y: 0.000000015923938, z: -0.0000000065182792, w: 0.9254667}
   m_LocalPosition: {x: 8.3, y: 11.933001, z: -25.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -39426,11 +39402,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 127461939
-      Data2: 1150898409
-      Data3: -1757710200
-      Data4: 429570773
-    Path: event:/Music/Title Screen
+      Data1: 1404076253
+      Data2: 1090376252
+      Data3: 995049856
+      Data4: -96065635
+    Path: event:/Music/Areas/Thwomp Volcano
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -39441,6 +39417,60 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &1800496819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800496810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: b7fc835fbafbfd6429cc1ddf343bf086, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bfd3cb2e-33b8-461b-b289-db1650c4ded3
+    m_ActionName: Overworld/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 633934e5-17ff-408e-9beb-e5d1581e3883
+    m_ActionName: Overworld/m_action[/Keyboard/m]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c4ad9e8a-5b51-45eb-8885-cf42a0663600
+    m_ActionName: Overworld/l_action[/Keyboard/l]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 44c4b23c-9f56-4231-a91f-c8507184e408
+    m_ActionName: Overworld/jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0086aca1-ffc4-4277-bcb6-7ce07e4b2320
+    m_ActionName: Overworld/Camera[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bbb07b4b-0eb1-4533-9edf-e22644339494
+    m_ActionName: Overworld/switch_action[/Keyboard/shift]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Overworld
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1860043926
 GameObject:
   m_ObjectHideFlags: 0
@@ -39707,7 +39737,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773224, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -39730,7 +39760,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938000780}
-  m_LocalRotation: {x: 0.378829, y: -0.000000015923927, z: 0.0000000065182744, w: 0.9254667}
+  m_LocalRotation: {x: 0.378829, y: 0.000000015923938, z: -0.0000000065182792, w: 0.9254667}
   m_LocalPosition: {x: 8.3, y: 11.933001, z: -25.79}
   m_LocalScale: {x: 1.9366077, y: 0.83533406, z: 1.556065}
   m_ConstrainProportionsScale: 0

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:fc0b2aabf72151999a5f3023c38c86ce:ba3204fbe7f6fe732024784b4abe6091:c034bdb0c2da476810b63d01be96f03b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Title Screen.png" width="1927" height="1557">
+    <sprite n="Big Green.png" x="5" y="156" w="495" h="109"/>
+    <sprite n="Big Red_.png" x="500" y="156" w="495" h="109"/>
+    <sprite n="Big Star.png" x="287" y="5" w="93" h="90"/>
+    <sprite n="Clock Line.png" x="1350" y="156" w="460" h="763"/>
+    <sprite n="Cloud 1.png" x="596" y="5" w="250" h="141"/>
+    <sprite n="Cloud 2.png" x="846" y="5" w="250" h="151"/>
+    <sprite n="Cloud 3.png" x="380" y="5" w="216" h="129"/>
+    <sprite n="Green Clockhead.png" x="196" y="5" w="45" h="101"/>
+    <sprite n="Green Star.png" x="72" y="5" w="62" h="60"/>
+    <sprite n="Red Clockhead.png" x="241" y="5" w="46" h="101"/>
+    <sprite n="Red Star.png" x="134" y="5" w="62" h="60"/>
+    <sprite n="Small Cloud.png" x="5" y="5" w="67" h="44"/>
+    <sprite n="Small Green.png" x="1096" y="5" w="407" h="97"/>
+    <sprite n="Small Red.png" x="1503" y="5" w="407" h="98"/>
+    <sprite n="Stars.png" x="5" y="919" w="1917" h="633"/>
+    <sprite n="Time Markers.png" x="995" y="156" w="355" h="749"/>
+</TextureAtlas>

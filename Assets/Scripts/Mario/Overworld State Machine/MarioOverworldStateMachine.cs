@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -61,7 +62,7 @@ public class MarioOverworldStateMachine : Billboard
         base.Init(child);
 
         // Input Setup
-        _playerInput = GetComponent<PlayerInput>();
+        _playerInput = GameObject.FindWithTag("MainCamera").GetComponent<PlayerInput>();
         
         _action = _playerInput.actions["m_action"];
         _switchAction = _playerInput.actions["switch_action"];
@@ -85,6 +86,7 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
+        Debug.Log(_playerInput.currentControlScheme);
         _currentState.UpdateStates();
         _debugData.SetText("Current Ability: " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
