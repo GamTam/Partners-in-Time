@@ -19,7 +19,6 @@ public class UpdateText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_playerInput.actions["confirm"].GetBindingDisplayString());
         _text.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
             + _playerInput.actions["Confirm"].GetBindingDisplayString()+ 
             "\"> To Start");
