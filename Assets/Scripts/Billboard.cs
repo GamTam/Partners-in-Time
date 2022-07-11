@@ -23,6 +23,7 @@ public abstract class Billboard : MonoBehaviour
         
         SetAnimation();
 
+        // Quaternion rot = Sprite.transform.rotation;
         Sprite.transform.rotation = _cam.rotation;
         
         // Sprite.transform.rotation = Quaternion.Euler(rot.eulerAngles.x, Sprite.transform.rotation.eulerAngles.y, rot.eulerAngles.z);
