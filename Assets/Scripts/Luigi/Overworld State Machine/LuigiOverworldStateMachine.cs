@@ -70,7 +70,7 @@ public class LuigiOverworldStateMachine : Billboard
         base.Init(child);
 
         // Input Setup
-        _playerInput = GameObject.FindWithTag("MainCamera").GetComponent<PlayerInput>();
+        _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
         
         _action = _playerInput.actions["l_action"];
         _switchAction = _playerInput.actions["switch_action"];

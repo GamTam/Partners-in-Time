@@ -62,7 +62,8 @@ public class MarioOverworldStateMachine : Billboard
         base.Init(child);
 
         // Input Setup
-        _playerInput = GameObject.FindWithTag("MainCamera").GetComponent<PlayerInput>();
+        _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
+        _playerInput.SwitchCurrentActionMap("Overworld");
         
         _action = _playerInput.actions["m_action"];
         _switchAction = _playerInput.actions["switch_action"];
