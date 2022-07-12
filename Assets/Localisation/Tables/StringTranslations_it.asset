@@ -18,29 +18,7 @@ MonoBehaviour:
   m_Metadata:
     m_Items:
     - rid: 7564701837450543130
-  m_TableData:
-  - m_Id: 1760585134085
-    m_Localized: 
-    m_Metadata:
-      m_Items:
-      - rid: 7564701837450543130
-  - m_Id: 1760585134086
-    m_Localized: 
-    m_Metadata:
-      m_Items: []
-  - m_Id: 160546025189376
-    m_Localized: 0% Translated
-    m_Metadata:
-      m_Items: []
-  - m_Id: 160547568693248
-    m_Localized: Open
-    m_Metadata:
-      m_Items: []
-  - m_Id: 160547568693250
-    m_Localized: 
-    m_Metadata:
-      m_Items:
-      - rid: 7564701837450543130
+  m_TableData: []
   references:
     version: 2
     RefIds:

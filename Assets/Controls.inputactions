@@ -389,7 +389,7 @@
                 {
                     "name": "",
                     "id": "49dbee07-9e99-430b-9cc9-902a501093a9",
-                    "path": "<Mouse>/middleButton",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -400,7 +400,7 @@
                 {
                     "name": "",
                     "id": "2744c1ac-8228-442b-b701-04ebb8441231",
-                    "path": "<DualShockGamepad>/leftShoulder",
+                    "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "PS4",
@@ -411,7 +411,7 @@
                 {
                     "name": "",
                     "id": "0555aaba-19eb-4f7a-92ad-a7fb69264de2",
-                    "path": "<Gamepad>/leftStick/down",
+                    "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "Xbox",

@@ -19,38 +19,28 @@ MonoBehaviour:
     m_Items:
     - rid: 7564701837450543129
   m_TableData:
-  - m_Id: 1760585134083
-    m_Localized: GamTam
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1760585134082
-    m_Localized: English
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1760585134086
+  - m_Id: 212437396598789
     m_Localized: "2022 GammaDream\nOriginal Work \xA9Nintendo 2005"
     m_Metadata:
       m_Items: []
-  - m_Id: 1760585134085
+  - m_Id: 212437396598788
     m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.confirm}\">
       To Start
     m_Metadata:
-      m_Items:
-      - rid: 7564701837450543129
-  - m_Id: 160547568693248
-    m_Localized: Full
+      m_Items: []
+  - m_Id: 212437396598785
+    m_Localized: English
     m_Metadata:
       m_Items: []
-  - m_Id: 160547568693249
-    m_Localized: GamTam#5335
+  - m_Id: 212437396598786
+    m_Localized: GamTam
     m_Metadata:
       m_Items: []
-  - m_Id: 160547568693250
+  - m_Id: 212437396598790
     m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
       to switch action
     m_Metadata:
-      m_Items:
-      - rid: 7564701837450543129
+      m_Items: []
   references:
     version: 2
     RefIds:
