@@ -20,21 +20,31 @@ MonoBehaviour:
     - rid: 7564701837450543130
   m_TableData:
   - m_Id: 1760585134085
-    m_Localized: 'Press <sprite=\"{global.controller}\" name=\"{global.confirmbutton}\">
-      To Start
-
-      (But in Italian)'
+    m_Localized: 
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
   - m_Id: 1760585134086
-    m_Localized: "2022 GammaDream\nOriginal Work \xA9Nintendo 2005\n(But in Italian)"
+    m_Localized: 
     m_Metadata:
       m_Items: []
+  - m_Id: 160546025189376
+    m_Localized: 0% Translated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 160547568693248
+    m_Localized: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 160547568693250
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
   references:
     version: 2
     RefIds:
     - rid: 7564701837450543130
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00308dc60800000005300deb99010000
+        m_Entries: 00308dc60800000005300deb990100000230cd6404920000

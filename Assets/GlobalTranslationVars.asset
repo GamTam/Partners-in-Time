@@ -16,17 +16,24 @@ MonoBehaviour:
   - name: controller
     variable:
       rid: 7564701837450543151
-  - name: confirmbutton
+  - name: confirm
     variable:
       rid: 7564701837450543150
+  - name: switch_action
+    variable:
+      rid: 7564701837450543166
   references:
     version: 2
     RefIds:
     - rid: 7564701837450543150
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: Cross
+        m_Value: MMB
     - rid: 7564701837450543151
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: PS4
+        m_Value: Keyboard
+    - rid: 7564701837450543166
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: Shift

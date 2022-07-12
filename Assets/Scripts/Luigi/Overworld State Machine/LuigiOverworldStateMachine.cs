@@ -97,7 +97,9 @@ public class LuigiOverworldStateMachine : Billboard
     void Update()
     {
         _currentState.UpdateStates();
-        _debugData.SetText("Current Ability: " + _actions[_currentAction]);
+        _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
+                                            + _playerInput.actions["l_action"].GetBindingDisplayString()+ 
+                                            "\"> To " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
     }
 

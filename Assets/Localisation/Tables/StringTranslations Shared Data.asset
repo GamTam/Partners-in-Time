@@ -15,12 +15,24 @@ MonoBehaviour:
   m_TableCollectionName: StringTranslations
   m_TableCollectionNameGuidString: e36c4b67d0b385844bc908d401e45fe2
   m_Entries:
+  - m_Id: 160546025189376
+    m_Key: Progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 160547568693248
+    m_Key: more_translators_needed
+    m_Metadata:
+      m_Items: []
   - m_Id: 1760585134082
     m_Key: language_name
     m_Metadata:
       m_Items: []
   - m_Id: 1760585134083
     m_Key: translator_names
+    m_Metadata:
+      m_Items: []
+  - m_Id: 160547568693249
+    m_Key: translator_discord
     m_Metadata:
       m_Items: []
   - m_Id: 1760585134085
@@ -31,8 +43,8 @@ MonoBehaviour:
     m_Key: msg_copyright_info
     m_Metadata:
       m_Items: []
-  - m_Id: 6960695816192
-    m_Key: New Entry
+  - m_Id: 160547568693250
+    m_Key: msg_press_to_shift
     m_Metadata:
       m_Items: []
   m_Metadata:

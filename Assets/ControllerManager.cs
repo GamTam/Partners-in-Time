@@ -26,6 +26,8 @@ public class ControllerManager : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         _currentPlayerInput = _playerInput.currentControlScheme;
         
+        UpdateButtonPrompts();
+        
         _me = gameObject;
     }
 
@@ -43,9 +45,14 @@ public class ControllerManager : MonoBehaviour
         _currentPlayerInput = _playerInput.currentControlScheme;
         
         var activeController = _source["controller"] as StringVariable;
-        var confirmButton = _source["confirmbutton"] as StringVariable;
+        var confirmButton = _source["confirm"] as StringVariable;
+        var switchAction = _source["switch_action"] as StringVariable;
+
+        Debug.Log(confirmButton);
         
         activeController.Value = _playerInput.currentControlScheme;
         confirmButton.Value = _playerInput.actions["Confirm"].GetBindingDisplayString();
+        switchAction.Value = _playerInput.actions["switch_action"].GetBindingDisplayString();
+        
     }
 }

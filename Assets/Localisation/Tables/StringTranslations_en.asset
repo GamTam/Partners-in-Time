@@ -32,8 +32,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1760585134085
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.confirmbutton}\">
+    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.confirm}\">
       To Start
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543129
+  - m_Id: 160547568693248
+    m_Localized: Full
+    m_Metadata:
+      m_Items: []
+  - m_Id: 160547568693249
+    m_Localized: GamTam#5335
+    m_Metadata:
+      m_Items: []
+  - m_Id: 160547568693250
+    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
+      to switch action
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -43,4 +57,4 @@ MonoBehaviour:
     - rid: 7564701837450543129
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00308dc60800000005300deb99010000
+        m_Entries: 00308dc60800000005300deb990100000230cd6404920000
