@@ -86,6 +86,7 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
+        Debug.Log(_playerInput.currentControlScheme);
         _currentState.UpdateStates();
         _debugData.SetText("Current Ability: " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
@@ -94,5 +95,12 @@ public class MarioOverworldStateMachine : Billboard
     protected override void SetAnimation()
     {
         _currentState.AnimateState();
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit) {
+        if(hit.gameObject.tag == "Block" && hit.moveDirection.y > 0) {
+            _velocity += _gravity * Time.deltaTime * 3;
+            hit.gameObject.SendMessage("OnBlockHit", "Mario");
+        }
     }
 }

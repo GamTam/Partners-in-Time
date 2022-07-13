@@ -3882,7 +3882,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 63815889-2a80-4c5a-86e3-7d410cee8440
+  m_DefaultActionMap: Overworld
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &1670579349
@@ -4120,7 +4120,6 @@ GameObject:
   - component: {fileID: 1689159551}
   - component: {fileID: 1689159550}
   - component: {fileID: 1689159552}
-  - component: {fileID: 1689159553}
   m_Layer: 5
   m_Name: Press Start
   m_TagString: Untagged
@@ -4168,7 +4167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press <sprite="Keyboard" name="Space"> To Start
+  m_text: Press <sprite="Keyboard" name="space"> To Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e757cc9f95611b74da8d017a67059ae5, type: 2}
   m_sharedMaterial: {fileID: -8043167168089830999, guid: e757cc9f95611b74da8d017a67059ae5, type: 2}
@@ -4265,28 +4264,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1689159553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689159548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ddc20f4ade96c046be49cd2ad826065, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _text: {fileID: 1689159550}
-  inputActions:
-    m_Name: Input Actions
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: bb14cf7b-6ebe-44ba-81d4-bfa87492f520
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
 --- !u!1 &1757025442
 GameObject:
   m_ObjectHideFlags: 0
@@ -5456,10 +5433,6 @@ PrefabInstance:
     - target: {fileID: 8204593425939761265, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
       propertyPath: m_Name
       value: LevelLoader
-      objectReference: {fileID: 0}
-    - target: {fileID: 8204593425939761265, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a3510f82e6ad64587b442f624a7933, type: 3}

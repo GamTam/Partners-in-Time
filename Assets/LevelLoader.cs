@@ -16,7 +16,7 @@ public class LevelLoader : MonoBehaviour
     private void Start()
     {
         _playerInput = GameObject.FindWithTag("MainCamera").GetComponent<PlayerInput>();
-        _start = _playerInput.actions["confirm"];
+        _start = _playerInput.actions["jump"];
     }
 
     // Update is called once per frame
@@ -26,7 +26,6 @@ public class LevelLoader : MonoBehaviour
         {
             StartCoroutine(Kill());
         }
-        
         if (_start.triggered)
         {
             AudioManager.FadeoutAll();
