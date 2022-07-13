@@ -80,131 +80,131 @@ MonoBehaviour:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 0
-    m_Scale: 1
+    m_Scale: 1.25
     m_Name: Circle
     m_HashCode: -1622796654
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1
-    m_Scale: 1
+    m_Scale: 1.25
     m_Name: Cross
     m_HashCode: 81017790
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 2
-    m_Scale: 1
-    m_Name: Dpad_Empty
-    m_HashCode: -1068953061
+    m_Scale: 1.25
+    m_Name: D-Pad
+    m_HashCode: 82056316
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 3
-    m_Scale: 1
-    m_Name: PS4_Dpad_Down.png
-    m_HashCode: -1176498749
+    m_Scale: 1.25
+    m_Name: D-Pad Down
+    m_HashCode: 2036954446
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 4
-    m_Scale: 1
-    m_Name: PS4_Dpad_Left.png
-    m_HashCode: 1538711338
+    m_Scale: 1.25
+    m_Name: D-Pad Left
+    m_HashCode: 2036678311
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 5
-    m_Scale: 1
-    m_Name: PS4_Dpad_Right.png
-    m_HashCode: 1172102705
+    m_Scale: 1.25
+    m_Name: D-Pad Right
+    m_HashCode: -1516502276
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 6
-    m_Scale: 1
-    m_Name: PS4_Dpad_Up.png
-    m_HashCode: -1845650476
+    m_Scale: 1.25
+    m_Name: D-Pad Up
+    m_HashCode: -1784741799
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 7
-    m_Scale: 1
-    m_Name: PS4_L1.png
-    m_HashCode: 1123065282
+    m_Scale: 1.25
+    m_Name: L1
+    m_HashCode: 2557
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 8
-    m_Scale: 1
-    m_Name: PS4_L2.png
-    m_HashCode: 1126413889
+    m_Scale: 1.25
+    m_Name: L2
+    m_HashCode: 2558
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 9
-    m_Scale: 1
-    m_Name: PS4_Left_Stick.png
-    m_HashCode: 1167507549
+    m_Scale: 1.25
+    m_Name: Left Stick
+    m_HashCode: 101102077
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 10
-    m_Scale: 1
-    m_Name: PS4_Left_Stick_Click.png
-    m_HashCode: 48818828
+    m_Scale: 1.25
+    m_Name: L3
+    m_HashCode: 2559
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 11
-    m_Scale: 1
-    m_Name: PS4_Options.png
-    m_HashCode: 1846628559
+    m_Scale: 1.25
+    m_Name: Options
+    m_HashCode: 840430256
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 12
-    m_Scale: 1
-    m_Name: PS4_R1.png
-    m_HashCode: 1945837724
+    m_Scale: 1.25
+    m_Name: R1
+    m_HashCode: 2723
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 13
-    m_Scale: 1
-    m_Name: PS4_R2.png
-    m_HashCode: 1944729887
+    m_Scale: 1.25
+    m_Name: R2
+    m_HashCode: 2720
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 14
-    m_Scale: 1
-    m_Name: PS4_Right_Stick.png
-    m_HashCode: -1736544634
+    m_Scale: 1.25
+    m_Name: Right Stick
+    m_HashCode: -2087580698
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 15
-    m_Scale: 1
-    m_Name: PS4_Right_Stick_Click.png
-    m_HashCode: -1568936425
+    m_Scale: 1.25
+    m_Name: R3
+    m_HashCode: 2721
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 16
-    m_Scale: 1
-    m_Name: PS4_Share.png
-    m_HashCode: 1744496306
+    m_Scale: 1.25
+    m_Name: Share
+    m_HashCode: 99905165
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 17
-    m_Scale: 1
-    m_Name: PS4_Square.png
-    m_HashCode: 120267742
+    m_Scale: 1.25
+    m_Name: Square
+    m_HashCode: -1024775839
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 18
-    m_Scale: 1
-    m_Name: PS4_Touch_Pad.png
-    m_HashCode: 1593110512
+    m_Scale: 1.25
+    m_Name: touchpadButton
+    m_HashCode: -1300055162
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 19
-    m_Scale: 1
-    m_Name: PS4_Triangle.png
-    m_HashCode: 1366337585
+    m_Scale: 1.25
+    m_Name: Triangle
+    m_HashCode: -557954866
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 0
       m_Y: 0
@@ -225,16 +225,16 @@ MonoBehaviour:
       m_Y: 0
       m_Width: 100
       m_Height: 100
-    m_Scale: 1.25
+    m_Scale: 1
     m_AtlasIndex: 0
     sprite: {fileID: -7138155586556045436, guid: 269d617dedac49343be6cf632d595157, type: 3}
   - m_Index: 2
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 200
       m_Y: 0
@@ -247,9 +247,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 300
       m_Y: 0
@@ -262,9 +262,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 400
       m_Y: 0
@@ -277,9 +277,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 500
       m_Y: 0
@@ -292,9 +292,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 600
       m_Y: 0
@@ -307,9 +307,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 700
       m_Y: 0
@@ -322,9 +322,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 800
       m_Y: 0
@@ -337,9 +337,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 900
       m_Y: 0
@@ -352,9 +352,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1000
       m_Y: 0
@@ -367,9 +367,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1100
       m_Y: 0
@@ -382,9 +382,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1200
       m_Y: 0
@@ -397,9 +397,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1300
       m_Y: 0
@@ -412,9 +412,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1400
       m_Y: 0
@@ -427,9 +427,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1500
       m_Y: 0
@@ -442,9 +442,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1600
       m_Y: 0
@@ -457,9 +457,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1700
       m_Y: 0
@@ -472,9 +472,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1800
       m_Y: 0
@@ -487,9 +487,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.84
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 1900
       m_Y: 0

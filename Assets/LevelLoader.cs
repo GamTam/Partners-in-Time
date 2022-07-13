@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
@@ -15,8 +16,8 @@ public class LevelLoader : MonoBehaviour
     
     private void Start()
     {
-        _playerInput = GameObject.FindWithTag("MainCamera").GetComponent<PlayerInput>();
-        _start = _playerInput.actions["jump"];
+        _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
+        _start = _playerInput.actions["confirm"];
     }
 
     // Update is called once per frame

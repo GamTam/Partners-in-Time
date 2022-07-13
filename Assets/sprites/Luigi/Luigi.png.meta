@@ -100,6 +100,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -3540,9 +3564,10 @@ TextureImporter:
       l_fall_ul_1.png: 2430483213586401883
       l_walk_l_1.png: 8313055547708745662
       l_walk_ur_5.png: 3880562156952921645
-      l_land_l_2.png: -163726240871911841
       l_land_d_4.png: 795296103828002519
+      l_land_l_2.png: -163726240871911841
       l_walk_ul_10.png: 516104508128510610
+      l_land_d_4.png: 795296103828002519
       l_land_l_4.png: -9083910117687585475
       l_land_dl_4.png: 816492912243618877
       l_fall_l_1.png: -1840419973933675243

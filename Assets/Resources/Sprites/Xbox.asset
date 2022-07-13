@@ -80,131 +80,131 @@ MonoBehaviour:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 0
-    m_Scale: 1
-    m_Name: XboxSeriesX_A.png
-    m_HashCode: 1316276039
+    m_Scale: 1.25
+    m_Name: A
+    m_HashCode: 65
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1
-    m_Scale: 1
-    m_Name: XboxSeriesX_B.png
-    m_HashCode: 1317392324
+    m_Scale: 1.25
+    m_Name: B
+    m_HashCode: 66
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 2
-    m_Scale: 1
-    m_Name: XboxSeriesX_Dpad.png
-    m_HashCode: 1540461495
+    m_Scale: 1.25
+    m_Name: D-Pad
+    m_HashCode: 82056316
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 3
-    m_Scale: 1
-    m_Name: XboxSeriesX_Dpad_Down.png
-    m_HashCode: 291736250
+    m_Scale: 1.25
+    m_Name: D-Pad Down
+    m_HashCode: 2036954446
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 4
-    m_Scale: 1
-    m_Name: XboxSeriesX_Dpad_Left.png
-    m_HashCode: -432182701
+    m_Scale: 1.25
+    m_Name: D-Pad Left
+    m_HashCode: 2036678311
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 5
-    m_Scale: 1
-    m_Name: XboxSeriesX_Dpad_Right.png
-    m_HashCode: 160390312
+    m_Scale: 1.25
+    m_Name: D-Pad Right
+    m_HashCode: -1516502276
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 6
-    m_Scale: 1
-    m_Name: XboxSeriesX_Dpad_Up.png
-    m_HashCode: 1244836013
+    m_Scale: 1.25
+    m_Name: D-Pad Up
+    m_HashCode: -1784741799
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 7
-    m_Scale: 1
-    m_Name: XboxSeriesX_LB.png
-    m_HashCode: 1024726184
+    m_Scale: 1.25
+    m_Name: LB
+    m_HashCode: 2446
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 8
-    m_Scale: 1
-    m_Name: XboxSeriesX_Left_Stick.png
-    m_HashCode: -176089340
+    m_Scale: 1.25
+    m_Name: Left Stick
+    m_HashCode: 101102077
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 9
-    m_Scale: 1
-    m_Name: XboxSeriesX_Left_Stick_Click.png
-    m_HashCode: -1135313003
+    m_Scale: 1.25
+    m_Name: LS Down
+    m_HashCode: 1865357261
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 10
-    m_Scale: 1
-    m_Name: XboxSeriesX_LT.png
-    m_HashCode: 999097406
+    m_Scale: 1.25
+    m_Name: Left Trigger
+    m_HashCode: -130475453
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 11
-    m_Scale: 1
-    m_Name: XboxSeriesX_Menu.png
-    m_HashCode: -1406678539
+    m_Scale: 1.25
+    m_Name: Menu
+    m_HashCode: 2660307
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 12
-    m_Scale: 1
-    m_Name: XboxSeriesX_RB.png
-    m_HashCode: -148434698
+    m_Scale: 1.25
+    m_Name: RB
+    m_HashCode: 2768
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 13
-    m_Scale: 1
-    m_Name: XboxSeriesX_Right_Stick.png
-    m_HashCode: -1551371521
+    m_Scale: 1.25
+    m_Name: Right Stick
+    m_HashCode: -2087580698
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 14
-    m_Scale: 1
-    m_Name: XboxSeriesX_Right_Stick_Click.png
-    m_HashCode: 674352686
+    m_Scale: 1.25
+    m_Name: RS Down
+    m_HashCode: 325416915
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 15
-    m_Scale: 1
-    m_Name: XboxSeriesX_RT.png
-    m_HashCode: -122814368
+    m_Scale: 1.25
+    m_Name: RT
+    m_HashCode: 2758
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 16
-    m_Scale: 1
-    m_Name: XboxSeriesX_Share.png
-    m_HashCode: 1310654731
+    m_Scale: 1.25
+    m_Name: Share
+    m_HashCode: 99905165
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 17
-    m_Scale: 1
-    m_Name: XboxSeriesX_View.png
-    m_HashCode: 1872965547
+    m_Scale: 1.25
+    m_Name: View
+    m_HashCode: 3203597
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 18
-    m_Scale: 1
-    m_Name: XboxSeriesX_X.png
-    m_HashCode: 1305132894
+    m_Scale: 1.25
+    m_Name: X
+    m_HashCode: 88
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 19
-    m_Scale: 1
-    m_Name: XboxSeriesX_Y.png
-    m_HashCode: 1306249055
+    m_Scale: 1.25
+    m_Name: Y
+    m_HashCode: 89
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 0
       m_Y: 0
@@ -217,9 +217,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 100
       m_Y: 0
@@ -232,9 +232,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 200
       m_Y: 0
@@ -247,9 +247,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 300
       m_Y: 0
@@ -262,9 +262,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 400
       m_Y: 0
@@ -277,9 +277,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 500
       m_Y: 0
@@ -292,9 +292,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 600
       m_Y: 0
@@ -307,9 +307,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 700
       m_Y: 0
@@ -322,9 +322,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 800
       m_Y: 0
@@ -337,9 +337,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 900
       m_Y: 0
@@ -352,9 +352,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1000
       m_Y: 0
@@ -367,9 +367,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1100
       m_Y: 0
@@ -382,9 +382,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1200
       m_Y: 0
@@ -397,9 +397,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1300
       m_Y: 0
@@ -412,9 +412,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1400
       m_Y: 0
@@ -427,9 +427,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1500
       m_Y: 0
@@ -442,9 +442,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1600
       m_Y: 0
@@ -457,9 +457,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1700
       m_Y: 0
@@ -472,9 +472,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1800
       m_Y: 0
@@ -487,9 +487,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.5
     m_GlyphRect:
       m_X: 1900
       m_Y: 0
