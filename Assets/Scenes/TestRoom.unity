@@ -32469,7 +32469,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7471489789758403371, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7471489789758403371, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36464,7 +36464,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9088977513299016012, guid: 984d96e6739d06b4ea25d4cfab3efc36, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9088977513299016012, guid: 984d96e6739d06b4ea25d4cfab3efc36, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38888,6 +38888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -39873,6 +39874,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -40310,7 +40312,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7768079, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
