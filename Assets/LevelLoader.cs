@@ -27,7 +27,6 @@ public class LevelLoader : MonoBehaviour
         {
             StartCoroutine(Kill());
         }
-        
         if (_start.triggered)
         {
             AudioManager.FadeoutAll();

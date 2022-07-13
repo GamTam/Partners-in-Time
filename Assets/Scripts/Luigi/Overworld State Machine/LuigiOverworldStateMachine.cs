@@ -112,4 +112,11 @@ public class LuigiOverworldStateMachine : Billboard
     {
         _currentState.AnimateState();
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit) {
+        if(hit.gameObject.tag == "Block" && hit.moveDirection.y > 0) {
+            _velocity += _gravity * Time.deltaTime * 3;
+            hit.transform.SendMessage("OnBlockHit", "Luigi");
+        }
+    }
 }

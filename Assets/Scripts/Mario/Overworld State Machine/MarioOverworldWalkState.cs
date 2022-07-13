@@ -21,9 +21,9 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
         
         if (_ctx.MoveVector.magnitude > Globals.deadZone) {
             _ctx.MoveAngle = targetAngle;
+            _ctx.Controller.Move(_newMove * _ctx.MoveSpeed * Time.deltaTime);
         }
 
-        _ctx.Controller.Move(_newMove * _ctx.MoveSpeed * Time.deltaTime);
         CheckSwitchStates();
     }
 

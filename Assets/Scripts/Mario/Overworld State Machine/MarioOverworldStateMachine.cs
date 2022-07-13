@@ -87,6 +87,7 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
+        Debug.Log(_playerInput.currentControlScheme);
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
                            + _playerInput.actions["m_action"].GetBindingDisplayString()+ 
@@ -97,5 +98,12 @@ public class MarioOverworldStateMachine : Billboard
     protected override void SetAnimation()
     {
         _currentState.AnimateState();
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit) {
+        if(hit.gameObject.tag == "Block" && hit.moveDirection.y > 0) {
+            _velocity += _gravity * Time.deltaTime * 3;
+            hit.gameObject.SendMessage("OnBlockHit", "Mario");
+        }
     }
 }
