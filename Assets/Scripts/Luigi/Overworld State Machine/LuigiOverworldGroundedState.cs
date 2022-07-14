@@ -38,6 +38,8 @@ public class LuigiOverworldGroundedState : LuigiOverworldBaseState, ILuigiOverwo
 
     public override void CheckSwitchStates()
     {
+        InitializeSubState();
+
         if (_ctx.Jump)
         {
             SwitchState(_factory.Jump());

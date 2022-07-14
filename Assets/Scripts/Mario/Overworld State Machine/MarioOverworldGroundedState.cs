@@ -33,6 +33,8 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState, IMarioOverwo
 
     public override void CheckSwitchStates()
     {
+        InitializeSubState();
+
         if (_ctx.Jump)
         {
             SwitchState(_factory.Jump());
