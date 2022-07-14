@@ -32527,6 +32527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 263155428}
   - component: {fileID: 263155429}
+  - component: {fileID: 263155430}
   - component: {fileID: 263155425}
   m_Layer: 6
   m_Name: Luigi
@@ -32585,6 +32586,19 @@ MonoBehaviour:
   _marioPos: {fileID: 1097153016}
   child: {fileID: 360729861}
   _debugData: {fileID: 197809452}
+--- !u!114 &263155430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263155424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2b1f6b94548fc47ba6533d22e78819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ctx: {fileID: 0}
 --- !u!1 &264830814
 GameObject:
   m_ObjectHideFlags: 0
@@ -37208,6 +37222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1097153016}
   - component: {fileID: 1097153018}
+  - component: {fileID: 1097153022}
   - component: {fileID: 1097153019}
   - component: {fileID: 1097153020}
   - component: {fileID: 1097153021}
@@ -37339,6 +37354,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1097153022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097153015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3603716be45da984bb1f63e93ee5c393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ctx: {fileID: 0}
 --- !u!1 &1144313777
 GameObject:
   m_ObjectHideFlags: 3
@@ -38888,7 +38916,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -39134,7 +39161,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28034
+  m_Name: pb_Mesh32606
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39874,7 +39901,6 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
-  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -40312,7 +40338,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.7772926, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
