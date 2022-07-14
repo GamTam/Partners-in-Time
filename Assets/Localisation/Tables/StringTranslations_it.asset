@@ -18,11 +18,50 @@ MonoBehaviour:
   m_Metadata:
     m_Items:
     - rid: 7564701837450543130
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1119683437473792
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 212437396598788
+    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+      Per Iniziare
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 1119172369920000
+    m_Localized: 100% Translated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668736
+    m_Localized: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598785
+    m_Localized: Italiano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668737
+    m_Localized: 'Mario & Luigi: Fratelli Nel Tempo + La Furia Di Sogghigno '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598786
+    m_Localized: Simo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668738
+    m_Localized: Simo_#6397
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598789
+    m_Localized: "2022 GammaDream\nGioco Originale \xA9Nintendo 2005"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
     - rid: 7564701837450543130
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00308dc60800000005300deb990100000230cd6404920000
+        m_Entries: 00308dc60800000005300deb990100000230cd640492000006b08fef35c1000004b08fef35c100000030cd2aebf9030000308d9d58fa0300

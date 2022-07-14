@@ -27,7 +27,7 @@ public class LuigiOverworldStateMachine : Billboard
     [SerializeField] public Transform _marioPos;
     public Queue<Vector3> _posQueue;
     private Queue<Quaternion> _rotQueue;
-    private int _queueDelay = 10;
+    [SerializeField] private int _queueDelay = 5;
 
     // Jump
     private float _velocity;
@@ -114,7 +114,7 @@ public class LuigiOverworldStateMachine : Billboard
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
-        if(hit.gameObject.tag == "Block" && hit.moveDirection.y > 0) {
+        if(hit.gameObject.tag == "Block" && _currentState is LuigiOverworldJumpState) {
             _velocity += _gravity * Time.deltaTime * 3;
             hit.transform.SendMessage("OnBlockHit", "Luigi");
         }

@@ -87,10 +87,9 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
-        Debug.Log(_playerInput.currentControlScheme);
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
-                           + _playerInput.actions["m_action"].GetBindingDisplayString()+ 
+                           + _playerInput.actions["m_action"].GetBindingDisplayString() + 
                            "\"> To " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
     }
@@ -101,8 +100,9 @@ public class MarioOverworldStateMachine : Billboard
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
-        if(hit.gameObject.tag == "Block" && hit.moveDirection.y > 0) {
-            _velocity += _gravity * Time.deltaTime * 3;
+        if(hit.gameObject.tag == "Block" && _currentState is MarioOverworldJumpState) {
+            Debug.Log(_currentState);
+            _velocity = 0;
             hit.gameObject.SendMessage("OnBlockHit", "Mario");
         }
     }
