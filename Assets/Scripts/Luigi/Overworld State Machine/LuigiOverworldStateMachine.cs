@@ -41,6 +41,8 @@ public class LuigiOverworldStateMachine : Billboard
     private CharacterController _controller;
     [SerializeField] private GameObject child;
     [SerializeField] private TMP_Text _debugData;
+    [SerializeField] private Transform _shadow;
+    private RaycastHit _hit;
     
     // Getters and Setters
     public LuigiOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
@@ -64,6 +66,7 @@ public class LuigiOverworldStateMachine : Billboard
     public int QueueDelay {get {return _queueDelay;}}
     public Queue<Vector3> PosQueue {get {return _posQueue;} set {_posQueue = value;}}
     public Queue<Quaternion> RotQueue {get {return _rotQueue;} set {_rotQueue = value;}}
+    public Transform Shadow {get {return _shadow;} set {_shadow = value;}}
 
     private void Awake()
     {
@@ -101,6 +104,13 @@ public class LuigiOverworldStateMachine : Billboard
                                             + _playerInput.actions["l_action"].GetBindingDisplayString()+ 
                                             "\"> To " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
+        
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out _hit,
+            Mathf.Infinity))
+        {
+            _shadow.transform.position = new Vector3(_shadow.transform.position.x, _hit.point.y,
+                _shadow.transform.position.z);
+        }
     }
 
     private void FixedUpdate()
