@@ -124,8 +124,9 @@ public class LuigiOverworldStateMachine : Billboard
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
-        if(hit.gameObject.tag == "Block" && _currentState is LuigiOverworldJumpState) {
-            _velocity += _gravity * Time.deltaTime * 3;
+        if(hit.gameObject.tag == "Block" && _currentState is LuigiOverworldJumpState)
+        {
+            _velocity = 0;
             hit.transform.SendMessage("OnBlockHit", "Luigi");
         }
     }

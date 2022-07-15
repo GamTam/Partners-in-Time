@@ -89,6 +89,7 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
+        Debug.Log(_velocity);
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
                            + _playerInput.actions["m_action"].GetBindingDisplayString() + 
