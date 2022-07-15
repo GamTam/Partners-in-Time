@@ -34,6 +34,8 @@ public class MarioOverworldStateMachine : Billboard
     private CharacterController _controller;
     [SerializeField] private GameObject child;
     [SerializeField] private TMP_Text _debugData;
+    [SerializeField] private Transform _shadow;
+    private RaycastHit _hit;
     
     // Getters and Setters
     public MarioOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
@@ -62,7 +64,8 @@ public class MarioOverworldStateMachine : Billboard
         base.Init(child);
 
         // Input Setup
-        _playerInput = GameObject.FindWithTag("MainCamera").GetComponent<PlayerInput>();
+        _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
+        _playerInput.SwitchCurrentActionMap("Overworld");
         
         _action = _playerInput.actions["m_action"];
         _switchAction = _playerInput.actions["switch_action"];
@@ -86,13 +89,30 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
+        Debug.Log(_velocity);
         _currentState.UpdateStates();
-        _debugData.SetText("Current Ability: " + _actions[_currentAction]);
+        _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
+                           + _playerInput.actions["m_action"].GetBindingDisplayString() + 
+                           "\"> To " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out _hit,
+            Mathf.Infinity))
+        {
+            _shadow.transform.position = new Vector3(_shadow.transform.position.x, _hit.point.y,
+                _shadow.transform.position.z);
+        }
     }
 
     protected override void SetAnimation()
     {
         _currentState.AnimateState();
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit) {
+        if(hit.gameObject.tag == "Block" && _currentState is MarioOverworldJumpState) {
+            Debug.Log(_currentState);
+            _velocity = 0;
+            hit.gameObject.SendMessage("OnBlockHit", "Mario");
+        }
     }
 }

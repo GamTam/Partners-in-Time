@@ -12,4 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TestRoom.unity
     guid: a58db1ad84b34354990e3a231cfce721
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 8383a00d238ed6245be1108e1f2e52da, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 1a268976f4d7a8a47988808f4703543e, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 86549f859142f7a4496388c6ab9ae3d4, type: 2}

@@ -22,6 +22,7 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState, IMarioOverwo
             {
                 _ctx.CurrentAction = 0;
             }
+            Debug.Log(_ctx.Actions[_ctx.CurrentAction]);
         }
         HandleGravity();
         CheckSwitchStates();

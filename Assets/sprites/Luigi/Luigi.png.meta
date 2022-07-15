@@ -100,6 +100,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -3510,10 +3534,10 @@ TextureImporter:
       l_stand_ur.png: -6475335005430144408
       l_walk_d_8.png: 3860297840391684903
       l_fall_dl_1.png: -3020010596774813509
-      l_walk_dl_3.png: -5187222266223332091
       l_walk_dr_2.png: -608808585856647044
       l_walk_l_12.png: -1120264380730119280
       l_walk_r_12.png: 4223688400399208795
+      l_walk_dl_3.png: -5187222266223332091
       l_land_r_2.png: -2099766248894284742
       l_fall_d_2.png: 8073286754218664707
       l_walk_d_6.png: 7476070945757791645
@@ -3540,12 +3564,12 @@ TextureImporter:
       l_fall_ul_1.png: 2430483213586401883
       l_walk_l_1.png: 8313055547708745662
       l_walk_ur_5.png: 3880562156952921645
-      l_land_l_2.png: -163726240871911841
       l_land_d_4.png: 795296103828002519
-      l_walk_u_4.png: -4764561292046074764
+      l_land_l_2.png: -163726240871911841
+      l_walk_ul_10.png: 516104508128510610
+      l_land_d_4.png: 795296103828002519
       l_land_l_4.png: -9083910117687585475
       l_land_dl_4.png: 816492912243618877
-      l_walk_ul_10.png: 516104508128510610
       l_fall_l_1.png: -1840419973933675243
       l_walk_dr_10.png: 212735465902222733
       l_walk_d_4.png: -5470504896374407895
@@ -3563,15 +3587,16 @@ TextureImporter:
       l_jump_l.png: 7930368610026035125
       l_walk_d_12.png: -7964540661165839162
       l_jump_dl.png: 3164632056132755169
+      l_walk_u_4.png: -4764561292046074764
       l_walk_dl_2.png: -379256271464217279
-      l_walk_ur_10.png: -8840615375049487544
       l_walk_dl_5.png: -8290027022839542697
       l_walk_r_1.png: 3113474997247935382
       l_walk_l_3.png: 1972046392261881537
+      l_walk_ur_10.png: -8840615375049487544
       l_walk_d_2.png: -3485489710937955135
       l_fall_dr_1.png: 1165310060722943066
-      l_walk_r_4.png: 2614099485709302215
       l_fall_u_1.png: 6454824249572276355
+      l_walk_r_4.png: 2614099485709302215
       l_walk_dr_12.png: -6249055720068893228
       l_land_d_3.png: 1103344482405130327
       l_walk_d_1.png: 4694653078198836942

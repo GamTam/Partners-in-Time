@@ -122,18 +122,7 @@
                     "path": "<DualShockGamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8ea9443e-d9bd-4ff5-96f1-2cbfe5f0d306",
-                    "path": "<DualSenseGamepadHID>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS5",
+                    "groups": "PS4 Controller",
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -144,7 +133,7 @@
                     "path": "<XInputController>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox",
+                    "groups": "Xbox Control Scheme",
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -155,18 +144,7 @@
                     "path": "<XInputController>/dpad",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "903153cd-786e-465c-81c2-13dc52d065b6",
-                    "path": "<DualSenseGamepadHID>/dpad",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS5",
+                    "groups": "Xbox Control Scheme",
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -177,29 +155,7 @@
                     "path": "<DualShockGamepad>/dpad",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f222f99f-5118-45a1-9652-47c09717fe81",
-                    "path": "<SwitchProControllerHID>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "0a60bf1b-2af6-4421-a92f-0421e1bc5f1e",
-                    "path": "<SwitchProControllerHID>/dpad",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
+                    "groups": "PS4 Controller",
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -221,18 +177,7 @@
                     "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
-                    "action": "m_action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a9f27346-eca7-4ead-9172-67e2a175c96b",
-                    "path": "<DualSenseGamepadHID>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS5",
+                    "groups": "PS4 Controller",
                     "action": "m_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -243,18 +188,7 @@
                     "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox",
-                    "action": "m_action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "82aa91ab-b407-4c02-b3e3-dd0ea6a1b97a",
-                    "path": "<SwitchProControllerHID>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
+                    "groups": "Xbox Control Scheme",
                     "action": "m_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -276,18 +210,7 @@
                     "path": "<DualShockGamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
-                    "action": "l_action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "42dce854-7c19-4aee-9e64-edc0ecb77ad1",
-                    "path": "<DualSenseGamepadHID>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS5",
+                    "groups": "PS4 Controller",
                     "action": "l_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -298,18 +221,7 @@
                     "path": "<XInputController>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox",
-                    "action": "l_action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "758b9961-c580-4ab8-a1be-785af642a4e0",
-                    "path": "<SwitchProControllerHID>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
+                    "groups": "Xbox Control Scheme",
                     "action": "l_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -331,18 +243,7 @@
                     "path": "<DualShockGamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
-                    "action": "jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "33f98dcc-c802-4b9f-b1c8-adff412084c1",
-                    "path": "<DualSenseGamepadHID>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS5",
+                    "groups": "PS4 Controller",
                     "action": "jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -353,18 +254,7 @@
                     "path": "<XInputController>/buttonWest",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox",
-                    "action": "jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "df998ca7-6185-46d9-b82b-39d841ea06e3",
-                    "path": "<SwitchProControllerHID>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
+                    "groups": "Xbox Control Scheme",
                     "action": "jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -430,18 +320,7 @@
                     "path": "<DualShockGamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
-                    "action": "Camera",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "685aec3e-f7c6-44ff-b0d0-93a54a768729",
-                    "path": "<DualSenseGamepadHID>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS5",
+                    "groups": "PS4 Controller",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -452,18 +331,7 @@
                     "path": "<XInputController>/rightStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox",
-                    "action": "Camera",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c9c5ef90-5725-4baf-bf74-85996fe527cd",
-                    "path": "<SwitchProControllerHID>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
+                    "groups": "Xbox Control Scheme",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -485,18 +353,7 @@
                     "path": "<DualShockGamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
-                    "action": "switch_action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "950e0d1e-729c-4f7c-b26f-9f6c64813a56",
-                    "path": "<DualSenseGamepadHID>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS5",
+                    "groups": "PS4 Controller",
                     "action": "switch_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -507,18 +364,7 @@
                     "path": "<XInputController>/rightShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox",
-                    "action": "switch_action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "99c93eba-20c4-4613-8564-251f3e914a2d",
-                    "path": "<SwitchProControllerHID>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
+                    "groups": "Xbox Control Scheme",
                     "action": "switch_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -540,17 +386,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "abf695d8-41fe-409b-9917-8c38870427f3",
-                    "path": "<XInputController>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
-                    "action": "confirm",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "49dbee07-9e99-430b-9cc9-902a501093a9",
@@ -575,28 +410,6 @@
                 },
                 {
                     "name": "",
-                    "id": "352c72e9-680a-431b-a6ef-72e36ad919c8",
-                    "path": "<DualSenseGamepadHID>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS5",
-                    "action": "confirm",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7052964a-b843-4e87-a498-5a2f65c28a3b",
-                    "path": "<SwitchProControllerHID>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Switch",
-                    "action": "confirm",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "0555aaba-19eb-4f7a-92ad-a7fb69264de2",
                     "path": "<XInputController>/buttonSouth",
                     "interactions": "",
@@ -611,8 +424,8 @@
     ],
     "controlSchemes": [
         {
-            "name": "PS4",
-            "bindingGroup": "PS4",
+            "name": "PS4 Controller",
+            "bindingGroup": "PS4 Controller",
             "devices": [
                 {
                     "devicePath": "<DualShockGamepad>",
@@ -622,8 +435,8 @@
             ]
         },
         {
-            "name": "Xbox",
-            "bindingGroup": "Xbox",
+            "name": "Xbox Control Scheme",
+            "bindingGroup": "Xbox Control Scheme",
             "devices": [
                 {
                     "devicePath": "<XInputController>",
@@ -643,28 +456,6 @@
                 },
                 {
                     "devicePath": "<Mouse>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        },
-        {
-            "name": "PS5",
-            "bindingGroup": "PS5",
-            "devices": [
-                {
-                    "devicePath": "<DualSenseGamepadHID>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        },
-        {
-            "name": "Switch",
-            "bindingGroup": "Switch",
-            "devices": [
-                {
-                    "devicePath": "<SwitchProControllerHID>",
                     "isOptional": false,
                     "isOR": false
                 }

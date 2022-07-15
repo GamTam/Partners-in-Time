@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringTranslations_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: e36c4b67d0b385844bc908d401e45fe2, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 7564701837450543129
+  m_TableData:
+  - m_Id: 212437396598789
+    m_Localized: "2022 GammaDream\nOriginal Game \xA9Nintendo 2005"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598788
+    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+      To Start
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543129
+  - m_Id: 212437396598785
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598786
+    m_Localized: GamTam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668736
+    m_Localized: Full
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668737
+    m_Localized: 'Mario & Luigi: Partners in Time + Fawful''s Fury'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668738
+    m_Localized: GamTam#5335
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119683437473792
+    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
+      to switch action
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543129
+  references:
+    version: 2
+    RefIds:
+    - rid: 7564701837450543129
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00308dc60800000005300deb990100000230cd640492000004b08fef35c1000006b08fef35c100000030cd2aebf9030000308d9d58fa0300

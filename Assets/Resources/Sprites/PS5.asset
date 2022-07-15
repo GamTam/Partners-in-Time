@@ -80,63 +80,63 @@ MonoBehaviour:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 0
-    m_Scale: 1
-    m_Name: PS5_Circle.png
-    m_HashCode: 436094732
+    m_Scale: 1.25
+    m_Name: Circle
+    m_HashCode: -1622796654
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1
-    m_Scale: 1
-    m_Name: PS5_Cross.png
-    m_HashCode: -492850944
+    m_Scale: 1.25
+    m_Name: Cross
+    m_HashCode: 81017790
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 2
-    m_Scale: 1
-    m_Name: PS5_Dpad.png
-    m_HashCode: -1251257713
+    m_Scale: 1.25
+    m_Name: D-Pad
+    m_HashCode: 82056316
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 3
-    m_Scale: 1
-    m_Name: PS5_Dpad_Down.png
-    m_HashCode: -2087949758
+    m_Scale: 1.25
+    m_Name: D-Pad Down
+    m_HashCode: 2036954446
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 4
-    m_Scale: 1
-    m_Name: PS5_Dpad_Left.png
-    m_HashCode: 397052395
+    m_Scale: 1.25
+    m_Name: D-Pad Left
+    m_HashCode: 2036678311
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 5
-    m_Scale: 1
-    m_Name: PS5_Dpad_Right.png
-    m_HashCode: 54520208
+    m_Scale: 1.25
+    m_Name: D-Pad Right
+    m_HashCode: -1516502276
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 6
-    m_Scale: 1
-    m_Name: PS5_Dpad_Up.png
-    m_HashCode: 1590338517
+    m_Scale: 1.25
+    m_Name: D-Pad Up
+    m_HashCode: -1784741799
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 7
     m_Scale: 1
-    m_Name: PS5_L1.png
-    m_HashCode: -183995741
+    m_Name: L1
+    m_HashCode: 2557
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 8
-    m_Scale: 1
-    m_Name: PS5_L2.png
-    m_HashCode: -178279520
+    m_Scale: 1.25
+    m_Name: L2
+    m_HashCode: 2558
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 9
-    m_Scale: 1
-    m_Name: PS5_Left_Stick.png
-    m_HashCode: 693907068
+    m_Scale: 1.25
+    m_Name: Left Stick
+    m_HashCode: 101102077
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 10
@@ -220,9 +220,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 0
       m_Y: 400
@@ -235,9 +235,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 100
       m_Y: 400
@@ -250,9 +250,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 200
       m_Y: 400
@@ -265,9 +265,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 300
       m_Y: 400
@@ -280,9 +280,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 400
       m_Y: 400
@@ -295,9 +295,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 0
       m_Y: 300
@@ -310,9 +310,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 100
       m_Y: 300
@@ -325,9 +325,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 200
       m_Y: 300
@@ -340,9 +340,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 300
       m_Y: 300
@@ -355,9 +355,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 100
       m_Height: 100
-      m_HorizontalBearingX: -50
-      m_HorizontalBearingY: 50
-      m_HorizontalAdvance: 100
+      m_HorizontalBearingX: -10.4
+      m_HorizontalBearingY: 79.4
+      m_HorizontalAdvance: 80.96
     m_GlyphRect:
       m_X: 400
       m_Y: 300
