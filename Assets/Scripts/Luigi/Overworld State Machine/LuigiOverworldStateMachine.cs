@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Dynamic;
 
 public class LuigiOverworldStateMachine : Billboard
 {
@@ -27,7 +28,7 @@ public class LuigiOverworldStateMachine : Billboard
     [SerializeField] public Transform _marioPos;
     public Queue<Vector3> _posQueue;
     private Queue<Quaternion> _rotQueue;
-    private int _queueDelay = 10;
+    [SerializeField] private int _queueDelay = 5;
 
     // Jump
     private float _velocity;
@@ -41,6 +42,7 @@ public class LuigiOverworldStateMachine : Billboard
     private CharacterController _controller;
     [SerializeField] private GameObject child;
     [SerializeField] private TMP_Text _debugData;
+    private bool _angleColliding = false;
     
     // Getters and Setters
     public LuigiOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
@@ -96,6 +98,7 @@ public class LuigiOverworldStateMachine : Billboard
     
     void Update()
     {
+        CheckAngleCollide();
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
                                             + _playerInput.actions["l_action"].GetBindingDisplayString()+ 
@@ -116,7 +119,48 @@ public class LuigiOverworldStateMachine : Billboard
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         if(hit.gameObject.tag == "Block" && hit.moveDirection.y > 0) {
             _velocity = 0;
-            hit.transform.SendMessage("OnBlockHit", "Luigi");
+            hit.transform.SendMessage("OnBlockHit", "Luigi", SendMessageOptions.DontRequireReceiver);
+        }
+
+        if(hit.moveDirection.y == 0) {
+            float collisionDot = Vector3.Dot(transform.TransformDirection(Vector3.forward).normalized, hit.transform.TransformDirection(Vector3.forward).normalized);
+
+            _marioPos.SendMessage("OnCollision", new object[]{collisionDot, _angleColliding }, SendMessageOptions.DontRequireReceiver);
+        }
+    }
+
+    private void CheckAngleCollide() {
+        Vector3 rayOrigin = transform.position;
+
+        int countFR = 0;
+        int countBR = 0;
+        int countBL = 0;
+        int countFL = 0;
+
+        _angleColliding = false;
+
+        if(Physics.Raycast(rayOrigin, Vector3.right, 0.5f)) {
+            countFR++;
+            countBR++;
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.forward, 0.5f)) {
+            countFL++;
+            countFR++;
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.left, 0.5f)) {
+            countBL++;
+            countFL++;
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.back, 0.5f)) {
+            countBL++;
+            countBR++;
+        }
+
+        if(countFR == 2 || countBL == 2 || countBR == 2 || countFL == 2) {
+            _angleColliding = true;
         }
     }
 }

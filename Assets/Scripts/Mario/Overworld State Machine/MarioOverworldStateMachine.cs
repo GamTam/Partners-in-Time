@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Dynamic;
 
 public class MarioOverworldStateMachine : Billboard
 {
@@ -34,6 +35,12 @@ public class MarioOverworldStateMachine : Billboard
     private CharacterController _controller;
     [SerializeField] private GameObject child;
     [SerializeField] private TMP_Text _debugData;
+
+    // Luigi
+    [SerializeField] private Transform _luigiPos;
+    private float _maxDistance = 1.8f;
+    private float _collisionDot;
+    private bool _angleColliding;
     
     // Getters and Setters
     public MarioOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
@@ -53,6 +60,10 @@ public class MarioOverworldStateMachine : Billboard
     public float Gravity {get {return _gravity;}}
     public float FallMultiplier {get {return _fallMultiplier;}}
     public float Velocity {get {return _velocity;} set {_velocity = value;}}
+    public Transform LuigiPos {get {return _luigiPos;}}
+    public float MaxDistance {get {return _maxDistance;}}
+    public float CollisionDot {get {return _collisionDot;}}
+    public bool LuigiAngleColliding {get {return _angleColliding;}}
     
     private void Awake()
     {
@@ -103,7 +114,12 @@ public class MarioOverworldStateMachine : Billboard
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         if(hit.gameObject.tag == "Block" && hit.moveDirection.y > 0) {
             _velocity = 0;
-            hit.gameObject.SendMessage("OnBlockHit", "Mario");
+            hit.gameObject.SendMessage("OnBlockHit", "Mario", SendMessageOptions.DontRequireReceiver);
         }
+    }
+
+    public void OnCollision(object[] args) {
+        _collisionDot = (float) args[0];
+        _angleColliding = (bool) args[1];
     }
 }
