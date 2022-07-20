@@ -34,9 +34,22 @@ public class LuigiOverworldLandingState : LuigiOverworldBaseState, ILuigiOverwor
             _ctx.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         {
             SwitchState(_factory.Grounded());
-        } else if (_ctx.Jump)
+        } 
+        else if (_ctx.Jump)
         {
             SwitchState(_factory.Jump());
+        }
+        else if (_ctx.Action)
+        {
+            switch (_ctx.Actions[_ctx.CurrentAction])
+            {
+                case "jump":
+                    SwitchState(_factory.Jump());
+                    break;
+                case "spin and jump":
+                    SwitchState(_factory.SpinAndJump());
+                    break;
+            }
         }
     }
 
