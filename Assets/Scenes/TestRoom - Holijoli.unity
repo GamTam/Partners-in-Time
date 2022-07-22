@@ -3435,7 +3435,7 @@ MonoBehaviour:
   m_BindingMode: 4
   m_FollowOffset: {x: 0, y: 11.3, z: -11.49}
   m_XDamping: 0
-  m_YDamping: 2
+  m_YDamping: 0
   m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
