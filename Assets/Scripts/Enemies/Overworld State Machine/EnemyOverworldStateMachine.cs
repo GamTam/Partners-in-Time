@@ -94,8 +94,8 @@ public class EnemyOverworldStateMachine : Billboard
                         break;
                 }
             }
-            //Debug.Log(_target);
-            _moveVector = _eam.MoveTowardsTarget(_target, _moveSpeed);
+            
+            _moveVector = _eam.GetMoveVector(_target);
         }
     }
 }

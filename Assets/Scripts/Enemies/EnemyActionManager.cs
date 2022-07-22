@@ -19,18 +19,14 @@ public class EnemyActionManager
         _controller = _enemy.GetComponent<CharacterController>();
     }
 
-    public Vector3 MoveTowardsTarget(Vector3 target, float moveSpeed) {
-        Vector3 moveVector = Vector3.zero;
-        Vector3 offset = target - _enemy.transform.position;
+    public Vector3 GetMoveVector(Vector3 target) {
+        Vector3 moveVector = target - _enemy.transform.position;
 
-        if(offset.magnitude > 0.7f) {
+        if(moveVector.magnitude > 0.7f) {
             _isMoving = true;
-            moveVector = offset.normalized;
-            //ebug.Log(offset.normalized.z);
-            offset = offset.normalized * moveSpeed;
-            //_controller.Move(offset * Time.deltaTime);
+            moveVector = moveVector.normalized;
         } else {
-            moveVector = offset.normalized / 20f;
+            moveVector = moveVector.normalized / 20f;
             _isMoving = false;
         }
 
