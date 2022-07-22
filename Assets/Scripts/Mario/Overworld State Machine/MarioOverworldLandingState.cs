@@ -33,6 +33,18 @@ public class MarioOverworldLandingState : MarioOverworldBaseState, IMarioOverwor
         {
             SwitchState(_factory.Jump());
         }
+        else if (_ctx.Action)
+        {
+            switch (_ctx.Actions[_ctx.CurrentAction])
+            {
+                case "jump":
+                    SwitchState(_factory.Jump());
+                    break;
+                case "spin and jump":
+                    SwitchState(_factory.SpinAndJump());
+                    break;
+            }
+        }
     }
 
     public override void InitializeSubState()

@@ -708,7 +708,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
     m_TableEntryReference:
-      m_KeyId: 1760585134086
+      m_KeyId: 212437396598789
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -2447,7 +2447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1215964592
 Transform:
   m_ObjectHideFlags: 0
@@ -4291,7 +4291,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
     m_TableEntryReference:
-      m_KeyId: 1760585134085
+      m_KeyId: 212437396598788
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 1
@@ -4415,7 +4415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1760030664
 Transform:
   m_ObjectHideFlags: 0
@@ -4425,8 +4425,8 @@ Transform:
   m_GameObject: {fileID: 1760030663}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -6.26, z: 0}
-  m_LocalScale: {x: 2.8699737, y: 2.8699737, z: 2.8699737}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.97, y: 0.97, z: 0.97}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1054277059}
   m_RootOrder: 4

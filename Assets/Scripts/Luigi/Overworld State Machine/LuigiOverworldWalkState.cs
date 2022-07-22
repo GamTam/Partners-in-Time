@@ -28,8 +28,6 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
             _ctx.transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
             _ctx.MoveAngle = targetAngle;
-
-            // Debug.Log(Vector2.Distance(new Vector2(_ctx.transform.position.x, _ctx.transform.position.z), new Vector2(pos.x, pos.z)));
         }
 
         _ctx.Controller.Move(_newMove * _ctx.MoveSpeed * Time.deltaTime);

@@ -48,10 +48,8 @@ public class ControllerManager : MonoBehaviour
         var confirmButton = _source["confirm"] as StringVariable;
         var switchAction = _source["switch_action"] as StringVariable;
 
-        Debug.Log(confirmButton);
-        
         activeController.Value = _playerInput.currentControlScheme;
-        confirmButton.Value = _playerInput.actions["Confirm"].GetBindingDisplayString();
+        confirmButton.Value = _playerInput.actions["confirm"].GetBindingDisplayString();
         switchAction.Value = _playerInput.actions["switch_action"].GetBindingDisplayString();
         
     }

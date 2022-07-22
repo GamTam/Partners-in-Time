@@ -403,7 +403,7 @@
                     "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
+                    "groups": "PS4 Controller",
                     "action": "confirm",
                     "isComposite": false,
                     "isPartOfComposite": false

@@ -35,6 +35,8 @@ public class MarioOverworldStateMachine : Billboard
     private CharacterController _controller;
     [SerializeField] private GameObject child;
     [SerializeField] private TMP_Text _debugData;
+    [SerializeField] private Transform _shadow;
+    private RaycastHit _hit;
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
@@ -98,12 +100,18 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
-        Debug.Log(_playerInput.currentControlScheme);
+        Debug.Log(_velocity);
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
-                           + _playerInput.actions["m_action"].GetBindingDisplayString()+ 
+                           + _playerInput.actions["m_action"].GetBindingDisplayString() + 
                            "\"> To " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out _hit,
+            Mathf.Infinity))
+        {
+            _shadow.transform.position = new Vector3(_shadow.transform.position.x, _hit.point.y,
+                _shadow.transform.position.z);
+        }
     }
 
     protected override void SetAnimation()
@@ -112,9 +120,10 @@ public class MarioOverworldStateMachine : Billboard
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
-        if(hit.gameObject.tag == "Block" && hit.moveDirection.y > 0) {
+        if(hit.gameObject.tag == "Block" && _currentState is MarioOverworldJumpState) {
+            Debug.Log(_currentState);
             _velocity = 0;
-            hit.gameObject.SendMessage("OnBlockHit", "Mario", SendMessageOptions.DontRequireReceiver);
+            hit.gameObject.SendMessage("OnBlockHit", "Mario");
         }
     }
 

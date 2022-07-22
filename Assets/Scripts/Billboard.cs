@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class Billboard : MonoBehaviour
@@ -7,13 +8,15 @@ public abstract class Billboard : MonoBehaviour
     protected float _displayAngle;
     protected string _facing = "_down";
     protected Transform _cam;
-    protected Transform Sprite;
+    protected Transform _spriteTransform;
+    protected SpriteRenderer _sprite;
     protected Animator _animator;
 
     protected void Init(GameObject child)
     {
-        Sprite = child.transform;
+        _spriteTransform = child.transform;
         _animator = child.GetComponent<Animator>();
+        _sprite = child.GetComponent<SpriteRenderer>();
         _cam = Camera.main.transform;
     }
 
@@ -24,8 +27,9 @@ public abstract class Billboard : MonoBehaviour
         SetAnimation();
 
         // Quaternion rot = Sprite.transform.rotation;
-        Sprite.transform.rotation = _cam.rotation;
-        
+        _spriteTransform.transform.rotation = _cam.rotation;
+        _sprite.sortingOrder =  1000000 - (int) (_spriteTransform.transform.position.z * 100);
+
         // Sprite.transform.rotation = Quaternion.Euler(rot.eulerAngles.x, Sprite.transform.rotation.eulerAngles.y, rot.eulerAngles.z);
     }
     
