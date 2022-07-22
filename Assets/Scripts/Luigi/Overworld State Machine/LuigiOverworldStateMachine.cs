@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Dynamic;
 
 public class LuigiOverworldStateMachine : Billboard
 {
@@ -43,6 +44,7 @@ public class LuigiOverworldStateMachine : Billboard
     [SerializeField] private TMP_Text _debugData;
     [SerializeField] private Transform _shadow;
     private RaycastHit _hit;
+    private bool _angleColliding = false;
     
     // Getters and Setters
     public LuigiOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
@@ -99,6 +101,7 @@ public class LuigiOverworldStateMachine : Billboard
     
     void Update()
     {
+        CheckAngleCollide();
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
                                             + _playerInput.actions["l_action"].GetBindingDisplayString()+ 
@@ -128,6 +131,47 @@ public class LuigiOverworldStateMachine : Billboard
         {
             _velocity = 0;
             hit.transform.SendMessage("OnBlockHit", "Luigi");
+       }
+
+        if(hit.moveDirection.y == 0) {
+            float collisionDot = Vector3.Dot(transform.TransformDirection(Vector3.forward).normalized, hit.transform.TransformDirection(Vector3.forward).normalized);
+
+            _marioPos.SendMessage("OnCollision", new object[]{collisionDot, _angleColliding }, SendMessageOptions.DontRequireReceiver);
+        }
+    }
+
+    private void CheckAngleCollide() {
+        Vector3 rayOrigin = transform.position;
+
+        int countFR = 0;
+        int countBR = 0;
+        int countBL = 0;
+        int countFL = 0;
+
+        _angleColliding = false;
+
+        if(Physics.Raycast(rayOrigin, Vector3.right, 0.5f)) {
+            countFR++;
+            countBR++;
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.forward, 0.5f)) {
+            countFL++;
+            countFR++;
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.left, 0.5f)) {
+            countBL++;
+            countFL++;
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.back, 0.5f)) {
+            countBL++;
+            countBR++;
+        }
+
+        if(countFR == 2 || countBL == 2 || countBR == 2 || countFL == 2) {
+            _angleColliding = true;
         }
     }
 }
