@@ -11,6 +11,9 @@ public class EnemyOverworldStateMachine : Billboard
     private Vector3 _moveVector;
     private EnemyActionManager _eam;
     private Vector3 _target;
+    [SerializeField] private float _xLimit;
+    [SerializeField] private float _zLimit;
+    private Vector3 _startingPos;
 
     // Animation
     [SerializeField] private string _animPrefix;
@@ -19,6 +22,9 @@ public class EnemyOverworldStateMachine : Billboard
     private EnemyOverworldBaseState _currentState;
     private EnemyOverworldStateFactory _states;
     [SerializeField] private GameObject _child;
+
+    // Misc.
+    private CharacterController _controller;
 
     // Getters and Setters
     public EnemyOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
@@ -32,11 +38,10 @@ public class EnemyOverworldStateMachine : Billboard
     public CharacterController Controller { get {return _controller;} }
     public EnemyActionManager Eam { get {return _eam;} }
 
-    // Misc.
-    private CharacterController _controller;
-
     private void Awake() {
         Init(_child);
+
+        _startingPos = transform.position;
 
         // Misc. Setup
         _controller = GetComponent<CharacterController>();
@@ -63,38 +68,39 @@ public class EnemyOverworldStateMachine : Billboard
     }
 
     IEnumerator EnemyAI() {
-        while (true) {
+        while(true) {
             yield return new WaitForSeconds(_eam.IsMoving ? Time.deltaTime : 2f);
 
             if(!_eam.IsMoving) {
+                
+                do {
+                    int direction  = Random.Range(1, 5);
+                    float distance = Random.Range(2f, 5f);
 
-                int direction  = Random.Range(1, 5);
-                float distance = Random.Range(2f, 5f);
+                    _target = transform.position;
 
-                _target = transform.position;
-
-                Debug.Log(direction + " : " + distance);
-
-                switch (direction) {
-                    case 1:
-                        // Up
-                        _target += new Vector3(0f, 0f, distance);
-                        break;
-                    case 2:
-                        // Right
-                        _target += new Vector3(distance, 0f, 0f);
-                        break;
-                    case 3:
-                        // Down
-                        _target += new Vector3(0f, 0f, -distance);
-                        break;
-                    case 4:
-                        // Left
-                        _target += new Vector3(-distance, 0f, 0f);
-                        break;
-                }
+                    switch (direction) {
+                        case 1:
+                            // Up
+                            _target += new Vector3(0f, 0f, distance);
+                            break;
+                        case 2:
+                            // Right
+                            _target += new Vector3(distance, 0f, 0f);
+                            break;
+                        case 3:
+                            // Down
+                            _target += new Vector3(0f, 0f, -distance);
+                            break;
+                        case 4:
+                            // Left
+                            _target += new Vector3(-distance, 0f, 0f);
+                            break;
+                    }
+                } while((_target.x > (_startingPos.x + _xLimit)) || (_target.x < (_startingPos.x - _xLimit)) ||
+                (_target.z > (_startingPos.z + _zLimit)) || (_target.z < (_startingPos.z - _zLimit)));
             }
-            
+
             _moveVector = _eam.GetMoveVector(_target);
         }
     }
