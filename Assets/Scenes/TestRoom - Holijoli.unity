@@ -528,7 +528,7 @@ Transform:
   - {fileID: 525076773}
   - {fileID: 2066591827}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &13415613
 MonoBehaviour:
@@ -869,7 +869,7 @@ Transform:
   - {fileID: 1490338172}
   - {fileID: 977504415}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1001 &253338038
 PrefabInstance:
@@ -880,7 +880,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7471489789758403371, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7471489789758403371, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1621,7 +1621,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618225182
 GameObject:
@@ -2448,7 +2448,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9088977513299016012, guid: 984d96e6739d06b4ea25d4cfab3efc36, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9088977513299016012, guid: 984d96e6739d06b4ea25d4cfab3efc36, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2774,7 +2774,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
     m_TableEntryReference:
-      m_KeyId: 1119683437473792
+      m_KeyId: 5510246404272128
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -2915,7 +2915,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -134.209, y: 0, z: 0}
 --- !u!1 &886893690
 GameObject:
@@ -3142,7 +3142,7 @@ GameObject:
   - component: {fileID: 959333152}
   m_Layer: 5
   m_Name: UI
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3225,7 +3225,7 @@ RectTransform:
   - {fileID: 798732945}
   - {fileID: 784702450}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3481,6 +3481,37 @@ MonoBehaviour:
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
+--- !u!1 &996582193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 996582194}
+  m_Layer: 0
+  m_Name: -----------------------------------------------------------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &996582194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996582193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1208.4504, y: 420.19662, z: -109.71579}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1018906607
 GameObject:
   m_ObjectHideFlags: 0
@@ -4183,7 +4214,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1196235834
 GameObject:
@@ -4599,9 +4630,10 @@ GameObject:
   - component: {fileID: 1275422786}
   - component: {fileID: 1275422787}
   - component: {fileID: 1275422788}
+  - component: {fileID: 1275422789}
   m_Layer: 0
-  m_Name: Mountain Toad
-  m_TagString: Player
+  m_Name: Preacher Toad
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4621,7 +4653,7 @@ Transform:
   - {fileID: 1784671983}
   - {fileID: 2116720984}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1275422786
 MonoBehaviour:
@@ -4660,10 +4692,35 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.6
+  m_Radius: 0.8
   m_Height: 1.6787655
   m_Direction: 1
   m_Center: {x: 0.03, y: 1.4356447, z: -0}
+--- !u!114 &1275422789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275422783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ccdc3b7069cf34a9d1d90235b15cfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue:
+  - "<sp:50><anim:shake>BUT IF WE ARE LIVING IN THE LIGHT,<p:normal> AS GOD IS IN
+    THE LIGHT, \n<p:normal>THEN WE HAVE FELLOWSHIP WITH EACH OTHER, <p:normal>\nAND
+    THE BLOOD OF JESUS,<p:short> HIS SON,<p:short> CLEANSES US FROM ALL SIN</anim>"
+  - "<sp:50><anim:shake>IF WE CLAIM WE HAVE NO SIN,<p:normal> WE ARE ONLY \nFOOLING
+    OURSELVES,<p:normal> AND NOT LIVING IN THE TRUTH</anim>"
+  - '<sp:50><anim:shake>BUT IF WE CONFESS OUR SINS TO HIM,<p:normal> HE IS FAITHFUL
+    <p:normal>
+
+    AND JUST TO FORGIVE US OUR SINS <p:normal>
+
+    AND TO CLEANSE
+    US<p:normal> FROM ALL WICKEDNESS</anim>'
 --- !u!1 &1290949060
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,7 +4768,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1399700810
 GameObject:
@@ -5051,7 +5108,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1477718339
 MonoBehaviour:
@@ -5730,9 +5787,10 @@ GameObject:
   - component: {fileID: 1672499366}
   - component: {fileID: 1672499368}
   - component: {fileID: 1672499369}
+  - component: {fileID: 1672499370}
   m_Layer: 0
-  m_Name: Mountain Toad (1)
-  m_TagString: Player
+  m_Name: Jetstream Toad
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5765,7 +5823,7 @@ Transform:
   - {fileID: 1860043929}
   - {fileID: 886893691}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!136 &1672499368
 CapsuleCollider:
@@ -5791,10 +5849,104 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.6
+  m_Radius: 0.8
   m_Height: 1.6787655
   m_Direction: 1
   m_Center: {x: 0.03, y: 1.4356447, z: -0}
+--- !u!114 &1672499370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672499365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ccdc3b7069cf34a9d1d90235b15cfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue:
+  - Memories broken
+  - The truth goes unspoken
+  - 'I''ve even forgotten my
+
+    <anim:wave>naaaaaaaaaaaaaaaaaaaaame!</anim>'
+  - I don't know the season
+  - Or what is the reason
+  - 'I''m standing here holding my
+
+    <anim:wave>blaaaaaaaaaaaaaaaaaaaaade!</anim>'
+  - 'A desolate place!<p:short>
+
+    <size=50%><sp:100>Place!'
+  - 'Without any trace!<p:short>
+
+    <size=50%><sp:100>Trace!'
+  - It's only the cold wind I feel.
+  - It's me that I spite
+  - As I stand up and fight
+  - 'The only thing I know for real:'
+  - <sp:5000>THERE <p:short>WILL <p:short>BE
+  - <color=red><size=300%><anim:shake>BLOOD</anim></color>
+  - <color=red><size=300%><anim:shake>SHED</anim></color>
+  - The man in the mirror nods his head
+  - The only
+  - <size=300%><anim:shake>ONE</anim>
+  - <size=300%><anim:shake>LEFT</anim>
+  - Will ride upon he dragon's back
+  - Because the mountains don't give back what they take
+  - <sp:5000>OH <p:short>NO, <p:short>THERE <p:short>WILL <p:short>BE
+  - <color=red><size=300%><anim:shake>BLOOD</anim></color>
+  - <color=red><size=300%><anim:shake>SHED</anim></color>
+  - 'It''s the only thing I''ve ever
+
+    <anim:wave>knoooooooooooooooooooooown!</anim>'
+--- !u!1 &1724763620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724763621}
+  - component: {fileID: 1724763622}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1724763621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724763620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1724763622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724763620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b56c6753046ca4b91b9a173f23ef97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBoxPrefab: {fileID: 1939202264199205822, guid: 435e1e355c2dd744e84d10fd80d28039, type: 3}
+  typingClip: {fileID: 0}
 --- !u!1 &1740637933
 GameObject:
   m_ObjectHideFlags: 0
@@ -6266,13 +6418,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
   m_LocalRotation: {x: 0.37905726, y: 0.000000075150226, z: -0.000000030783514, w: 0.92537326}
-  m_LocalPosition: {x: 8.602943, y: 11.933001, z: 2.4100006}
+  m_LocalPosition: {x: 8.605366, y: 11.933001, z: 2.4100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 331387929}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 44.52, y: 0, z: 0}
 --- !u!114 &1800496815
 MonoBehaviour:
@@ -6760,7 +6912,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7781818, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6783,7 +6935,7 @@ Transform:
   m_Children:
   - {fileID: 979719346}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975520593
 GameObject:
@@ -7077,9 +7229,10 @@ GameObject:
   - component: {fileID: 2110346870}
   - component: {fileID: 2110346872}
   - component: {fileID: 2110346873}
+  - component: {fileID: 2110346874}
   m_Layer: 0
-  m_Name: Mountain Toad (2)
-  m_TagString: Player
+  m_Name: Toad Toadham
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7112,7 +7265,7 @@ Transform:
   - {fileID: 1975520596}
   - {fileID: 1018906608}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!136 &2110346872
 CapsuleCollider:
@@ -7138,10 +7291,123 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.6
+  m_Radius: 0.8
   m_Height: 1.6787655
   m_Direction: 1
   m_Center: {x: 0.03, y: 1.4356447, z: -0}
+--- !u!114 &2110346874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110346869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ccdc3b7069cf34a9d1d90235b15cfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue:
+  - <anim:wave>Welcome<p:short> to the internet!</anim>
+  - Have a look around
+  - 'Anything that brain of yours can think of
+
+    can be found.'
+  - We've got <anim:wave>mountains</anim> of content.
+  - Some better,<p:short> some worse.
+  - 'If none of it''s of interest to you
+
+    You''d be the first.'
+  - <anim:wave>Welcome<p:short> to the internet!</anim>
+  - Come and take a seat!
+  - 'Would you like to see the news
+
+    or any famous women''s <color=red>feet</color>?'
+  - There's no need to panic
+  - 'This isn''t a test.<p:short>
+
+    Ha <p:tiny>ha!'
+  - 'Just nod or shake your head
+
+    and we''ll do the rest.'
+  - <anim:wave>Welcome<p:short> to the internet!</anim>
+  - What would you prefer?
+  - 'Would you like to fight for civil rights
+
+    or tweet a racial slur?'
+  - 'Be happy!<p:normal>
+
+    Be horny!<p:normal>
+
+    Be bursting with rage!'
+  - We got a million different ways to engage.
+  - '<anim:wave>Welcome<p:short> to the internet!</anim><p:normal>
+
+    Put your
+    cares aside.'
+  - 'Here''s a tip for straining pasta,<p:short>
+
+    Here''s a 9-year-old who died.'
+  - We got movies,<p:normal> and doctors,<p:normal> and fantasy sports.
+  - "<sp:50>And a bunch of colored pencil drawings <sp:500>of\nall the different
+    characters from \nHarry Potter fucking each other."
+  - 'Welcome to the internet!<p:normal>
+
+    Hold on to your socks,'
+  - '''Cause a random guy just kindly sent you
+
+    photos of his cock.'
+  - 'They''re grainy and off-putting;<p:normal>
+
+    He just sent you more.'
+  - 'Don''t act surprised,<p:short>
+
+    you know you like it you whore.'
+  - '<sp:100>See a man beheaded,<p:short>
+
+    get offended, <p:short>
+
+    see a
+    shrink.'
+  - '<sp:100>Show us pictures of your children,<p:short>
+
+    tell us every thought
+    you think.'
+  - '<sp:100>Start a rumour,<p:short>
+
+    buy a broom,<p:short> or
+
+    send a death
+    threat to a boomer'
+  - '<sp:100>Or DM a girl and groom her,<p:short>
+
+    do a Zoom,<p:short>
+
+    or
+    find a tumor in your-'
+  - '<sp:100>Here''s a healthy breakfast option
+
+
+'
+  - '
+
+
+    <sp:100>You should kill your mom'
+  - '<sp:100>Here''s why women never fuck you
+
+
+
+'
+  - '
+
+
+    <sp:100>Here''s how you can build a bomb'
+  - '<sp:100>Which Power Ranger are you?<p:tiny> Take this quirky quiz!
+
+
+'
+  - <sp:100>Obama sent the immigrants to <p:normal>vac<p:short>ci<p:short>nate<p:short>
+    your<p:short> kids.
 --- !u!1 &2116720983
 GameObject:
   m_ObjectHideFlags: 0
@@ -7491,7 +7757,7 @@ PrefabInstance:
       objectReference: {fileID: 746993567}
     - target: {fileID: 110968905797429751, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 110968905797429751, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7548,7 +7814,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1147006386186476576, guid: 8cbc72f01441457418b16434bf71e435, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1147006386186476576, guid: 8cbc72f01441457418b16434bf71e435, type: 3}
       propertyPath: m_LocalPosition.x

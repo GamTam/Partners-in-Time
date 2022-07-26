@@ -18,11 +18,10 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState, IMarioOverwo
         if (_ctx.SwitchAction)
         {
             _ctx.CurrentAction += 1;
-            if (_ctx.CurrentAction > _ctx.Actions.Count - 1)
+            if (_ctx.CurrentAction > _ctx.Actions.Count - 3)
             {
                 _ctx.CurrentAction = 0;
             }
-            Debug.Log(_ctx.Actions[_ctx.CurrentAction]);
         }
         HandleGravity();
         CheckSwitchStates();

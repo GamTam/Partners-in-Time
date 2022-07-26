@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: translator_discord
     m_Metadata:
       m_Items: []
+  - m_Id: 5510246370717696
+    m_Key: advance_dialogue
+    m_Metadata:
+      m_Items: []
   - m_Id: 212437396598788
     m_Key: msg_press_to_start
     m_Metadata:
@@ -47,8 +51,20 @@ MonoBehaviour:
     m_Key: msg_copyright_info
     m_Metadata:
       m_Items: []
-  - m_Id: 1119683437473792
-    m_Key: msg_switch_action
+  - m_Id: 5510246400077824
+    m_Key: dbg_m_action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510246400077825
+    m_Key: dbg_l_action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510246404272128
+    m_Key: dbg_switch_action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510246404272129
+    m_Key: dbg_jump_action
     m_Metadata:
       m_Items: []
   m_Metadata:

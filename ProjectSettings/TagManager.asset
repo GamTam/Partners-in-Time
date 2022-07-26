@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Block
   - Controller Manager
+  - NPC
+  - UI
   layers:
   - Default
   - TransparentFX

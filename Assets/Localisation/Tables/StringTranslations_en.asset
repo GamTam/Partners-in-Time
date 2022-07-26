@@ -49,9 +49,32 @@ MonoBehaviour:
     m_Localized: GamTam#5335
     m_Metadata:
       m_Items: []
-  - m_Id: 1119683437473792
+  - m_Id: 5510246370717696
+    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543129
+  - m_Id: 5510246400077824
+    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.m_action}\">
+      to make Mario jump
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543129
+  - m_Id: 5510246400077825
+    m_Localized: 'Press <sprite=\"{global.controller}\" name=\"{global.l_action}\">
+      to make Luigi jump '
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543129
+  - m_Id: 5510246404272128
     m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
       to switch action
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543129
+  - m_Id: 5510246404272129
+    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.jump_action}\">
+      to make both bros. jump
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -61,4 +84,4 @@ MonoBehaviour:
     - rid: 7564701837450543129
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00308dc60800000005300deb990100000230cd640492000004b08fef35c1000006b08fef35c100000030cd2aebf9030000308d9d58fa0300
+        m_Entries: 00308dc60800000005300deb990100000230cd640492000004b08fef35c1000006b08fef35c100000030cd2aebf9030000308d9d58fa030000308d358a93130000304d378a93130001304d378a93130001308d378a93130000308d378a931300

@@ -19,11 +19,6 @@ MonoBehaviour:
     m_Items:
     - rid: 7564701837450543130
   m_TableData:
-  - m_Id: 1119683437473792
-    m_Localized: 
-    m_Metadata:
-      m_Items:
-      - rid: 7564701837450543130
   - m_Id: 212437396598788
     m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.confirm}\">
       Per Iniziare
@@ -58,10 +53,39 @@ MonoBehaviour:
     m_Localized: "2022 GammaDream\nGioco Originale \xA9Nintendo 2005"
     m_Metadata:
       m_Items: []
+  - m_Id: 5510246370717696
+    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 5510246400077824
+    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.m_action}\">
+      per far saltare Mario
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 5510246400077825
+    m_Localized: 'Premi <sprite=\"{global.controller}\" name=\"{global.l_action}\">
+      per far saltare Luigi '
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 5510246404272128
+    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
+      per cambiare azione
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 5510246404272129
+    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.jump_action}\">
+      per far saltare entrambi i fratelli
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
   references:
     version: 2
     RefIds:
     - rid: 7564701837450543130
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00308dc60800000005300deb990100000230cd640492000006b08fef35c1000004b08fef35c100000030cd2aebf9030000308d9d58fa0300
+        m_Entries: 00308dc60800000005300deb990100000230cd640492000006b08fef35c1000004b08fef35c100000030cd2aebf9030000308d9d58fa030000308d358a93130001304d378a93130000304d378a93130000308d378a93130001308d378a931300

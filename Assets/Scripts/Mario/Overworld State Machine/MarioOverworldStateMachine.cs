@@ -18,6 +18,7 @@ public class MarioOverworldStateMachine : Billboard
     [SerializeField] private int moveSpeed = 5;
     private ArrayList _actions;
     private int _currentAction = 0;
+    private int _storedAction = 0;
 
     //State Machine
     private MarioOverworldBaseState _currentState;
@@ -83,7 +84,7 @@ public class MarioOverworldStateMachine : Billboard
         _jump = _playerInput.actions["jump"];
         _moveVector = _playerInput.actions["move"];
 
-        _actions = new ArrayList(new[] {"jump", "spin and jump"});
+        _actions = new ArrayList(new[] {"jump", "spin and jump", "talk", "interact"});
         
         // Jump Setup
         _gravity = (-2 * _maxJumpHeight) / Mathf.Pow(_maxJumpTime / 2, 2);
@@ -100,7 +101,6 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
-        Debug.Log(_velocity);
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
                            + _playerInput.actions["m_action"].GetBindingDisplayString() + 
@@ -124,6 +124,25 @@ public class MarioOverworldStateMachine : Billboard
             Debug.Log(_currentState);
             _velocity = 0;
             hit.gameObject.SendMessage("OnBlockHit", "Mario");
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag.Equals("NPC"))
+        {
+            _storedAction = _currentAction;
+            _currentAction = _actions.Count - 2;
+            other.gameObject.GetComponent<DialogueTrigger>().Talkable = true;
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag.Equals("NPC"))
+        {
+            _currentAction = _storedAction;
+            other.gameObject.GetComponent<DialogueTrigger>().Talkable = false;
         }
     }
 
