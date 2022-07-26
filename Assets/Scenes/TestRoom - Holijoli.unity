@@ -878,6 +878,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7471489789758403370, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Keyboard
+      objectReference: {fileID: 0}
     - target: {fileID: 7471489789758403371, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6355,7 +6359,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1800496813}
   - component: {fileID: 1800496812}
-  - component: {fileID: 1800496815}
   - component: {fileID: 1800496816}
   - component: {fileID: 1800496817}
   - component: {fileID: 1800496818}
@@ -6426,18 +6429,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 44.52, y: 0, z: 0}
---- !u!114 &1800496815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800496810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1800496816
 MonoBehaviour:
   m_ObjectHideFlags: 0
