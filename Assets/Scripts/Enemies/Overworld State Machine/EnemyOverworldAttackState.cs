@@ -2,27 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyOverworldWalkState : EnemyOverworldBaseState, IEnemyOverworldRootState
+public class EnemyOverworldAttackState : EnemyOverworldBaseState, IEnemyOverworldRootState
 {
     private Vector3 _newMove;
+    private Vector3 _initPlayerPos;
 
-    public EnemyOverworldWalkState(EnemyOverworldStateMachine currentContext, EnemyOverworldStateFactory enemyOverworldStateFactory) 
+    public EnemyOverworldAttackState(EnemyOverworldStateMachine currentContext, EnemyOverworldStateFactory enemyOverworldStateFactory) 
         : base(currentContext, enemyOverworldStateFactory) {}
-    
-    public override void EnterState() {
+
+    public override void EnterState()
+    {
         _newMove = new Vector3(0f, 0f, 0f);
         _ctx.Velocity = _ctx.Gravity;
+        _initPlayerPos = _ctx.PlayerRef.transform.position;
     }
 
     public override void UpdateState()
     {
-        float targetAngle = Mathf.Atan2(_ctx.MoveVector.x, _ctx.MoveVector.z) * Mathf.Rad2Deg + _ctx.Cam.eulerAngles.y;
+        Vector3 moveDirection = _ctx.Eam.GetMoveVector(_initPlayerPos);
+
+        float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + _ctx.Cam.eulerAngles.y;
         _ctx.transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
         _newMove = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-
         _ctx.MoveAngle = targetAngle;
-        _newMove = _newMove * _ctx.MoveSpeed * Time.deltaTime;
+
+        _newMove = _newMove * _ctx.MoveAttackSpeed * Time.deltaTime;
 
         _ctx.Controller.Move(_newMove);
 
@@ -30,16 +35,15 @@ public class EnemyOverworldWalkState : EnemyOverworldBaseState, IEnemyOverworldR
         CheckSwitchStates();
     }
 
-    public override void ExitState()
-    {
+    public override void ExitState() {
+        _ctx.AiDisabled = false;
+        _ctx.FovDisabled = false;
+        _ctx.Eam.IsMoving = false;
     }
 
     public override void CheckSwitchStates()
     {
-        if(_ctx.PlayerDetected) {
-            SwitchState(_factory.Jump());
-        } else if (_ctx.MoveVector.magnitude < Globals.deadZone)
-        {
+        if(!_ctx.Eam.IsMoving || _ctx.IsOverLimit(_ctx.transform.position)) {
             SwitchState(_factory.Idle());
         }
     }

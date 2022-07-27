@@ -5,7 +5,9 @@ public class EnemyOverworldStateFactory
     enum States
     {
         Idle,
-        Walk
+        Walk,
+        Jump,
+        Attack
     }
     
     private EnemyOverworldStateMachine _context;
@@ -16,6 +18,8 @@ public class EnemyOverworldStateFactory
         _context = currentContext;
         _states[States.Idle] = new EnemyOverworldIdleState(_context, this);
         _states[States.Walk] = new EnemyOverworldWalkState(_context, this);
+        _states[States.Jump] = new EnemyOverworldJumpState(_context, this);
+        _states[States.Attack] = new EnemyOverworldAttackState(_context, this);
     }
 
     public EnemyOverworldBaseState Idle()
@@ -26,5 +30,15 @@ public class EnemyOverworldStateFactory
     public EnemyOverworldBaseState Walk()
     {
         return _states[States.Walk];
+    }
+
+    public EnemyOverworldBaseState Jump()
+    {
+        return _states[States.Jump];
+    }
+
+    public EnemyOverworldBaseState Attack()
+    {
+        return _states[States.Attack];
     }
 }

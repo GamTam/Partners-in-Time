@@ -475,7 +475,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33393927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.52, z: -15}
+  m_LocalPosition: {x: -2.07, y: 0.52, z: -16.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -513,11 +513,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd80d6c038ca2f4c8aba6e2b5c45d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
-  _xLimit: 5
-  _zLimit: 5
-  _animPrefix: goomba
   _child: {fileID: 1498865915}
+  _animPrefix: goomba
+  _moveSpeed: 5
+  _idleTime: 2
+  _xLimit: 10
+  _zLimit: 10
+  _stationaryAttack: 0
+  _moveAttackSpeed: 7
+  _radius: 4
+  _angle: 100
+  _targetMask:
+    serializedVersion: 2
+    m_Bits: 64
+  _playerRef: {fileID: 1097153015}
 --- !u!1 &62719169
 GameObject:
   m_ObjectHideFlags: 3
@@ -38754,7 +38763,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh48286
+  m_Name: pb_Mesh27974
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39316,7 +39325,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh48368
+  m_Name: pb_Mesh28058
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39611,7 +39620,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh48272
+  m_Name: pb_Mesh27960
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40545,7 +40554,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7781818, y: 1}
+    m_SensorSize: {x: 1.7774936, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
