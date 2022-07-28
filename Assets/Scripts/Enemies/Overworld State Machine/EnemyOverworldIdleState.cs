@@ -12,6 +12,14 @@ public class EnemyOverworldIdleState : EnemyOverworldBaseState, IEnemyOverworldR
 
     public override void UpdateState()
     {
+        if(_ctx.FloatingEnemy) {
+            Vector3 destination = new Vector3(_ctx.Child.transform.position.x, _ctx.InitChildPosition.y, _ctx.Child.transform.position.z);
+
+            if(_ctx.Child.transform.position != destination) {
+                _ctx.Child.transform.position = Vector3.Lerp(_ctx.Child.transform.position, destination, _ctx.FloatSpeed / 2);
+            }
+        }
+
         HandleGravity();
         CheckSwitchStates();
     }
@@ -20,12 +28,17 @@ public class EnemyOverworldIdleState : EnemyOverworldBaseState, IEnemyOverworldR
 
     public override void CheckSwitchStates()
     {
-        if(_ctx.PlayerDetected) {
-
-            SwitchState(_factory.Jump());
-        } else if (_ctx.MoveVector.magnitude > Globals.deadZone)
-        {
-            SwitchState(_factory.Walk());
+        if(!_ctx.IsLookedAt) {
+            if(_ctx.PlayerDetected) {
+                if(!_ctx.FloatingEnemy) {
+                    SwitchState(_factory.Jump());
+                } else {
+                    SwitchState(_factory.Attack());
+                }
+            } else if (_ctx.MoveVector.magnitude > Globals.deadZone && !_ctx.MoveOnDetection)
+            {
+                SwitchState(_factory.Walk());
+            }
         }
     }
 

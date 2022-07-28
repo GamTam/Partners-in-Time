@@ -19,6 +19,12 @@ public class EnemyOverworldStateMachine : Billboard
     [SerializeField] private float _zLimit;
     private Vector3 _startingPos;
     private bool _aiDisabled = false;
+    [SerializeField] private bool _moveOnDetection;
+    [SerializeField] private bool _floatingEnemy;
+    [SerializeField] private bool _shy;
+    [SerializeField] private float _floatSpeed;
+    [SerializeField] private float _floatStrength;
+    private bool _isLookedAt = false;
 
     // Pre-attack Jump
     private float _velocity;
@@ -48,6 +54,7 @@ public class EnemyOverworldStateMachine : Billboard
     [SerializeField] private GameObject _child;
     [SerializeField] private string _animPrefix;
     [SerializeField] private Transform _shadow;
+    private Vector3 _initChildPosition;
     private RaycastHit _hit;
 
     // Getters and Setters
@@ -74,11 +81,21 @@ public class EnemyOverworldStateMachine : Billboard
     public float Velocity { get {return _velocity;} set {_velocity = value;}}
     public float Gravity { get {return _gravity;}}
     public float InitialJumpVelocity { get {return _initialJumpVelocity;}}
+    public bool MoveOnDetection { get {return _moveOnDetection;}}
+    public bool FloatingEnemy { get {return _floatingEnemy;}}
+    public Vector3 StartingPos { get {return _startingPos;}}
+    public bool Shy { get {return _shy;}}
+    public bool IsLookedAt { get {return _isLookedAt;}}
+    public GameObject Child { get {return _child;}}
+    public Vector3 InitChildPosition { get {return _initChildPosition;}}
+    public float FloatSpeed { get {return _floatSpeed;}}
+    public float FloatStrength { get {return _floatStrength;}}
  
     private void Awake() {
         Init(_child);
 
         _startingPos = transform.position;
+        _initChildPosition = _child.transform.position;
 
         // FOV
         StartCoroutine(ViewOfField());
@@ -102,6 +119,9 @@ public class EnemyOverworldStateMachine : Billboard
     }
 
     private void Update() {
+
+        //_isLookedAt = _playerRef.transform.GetComponent<MarioOverworldStateMachine>().BooSpotted;
+
         _currentState.UpdateState();
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
 
@@ -121,14 +141,14 @@ public class EnemyOverworldStateMachine : Billboard
     private IEnumerator EnemyAI() {
         while(true) {
 
-            if(!_aiDisabled) {
+            if(!_aiDisabled && !_moveOnDetection) {
                 yield return new WaitForSeconds(_eam.IsMoving ? Time.deltaTime : _idleTime);
             } else {
                 yield return new WaitForSeconds(Time.deltaTime);
             }
 
 
-            if(!_aiDisabled) {
+            if(!_aiDisabled && !_moveOnDetection) {
                 if(!_eam.IsMoving) {
                     
                     do {
@@ -201,5 +221,10 @@ public class EnemyOverworldStateMachine : Billboard
         } else if(_playerDetected) {
             _playerDetected = false;
         }
+    }
+
+    public void OnBooSpotted(bool isSpotted) {
+        _isLookedAt = isSpotted;
+        Debug.Log(isSpotted);
     }
 }

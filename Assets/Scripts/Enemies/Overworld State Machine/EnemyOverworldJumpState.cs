@@ -7,11 +7,11 @@ public class EnemyOverworldJumpState : EnemyOverworldBaseState, IEnemyOverworldR
 
     public override void EnterState()
     {
-        _ctx.Velocity = _ctx.InitialJumpVelocity;
         _ctx.Eam.IsMoving = false;
         _ctx.AiDisabled = true;
         _ctx.FovDisabled = true;
         _ctx.PlayerDetected = false;
+        _ctx.Velocity = _ctx.InitialJumpVelocity;
     }
 
     public override void UpdateState()

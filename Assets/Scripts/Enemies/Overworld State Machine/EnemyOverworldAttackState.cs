@@ -6,12 +6,25 @@ public class EnemyOverworldAttackState : EnemyOverworldBaseState, IEnemyOverworl
 {
     private Vector3 _newMove;
     private Vector3 _initPlayerPos;
+    private float _floatTimer;
 
     public EnemyOverworldAttackState(EnemyOverworldStateMachine currentContext, EnemyOverworldStateFactory enemyOverworldStateFactory) 
         : base(currentContext, enemyOverworldStateFactory) {}
 
     public override void EnterState()
     {
+        _ctx.Eam.IsMoving = false;
+        _ctx.AiDisabled = true;
+
+        if(!_ctx.MoveOnDetection) {
+            _ctx.PlayerDetected = false;
+            _ctx.FovDisabled = true;
+        }
+
+        if(_ctx.FloatingEnemy) {
+            _floatTimer = 30f;
+        }
+
         _newMove = new Vector3(0f, 0f, 0f);
         _ctx.Velocity = _ctx.Gravity;
         _initPlayerPos = _ctx.PlayerRef.transform.position;
@@ -19,17 +32,53 @@ public class EnemyOverworldAttackState : EnemyOverworldBaseState, IEnemyOverworl
 
     public override void UpdateState()
     {
-        Vector3 moveDirection = _ctx.Eam.GetMoveVector(_initPlayerPos);
+        if(!_ctx.IsLookedAt) {
+            Vector3 moveDirection;
 
-        float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + _ctx.Cam.eulerAngles.y;
-        _ctx.transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+            if(!_ctx.FloatingEnemy) {
+                moveDirection = _ctx.Eam.GetMoveVector(_initPlayerPos);
+            } else {
+                _ctx.transform.LookAt(_ctx.PlayerRef.transform);
+                moveDirection = _ctx.transform.TransformDirection(Vector3.forward);
 
-        _newMove = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-        _ctx.MoveAngle = targetAngle;
+                _floatTimer += Time.deltaTime;
 
-        _newMove = _newMove * _ctx.MoveAttackSpeed * Time.deltaTime;
+                float floatY = _ctx.Child.transform.position.y;
+                floatY = _ctx.InitChildPosition.y + (Mathf.Sin(_floatTimer * _ctx.FloatSpeed) * _ctx.FloatStrength);
+                _ctx.Child.transform.position = new Vector3(_ctx.Child.transform.position.x, floatY, _ctx.Child.transform.position.z);
+            }
 
-        _ctx.Controller.Move(_newMove);
+            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + _ctx.Cam.eulerAngles.y;
+            _ctx.transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+
+            _newMove = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            _ctx.MoveAngle = targetAngle;
+
+            _newMove = _newMove * _ctx.MoveAttackSpeed * Time.deltaTime;
+
+            if(_ctx.FloatingEnemy) {
+                Vector3 maxAngleVector = _ctx.StartingPos + (Vector3.right * _ctx.XLimit) + (Vector3.forward * _ctx.ZLimit);
+                Vector3 minAngleVector = _ctx.StartingPos + (Vector3.left * _ctx.XLimit) + (Vector3.back * _ctx.ZLimit);
+                            
+                if(_ctx.transform.position.x >= maxAngleVector.x && _newMove.x > 0) {
+                    _newMove.x = 0f;
+                }
+                            
+                if(_ctx.transform.position.z >= maxAngleVector.z && _newMove.z > 0) {
+                    _newMove.z = 0f;
+                }
+
+                if(_ctx.transform.position.x <= minAngleVector.x && _newMove.x < 0) {
+                    _newMove.x = 0f;
+                }
+
+                if(_ctx.transform.position.z <= minAngleVector.z && _newMove.z < 0) {
+                    _newMove.z = 0f;
+                }
+            }
+
+            _ctx.Controller.Move(_newMove);
+        }
 
         HandleGravity();
         CheckSwitchStates();
@@ -43,7 +92,15 @@ public class EnemyOverworldAttackState : EnemyOverworldBaseState, IEnemyOverworl
 
     public override void CheckSwitchStates()
     {
-        if(!_ctx.Eam.IsMoving || _ctx.IsOverLimit(_ctx.transform.position)) {
+        if(!_ctx.IsLookedAt) {
+            if(!_ctx.MoveOnDetection) {
+                if(!_ctx.Eam.IsMoving || _ctx.IsOverLimit(_ctx.transform.position)) {
+                    SwitchState(_factory.Idle());
+                }
+            } else if(!_ctx.PlayerDetected) {
+                SwitchState(_factory.Idle());
+            }
+        } else {
             SwitchState(_factory.Idle());
         }
     }

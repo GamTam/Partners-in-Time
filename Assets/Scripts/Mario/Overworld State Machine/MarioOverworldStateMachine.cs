@@ -37,6 +37,7 @@ public class MarioOverworldStateMachine : Billboard
     [SerializeField] private TMP_Text _debugData;
     [SerializeField] private Transform _shadow;
     private RaycastHit _hit;
+    private bool _booSpotted = false;
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
@@ -66,6 +67,7 @@ public class MarioOverworldStateMachine : Billboard
     public float MaxDistance {get {return _maxDistance;}}
     public float CollisionDot {get {return _collisionDot;}}
     public bool LuigiAngleColliding {get {return _angleColliding;}}
+    public bool BooSpotted { get {return _booSpotted;}}
     
     private void Awake()
     {
@@ -101,6 +103,7 @@ public class MarioOverworldStateMachine : Billboard
     void Update()
     {
         Debug.Log(_velocity);
+        FieldOfViewCheck();
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
                            + _playerInput.actions["m_action"].GetBindingDisplayString() + 
@@ -130,5 +133,32 @@ public class MarioOverworldStateMachine : Billboard
     public void OnCollision(object[] args) {
         _collisionDot = (float) args[0];
         _angleColliding = (bool) args[1];
+    }
+
+    private void FieldOfViewCheck() {
+        
+        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, 5f);
+
+        if(rangeChecks.Length != 0) {
+            for(int i = 0; i < rangeChecks.Length; i++) {
+                Transform target = rangeChecks[i].transform;
+
+                if(target.gameObject.tag == "Enemy" && target.gameObject.GetComponent<EnemyOverworldStateMachine>().Shy) {
+                    Vector3 directionToTarget = (target.position - transform.position).normalized;
+
+                    if(Vector3.Angle(transform.forward, directionToTarget) < (160f / 2)) {
+                        //float distanceToTarget = Vector3.Distance(transform.position, target.position);
+                        target.gameObject.SendMessage("OnBooSpotted", true);
+                        // if(!Physics.Raycast(transform.position, directionToTarget, distanceToTarget)) {
+                        //     target.gameObject.SendMessage("OnBooSpotted", true);
+                        // } else {
+                        //     target.gameObject.SendMessage("OnBooSpotted", false);
+                        // }
+                    } else {
+                        target.gameObject.SendMessage("OnBooSpotted", false);
+                    }
+                }
+            }
+        }
     }
 }
