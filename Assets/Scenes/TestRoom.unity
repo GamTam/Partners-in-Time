@@ -40197,7 +40197,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
-  m_LocalRotation: {x: 0.378829, y: 0.000000015923938, z: -0.0000000065182792, w: 0.9254667}
+  m_LocalRotation: {x: 0.378829, y: -0.000000015923927, z: 0.0000000065182744, w: 0.9254667}
   m_LocalPosition: {x: 8.3, y: 11.933001, z: -25.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -40525,7 +40525,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.5
+  m_Height: 1.8
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -40551,7 +40551,7 @@ MonoBehaviour:
   _moveOnDetection: 1
   _floatingEnemy: 1
   _shy: 1
-  _floatSpeed: 6
+  _floatSpeed: 5
   _floatStrength: 0.5
   _stationaryAttack: 0
   _moveAttackSpeed: 5
@@ -40644,7 +40644,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.778306, y: 1}
+    m_SensorSize: {x: 1.7782894, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -40660,7 +40660,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938000780}
-  m_LocalRotation: {x: 0.378829, y: 0.000000015923938, z: -0.0000000065182792, w: 0.9254667}
+  m_LocalRotation: {x: 0.378829, y: -0.000000015923927, z: 0.0000000065182744, w: 0.9254667}
   m_LocalPosition: {x: 8.3, y: 11.933001, z: -25.79}
   m_LocalScale: {x: 1.9366077, y: 0.83533406, z: 1.556065}
   m_ConstrainProportionsScale: 0

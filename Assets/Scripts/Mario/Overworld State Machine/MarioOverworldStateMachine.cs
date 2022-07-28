@@ -37,7 +37,6 @@ public class MarioOverworldStateMachine : Billboard
     [SerializeField] private TMP_Text _debugData;
     [SerializeField] private Transform _shadow;
     private RaycastHit _hit;
-    private bool _booSpotted = false;
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
@@ -67,7 +66,6 @@ public class MarioOverworldStateMachine : Billboard
     public float MaxDistance {get {return _maxDistance;}}
     public float CollisionDot {get {return _collisionDot;}}
     public bool LuigiAngleColliding {get {return _angleColliding;}}
-    public bool BooSpotted { get {return _booSpotted;}}
     
     private void Awake()
     {

@@ -4,8 +4,10 @@ using UnityEngine;
 [CustomEditor(typeof(EnemyOverworldStateMachine))]
 public class EnemyEditor : Editor
 {
+    private EnemyOverworldStateMachine t;
+
     private void OnSceneGUI() {
-        EnemyOverworldStateMachine t = (EnemyOverworldStateMachine) target;
+        t = (EnemyOverworldStateMachine) target;
         Handles.color = Color.white;
         Handles.DrawWireArc(t.transform.position, Vector3.up, Vector3.forward, 360, t.Radius);
 
@@ -21,7 +23,15 @@ public class EnemyEditor : Editor
             Handles.DrawLine(t.transform.position, t.PlayerRef.transform.position);
         }
 
-        Vector3 pos = t.transform.position;
+        Vector3 pos;
+
+        if(!Application.isPlaying) {
+            pos = t.transform.position;
+        } else {
+            pos = t.StartingPos;
+        }
+
+        Debug.Log(pos);
 
         Vector3[] verts = new Vector3[]
         {
