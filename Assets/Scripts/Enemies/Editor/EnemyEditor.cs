@@ -31,8 +31,6 @@ public class EnemyEditor : Editor
             pos = t.StartingPos;
         }
 
-        Debug.Log(pos);
-
         Vector3[] verts = new Vector3[]
         {
             new Vector3(pos.x - t.XLimit, pos.y, pos.z - t.ZLimit),
