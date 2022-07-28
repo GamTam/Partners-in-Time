@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour
         {
             NextLine();
         }
-
+        
         if (!dialogueVertexAnimator.textAnimating)
         {
             _advanceButton.enabled = true;

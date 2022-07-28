@@ -66,9 +66,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "BUT IF WE ARE LIVING IN THE LIGHT, AS GOD IS IN THE LIGHT, \nTHEN WE HAVE
-    FELLOWSHIP WITH EACH OTHER, \nAND THE BLOOD OF JESUS, HIS SON, CLEANSES US FROM
-    ALL SIN"
+  m_text: "This is dummy text. If you're reading this, \nthen something's gone horribly,
+    horribly wrong.\nPlease report your actions leading up to this event."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f69ca41b47814048a3b35f12608fd73, type: 2}
   m_sharedMaterial: {fileID: 7878039055478814383, guid: 2f69ca41b47814048a3b35f12608fd73, type: 2}
@@ -148,6 +147,7 @@ GameObject:
   - component: {fileID: 1939202264199205823}
   - component: {fileID: 1939202264199205821}
   - component: {fileID: 1939202264199205820}
+  - component: {fileID: 2179893114139269171}
   m_Layer: 5
   m_Name: Speech Bubble
   m_TagString: Untagged
@@ -215,6 +215,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2179893114139269171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939202264199205822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8dcc976d43bf1243b0303e709ed4935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _backgroundRectTransform: {fileID: 1939202264199205823}
+  _textMeshPro: {fileID: 1939202262992677108}
+  _minWidth: 50
+  _minHeight: 50
 --- !u!1 &2444468307801532045
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +294,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
     m_TableEntryReference:
-      m_KeyId: 5510246370717696
+      m_KeyId: 6215980339245056
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -322,7 +338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <sprite="Xbox Controller" name="A">
+  m_text: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f69ca41b47814048a3b35f12608fd73, type: 2}
   m_sharedMaterial: {fileID: 7878039055478814383, guid: 2f69ca41b47814048a3b35f12608fd73, type: 2}
