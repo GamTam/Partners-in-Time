@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 1939202264199205823}
   - component: {fileID: 1939202264199205821}
   - component: {fileID: 1939202264199205820}
-  - component: {fileID: 2179893114139269171}
+  - component: {fileID: 4515781722037364617}
   m_Layer: 5
   m_Name: Speech Bubble
   m_TagString: Untagged
@@ -164,7 +164,7 @@ RectTransform:
   m_GameObject: {fileID: 1939202264199205822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1939202262992677111}
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2179893114139269171
+--- !u!114 &4515781722037364617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,11 +224,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1939202264199205822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8dcc976d43bf1243b0303e709ed4935, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b968bedb9f4a2343b53b4257477a346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _backgroundRectTransform: {fileID: 1939202264199205823}
   _textMeshPro: {fileID: 1939202262992677108}
+  _offset: {x: 0, y: 5, z: 0}
   _minWidth: 50
   _minHeight: 50
 --- !u!1 &2444468307801532045
@@ -338,7 +339,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+  m_text: <sprite="Xbox Controller" name="A">
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f69ca41b47814048a3b35f12608fd73, type: 2}
   m_sharedMaterial: {fileID: 7878039055478814383, guid: 2f69ca41b47814048a3b35f12608fd73, type: 2}

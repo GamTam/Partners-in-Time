@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Items:
       - rid: 7564701837450543129
   - m_Id: 5510246404272129
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.jump_action}\">
-      to make both bros. jump
+    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.jump}\"> to
+      make both bros. jump
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -84,6 +84,51 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
+  - m_Id: 6264809012932608
+    m_Localized: "<sp:50><anim:shake>BUT IF WE ARE LIVING IN THE LIGHT,<p:normal>
+      AS GOD IS IN THE LIGHT, \n<p:normal>THEN WE HAVE FELLOWSHIP WITH EACH OTHER,
+      <p:normal>\nAND THE BLOOD OF JESUS,<p:short> HIS SON,<p:short> CLEANSES US
+      FROM ALL SIN</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Localized: "<sp:50><anim:shake>IF WE CLAIM WE HAVE NO SIN,<p:normal> WE ARE
+      ONLY \nFOOLING OURSELVES,<p:normal> AND NOT LIVING IN THE TRUTH</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Localized: '<sp:50><anim:shake>BUT IF WE CONFESS OUR SINS TO HIM,<p:normal>
+      HE IS FAITHFUL <p:normal>
+
+      AND JUST TO FORGIVE US OUR SINS <p:normal>
+
+      AND
+      TO CLEANSE US<p:normal> FROM ALL WICKEDNESS</anim>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Localized: "<sp:50><anim:shake>AND SO I TELL YOU,<p:normal> EVERY KIND OF SIN
+      AND SLANDER\nWILL BE FORGIVEN,<p:normal> BUT <color=red>BLASPHEMY AGAINST THE
+      SPIRIT</color>  <p:normal> \nWILL NOT BE FORGIVEN</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Localized: "<sp:50><anim:shake>IMPURITY,<p:normal> LUST,<p:normal> AND EVIL
+      DESIRES;<p:normal> \nDON'T BE GREEDY,<p:normal> FOR A GREEDY PERSON<p:normal>
+      IS AN IDOLATER,<p:normal>\nWORSHIPPING THE THINGS OF THIS WORLD</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Localized: "<sp:50><anim:shake>BECAUSE OF THESE SINS,<p:normal> \n<color=red><size=200%>THE
+      ANGER OF GOD IS COMING</color>!</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Localized: "<sp:50><anim:shake>NO TEMPTATION HAS OVERTAKEN YOU \nEXCEPT WHAT
+      IS COMMON TO MANKIND.<p:normal> \nAND GOD IS FAITHFUL;<p:normal> \nHE WILL
+      NOT LET YOU BE TEMPTED \nBEYOND WHAT YOU CAN BEAR!</anim>"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

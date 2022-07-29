@@ -22,13 +22,22 @@ MonoBehaviour:
   - name: switch_action
     variable:
       rid: 7564701837450543166
+  - name: m_action
+    variable:
+      rid: 7564702225955553294
+  - name: l_action
+    variable:
+      rid: 7564702225955553295
+  - name: jump
+    variable:
+      rid: 7564702225955553296
   references:
     version: 2
     RefIds:
     - rid: 7564701837450543150
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: MMB
+        m_Value: J
     - rid: 7564701837450543151
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
@@ -37,3 +46,15 @@ MonoBehaviour:
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
         m_Value: Shift
+    - rid: 7564702225955553294
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: J
+    - rid: 7564702225955553295
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: K
+    - rid: 7564702225955553296
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: Press Space

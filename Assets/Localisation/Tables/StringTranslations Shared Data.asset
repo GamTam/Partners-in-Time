@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Key: ui_advance_dialogue
     m_Metadata:
       m_Items: []
+  - m_Id: 6210973573394432
+    m_Key: msg_dummy_text
+    m_Metadata:
+      m_Items: []
   - m_Id: 212437396598788
     m_Key: msg_press_to_start
     m_Metadata:
@@ -67,8 +71,32 @@ MonoBehaviour:
     m_Key: msg_copyright_info
     m_Metadata:
       m_Items: []
-  - m_Id: 6210973573394432
-    m_Key: msg_dummy_text
+  - m_Id: 6264809012932608
+    m_Key: msg_living_in_the_light_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Key: msg_living_in_the_light_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Key: msg_living_in_the_light_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Key: msg_living_in_the_light_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Key: msg_living_in_the_light_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Key: msg_living_in_the_light_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Key: msg_living_in_the_light_7
     m_Metadata:
       m_Items: []
   m_Metadata:

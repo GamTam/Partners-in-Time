@@ -103,9 +103,9 @@ public class LuigiOverworldStateMachine : Billboard
     {
         CheckAngleCollide();
         _currentState.UpdateStates();
-        _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
-                                            + _playerInput.actions["l_action"].GetBindingDisplayString()+ 
-                                            "\"> To " + _actions[_currentAction]);
+        // _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
+        //                                     + _playerInput.actions["l_action"].GetBindingDisplayString()+ 
+        //                                     "\"> To " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
         
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out _hit,

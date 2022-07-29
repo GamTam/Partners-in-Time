@@ -26,7 +26,7 @@ MonoBehaviour:
       m_Items:
       - rid: 7564702225955553283
   - m_Id: 5510246404272129
-    m_Localized: "Dr\xFCcke <sprite=\\\"{global.controller}\\\" name=\\\"{global.jump_action}\\\">
+    m_Localized: "Dr\xFCcke <sprite=\\\"{global.controller}\\\" name=\\\"{global.jump}\\\">
       damit die Br\xFCder gleichzeitig springen"
     m_Metadata:
       m_Items:
@@ -50,7 +50,7 @@ MonoBehaviour:
       m_Items:
       - rid: 7564702225955553283
   - m_Id: 1119172369920000
-    m_Localized: 91.67% Translated
+    m_Localized: 57.89% Translated
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668736
