@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+ using UnityEngine.UI;
 
 [CustomEditor(typeof(EnemyOverworldStateMachine))]
 public class EnemyEditor : Editor
@@ -46,5 +47,17 @@ public class EnemyEditor : Editor
         angleInDegrees += eulerY;
 
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0f, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
+    }
+
+    public override void OnInspectorGUI() {
+        DrawDefaultInspector();
+        
+        if (t.FloatingEnemy) {
+            EditorGUILayout.Space();
+            EditorGUILayout.LabelField("Float", EditorStyles.boldLabel);
+            t.Shy = (bool)EditorGUILayout.Toggle("Shy", t.Shy);
+            t.FloatSpeed = (float)EditorGUILayout.FloatField("Float Speed", t.FloatSpeed);
+            t.FloatStrength = (float)EditorGUILayout.FloatField("Float Strength", t.FloatStrength);
+        }
     }
 }

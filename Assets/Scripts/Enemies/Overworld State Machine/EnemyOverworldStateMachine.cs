@@ -21,9 +21,9 @@ public class EnemyOverworldStateMachine : Billboard
     private bool _aiDisabled = false;
     [SerializeField] private bool _moveOnDetection;
     [SerializeField] private bool _floatingEnemy;
-    [SerializeField] private bool _shy;
-    [SerializeField] private float _floatSpeed;
-    [SerializeField] private float _floatStrength;
+    [HideInInspector][SerializeField] private bool _shy;
+    [HideInInspector][SerializeField] private float _floatSpeed;
+    [HideInInspector][SerializeField] private float _floatStrength;
     private bool _isLookedAt = false;
 
     // Pre-attack Jump
@@ -82,14 +82,14 @@ public class EnemyOverworldStateMachine : Billboard
     public float Gravity { get {return _gravity;}}
     public float InitialJumpVelocity { get {return _initialJumpVelocity;}}
     public bool MoveOnDetection { get {return _moveOnDetection;}}
-    public bool FloatingEnemy { get {return _floatingEnemy;}}
+    public bool FloatingEnemy { get {return _floatingEnemy;} set {_floatingEnemy = value;}}
     public Vector3 StartingPos { get {return _startingPos;}}
-    public bool Shy { get {return _shy;}}
+    public bool Shy { get {return _shy;} set {_shy = value;}}
     public bool IsLookedAt { get {return _isLookedAt;}}
     public GameObject Child { get {return _child;}}
     public Vector3 InitChildPosition { get {return _initChildPosition;}}
-    public float FloatSpeed { get {return _floatSpeed;}}
-    public float FloatStrength { get {return _floatStrength;}}
+    public float FloatSpeed { get {return _floatSpeed;} set {_floatSpeed = value;}}
+    public float FloatStrength { get {return _floatStrength;} set {_floatStrength = value;}}
  
     private void Awake() {
         Init(_child);
