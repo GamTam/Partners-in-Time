@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -26,10 +27,11 @@ public class DialogueManager : MonoBehaviour
         _advanceText = _playerInput.actions["confirm"];
     }
 
-    public void StartText(String[] linesIn)
+    public void StartText(String[] linesIn, Transform parentPos)
     {
         _tempBox = Instantiate(_textBoxPrefab);
         _tempBox.transform.SetParent(GameObject.FindWithTag("UI").transform, false);
+        _tempBox.GetComponent<TextBoxSettings>().ParentPos = parentPos;
 
         TMP_Text[] texts = _tempBox.GetComponentsInChildren<TMP_Text>();
 
@@ -37,7 +39,6 @@ public class DialogueManager : MonoBehaviour
         _advanceButton = texts[1];
         _advanceButton.enabled = false;
         dialogueVertexAnimator = new DialogueVertexAnimator(textBox/*, audioSourceGroup*/);
-        
         
         _playerInput.SwitchCurrentActionMap("Menu");
         lines.Clear();
@@ -56,10 +57,13 @@ public class DialogueManager : MonoBehaviour
         {
             NextLine();
         }
-        
-        if (!dialogueVertexAnimator.textAnimating)
+
+        if (!(dialogueVertexAnimator == null))
         {
-            _advanceButton.enabled = true;
+            if (!dialogueVertexAnimator.textAnimating)
+            {
+                _advanceButton.enabled = true;
+            }
         }
     }
 

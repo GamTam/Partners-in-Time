@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    [TextArea] [SerializeField] private String[] _dialogue;
+    [TextArea(15, 20)] [SerializeField] private String[] _dialogue;
     private static MarioOverworldStateMachine _mar;
     private bool _talkable = false;
     
@@ -30,6 +30,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartText(_dialogue);
+        FindObjectOfType<DialogueManager>().StartText(_dialogue, gameObject.transform);
     }
 }

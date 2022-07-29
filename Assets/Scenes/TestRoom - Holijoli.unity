@@ -2318,6 +2318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 746993566}
   - component: {fileID: 746993568}
+  - component: {fileID: 746993569}
   - component: {fileID: 746993567}
   m_Layer: 5
   m_Name: Mario Action
@@ -2443,6 +2444,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746993565}
   m_CullTransparentMesh: 1
+--- !u!114 &746993569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746993565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
+    m_TableEntryReference:
+      m_KeyId: 5510246400077824
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 746993567}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &756464208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2778,7 +2819,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
     m_TableEntryReference:
-      m_KeyId: 5510246404272128
+      m_KeyId: 5510246404272129
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -3201,15 +3242,15 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_Camera: {fileID: 1800496812}
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -2035739791
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &959333155
@@ -4230,6 +4271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1196235835}
   - component: {fileID: 1196235837}
+  - component: {fileID: 1196235838}
   - component: {fileID: 1196235836}
   m_Layer: 5
   m_Name: Luigi Action
@@ -4355,6 +4397,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196235834}
   m_CullTransparentMesh: 1
+--- !u!114 &1196235838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196235834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
+    m_TableEntryReference:
+      m_KeyId: 5510246400077825
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1196235836}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1240283403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,6 +4807,17 @@ MonoBehaviour:
 
     AND TO CLEANSE
     US<p:normal> FROM ALL WICKEDNESS</anim>'
+  - "<sp:50><anim:shake>AND SO I TELL YOU,<p:normal> EVERY KIND OF SIN AND SLANDER\nWILL
+    BE FORGIVEN,<p:normal> BUT <color=red>BLASPHEMY AGAINST THE SPIRIT</color>  <p:normal>
+    \nWILL NOT BE FORGIVEN</anim>"
+  - "<sp:50><anim:shake>IMPURITY,<p:normal> LUST,<p:normal> AND EVIL DESIRES;<p:normal>
+    \nDON'T BE GREEDY,<p:normal> FOR A GREEDY PERSON<p:normal> IS AN IDOLATER,<p:normal>\nWORSHIPPING
+    THE THINGS OF THIS WORLD</anim>"
+  - "<sp:50><anim:shake>BECAUSE OF THESE SINS,<p:normal> \n<color=red><size=200%>THE
+    ANGER OF GOD IS COMING</color>!</anim>"
+  - "<sp:50><anim:shake>NO TEMPTATION HAS OVERTAKEN YOU \nEXCEPT WHAT IS COMMON TO
+    MANKIND.<p:normal> \nAND GOD IS FAITHFUL;<p:normal> \nHE WILL NOT LET YOU BE
+    TEMPTED \nBEYOND WHAT YOU CAN BEAR!</anim>"
 --- !u!1 &1290949060
 GameObject:
   m_ObjectHideFlags: 0
