@@ -29,6 +29,7 @@ public class LuigiOverworldStateMachine : Billboard
     public Queue<Vector3> _posQueue;
     private Queue<Quaternion> _rotQueue;
     [SerializeField] private int _queueDelay = 5;
+    private bool _stopMovement = false;
 
     // Jump
     private float _velocity;
@@ -69,6 +70,7 @@ public class LuigiOverworldStateMachine : Billboard
     public Queue<Vector3> PosQueue {get {return _posQueue;} set {_posQueue = value;}}
     public Queue<Quaternion> RotQueue {get {return _rotQueue;} set {_rotQueue = value;}}
     public Transform Shadow {get {return _shadow;} set {_shadow = value;}}
+    public bool StopMovement { get {return _stopMovement;} set {_stopMovement = value;}}
 
     private void Awake()
     {

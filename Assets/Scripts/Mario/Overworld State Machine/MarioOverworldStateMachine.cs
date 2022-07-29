@@ -100,7 +100,7 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
-        Debug.Log(_velocity);
+        Debug.Log(IsHittingWall());
         FieldOfViewCheck();
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
@@ -122,10 +122,53 @@ public class MarioOverworldStateMachine : Billboard
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         if(hit.gameObject.tag == "Block" && _currentState is MarioOverworldJumpState) {
-            Debug.Log(_currentState);
             _velocity = 0;
             hit.gameObject.SendMessage("OnBlockHit", "Mario");
         }
+        if(hit.gameObject.tag == "Wall") {
+            float dotProduct = Vector3.Dot(transform.TransformDirection(Vector3.forward), hit.transform.TransformDirection(Vector3.forward));
+            Debug.Log(dotProduct);
+            if(Mathf.Abs(dotProduct) == 1) {
+                _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
+            } else {
+                _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
+            }
+        } else if(hit.moveDirection.y < 0 && !IsHittingWall()) {
+            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
+        }
+    }
+
+    private bool IsHittingWall() {
+        bool isHitting = false;
+        RaycastHit hit;
+
+        Vector3 rayOrigin = transform.position + new Vector3(0f, 1f, 0f);
+
+        if(Physics.Raycast(rayOrigin, Vector3.right, out hit, 0.5f)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                isHitting = true;
+            }
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.forward, out hit, 0.5f)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                isHitting = true;
+            }
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.left, out hit, 0.5f)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                isHitting = true;
+            }
+        }
+
+        if(Physics.Raycast(rayOrigin, Vector3.back, out hit, 0.5f)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                isHitting = true;
+            }
+        }
+
+        return isHitting;
     }
 
     public void OnCollision(object[] args) {
@@ -145,13 +188,7 @@ public class MarioOverworldStateMachine : Billboard
                     Vector3 directionToTarget = (target.position - transform.position).normalized;
 
                     if(Vector3.Angle(transform.forward, directionToTarget) < (160f / 2)) {
-                        //float distanceToTarget = Vector3.Distance(transform.position, target.position);
                         target.gameObject.SendMessage("OnBooSpotted", true);
-                        // if(!Physics.Raycast(transform.position, directionToTarget, distanceToTarget)) {
-                        //     target.gameObject.SendMessage("OnBooSpotted", true);
-                        // } else {
-                        //     target.gameObject.SendMessage("OnBooSpotted", false);
-                        // }
                     } else {
                         target.gameObject.SendMessage("OnBooSpotted", false);
                     }

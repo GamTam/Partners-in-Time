@@ -85,7 +85,7 @@ public class EnemyOverworldStateMachine : Billboard
     public float Gravity { get {return _gravity;}}
     public float InitialJumpVelocity { get {return _initialJumpVelocity;}}
     public bool MoveOnDetection { get {return _moveOnDetection;}}
-    public bool FloatingEnemy { get {return _floatingEnemy;} set {_floatingEnemy = value;}}
+    public bool FloatingEnemy { get {return _floatingEnemy;}}
     public Vector3 StartingPos { get {return _startingPos;}}
     public bool Shy { get {return _shy;} set {_shy = value;}}
     public bool IsLookedAt { get {return _isLookedAt;}}
@@ -211,13 +211,7 @@ public class EnemyOverworldStateMachine : Billboard
             Vector3 directionToTarget = (target.position - transform.position).normalized;
 
             if(Vector3.Angle(transform.forward, directionToTarget) < (_angle / 2)) {
-                float distanceToTarget = Vector3.Distance(transform.position, target.position);
-
-                if(!Physics.Raycast(transform.position, directionToTarget, distanceToTarget)) {
-                    _playerDetected = true;
-                } else {
-                    _playerDetected = false;
-                }
+                _playerDetected = true;
             } else {
                 _playerDetected = false;
             }
@@ -228,6 +222,5 @@ public class EnemyOverworldStateMachine : Billboard
 
     public void OnBooSpotted(bool isSpotted) {
         _isLookedAt = isSpotted;
-        Debug.Log(isSpotted);
     }
 }

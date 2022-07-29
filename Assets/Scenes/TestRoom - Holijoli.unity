@@ -599,8 +599,8 @@ MonoBehaviour:
   _xLimit: 4
   _zLimit: 3
   _moveOnDetection: 1
-  _floatingEnemy: 1
   _shy: 1
+  _floatingEnemy: 1
   _floatSpeed: 6
   _floatStrength: 0.5
   _stationaryAttack: 0
@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 120514332}
   m_Layer: 3
   m_Name: Wall - North
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -759,7 +759,7 @@ Transform:
   m_GameObject: {fileID: 120514330}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -0.2996, y: 9.92, z: -14.14}
-  m_LocalScale: {x: 24.9897, y: 8.48, z: -9.960541}
+  m_LocalScale: {x: 24.9897, y: 8.48, z: 9.960541}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 175129985}
   m_Layer: 3
   m_Name: Tree Walls (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -857,7 +857,7 @@ Transform:
   m_GameObject: {fileID: 175129983}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 8.34, y: 6.46, z: -17.6}
-  m_LocalScale: {x: 5.20826, y: 8.48, z: -4.5353694}
+  m_LocalScale: {x: 5.20826, y: 8.48, z: 4.535369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}
@@ -980,8 +980,8 @@ MonoBehaviour:
   _xLimit: 5
   _zLimit: 3.2
   _moveOnDetection: 0
-  _floatingEnemy: 0
   _shy: 0
+  _floatingEnemy: 0
   _floatSpeed: 0
   _floatStrength: 0
   _stationaryAttack: 0
@@ -1705,7 +1705,7 @@ GameObject:
   - component: {fileID: 506988618}
   m_Layer: 3
   m_Name: Wall - West
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1719,7 +1719,7 @@ Transform:
   m_GameObject: {fileID: 506988616}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -12.67, y: 1.05, z: -23.01}
-  m_LocalScale: {x: 3.2501662, y: 8.48, z: -15.6241665}
+  m_LocalScale: {x: 3.2501662, y: 8.48, z: 15.62417}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}
@@ -2188,7 +2188,7 @@ GameObject:
   - component: {fileID: 633319536}
   m_Layer: 3
   m_Name: Tree Walls (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2202,7 +2202,7 @@ Transform:
   m_GameObject: {fileID: 633319534}
   m_LocalRotation: {x: -0.3720241, y: 0.2165393, z: -0.08969352, w: 0.8981448}
   m_LocalPosition: {x: -9.0194, y: 2.85, z: -21.21}
-  m_LocalScale: {x: 4.3815846, y: 8.48, z: -18.805279}
+  m_LocalScale: {x: 4.3815846, y: 8.48, z: 18.80528}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}
@@ -4445,7 +4445,7 @@ GameObject:
   - component: {fileID: 1093318156}
   m_Layer: 3
   m_Name: Wall - East
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4459,7 +4459,7 @@ Transform:
   m_GameObject: {fileID: 1093318154}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 12.69, y: 1.16, z: -22.9}
-  m_LocalScale: {x: 3.2501662, y: 8.48, z: -15.6241665}
+  m_LocalScale: {x: 3.2501662, y: 8.48, z: 15.62417}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}
@@ -5420,7 +5420,7 @@ GameObject:
   - component: {fileID: 1462122322}
   m_Layer: 3
   m_Name: Wall - South
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5434,7 +5434,7 @@ Transform:
   m_GameObject: {fileID: 1462122320}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -0.1, y: -7.6886, z: -31.7486}
-  m_LocalScale: {x: 24.9897, y: 8.48, z: -10.558711}
+  m_LocalScale: {x: 24.9897, y: 8.48, z: 10.55871}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}
@@ -6308,7 +6308,7 @@ GameObject:
   - component: {fileID: 1740637935}
   m_Layer: 3
   m_Name: Tree Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6322,7 +6322,7 @@ Transform:
   m_GameObject: {fileID: 1740637933}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 9.4264, y: -2.84, z: -26.9}
-  m_LocalScale: {x: 5.20826, y: 8.48, z: -4.5353694}
+  m_LocalScale: {x: 5.20826, y: 8.48, z: 4.535369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}
@@ -6608,7 +6608,7 @@ GameObject:
   - component: {fileID: 1787310339}
   m_Layer: 3
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6765,7 +6765,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
   m_LocalRotation: {x: 0.37905726, y: 0.000000075150226, z: -0.000000030783514, w: 0.92537326}
-  m_LocalPosition: {x: 8.615904, y: 11.933001, z: 2.4100006}
+  m_LocalPosition: {x: 8.591213, y: 11.933001, z: 2.4100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7259,7 +7259,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7760217, y: 1}
+    m_SensorSize: {x: 1.780137, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7995,7 +7995,7 @@ GameObject:
   - component: {fileID: 2143073928}
   m_Layer: 3
   m_Name: Tree Walls (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8009,7 +8009,7 @@ Transform:
   m_GameObject: {fileID: 2143073926}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -4.14, y: -3.01, z: -27.07}
-  m_LocalScale: {x: 1.69, y: 8.48, z: -0.74}
+  m_LocalScale: {x: 1.69, y: 8.48, z: 0.74}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}
@@ -8094,6 +8094,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 110968905797429748, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 110968905797429749, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
       propertyPath: _luigiPos
       value: 
