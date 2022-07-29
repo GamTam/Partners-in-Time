@@ -19,6 +19,9 @@ public class EnemyOverworldStateMachine : Billboard
     [SerializeField] private float _zLimit;
     private Vector3 _startingPos;
     private bool _aiDisabled = false;
+
+    // Behavior
+    [Header("Behavior")]
     [SerializeField] private bool _moveOnDetection;
     [SerializeField] private bool _floatingEnemy;
     [HideInInspector][SerializeField] private bool _shy;
