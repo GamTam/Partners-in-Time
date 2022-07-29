@@ -23,8 +23,8 @@ public class EnemyOverworldStateMachine : Billboard
     // Behavior
     [Header("Behavior")]
     [SerializeField] private bool _moveOnDetection;
+    [SerializeField] private bool _shy;
     [SerializeField] private bool _floatingEnemy;
-    [HideInInspector][SerializeField] private bool _shy;
     [HideInInspector][SerializeField] private float _floatSpeed;
     [HideInInspector][SerializeField] private float _floatStrength;
     private bool _isLookedAt = false;
