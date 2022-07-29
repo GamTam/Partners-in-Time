@@ -75,7 +75,7 @@ public class MarioOverworldStateMachine : Billboard
         
         base.Init(child);
 
-        _lastPosition = transform.position;
+        _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
 
         // Input Setup
         _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
@@ -103,8 +103,8 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
-        if(_lastPosition != transform.position) {
-            _lastPosition = transform.position;
+        if(_lastPosition != new Vector3(transform.position.x, 0f, transform.position.z)) {
+            _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
             _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
         } else {
             _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
