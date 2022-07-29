@@ -37,6 +37,7 @@ public class MarioOverworldStateMachine : Billboard
     [SerializeField] private TMP_Text _debugData;
     [SerializeField] private Transform _shadow;
     private RaycastHit _hit;
+    private Vector3 _lastPosition;
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
@@ -74,6 +75,8 @@ public class MarioOverworldStateMachine : Billboard
         
         base.Init(child);
 
+        _lastPosition = transform.position;
+
         // Input Setup
         _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
         _playerInput.SwitchCurrentActionMap("Overworld");
@@ -100,7 +103,13 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
-        Debug.Log(IsHittingWall());
+        if(_lastPosition != transform.position) {
+            _lastPosition = transform.position;
+            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
+        } else {
+            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
+        }
+
         FieldOfViewCheck();
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
@@ -125,50 +134,6 @@ public class MarioOverworldStateMachine : Billboard
             _velocity = 0;
             hit.gameObject.SendMessage("OnBlockHit", "Mario");
         }
-        if(hit.gameObject.tag == "Wall") {
-            float dotProduct = Vector3.Dot(transform.TransformDirection(Vector3.forward), hit.transform.TransformDirection(Vector3.forward));
-            Debug.Log(dotProduct);
-            if(Mathf.Abs(dotProduct) == 1) {
-                _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
-            } else {
-                _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
-            }
-        } else if(hit.moveDirection.y < 0 && !IsHittingWall()) {
-            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
-        }
-    }
-
-    private bool IsHittingWall() {
-        bool isHitting = false;
-        RaycastHit hit;
-
-        Vector3 rayOrigin = transform.position + new Vector3(0f, 1f, 0f);
-
-        if(Physics.Raycast(rayOrigin, Vector3.right, out hit, 0.5f)) {
-            if(hit.transform.gameObject.tag == "Wall") {
-                isHitting = true;
-            }
-        }
-
-        if(Physics.Raycast(rayOrigin, Vector3.forward, out hit, 0.5f)) {
-            if(hit.transform.gameObject.tag == "Wall") {
-                isHitting = true;
-            }
-        }
-
-        if(Physics.Raycast(rayOrigin, Vector3.left, out hit, 0.5f)) {
-            if(hit.transform.gameObject.tag == "Wall") {
-                isHitting = true;
-            }
-        }
-
-        if(Physics.Raycast(rayOrigin, Vector3.back, out hit, 0.5f)) {
-            if(hit.transform.gameObject.tag == "Wall") {
-                isHitting = true;
-            }
-        }
-
-        return isHitting;
     }
 
     public void OnCollision(object[] args) {
