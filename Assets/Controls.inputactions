@@ -58,6 +58,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "bm_action",
+                    "type": "Button",
+                    "id": "ff3d7252-f13e-47ac-ad18-0bb77f09529f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -366,6 +375,17 @@
                     "processors": "",
                     "groups": "Xbox Control Scheme",
                     "action": "switch_action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d460d7f9-159f-4093-ac38-541af24b297d",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "bm_action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

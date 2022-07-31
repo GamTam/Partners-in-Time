@@ -272,6 +272,7 @@ MonoBehaviour:
   child: {fileID: 110968905104014189}
   _debugData: {fileID: 0}
   _shadow: {fileID: 110968905371429708}
+  _luigiPos: {fileID: 0}
 --- !u!143 &110968905797429748
 CharacterController:
   m_ObjectHideFlags: 0

@@ -5,31 +5,35 @@ using UnityEngine;
 [CustomEditor(typeof(EnemyOverworldStateMachine))]
 public class EnemyEditor : Editor
 {
-    private EnemyOverworldStateMachine t;
+    private RaycastHit _hit;
 
     private void OnSceneGUI() {
-        t = (EnemyOverworldStateMachine) target;
+        EnemyOverworldStateMachine t = (EnemyOverworldStateMachine) target;
+        Vector3 fovVector;
+
+        Raycast(t.transform, t.transform.position, out fovVector);
+
         Handles.color = Color.white;
-        Handles.DrawWireArc(t.transform.position, Vector3.up, Vector3.forward, 360, t.Radius);
+        Handles.DrawWireArc(fovVector, Vector3.up, Vector3.forward, 360, t.Radius);
 
         Vector3 viewAngle01 = DirectionFromAngle(t.transform.eulerAngles.y, -t.Angle / 2);
         Vector3 viewAngle02 = DirectionFromAngle(t.transform.eulerAngles.y, t.Angle / 2);
 
         Handles.color = Color.yellow;
-        Handles.DrawLine(t.transform.position, t.transform.position + viewAngle01 * t.Radius);
-        Handles.DrawLine(t.transform.position, t.transform.position + viewAngle02 * t.Radius);
+        Handles.DrawLine(fovVector, fovVector + viewAngle01 * t.Radius);
+        Handles.DrawLine(fovVector, fovVector + viewAngle02 * t.Radius);
 
         if(t.PlayerDetected) {
             Handles.color = Color.green;
-            Handles.DrawLine(t.transform.position, t.PlayerRef.transform.position);
+            Handles.DrawLine(fovVector, t.PlayerRef.transform.position);
         }
 
         Vector3 pos;
 
         if(!Application.isPlaying) {
-            pos = t.transform.position;
+            Raycast(t.transform, t.transform.position, out pos);
         } else {
-            pos = t.StartingPos;
+            Raycast(t.transform, t.StartingPos, out pos);
         }
 
         Vector3[] verts = new Vector3[]
@@ -49,7 +53,18 @@ public class EnemyEditor : Editor
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0f, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
     }
 
+    private void Raycast(Transform targetTransform, Vector3 original, out Vector3 newVector) {
+        if(Physics.Raycast(targetTransform.position, targetTransform.TransformDirection(Vector3.down), out _hit,
+            Mathf.Infinity)) {
+            newVector = new Vector3(original.x, _hit.point.y, original.z);
+        } else {
+            newVector = original;
+        }
+    }
+
     public override void OnInspectorGUI() {
+        EnemyOverworldStateMachine t = (EnemyOverworldStateMachine) target;
+
         DrawDefaultInspector();
         
         if (t.FloatingEnemy) {

@@ -13,14 +13,19 @@ public class EnemyOverworldIdleState : EnemyOverworldBaseState, IEnemyOverworldR
     public override void UpdateState()
     {
         if(_ctx.FloatingEnemy) {
-            Vector3 destination = new Vector3(_ctx.Child.transform.position.x, _ctx.InitChildPosition.y, _ctx.Child.transform.position.z);
+            Vector3 destination = new Vector3(_ctx.transform.position.x, _ctx.StartingPos.y, _ctx.transform.position.z);
 
-            if(_ctx.Child.transform.position != destination) {
-                _ctx.Child.transform.position = Vector3.Lerp(_ctx.Child.transform.position, destination, _ctx.FloatSpeed / 2);
+            if(_ctx.transform.position != destination) {
+                _ctx.Controller.enabled = false;
+                _ctx.transform.position = Vector3.Lerp(_ctx.transform.position, destination, _ctx.FloatSpeed / 2);
+                _ctx.Controller.enabled = true;
             }
         }
 
-        HandleGravity();
+        if(!_ctx.FloatingEnemy) {
+            HandleGravity();
+        }
+
         CheckSwitchStates();
     }
 

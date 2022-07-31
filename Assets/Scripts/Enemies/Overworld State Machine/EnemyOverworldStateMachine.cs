@@ -89,8 +89,6 @@ public class EnemyOverworldStateMachine : Billboard
     public Vector3 StartingPos { get {return _startingPos;}}
     public bool Shy { get {return _shy;} set {_shy = value;}}
     public bool IsLookedAt { get {return _isLookedAt;}}
-    public GameObject Child { get {return _child;}}
-    public Vector3 InitChildPosition { get {return _initChildPosition;}}
     public float FloatSpeed { get {return _floatSpeed;} set {_floatSpeed = value;}}
     public float FloatStrength { get {return _floatStrength;} set {_floatStrength = value;}}
  
@@ -98,7 +96,6 @@ public class EnemyOverworldStateMachine : Billboard
         Init(_child);
 
         _startingPos = transform.position;
-        _initChildPosition = _child.transform.position;
 
         // FOV
         StartCoroutine(ViewOfField());
@@ -122,9 +119,6 @@ public class EnemyOverworldStateMachine : Billboard
     }
 
     private void Update() {
-
-        //_isLookedAt = _playerRef.transform.GetComponent<MarioOverworldStateMachine>().BooSpotted;
-
         _currentState.UpdateState();
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
 

@@ -40,12 +40,6 @@ public class EnemyOverworldAttackState : EnemyOverworldBaseState, IEnemyOverworl
             } else {
                 _ctx.transform.LookAt(_ctx.PlayerRef.transform);
                 moveDirection = _ctx.transform.TransformDirection(Vector3.forward);
-
-                _floatTimer += Time.deltaTime;
-
-                float floatY = _ctx.Child.transform.position.y;
-                floatY = _ctx.InitChildPosition.y + (Mathf.Sin(_floatTimer * _ctx.FloatSpeed) * _ctx.FloatStrength);
-                _ctx.Child.transform.position = new Vector3(_ctx.Child.transform.position.x, floatY, _ctx.Child.transform.position.z);
             }
 
             float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + _ctx.Cam.eulerAngles.y;
@@ -78,9 +72,23 @@ public class EnemyOverworldAttackState : EnemyOverworldBaseState, IEnemyOverworl
             }
 
             _ctx.Controller.Move(_newMove);
+
+            if(_ctx.FloatingEnemy) {
+                _floatTimer += Time.deltaTime;
+
+                float floatY = _ctx.transform.position.y;
+                floatY = _ctx.StartingPos.y + (Mathf.Sin(_floatTimer * _ctx.FloatSpeed) * _ctx.FloatStrength);
+
+                _ctx.Controller.enabled = false;
+                _ctx.transform.position = new Vector3(_ctx.transform.position.x, floatY, _ctx.transform.position.z);
+                _ctx.Controller.enabled = true;
+            }
         }
 
-        HandleGravity();
+        if(!_ctx.FloatingEnemy) {
+            HandleGravity();
+        }
+
         CheckSwitchStates();
     }
 

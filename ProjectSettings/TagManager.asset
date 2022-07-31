@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Wall
   - Floor
+  - 2D Cam
   layers:
   - Default
   - TransparentFX
