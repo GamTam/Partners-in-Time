@@ -70,7 +70,6 @@ public class EnemyEditor : Editor
         if (t.FloatingEnemy) {
             EditorGUILayout.Space();
             EditorGUILayout.LabelField("Float", EditorStyles.boldLabel);
-            t.Shy = (bool)EditorGUILayout.Toggle("Shy", t.Shy);
             t.FloatSpeed = (float)EditorGUILayout.FloatField("Float Speed", t.FloatSpeed);
             t.FloatStrength = (float)EditorGUILayout.FloatField("Float Strength", t.FloatStrength);
         }
