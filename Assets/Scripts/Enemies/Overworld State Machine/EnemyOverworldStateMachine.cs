@@ -132,8 +132,12 @@ public class EnemyOverworldStateMachine : Billboard
         }
 
         if(!_marioRef.GetComponent<MarioOverworldStateMachine>().InputDisabled) {
+            _babyMarioRef.GetComponent<BMarioOverworldStateMachine>().FovDisabled = true;
+            _marioRef.GetComponent<MarioOverworldStateMachine>().FovDisabled = false;
             _playerRef = _marioRef;
         } else {
+            _babyMarioRef.GetComponent<BMarioOverworldStateMachine>().FovDisabled = false;
+            _marioRef.GetComponent<MarioOverworldStateMachine>().FovDisabled = true;
             _playerRef = _babyMarioRef;
         }
     }

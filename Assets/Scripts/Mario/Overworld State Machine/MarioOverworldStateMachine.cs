@@ -42,6 +42,7 @@ public class MarioOverworldStateMachine : Billboard
     [SerializeField] private Transform _shadow;
     private RaycastHit _hit;
     private Vector3 _lastPosition;
+    private bool _fovDisabled = false;
 
     // Babies
     [SerializeField] private GameObject _babyMarioRef;
@@ -75,6 +76,7 @@ public class MarioOverworldStateMachine : Billboard
     public float CollisionDot {get {return _collisionDot;}}
     public bool LuigiAngleColliding {get {return _angleColliding;}}
     public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; }}
+    public bool FovDisabled { get { return _fovDisabled; } set { _fovDisabled = value; }}
     
     private void Awake()
     {
@@ -127,7 +129,10 @@ public class MarioOverworldStateMachine : Billboard
             _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
         }
 
-        FieldOfViewCheck();
+        if(!_fovDisabled) {
+            FieldOfViewCheck();
+        }
+
         _currentState.UpdateStates();
         _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
                            + _playerInput.actions["m_action"].GetBindingDisplayString() + 
