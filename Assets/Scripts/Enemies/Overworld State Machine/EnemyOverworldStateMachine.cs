@@ -47,7 +47,9 @@ public class EnemyOverworldStateMachine : Billboard
     [Range(0, 360)]
     [SerializeField] private float _angle;
     [SerializeField] private LayerMask _targetMask;
-    [SerializeField] private GameObject _playerRef;
+    [SerializeField] private GameObject _marioRef;
+    [SerializeField] private GameObject _babyMarioRef;
+    private GameObject _playerRef;
     private bool _playerDetected = false;
     private bool _fovDisabled = false;
 
@@ -127,6 +129,12 @@ public class EnemyOverworldStateMachine : Billboard
         {
             _shadow.transform.position = new Vector3(_shadow.transform.position.x, _hit.point.y,
                 _shadow.transform.position.z);
+        }
+
+        if(!_marioRef.GetComponent<MarioOverworldStateMachine>().InputDisabled) {
+            _playerRef = _marioRef;
+        } else {
+            _playerRef = _babyMarioRef;
         }
     }
 
