@@ -12,6 +12,7 @@ public class MarioOverworldStateMachine : Billboard
     private PlayerInput _playerInput;
     private InputAction _mAction;
     private InputAction _bmAction;
+    private InputAction _blAction;
     private InputAction _switchAction;
     private InputAction _jump;
     private InputAction _moveVector;
@@ -50,6 +51,7 @@ public class MarioOverworldStateMachine : Billboard
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
+    private LuigiOverworldStateMachine _luigiSM;
     private float _maxDistance = 1.8f;
     private float _collisionDot;
     private bool _angleColliding;
@@ -76,8 +78,8 @@ public class MarioOverworldStateMachine : Billboard
     public float MaxDistance {get {return _maxDistance;}}
     public float CollisionDot {get {return _collisionDot;}}
     public bool LuigiAngleColliding {get {return _angleColliding;}}
-    public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; }}
-    public bool FovDisabled { get { return _fovDisabled; } set { _fovDisabled = value; }}
+    public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; } }
+    public bool FovDisabled { get { return _fovDisabled; } set { _fovDisabled = value; } }
     
     private void Awake()
     {
@@ -88,12 +90,15 @@ public class MarioOverworldStateMachine : Billboard
 
         _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
 
+        _luigiSM = _luigiPos.GetComponent<LuigiOverworldStateMachine>();
+
         // Input Setup
         _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
         _playerInput.SwitchCurrentActionMap("Overworld");
         
         _mAction = _playerInput.actions["m_action"];
         _bmAction = _playerInput.actions["bm_action"];
+        _blAction = _playerInput.actions["bl_action"];
         _switchAction = _playerInput.actions["switch_action"];
         _jump = _playerInput.actions["jump"];
         _moveVector = _playerInput.actions["move"];
@@ -120,19 +125,29 @@ public class MarioOverworldStateMachine : Billboard
         if(_wallTransform) {
             Debug.Log(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward)));
         }
-        if(_bmAction.triggered) {
-            _babyMarioRef.GetComponent<BMarioOverworldStateMachine>().InputDisabled = false;
+        if(_bmAction.triggered || _blAction.triggered) {
+            BMarioOverworldStateMachine babyMarioSM = _babyMarioRef.GetComponent<BMarioOverworldStateMachine>();
+
+            babyMarioSM.InputDisabled = false;
             _inputDisabled = true;
             _virtualCam.Follow = _babyMarioRef.transform;
+        }
+
+        if(_inputDisabled) {
+            _sprite.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            _luigiSM.Sprite.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        } else {
+            _sprite.color = new Color(1f, 1f, 1f, 1f);
+            _luigiSM.Sprite.color = new Color(1f, 1f, 1f, 1f);
         }
 
         if(_lastPosition == new Vector3(transform.position.x, 0f, transform.position.z) ||
         (Vector3.Distance(transform.position, _luigiPos.position) < (_maxDistance / 2) && IsHittingWall() &&
         Mathf.Abs(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward))) > 0.7f)) {
-            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
+            _luigiSM.StopMovement = true;
         } else {
             _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
-            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
+            _luigiSM.StopMovement = false;
         }
 
         if(!_fovDisabled) {

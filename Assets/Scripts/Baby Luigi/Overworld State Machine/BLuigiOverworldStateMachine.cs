@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Dynamic;
 
-public class LuigiOverworldStateMachine : Billboard
+public class BLuigiOverworldStateMachine : Billboard
 {
     // Input
     private PlayerInput _playerInput;
@@ -21,8 +21,8 @@ public class LuigiOverworldStateMachine : Billboard
     private int _currentAction = 0;
 
     // State Machine
-    private LuigiOverworldBaseState _currentState;
-    private LuigiOverworldStateFactory _states;
+    private BLuigiOverworldBaseState _currentState;
+    private BLuigiOverworldStateFactory _states;
     
     // Mario
     [SerializeField] public Transform _marioPos;
@@ -36,7 +36,7 @@ public class LuigiOverworldStateMachine : Billboard
     private float _gravity;
     private float _initialJumpVelocity;
     private float _fallMultiplier = 2f;
-    private float _maxJumpHeight = 4f;
+    private float _maxJumpHeight = 2.5f;
     private float _maxJumpTime = 0.75f;
 
     // Misc.
@@ -48,7 +48,7 @@ public class LuigiOverworldStateMachine : Billboard
     private bool _angleColliding = false;
     
     // Getters and Setters
-    public LuigiOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
+    public BLuigiOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
     public bool Action { get { return _action.triggered; } }
     public bool SwitchAction { get { return _switchAction.triggered; } }
     public int CurrentAction { get { return _currentAction; } set { _currentAction = value; } }
@@ -80,7 +80,7 @@ public class LuigiOverworldStateMachine : Billboard
         // Input Setup
         _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
         
-        _action = _playerInput.actions["l_action"];
+        _action = _playerInput.actions["bl_action"];
         _switchAction = _playerInput.actions["switch_action"];
         _jump = _playerInput.actions["jump"];
         _moveVector = _playerInput.actions["move"];
@@ -97,7 +97,7 @@ public class LuigiOverworldStateMachine : Billboard
         _rotQueue = new Queue<Quaternion>();
         
         // State Machine Setup
-        _states = new LuigiOverworldStateFactory(this);
+        _states = new BLuigiOverworldStateFactory(this);
         _currentState = _states.Grounded();
         _currentState.EnterState();
     }
@@ -106,9 +106,9 @@ public class LuigiOverworldStateMachine : Billboard
     {
         CheckAngleCollide();
         _currentState.UpdateStates();
-        _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
-                                            + _playerInput.actions["l_action"].GetBindingDisplayString()+ 
-                                            "\"> To " + _actions[_currentAction]);
+        // _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
+        //                                     + _playerInput.actions["l_action"].GetBindingDisplayString()+ 
+        //                                     "\"> To " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
         
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out _hit,
@@ -130,7 +130,7 @@ public class LuigiOverworldStateMachine : Billboard
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
-        if(hit.gameObject.tag == "Block" && _currentState is LuigiOverworldJumpState)
+        if(hit.gameObject.tag == "Block" && _currentState is BLuigiOverworldJumpState)
         {
             _velocity = 0;
             hit.transform.SendMessage("OnBlockHit", "Luigi");
