@@ -3008,7 +3008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cd3abea6e888c49bbcd7c5b9a4dce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _object: {fileID: 1147006386057556677}
+  _object: {fileID: 1672499367}
   _deadZone: 0.25
   _minScale: 0.05
   _maxDistance: 4
@@ -3603,7 +3603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cd3abea6e888c49bbcd7c5b9a4dce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _object: {fileID: 1147006386057556677}
+  _object: {fileID: 2110346871}
   _deadZone: 0.25
   _minScale: 0.05
   _maxDistance: 4
@@ -4794,30 +4794,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ccdc3b7069cf34a9d1d90235b15cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _localize: 1
   _dialogue:
-  - "<sp:50><anim:shake>BUT IF WE ARE LIVING IN THE LIGHT,<p:normal> AS GOD IS IN
-    THE LIGHT, \n<p:normal>THEN WE HAVE FELLOWSHIP WITH EACH OTHER, <p:normal>\nAND
-    THE BLOOD OF JESUS,<p:short> HIS SON,<p:short> CLEANSES US FROM ALL SIN</anim>"
-  - "<sp:50><anim:shake>IF WE CLAIM WE HAVE NO SIN,<p:normal> WE ARE ONLY \nFOOLING
-    OURSELVES,<p:normal> AND NOT LIVING IN THE TRUTH</anim>"
-  - '<sp:50><anim:shake>BUT IF WE CONFESS OUR SINS TO HIM,<p:normal> HE IS FAITHFUL
-    <p:normal>
-
-    AND JUST TO FORGIVE US OUR SINS <p:normal>
-
-    AND TO CLEANSE
-    US<p:normal> FROM ALL WICKEDNESS</anim>'
-  - "<sp:50><anim:shake>AND SO I TELL YOU,<p:normal> EVERY KIND OF SIN AND SLANDER\nWILL
-    BE FORGIVEN,<p:normal> BUT <color=red>BLASPHEMY AGAINST THE SPIRIT</color>  <p:normal>
-    \nWILL NOT BE FORGIVEN</anim>"
-  - "<sp:50><anim:shake>IMPURITY,<p:normal> LUST,<p:normal> AND EVIL DESIRES;<p:normal>
-    \nDON'T BE GREEDY,<p:normal> FOR A GREEDY PERSON<p:normal> IS AN IDOLATER,<p:normal>\nWORSHIPPING
-    THE THINGS OF THIS WORLD</anim>"
-  - "<sp:50><anim:shake>BECAUSE OF THESE SINS,<p:normal> \n<color=red><size=200%>THE
-    ANGER OF GOD IS COMING</color>!</anim>"
-  - "<sp:50><anim:shake>NO TEMPTATION HAS OVERTAKEN YOU \nEXCEPT WHAT IS COMMON TO
-    MANKIND.<p:normal> \nAND GOD IS FAITHFUL;<p:normal> \nHE WILL NOT LET YOU BE
-    TEMPTED \nBEYOND WHAT YOU CAN BEAR!</anim>"
+  - msg_living_in_the_light_1
+  - msg_living_in_the_light_2
+  - msg_living_in_the_light_3
+  - msg_living_in_the_light_4
+  - msg_living_in_the_light_5
+  - msg_living_in_the_light_6
+  - msg_living_in_the_light_7
+  _stringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
 --- !u!1 &1290949060
 GameObject:
   m_ObjectHideFlags: 0
@@ -5962,6 +5950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ccdc3b7069cf34a9d1d90235b15cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _localize: 0
   _dialogue:
   - Memories broken
   - The truth goes unspoken
@@ -5998,6 +5987,9 @@ MonoBehaviour:
   - 'It''s the only thing I''ve ever
 
     <anim:wave>knoooooooooooooooooooooown!</anim>'
+  _stringTable:
+    m_TableReference:
+      m_TableCollectionName: StringTranslations
 --- !u!1 &1724763620
 GameObject:
   m_ObjectHideFlags: 0
@@ -7391,6 +7383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ccdc3b7069cf34a9d1d90235b15cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _localize: 0
   _dialogue:
   - <anim:wave>Welcome<p:short> to the internet!</anim>
   - Have a look around
@@ -7492,6 +7485,9 @@ MonoBehaviour:
 '
   - <sp:100>Obama sent the immigrants to <p:normal>vac<p:short>ci<p:short>nate<p:short>
     your<p:short> kids.
+  _stringTable:
+    m_TableReference:
+      m_TableCollectionName: StringTranslations
 --- !u!1 &2116720983
 GameObject:
   m_ObjectHideFlags: 0
@@ -7538,7 +7534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cd3abea6e888c49bbcd7c5b9a4dce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _object: {fileID: 1147006386057556677}
+  _object: {fileID: 1275422785}
   _deadZone: 0.25
   _minScale: 0.05
   _maxDistance: 4

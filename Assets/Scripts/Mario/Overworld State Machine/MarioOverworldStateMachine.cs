@@ -71,7 +71,7 @@ public class MarioOverworldStateMachine : Billboard
     private void Awake()
     {
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = Int32.MaxValue;
+        Application.targetFrameRate = 60;
         
         base.Init(child);
 

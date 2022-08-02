@@ -50,7 +50,7 @@ MonoBehaviour:
       m_Items:
       - rid: 7564702225955553283
   - m_Id: 1119172369920000
-    m_Localized: 57.89% Translated
+    m_Localized: 100% Translated
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668736
@@ -80,6 +80,52 @@ MonoBehaviour:
       - rid: 7564702225955553283
   - m_Id: 212437396598789
     m_Localized: "2022 GammaDream \nOriginal Game \xA9Nintendo 2005-2006"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6210973573394432
+    m_Localized: "Dies ist ein Blindtext. Wenn du das hier liest, ist etwas schrecklich
+      schief gelaufen. Bitte melde uns deine Schritte, die zu diesem Ergebnis gef\xFChrt
+      haben. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809012932608
+    m_Localized: "<sp:50><anim:shake>ABER WENN WIR IM LICHT LEBEN,<p:normal>SO WIE
+      GOTT,<p:normal>DANNHABEN WIR UNSERE KAMERADSCHAFT,<p:normal>UND DAS BLUT JESUS,<p:short>SEINES
+      SOHNES,<p:short>REINIGT UNS VON UNSERER S\xDCNDEN</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Localized: "<sp:50><anim:shake>WENN WIR BEHAUPTEN WIR W\xC4REN OHNE S\xDCNDE,<p:normal>T\xC4USCHEN
+      WIR UNS NUR SELBST,<p:normal>UND LEBEN SOMIT NICHT IN WAHRHEIT</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Localized: "<sp:50><anim:shake>ABER WENN WIR UNSERE S\xDCNDEN IHM BEICHTEN,<p:normal>IST
+      ER GL\xC4UBIG UND VERGEBT UNSERE S\xDCNDEN,<p:normal>UND REINIGT UNS VON ALLER
+      BOSHEIT</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Localized: "<sp:50><anim:shake>UND SO SAG ICH DIR,<p:normal>JEDE ART DER S\xDCNDE
+      UND VERLEUMDUNG WIRD VERGEBEN,<p:normal>ABER <color=red>BLASPHEMIE GEGEN DEN
+      HEILIGEN GEIST</color>WIRD NICHT VERGEBEN</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Localized: "<sp:50><anim:shake>UNREINHEIT,<p:normal>GEILHEIT,<p:normal>UND
+      B\xD6SE VERLANGEN;<p:normal>SEI NICHT GIERIG,<p:normal>DENN EINE GIERIGE PERSON
+      IST EIN G\xD6TZENDIENER,<p:normal>DER DIE FALSCHEN DINGE DIESER WELT ANBETET</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Localized: "<sp:50><anim:shake>WEGEN DIESE S\xDCNDEN,<p:normal> \n<color=red><size=200%>KOMMT
+      DIE WUT GOTTES!</color></anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Localized: "<sp:50><anim:shake>KEINE VERSUCHUNG HAT DICH \xDCBERKOMMEN, AU\xDFER
+      DAS \xDCBLICHE DER MENSCHHEIT.<p:normal>UND GOTT IST GL\xC4UBIG;<p:normal>ER
+      L\xC4SST DICH NICHTS VERSUCHEN WAS DU NICHT ERTRAGEN KANNST!</anim>"
     m_Metadata:
       m_Items: []
   references:

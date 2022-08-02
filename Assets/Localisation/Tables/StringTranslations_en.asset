@@ -98,29 +98,29 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6264809042292737
     m_Localized: '<sp:50><anim:shake>BUT IF WE CONFESS OUR SINS TO HIM,<p:normal>
-      HE IS FAITHFUL <p:normal>
+      HE IS FAITHFUL
 
       AND JUST TO FORGIVE US OUR SINS <p:normal>
 
       AND
-      TO CLEANSE US<p:normal> FROM ALL WICKEDNESS</anim>'
+      TO CLEANSE US FROM ALL WICKEDNESS</anim>'
     m_Metadata:
       m_Items: []
   - m_Id: 6264809042292738
     m_Localized: "<sp:50><anim:shake>AND SO I TELL YOU,<p:normal> EVERY KIND OF SIN
       AND SLANDER\nWILL BE FORGIVEN,<p:normal> BUT <color=red>BLASPHEMY AGAINST THE
-      SPIRIT</color>  <p:normal> \nWILL NOT BE FORGIVEN</anim>"
+      SPIRIT</color> \nWILL NOT BE FORGIVEN</anim>"
     m_Metadata:
       m_Items: []
   - m_Id: 6264809042292739
     m_Localized: "<sp:50><anim:shake>IMPURITY,<p:normal> LUST,<p:normal> AND EVIL
-      DESIRES;<p:normal> \nDON'T BE GREEDY,<p:normal> FOR A GREEDY PERSON<p:normal>
-      IS AN IDOLATER,<p:normal>\nWORSHIPPING THE THINGS OF THIS WORLD</anim>"
+      DESIRES;<p:normal> \nDON'T BE GREEDY,<p:normal> FOR A GREEDY PERSON IS AN IDOLATER,<p:normal>\nWORSHIPPING
+      THE THINGS OF THIS WORLD</anim>"
     m_Metadata:
       m_Items: []
   - m_Id: 6264809042292740
     m_Localized: "<sp:50><anim:shake>BECAUSE OF THESE SINS,<p:normal> \n<color=red><size=200%>THE
-      ANGER OF GOD IS COMING</color>!</anim>"
+      ANGER OF GOD IS COMING!</color></anim>"
     m_Metadata:
       m_Items: []
   - m_Id: 6264809042292741
