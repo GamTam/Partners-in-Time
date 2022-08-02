@@ -30,7 +30,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (_talkable && _mar.Action)
+        if (_talkable && _mar.MAction)
         {
             TriggerDialogue();
         }
