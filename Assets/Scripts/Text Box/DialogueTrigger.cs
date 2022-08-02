@@ -22,15 +22,12 @@ public class DialogueTrigger : MonoBehaviour
     private void Awake()
     {
         _capsule = gameObject.GetComponent<CapsuleCollider>();
-        if (_mar == null)
-        {
-            _mar = GameObject.FindWithTag("Player").GetComponent<MarioOverworldStateMachine>();
-        }
+        Debug.Log(_capsule.height);
     }
 
     private void Update()
     {
-        if (_talkable && _mar.MAction)
+        if (_talkable && Globals.Mario.MAction)
         {
             TriggerDialogue();
         }

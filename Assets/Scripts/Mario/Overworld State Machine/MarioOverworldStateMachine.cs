@@ -81,6 +81,8 @@ public class MarioOverworldStateMachine : Billboard
     
     private void Awake()
     {
+        Globals.Mario = this;
+        
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
         

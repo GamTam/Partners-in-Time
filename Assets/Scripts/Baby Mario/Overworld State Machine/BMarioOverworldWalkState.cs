@@ -19,7 +19,7 @@ public class BMarioOverworldWalkState : BMarioOverworldBaseState
 
         _newMove = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
         
-        if (_ctx.MoveVector.magnitude > Globals.deadZone) {
+        if (_ctx.MoveVector.magnitude > Globals.DeadZone) {
             _ctx.MoveAngle = targetAngle;
 
             // Vector3 tempMarioPos = _ctx.transform.position;
@@ -80,7 +80,7 @@ public class BMarioOverworldWalkState : BMarioOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SwitchState(_factory.Idle());
         }

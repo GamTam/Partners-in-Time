@@ -30,7 +30,7 @@ public class LuigiOverworldLandingState : LuigiOverworldBaseState, ILuigiOverwor
     public override void CheckSwitchStates()
     {
         
-        if (_ctx.MoveVector.magnitude > Globals.deadZone || 
+        if (_ctx.MoveVector.magnitude > Globals.DeadZone || 
             _ctx.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         {
             SwitchState(_factory.Grounded());
@@ -55,7 +55,7 @@ public class LuigiOverworldLandingState : LuigiOverworldBaseState, ILuigiOverwor
 
     public override void InitializeSubState()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SetSubState(_factory.Idle());
         }

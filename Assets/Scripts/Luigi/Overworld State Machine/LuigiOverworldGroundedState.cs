@@ -65,7 +65,7 @@ public class LuigiOverworldGroundedState : LuigiOverworldBaseState, ILuigiOverwo
 
     public override void InitializeSubState()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SetSubState(_factory.Idle());
         }

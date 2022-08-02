@@ -56,7 +56,7 @@ public class BMarioOverworldGroundedState : BMarioOverworldBaseState, IBMarioOve
 
     public override void InitializeSubState()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SetSubState(_factory.Idle());
         }

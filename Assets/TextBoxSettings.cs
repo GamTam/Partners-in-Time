@@ -32,6 +32,7 @@ public class TextBoxSettings : MonoBehaviour
         _backgroundRectTransform.sizeDelta = new Vector2(_textMeshPro.textBounds.size.x + _minWidth, _textMeshPro.textBounds.size.y + _minHeight);
         
         Vector3 pos = _cam.WorldToScreenPoint(_parentPos.position);
+        Debug.Log(pos);
 
         if (_cam.WorldToScreenPoint(_parentPos.position).y < _cam.pixelHeight / 2)
         {
