@@ -43,6 +43,7 @@ public class MarioOverworldStateMachine : Billboard
     private RaycastHit _hit;
     private Vector3 _lastPosition;
     private bool _fovDisabled = false;
+    private Transform _wallTransform;
 
     // Babies
     [SerializeField] private GameObject _babyMarioRef;
@@ -115,18 +116,23 @@ public class MarioOverworldStateMachine : Billboard
     }
     
     void Update()
-    {
+    {   
+        if(_wallTransform) {
+            Debug.Log(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward)));
+        }
         if(_bmAction.triggered) {
             _babyMarioRef.GetComponent<BMarioOverworldStateMachine>().InputDisabled = false;
             _inputDisabled = true;
             _virtualCam.Follow = _babyMarioRef.transform;
         }
 
-        if(_lastPosition != new Vector3(transform.position.x, 0f, transform.position.z)) {
+        if(_lastPosition == new Vector3(transform.position.x, 0f, transform.position.z) ||
+        (Vector3.Distance(transform.position, _luigiPos.position) < (_maxDistance / 2) && IsHittingWall() &&
+        Mathf.Abs(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward))) > 0.7f)) {
+            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
+        } else {
             _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
             _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
-        } else {
-            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
         }
 
         if(!_fovDisabled) {
@@ -182,5 +188,44 @@ public class MarioOverworldStateMachine : Billboard
                 }
             }
         }
+    }
+
+    private bool IsHittingWall() {
+        bool IsHitting = false;
+        RaycastHit hit;
+
+        if(Physics.Raycast(transform.position, Vector3.back, out hit,
+         _controller.radius + _controller.skinWidth)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                IsHitting = true;
+                _wallTransform = hit.transform;
+            }
+        }
+
+        if(Physics.Raycast(transform.position, Vector3.forward, out hit,
+         _controller.radius + _controller.skinWidth)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                IsHitting = true;
+                _wallTransform = hit.transform;
+            }
+        }
+
+        if(Physics.Raycast(transform.position, Vector3.left, out hit,
+         _controller.radius + _controller.skinWidth)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                IsHitting = true;
+                _wallTransform = hit.transform;
+            }
+        }
+
+        if(Physics.Raycast(transform.position, Vector3.right, out hit,
+         _controller.radius + _controller.skinWidth)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                IsHitting = true;
+                _wallTransform = hit.transform;
+            }
+        }
+
+        return IsHitting;
     }
 }

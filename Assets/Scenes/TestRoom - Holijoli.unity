@@ -978,8 +978,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 5
   _idleTime: 2
-  _xLimit: 5
-  _zLimit: 3.2
+  _xLimit: 3
+  _zLimit: 3
   _moveOnDetection: 0
   _shy: 0
   _floatingEnemy: 0
@@ -1005,7 +1005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237669858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.38, y: -0.22637403, z: -4.100993}
+  m_LocalPosition: {x: -9.03, y: -0.22637403, z: -6.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1643,7 +1643,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -6686,7 +6686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
   m_LocalRotation: {x: 0.37905726, y: 0.000000075150226, z: -0.000000030783514, w: 0.92537326}
-  m_LocalPosition: {x: 8.595112, y: 11.933001, z: 2.4100006}
+  m_LocalPosition: {x: 8.6085415, y: 11.933001, z: 2.4100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7128,7 +7128,7 @@ GameObject:
   - component: {fileID: 1880579202}
   - component: {fileID: 1880579201}
   - component: {fileID: 1880579200}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7294,7 +7294,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7794871, y: 1}
+    m_SensorSize: {x: 1.7772486, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7436,7 +7436,7 @@ GameObject:
   - component: {fileID: 2016327423}
   - component: {fileID: 2016327422}
   - component: {fileID: 2016327421}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7470,7 +7470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cd3abea6e888c49bbcd7c5b9a4dce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _object: {fileID: 1147006386057556677}
+  _object: {fileID: 237669861}
   _deadZone: 0.25
   _minScale: 0.05
   _maxDistance: 4
@@ -8342,11 +8342,11 @@ PrefabInstance:
       objectReference: {fileID: 53012253}
     - target: {fileID: 5266739947051059708, guid: 013e59f29eb91d04eb018068086efb97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.187
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5266739947051059708, guid: 013e59f29eb91d04eb018068086efb97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.185
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5266739947200159838, guid: 013e59f29eb91d04eb018068086efb97, type: 3}
       propertyPath: m_LocalScale.x

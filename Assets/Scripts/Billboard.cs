@@ -27,8 +27,8 @@ public abstract class Billboard : MonoBehaviour
         SetAnimation();
 
         // Quaternion rot = Sprite.transform.rotation;
-        _spriteTransform.transform.rotation = _cam.rotation;
-        _sprite.sortingOrder =  1000000 - (int) (_spriteTransform.transform.position.z * 100);
+        _spriteTransform.rotation = _cam.rotation;
+        _sprite.sortingOrder = 1000000 - (int) (_spriteTransform.position.z * 100);
 
         // Sprite.transform.rotation = Quaternion.Euler(rot.eulerAngles.x, Sprite.transform.rotation.eulerAngles.y, rot.eulerAngles.z);
     }
