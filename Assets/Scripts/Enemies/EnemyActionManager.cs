@@ -12,7 +12,7 @@ public class EnemyActionManager
     private bool _isMoving = false;
 
     // Getters
-    public bool IsMoving { get { return _isMoving; } }
+    public bool IsMoving { get { return _isMoving; } set { _isMoving = value; }}
 
     public EnemyActionManager(GameObject enemy) {
         _enemy = enemy;

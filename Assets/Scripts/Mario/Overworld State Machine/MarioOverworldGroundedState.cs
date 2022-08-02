@@ -38,7 +38,7 @@ public class MarioOverworldGroundedState : MarioOverworldBaseState, IMarioOverwo
         {
             SwitchState(_factory.Jump());
         }
-        else if (_ctx.Action)
+        else if (_ctx.MAction)
         {
             switch (_ctx.Actions[_ctx.CurrentAction])
             {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyOverworldWalkState : EnemyOverworldBaseState
+public class EnemyOverworldWalkState : EnemyOverworldBaseState, IEnemyOverworldRootState
 {
     private Vector3 _newMove;
 
@@ -11,6 +11,7 @@ public class EnemyOverworldWalkState : EnemyOverworldBaseState
     
     public override void EnterState() {
         _newMove = new Vector3(0f, 0f, 0f);
+        _ctx.Velocity = _ctx.Gravity;
     }
 
     public override void UpdateState()
@@ -25,6 +26,7 @@ public class EnemyOverworldWalkState : EnemyOverworldBaseState
 
         _ctx.Controller.Move(_newMove);
 
+        HandleGravity();
         CheckSwitchStates();
     }
 
@@ -34,7 +36,9 @@ public class EnemyOverworldWalkState : EnemyOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if(_ctx.PlayerDetected) {
+            SwitchState(_factory.Jump());
+        } else if (_ctx.MoveVector.magnitude < Globals.deadZone)
         {
             SwitchState(_factory.Idle());
         }
@@ -43,5 +47,9 @@ public class EnemyOverworldWalkState : EnemyOverworldBaseState
     public override void AnimateState()
     {
         _ctx.Animator.Play(_ctx.AnimPrefix + "_walk" + _ctx.Facing);
+    }
+
+    public void HandleGravity() {
+        _ctx.Controller.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
     }
 }

@@ -8,6 +8,10 @@ TagManager:
   - Controller Manager
   - NPC
   - UI
+  - Enemy
+  - Wall
+  - Floor
+  - 2D Cam
   layers:
   - Default
   - TransparentFX

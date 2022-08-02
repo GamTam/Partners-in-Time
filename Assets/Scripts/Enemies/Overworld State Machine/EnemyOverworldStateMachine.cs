@@ -4,21 +4,63 @@ using UnityEngine;
 
 public class EnemyOverworldStateMachine : Billboard
 {
-    // Stats
-    [SerializeField] private float _moveSpeed;
-
-    // Movement
-    private Vector3 _moveVector;
-    private EnemyActionManager _eam;
-    private Vector3 _target;
-
-    // Animation
-    [SerializeField] private string _animPrefix;
-
     // State Machine
     private EnemyOverworldBaseState _currentState;
     private EnemyOverworldStateFactory _states;
+
+    // Movement
+    [Header("Movement")]
+    [SerializeField] private float _moveSpeed;
+    private Vector3 _moveVector;
+    private EnemyActionManager _eam;
+    private Vector3 _target;
+    [SerializeField] private float _idleTime;
+    [SerializeField] private float _xLimit;
+    [SerializeField] private float _zLimit;
+    private Vector3 _startingPos;
+    private bool _aiDisabled = false;
+
+    // Behavior
+    [Header("Behavior")]
+    [SerializeField] private bool _moveOnDetection;
+    [SerializeField] private bool _shy;
+    [SerializeField] private bool _floatingEnemy;
+    [HideInInspector][SerializeField] private float _floatSpeed;
+    [HideInInspector][SerializeField] private float _floatStrength;
+    private bool _isLookedAt = false;
+
+    // Pre-attack Jump
+    private float _velocity;
+    private float _gravity;
+    private float _initialJumpVelocity;
+    private float _maxJumpHeight = 1f;
+    private float _maxJumpTime = 0.25f;
+
+    // Attack
+    [Header("Attack")]
+    [SerializeField] private bool _stationaryAttack;
+    [SerializeField] private float _moveAttackSpeed;
+
+    // FOV
+    [Header("FOV")]
+    [SerializeField] private float _radius;
+    [Range(0, 360)]
+    [SerializeField] private float _angle;
+    [SerializeField] private LayerMask _targetMask;
+    [SerializeField] private GameObject _marioRef;
+    [SerializeField] private GameObject _babyMarioRef;
+    private GameObject _playerRef;
+    private bool _playerDetected = false;
+    private bool _fovDisabled = false;
+
+    // Misc.
+    private CharacterController _controller;
+    [Header("Misc")]
     [SerializeField] private GameObject _child;
+    [SerializeField] private string _animPrefix;
+    [SerializeField] private Transform _shadow;
+    private Vector3 _initChildPosition;
+    private RaycastHit _hit;
 
     // Getters and Setters
     public EnemyOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
@@ -31,12 +73,38 @@ public class EnemyOverworldStateMachine : Billboard
     public float MoveSpeed {get {return _moveSpeed;} }
     public CharacterController Controller { get {return _controller;} }
     public EnemyActionManager Eam { get {return _eam;} }
-
-    // Misc.
-    private CharacterController _controller;
-
+    public float Radius { get {return _radius;} }
+    public float Angle { get {return _angle;} }
+    public bool PlayerDetected { get {return _playerDetected;} set { _playerDetected = value; } }
+    public GameObject PlayerRef { get {return _playerRef;} }
+    public bool StationaryAttack { get {return _stationaryAttack;} }
+    public float XLimit { get {return _xLimit;} }
+    public float ZLimit { get {return _zLimit;} }
+    public bool AiDisabled {get {return _aiDisabled;} set {_aiDisabled = value;} }
+    public bool FovDisabled {get {return _fovDisabled;} set {_fovDisabled = value;} }
+    public float MoveAttackSpeed {get {return _moveAttackSpeed;} }
+    public float Velocity { get {return _velocity;} set {_velocity = value;}}
+    public float Gravity { get {return _gravity;}}
+    public float InitialJumpVelocity { get {return _initialJumpVelocity;}}
+    public bool MoveOnDetection { get {return _moveOnDetection;}}
+    public bool FloatingEnemy { get {return _floatingEnemy;}}
+    public Vector3 StartingPos { get {return _startingPos;}}
+    public bool Shy { get {return _shy;} set {_shy = value;}}
+    public bool IsLookedAt { get {return _isLookedAt;}}
+    public float FloatSpeed { get {return _floatSpeed;} set {_floatSpeed = value;}}
+    public float FloatStrength { get {return _floatStrength;} set {_floatStrength = value;}}
+ 
     private void Awake() {
         Init(_child);
+
+        _startingPos = transform.position;
+
+        // FOV
+        StartCoroutine(ViewOfField());
+
+        // Jump Setup
+        _gravity = (-2 * _maxJumpHeight) / Mathf.Pow(_maxJumpTime / 2, 2);
+        _initialJumpVelocity = (2 * _maxJumpHeight) / (_maxJumpTime / 2);
 
         // Misc. Setup
         _controller = GetComponent<CharacterController>();
@@ -55,6 +123,23 @@ public class EnemyOverworldStateMachine : Billboard
     private void Update() {
         _currentState.UpdateState();
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out _hit,
+            Mathf.Infinity))
+        {
+            _shadow.transform.position = new Vector3(_shadow.transform.position.x, _hit.point.y,
+                _shadow.transform.position.z);
+        }
+
+        if(!_marioRef.GetComponent<MarioOverworldStateMachine>().InputDisabled) {
+            _babyMarioRef.GetComponent<BMarioOverworldStateMachine>().FovDisabled = true;
+            _marioRef.GetComponent<MarioOverworldStateMachine>().FovDisabled = false;
+            _playerRef = _marioRef;
+        } else {
+            _babyMarioRef.GetComponent<BMarioOverworldStateMachine>().FovDisabled = false;
+            _marioRef.GetComponent<MarioOverworldStateMachine>().FovDisabled = true;
+            _playerRef = _babyMarioRef;
+        }
     }
 
     protected override void SetAnimation()
@@ -62,40 +147,86 @@ public class EnemyOverworldStateMachine : Billboard
         _currentState.AnimateState();
     }
 
-    IEnumerator EnemyAI() {
-        while (true) {
-            yield return new WaitForSeconds(_eam.IsMoving ? Time.deltaTime : 2f);
+    private IEnumerator EnemyAI() {
+        while(true) {
 
-            if(!_eam.IsMoving) {
-
-                int direction  = Random.Range(1, 5);
-                float distance = Random.Range(2f, 5f);
-
-                _target = transform.position;
-
-                Debug.Log(direction + " : " + distance);
-
-                switch (direction) {
-                    case 1:
-                        // Up
-                        _target += new Vector3(0f, 0f, distance);
-                        break;
-                    case 2:
-                        // Right
-                        _target += new Vector3(distance, 0f, 0f);
-                        break;
-                    case 3:
-                        // Down
-                        _target += new Vector3(0f, 0f, -distance);
-                        break;
-                    case 4:
-                        // Left
-                        _target += new Vector3(-distance, 0f, 0f);
-                        break;
-                }
+            if(!_aiDisabled && !_moveOnDetection) {
+                yield return new WaitForSeconds(_eam.IsMoving ? Time.deltaTime : _idleTime);
+            } else {
+                yield return new WaitForSeconds(Time.deltaTime);
             }
-            
-            _moveVector = _eam.GetMoveVector(_target);
+
+
+            if(!_aiDisabled && !_moveOnDetection) {
+                if(!_eam.IsMoving) {
+                    
+                    do {
+                        int direction  = Random.Range(1, 5);
+                        float distance = Random.Range(2f, 5f);
+
+                        _target = transform.position;
+
+                        switch(direction) {
+                            case 1:
+                                // Up
+                                _target += new Vector3(0f, 0f, distance);
+                                break;
+                            case 2:
+                                // Right
+                                _target += new Vector3(distance, 0f, 0f);
+                                break;
+                            case 3:
+                                // Down
+                                _target += new Vector3(0f, 0f, -distance);
+                                break;
+                            case 4:
+                                // Left
+                                _target += new Vector3(-distance, 0f, 0f);
+                                break;
+                        }
+                    } while(IsOverLimit(_target));
+                }
+
+                _moveVector = _eam.GetMoveVector(_target);
+            }
         }
+    }
+
+    public bool IsOverLimit(Vector3 target) {
+        return (target.x > (_startingPos.x + _xLimit)) || (target.x < (_startingPos.x - _xLimit)) ||
+                    (target.z > (_startingPos.z + _zLimit)) || (target.z < (_startingPos.z - _zLimit));
+    }
+    
+
+    private IEnumerator ViewOfField() {
+        while(true) {
+            yield return new WaitForSeconds(0.1f);
+
+            if(!_fovDisabled) {
+                FieldOfViewCheck();
+            }
+        }
+    }
+
+    private void FieldOfViewCheck() {
+        
+        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, _radius, _targetMask);
+
+        if(rangeChecks.Length != 0) {
+            Transform target = rangeChecks[0].transform;
+            Vector3 directionToTarget = (target.position - transform.position).normalized;
+
+            if(Vector3.Angle(transform.forward, directionToTarget) < (_angle / 2)) {
+                _playerDetected = true;
+            } else {
+                _playerDetected = false;
+            }
+        } else if(_playerDetected) {
+            _playerDetected = false;
+        }
+    }
+
+    public void OnBooSpotted(bool isSpotted) {
+        _isLookedAt = isSpotted;
     }
 }

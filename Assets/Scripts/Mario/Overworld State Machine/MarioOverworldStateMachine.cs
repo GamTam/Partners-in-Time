@@ -4,15 +4,18 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Dynamic;
+using Cinemachine;
 
 public class MarioOverworldStateMachine : Billboard
 {
     // Input
     private PlayerInput _playerInput;
-    private InputAction _action;
+    private InputAction _mAction;
+    private InputAction _bmAction;
     private InputAction _switchAction;
     private InputAction _jump;
     private InputAction _moveVector;
+    private bool _inputDisabled = false;
 
     // Stats
     [SerializeField] private int moveSpeed = 5;
@@ -34,10 +37,16 @@ public class MarioOverworldStateMachine : Billboard
 
     // Misc.
     private CharacterController _controller;
+    private CinemachineVirtualCamera _virtualCam;
     [SerializeField] private GameObject child;
     [SerializeField] private TMP_Text _debugData;
     [SerializeField] private Transform _shadow;
     private RaycastHit _hit;
+    private Vector3 _lastPosition;
+    private bool _fovDisabled = false;
+
+    // Babies
+    [SerializeField] private GameObject _babyMarioRef;
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
@@ -47,14 +56,14 @@ public class MarioOverworldStateMachine : Billboard
     
     // Getters and Setters
     public MarioOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
-    public bool Action { get { return _action.triggered; } }
+    public bool MAction { get { return _mAction.triggered; } }
     public bool SwitchAction { get { return _switchAction.triggered; } }
     public int CurrentAction { get { return _currentAction; } set { _currentAction = value; } }
     public ArrayList Actions { get { return _actions; } }
     public bool Jump { get { return _jump.triggered; } }
     public Animator Animator { get { return _animator; } }
     public string Facing { get { return _facing; } }
-    public Vector2 MoveVector { get {return _moveVector.ReadValue<Vector2>().normalized; } }
+    public Vector2 MoveVector { get {return !_inputDisabled ? _moveVector.ReadValue<Vector2>().normalized : Vector3.zero; } }
     public float MoveAngle {get {return _moveAngle;} set {_moveAngle = value;} }
     public CharacterController Controller {get {return _controller;}}
     public int MoveSpeed {get {return moveSpeed;}}
@@ -67,6 +76,8 @@ public class MarioOverworldStateMachine : Billboard
     public float MaxDistance {get {return _maxDistance;}}
     public float CollisionDot {get {return _collisionDot;}}
     public bool LuigiAngleColliding {get {return _angleColliding;}}
+    public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; }}
+    public bool FovDisabled { get { return _fovDisabled; } set { _fovDisabled = value; }}
     
     private void Awake()
     {
@@ -75,11 +86,14 @@ public class MarioOverworldStateMachine : Billboard
         
         base.Init(child);
 
+        _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
+
         // Input Setup
         _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
         _playerInput.SwitchCurrentActionMap("Overworld");
         
-        _action = _playerInput.actions["m_action"];
+        _mAction = _playerInput.actions["m_action"];
+        _bmAction = _playerInput.actions["bm_action"];
         _switchAction = _playerInput.actions["switch_action"];
         _jump = _playerInput.actions["jump"];
         _moveVector = _playerInput.actions["move"];
@@ -92,6 +106,8 @@ public class MarioOverworldStateMachine : Billboard
 
         // Misc. Setup
         _controller = GetComponent<CharacterController>();
+        _virtualCam = GameObject.FindWithTag("2D Cam").GetComponent<CinemachineVirtualCamera>();
+
         
         // State Machine Setup
         _states = new MarioOverworldStateFactory(this);
@@ -101,6 +117,23 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {
+        if(_bmAction.triggered) {
+            _babyMarioRef.GetComponent<BMarioOverworldStateMachine>().InputDisabled = false;
+            _inputDisabled = true;
+            _virtualCam.Follow = _babyMarioRef.transform;
+        }
+
+        if(_lastPosition != new Vector3(transform.position.x, 0f, transform.position.z)) {
+            _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
+            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
+        } else {
+            _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
+        }
+
+        if(!_fovDisabled) {
+            FieldOfViewCheck();
+        }
+
         _currentState.UpdateStates();
         // _debugData.SetText("Press <sprite=\"" + _playerInput.currentControlScheme + "\" name=\"" 
         //                    + _playerInput.actions["m_action"].GetBindingDisplayString() + 
@@ -121,7 +154,6 @@ public class MarioOverworldStateMachine : Billboard
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         if(hit.gameObject.tag == "Block" && _currentState is MarioOverworldJumpState) {
-            Debug.Log(_currentState);
             _velocity = 0;
             hit.gameObject.SendMessage("OnBlockHit", "Mario");
         }
@@ -149,5 +181,26 @@ public class MarioOverworldStateMachine : Billboard
     public void OnCollision(object[] args) {
         _collisionDot = (float) args[0];
         _angleColliding = (bool) args[1];
+    }
+
+    private void FieldOfViewCheck() {
+        
+        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, 5f);
+
+        if(rangeChecks.Length != 0) {
+            for(int i = 0; i < rangeChecks.Length; i++) {
+                Transform target = rangeChecks[i].transform;
+
+                if(target.gameObject.tag == "Enemy" && target.gameObject.GetComponent<EnemyOverworldStateMachine>().Shy) {
+                    Vector3 directionToTarget = (target.position - transform.position).normalized;
+
+                    if(Vector3.Angle(transform.forward, directionToTarget) < (160f / 2)) {
+                        target.gameObject.SendMessage("OnBooSpotted", true);
+                    } else {
+                        target.gameObject.SendMessage("OnBooSpotted", false);
+                    }
+                }
+            }
+        }
     }
 }
