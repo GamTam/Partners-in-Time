@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 32357019}
   - component: {fileID: 32357018}
   - component: {fileID: 32357017}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boo
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 237669861}
   - component: {fileID: 237669860}
   - component: {fileID: 237669859}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Goomba
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -6706,7 +6706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
   m_LocalRotation: {x: 0.37905726, y: 0.000000075150226, z: -0.000000030783514, w: 0.92537326}
-  m_LocalPosition: {x: 8.603653, y: 11.933001, z: 2.4100006}
+  m_LocalPosition: {x: 8.592369, y: 11.933001, z: 2.4100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7314,7 +7314,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7780634, y: 1}
+    m_SensorSize: {x: 1.7799443, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
