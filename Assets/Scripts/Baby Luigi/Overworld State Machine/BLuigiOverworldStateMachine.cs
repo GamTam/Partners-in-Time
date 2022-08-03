@@ -26,6 +26,7 @@ public class BLuigiOverworldStateMachine : Billboard
     
     // Mario
     [SerializeField] public Transform _marioPos;
+    private BMarioOverworldStateMachine _marioSM;
     public Queue<Vector3> _posQueue;
     private Queue<Quaternion> _rotQueue;
     [SerializeField] private int _queueDelay = 5;
@@ -36,8 +37,8 @@ public class BLuigiOverworldStateMachine : Billboard
     private float _gravity;
     private float _initialJumpVelocity;
     private float _fallMultiplier = 2f;
-    private float _maxJumpHeight = 2.5f;
-    private float _maxJumpTime = 0.75f;
+    private float _maxJumpHeight = 2f;
+    private float _maxJumpTime = 0.5f;
 
     // Misc.
     private CharacterController _controller;
@@ -53,7 +54,7 @@ public class BLuigiOverworldStateMachine : Billboard
     public bool SwitchAction { get { return _switchAction.triggered; } }
     public int CurrentAction { get { return _currentAction; } set { _currentAction = value; } }
     public ArrayList Actions { get { return _actions; } }
-    public bool Jump { get { return _jump.triggered; } }
+    public bool Jump { get { return !_marioSM.InputDisabled ? _jump.triggered : false; } }
     public Animator Animator { get { return _animator; } }
     public string Facing { get { return _facing; } }
     public Vector2 MoveVector { get {return _moveVector.ReadValue<Vector2>().normalized; } }
@@ -76,6 +77,8 @@ public class BLuigiOverworldStateMachine : Billboard
     private void Awake()
     {
         base.Init(child);
+
+        _marioSM = _marioPos.GetComponent<BMarioOverworldStateMachine>();
 
         // Input Setup
         _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();

@@ -32,8 +32,8 @@ public class BMarioOverworldStateMachine : Billboard
     private float _gravity;
     private float _initialJumpVelocity;
     private float _fallMultiplier = 2f;
-    private float _maxJumpHeight = 2.5f;
-    private float _maxJumpTime = 0.75f;
+    private float _maxJumpHeight = 2f;
+    private float _maxJumpTime = 0.5f;
 
     // Misc.
     private CharacterController _controller;
@@ -64,7 +64,7 @@ public class BMarioOverworldStateMachine : Billboard
     public bool SwitchAction { get { return _switchAction.triggered; } }
     public int CurrentAction { get { return _currentAction; } set { _currentAction = value; } }
     public ArrayList Actions { get { return _actions; } }
-    public bool Jump { get { return _jump.triggered; } }
+    public bool Jump { get { return !_inputDisabled ? _jump.triggered : false; } }
     public Animator Animator { get { return _animator; } }
     public string Facing { get { return _facing; } }
     public Vector2 MoveVector { get {return !_inputDisabled ? _moveVector.ReadValue<Vector2>().normalized : Vector3.zero; } }
