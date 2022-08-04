@@ -784,6 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _localize: 0
+  _spriteRenderer: {fileID: 436754523}
   _dialogue:
   - <anim:wave>Welcome<p:short> to the internet!</anim>
   - Have a look around
@@ -885,9 +886,6 @@ MonoBehaviour:
 '
   - <sp:100>Obama sent the immigrants to <p:normal>vac<p:short>ci<p:short>nate<p:short>
     your<p:short> kids.
-  _stringTable:
-    m_TableReference:
-      m_TableCollectionName: StringTranslations
 --- !u!136 &59953138
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2157,6 +2155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _localize: 0
+  _spriteRenderer: {fileID: 263178877}
   _dialogue:
   - Memories broken
   - The truth goes unspoken
@@ -2193,9 +2192,6 @@ MonoBehaviour:
   - 'It''s the only thing I''ve ever
 
     <anim:wave>knoooooooooooooooooooooown!</anim>'
-  _stringTable:
-    m_TableReference:
-      m_TableCollectionName: StringTranslations
 --- !u!136 &450329504
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5668,6 +5664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _localize: 1
+  _spriteRenderer: {fileID: 1896633408}
   _dialogue:
   - msg_living_in_the_light_1
   - msg_living_in_the_light_2
@@ -5676,9 +5673,6 @@ MonoBehaviour:
   - msg_living_in_the_light_5
   - msg_living_in_the_light_6
   - msg_living_in_the_light_7
-  _stringTable:
-    m_TableReference:
-      m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
 --- !u!136 &1344724529
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7111,8 +7105,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787310337}
   m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -0.05, y: -1.4889, z: -20.5089}
-  m_LocalScale: {x: 22.238613, y: 0.1, z: 15.123793}
+  m_LocalPosition: {x: -0.0376, y: -1.5264, z: -20.5464}
+  m_LocalScale: {x: 22.214151, y: 0.1, z: 15.017925}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977504415}

@@ -9,21 +9,15 @@ using UnityEngine.Localization.Tables;
 public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] private bool _localize;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
     [TextArea(15, 20)] [SerializeField] private string[] _dialogue;
-    [SerializeField] private LocalizedStringTable _stringTable = new LocalizedStringTable { TableReference = "StringTranslations" };
-
-    private CapsuleCollider _capsule;
+    
+    private LocalizedStringTable _stringTable = new LocalizedStringTable { TableReference = "StringTranslations" };
 
     private static MarioOverworldStateMachine _mar;
     private bool _talkable = false;
     
     public bool Talkable {get {return _talkable;} set {_talkable = value;}}
-
-    private void Awake()
-    {
-        _capsule = gameObject.GetComponent<CapsuleCollider>();
-        Debug.Log(_capsule.height);
-    }
 
     private void Update()
     {
@@ -55,6 +49,6 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
         
-        FindObjectOfType<DialogueManager>().StartText(dialogue, gameObject.transform, _capsule.height);
+        FindObjectOfType<DialogueManager>().StartText(dialogue, gameObject.transform, _spriteRenderer);
     }
 }
