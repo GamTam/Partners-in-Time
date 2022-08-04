@@ -33,10 +33,10 @@ public class TextBoxSettings : MonoBehaviour
         _cam = Camera.main;
         _parentPos = transform;
         
-        Update();
+        LateUpdate();
     }
     
-    void Update()
+    void LateUpdate()
     {
         Vector3 min = _spriteRenderer.bounds.min;
         Vector3 max = _spriteRenderer.bounds.max;
@@ -50,7 +50,7 @@ public class TextBoxSettings : MonoBehaviour
         
         Vector3 pos = _cam.WorldToScreenPoint(_spriteRenderer.bounds.center);
 
-        if (_cam.WorldToScreenPoint(_parentPos.position).y < _cam.pixelHeight / 2)
+        if (_cam.WorldToScreenPoint(_spriteRenderer.bounds.center).y < _cam.pixelHeight / 2)
         {
             transform.position = new Vector3(pos.x, pos.y + (_backgroundRectTransform.sizeDelta.y / 2) + (boxHeight / 2), pos.z);
             
