@@ -54,7 +54,7 @@ public class BLuigiOverworldJumpState : BLuigiOverworldBaseState, IBLuigiOverwor
 
     public override void AnimateState()
     {
-       _ctx.Animator.Play("bl_jump" + _ctx.Facing);
+       _ctx.CAnimator.Play("bl_jump" + _ctx.Facing);
     }
 
     public void HandleGravity()

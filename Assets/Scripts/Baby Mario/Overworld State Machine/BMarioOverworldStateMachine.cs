@@ -82,6 +82,7 @@ public class BMarioOverworldStateMachine : Billboard
     public bool LuigiAngleColliding {get {return _angleColliding;}}
     public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; }}
     public bool FovDisabled { get { return _fovDisabled; } set { _fovDisabled = value; }}
+    public CustomAnimator CAnimator { get { return _cAnimator; } }
     
     private void Awake()
     {

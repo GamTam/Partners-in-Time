@@ -46,7 +46,7 @@ public class EnemyOverworldWalkState : EnemyOverworldBaseState, IEnemyOverworldR
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play(_ctx.AnimPrefix + "_walk" + _ctx.Facing);
+        _ctx.CAnimator.Play(_ctx.AnimPrefix + "_walk" + _ctx.Facing);
     }
 
     public void HandleGravity() {

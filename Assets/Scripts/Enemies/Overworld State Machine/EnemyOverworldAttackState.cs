@@ -115,7 +115,7 @@ public class EnemyOverworldAttackState : EnemyOverworldBaseState, IEnemyOverworl
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play(_ctx.AnimPrefix + "_walk" + _ctx.Facing);
+        _ctx.CAnimator.Play(_ctx.AnimPrefix + "_walk" + _ctx.Facing);
     }
 
     public void HandleGravity() {

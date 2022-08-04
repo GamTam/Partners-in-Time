@@ -73,6 +73,7 @@ public class LuigiOverworldStateMachine : Billboard
     public Transform Shadow {get {return _shadow;} set {_shadow = value;}}
     public bool StopMovement { get {return _stopMovement;} set {_stopMovement = value;}}
     public SpriteRenderer Sprite { get { return _sprite; } }
+    public CustomAnimator CAnimator { get { return _cAnimator; } }
 
     private void Awake()
     {
@@ -156,22 +157,22 @@ public class LuigiOverworldStateMachine : Billboard
 
         _angleColliding = false;
 
-        if(Physics.Raycast(rayOrigin, Vector3.right, 0.5f)) {
+        if(Physics.Raycast(rayOrigin, Vector3.right, _controller.radius + _controller.skinWidth)) {
             countFR++;
             countBR++;
         }
 
-        if(Physics.Raycast(rayOrigin, Vector3.forward, 0.5f)) {
+        if(Physics.Raycast(rayOrigin, Vector3.forward, _controller.radius + _controller.skinWidth)) {
             countFL++;
             countFR++;
         }
 
-        if(Physics.Raycast(rayOrigin, Vector3.left, 0.5f)) {
+        if(Physics.Raycast(rayOrigin, Vector3.left, _controller.radius + _controller.skinWidth)) {
             countBL++;
             countFL++;
         }
 
-        if(Physics.Raycast(rayOrigin, Vector3.back, 0.5f)) {
+        if(Physics.Raycast(rayOrigin, Vector3.back, _controller.radius + _controller.skinWidth)) {
             countBL++;
             countBR++;
         }

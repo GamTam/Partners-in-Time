@@ -73,6 +73,7 @@ public class BLuigiOverworldStateMachine : Billboard
     public Transform Shadow {get {return _shadow;} set {_shadow = value;}}
     public bool StopMovement { get {return _stopMovement;} set {_stopMovement = value;}}
     public SpriteRenderer Sprite { get { return _sprite; } }
+    public CustomAnimator CAnimator { get { return _cAnimator; } }
 
     private void Awake()
     {

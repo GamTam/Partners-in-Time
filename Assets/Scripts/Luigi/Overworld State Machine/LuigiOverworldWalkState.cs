@@ -61,6 +61,6 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("l_walk" + _ctx.Facing);
+        _ctx.CAnimator.Play("l_walk" + _ctx.Facing);
     }
 }

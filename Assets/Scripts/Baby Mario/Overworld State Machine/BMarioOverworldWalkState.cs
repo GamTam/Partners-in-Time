@@ -93,6 +93,6 @@ public class BMarioOverworldWalkState : BMarioOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("bm_walk" + _ctx.Facing);
+        _ctx.CAnimator.Play("bm_walk" + _ctx.Facing);
     }
 }

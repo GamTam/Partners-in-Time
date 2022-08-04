@@ -80,6 +80,7 @@ public class MarioOverworldStateMachine : Billboard
     public bool LuigiAngleColliding {get {return _angleColliding;}}
     public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; } }
     public bool FovDisabled { get { return _fovDisabled; } set { _fovDisabled = value; } }
+    public CustomAnimator CAnimator { get { return _cAnimator; } }
     
     private void Awake()
     {
@@ -112,7 +113,6 @@ public class MarioOverworldStateMachine : Billboard
         // Misc. Setup
         _controller = GetComponent<CharacterController>();
         _virtualCam = GameObject.FindWithTag("2D Cam").GetComponent<CinemachineVirtualCamera>();
-
         
         // State Machine Setup
         _states = new MarioOverworldStateFactory(this);
@@ -122,9 +122,6 @@ public class MarioOverworldStateMachine : Billboard
     
     void Update()
     {   
-        if(_wallTransform) {
-            Debug.Log(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward)));
-        }
         if(_bmAction.triggered || _blAction.triggered) {
             BMarioOverworldStateMachine babyMarioSM = _babyMarioRef.GetComponent<BMarioOverworldStateMachine>();
 

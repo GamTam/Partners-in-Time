@@ -49,7 +49,7 @@ public class LuigiOverworldFallingState : LuigiOverworldBaseState, ILuigiOverwor
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("l_fall" + _ctx.Facing);
+        _ctx.CAnimator.Play("l_fall" + _ctx.Facing);
     }
 
     public void HandleGravity()

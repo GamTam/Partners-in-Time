@@ -93,6 +93,7 @@ public class EnemyOverworldStateMachine : Billboard
     public bool IsLookedAt { get {return _isLookedAt;}}
     public float FloatSpeed { get {return _floatSpeed;} set {_floatSpeed = value;}}
     public float FloatStrength { get {return _floatStrength;} set {_floatStrength = value;}}
+    public CustomAnimator CAnimator { get { return _cAnimator; } }
  
     private void Awake() {
         Init(_child);

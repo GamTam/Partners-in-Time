@@ -1406,6 +1406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 441224970}
   - component: {fileID: 441224969}
+  - component: {fileID: 441224971}
   - component: {fileID: 441224968}
   m_Layer: 0
   m_Name: Sprite
@@ -1501,6 +1502,18 @@ Transform:
   m_Father: {fileID: 32357019}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &441224971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441224967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c49c66c02cc37d43bdb90c13ed21009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &460768020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 473826086}
   - component: {fileID: 473826085}
+  - component: {fileID: 473826087}
   - component: {fileID: 473826084}
   m_Layer: 0
   m_Name: Sprite
@@ -1703,6 +1717,18 @@ Transform:
   m_Father: {fileID: 237669861}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &473826087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473826083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c49c66c02cc37d43bdb90c13ed21009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &506988616
 GameObject:
   m_ObjectHideFlags: 0
@@ -6706,7 +6732,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
   m_LocalRotation: {x: 0.37905726, y: 0.000000075150226, z: -0.000000030783514, w: 0.92537326}
-  m_LocalPosition: {x: 8.592369, y: 11.933001, z: 2.4100006}
+  m_LocalPosition: {x: 8.6103325, y: 11.933001, z: 2.4100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7314,7 +7340,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7799443, y: 1}
+    m_SensorSize: {x: 1.7769501, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8149,6 +8175,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 110968905797429747, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 110968905797429748, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
       propertyPath: m_Radius
       value: 0.4
@@ -8221,7 +8251,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mario
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6362808585290106482, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
 --- !u!1001 &1147006386057556676
 PrefabInstance:

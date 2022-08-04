@@ -61,6 +61,6 @@ public class BLuigiOverworldWalkState : BLuigiOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("bl_walk" + _ctx.Facing);
+        _ctx.CAnimator.Play("bl_walk" + _ctx.Facing);
     }
 }
