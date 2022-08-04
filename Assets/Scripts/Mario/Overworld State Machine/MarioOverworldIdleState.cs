@@ -27,6 +27,6 @@ public class MarioOverworldIdleState : MarioOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.CAnimator.Play("m_stand" + _ctx.Facing);
+        _ctx.Animator.Play("m_stand" + _ctx.Facing);
     }
 }

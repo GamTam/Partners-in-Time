@@ -22,10 +22,6 @@ public class CustomAnimator : MonoBehaviour
     public void Play(string clipName) {
         AnimationClip[] clips = _animator.runtimeAnimatorController.animationClips;
 
-        if(_previousClip && _previousClip.name.Split("_")[1] != clipName.Split("_")[1]) {
-            _currentFrame = 0;
-        }
-
         int i = 0;
         bool found = false;
 
@@ -57,13 +53,17 @@ public class CustomAnimator : MonoBehaviour
         catch (Exception e) {
             
         }
-        
+
         _currentFrame++;
 
         if(_currentFrame >= sprites.Count) {
-            _currentFrame = 0;
+            if(!AnimationUtility.GetAnimationClipSettings(clip).loopTime) {
+                _currentFrame = sprites.Count - 1;
+            } else {
+                _currentFrame = 0;
+            }
         }
-        
+
         yield return new WaitForSeconds(1f / (clip.frameRate * 1.25f));
         _debounce = false;
     }

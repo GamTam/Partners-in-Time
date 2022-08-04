@@ -49,7 +49,7 @@ public class BLuigiOverworldFallingState : BLuigiOverworldBaseState, IBLuigiOver
 
     public override void AnimateState()
     {
-        _ctx.CAnimator.Play("bl_fall" + _ctx.Facing);
+        _ctx.Animator.Play("bl_fall" + _ctx.Facing);
     }
 
     public void HandleGravity()

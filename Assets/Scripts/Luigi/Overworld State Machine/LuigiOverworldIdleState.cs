@@ -32,6 +32,6 @@ public class LuigiOverworldIdleState : LuigiOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.CAnimator.Play("l_stand" + _ctx.Facing);
+        _ctx.Animator.Play("l_stand" + _ctx.Facing);
     }
 }

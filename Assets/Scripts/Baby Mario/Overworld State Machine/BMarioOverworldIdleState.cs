@@ -27,6 +27,6 @@ public class BMarioOverworldIdleState : BMarioOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.CAnimator.Play("bm_stand" + _ctx.Facing);
+        _ctx.Animator.Play("bm_stand" + _ctx.Facing);
     }
 }

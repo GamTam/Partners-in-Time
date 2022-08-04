@@ -32,6 +32,6 @@ public class BLuigiOverworldIdleState : BLuigiOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.CAnimator.Play("bl_stand" + _ctx.Facing);
+        _ctx.Animator.Play("bl_stand" + _ctx.Facing);
     }
 }
