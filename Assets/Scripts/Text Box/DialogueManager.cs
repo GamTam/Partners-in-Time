@@ -27,12 +27,14 @@ public class DialogueManager : MonoBehaviour
         _advanceText = _playerInput.actions["confirm"];
     }
 
-    public void StartText(String[] linesIn, Transform parentPos, SpriteRenderer offset)
+    public void StartText(String[] linesIn, Transform parentPos, SpriteRenderer spriteRenderer)
     {
         _tempBox = Instantiate(_textBoxPrefab);
         _tempBox.transform.SetParent(GameObject.FindWithTag("UI").transform, false);
-        _tempBox.GetComponent<TextBoxSettings>().ParentPos = parentPos;
-        _tempBox.GetComponent<TextBoxSettings>().SpriteRenderer = offset;
+        TextBoxSettings tempBoxSettings = _tempBox.GetComponent<TextBoxSettings>();
+        tempBoxSettings.ParentPos = parentPos;
+        tempBoxSettings.SpriteRenderer = spriteRenderer;
+        tempBoxSettings.Open();
 
         TMP_Text[] texts = _tempBox.GetComponentsInChildren<TMP_Text>();
 

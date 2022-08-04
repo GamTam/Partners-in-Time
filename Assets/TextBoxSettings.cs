@@ -25,13 +25,15 @@ public class TextBoxSettings : MonoBehaviour
     public Transform ParentPos { get { return _parentPos; } set { _parentPos = value; } }
     public SpriteRenderer SpriteRenderer { get { return _spriteRenderer; } set { _spriteRenderer = value; } }
 
-    private void Awake()
+    public void Open()
     {
         _backgroundRectTransform.sizeDelta = new Vector2(_minWidth, _minHeight);
         _tailRect = _talkTail.GetComponent<RectTransform>();
         
         _cam = Camera.main;
         _parentPos = transform;
+        
+        Update();
     }
     
     void Update()
