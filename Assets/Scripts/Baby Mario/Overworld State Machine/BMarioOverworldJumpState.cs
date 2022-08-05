@@ -49,7 +49,7 @@ public class BMarioOverworldJumpState : BMarioOverworldBaseState, IBMarioOverwor
 
     public override void AnimateState()
     {
-       _ctx.Animator.Play("bm_jump" + _ctx.Facing);
+       _ctx.CAnimator.Play("bm_jump" + _ctx.Facing);
     }
 
     public void HandleGravity()

@@ -7,7 +7,7 @@ public class LuigiOverworldSpinAndJumpState : LuigiOverworldBaseState, ILuigiOve
     
     public override void EnterState()
     {
-        _ctx.Animator.Play("l_spin_and_jump");
+        _ctx.CAnimator.Play("l_spin_and_jump");
         _ctx.Velocity = _ctx.Gravity;
         _isRootState = true;
         InitializeSubState();
@@ -30,7 +30,7 @@ public class LuigiOverworldSpinAndJumpState : LuigiOverworldBaseState, ILuigiOve
     public override void CheckSwitchStates()
     {
         
-        if (_ctx.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+        if (_ctx.CAnimator.NormalizedTime >= 1)
         {
             SwitchState(_factory.Grounded());
         }

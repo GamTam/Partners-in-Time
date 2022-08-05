@@ -93,6 +93,7 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
 
     public override void AnimateState()
     {
+        
         _ctx.CAnimator.Play("m_walk" + _ctx.Facing);
     }
 }
