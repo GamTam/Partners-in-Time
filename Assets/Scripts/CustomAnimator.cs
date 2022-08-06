@@ -9,7 +9,7 @@ public class CustomAnimator : MonoBehaviour
     private Animator _animator;
     
     private AnimationClip _currentAnimation;
-    private List<Sprite> _frames;
+    private List<Frame> _frames;
     private int _currentFrame = 0;
 
     private float _time;
@@ -17,6 +17,11 @@ public class CustomAnimator : MonoBehaviour
 
     private bool _loop;
     private bool _playing = false;
+
+    public class Frame {
+        public Sprite Sprite;
+        public ObjectReferenceKeyframe Keyframe;
+    }
 
     public bool Playing { get { return _playing; } }
     public float NormalizedTime { get { return _currentAnimation ? (_time / _currentAnimation.length) : 0f; } }
@@ -56,47 +61,61 @@ public class CustomAnimator : MonoBehaviour
             _loop = AnimationUtility.GetAnimationClipSettings(animation).loopTime;
             _currentAnimation = animation;
             _playing = true;
-            _frames = GetSprites(animation);
+            _frames = GetFrames(animation);
             _animator.enabled = false;
-            _renderer.sprite = _frames[_currentFrame];
+            _renderer.sprite = _frames[_currentFrame].Sprite;
             StopAllCoroutines();
             StartCoroutine(PlayAnimation(_currentAnimation));
+            StartCoroutine(AnimationTime(animation));
+        }
+    }
+
+    private IEnumerator AnimationTime(AnimationClip animation) {
+        _time = 0f;
+
+        while(true) {
+            _time += Time.deltaTime;
+            yield return null;
         }
     }
 
     private IEnumerator PlayAnimation(AnimationClip animation) {
         float timer = 0f;
         float delay = 1f / (float) animation.frameRate;
-
-        _time = 0f;
-
+        float fixedDelay = 1f / (float) animation.frameRate;
+        
         while(_loop || _currentFrame < _frames.Count - 1) {
-            _time += Time.deltaTime;
+
+            if((_currentFrame + 1) < _frames.Count) {
+                float nextFrameDelay = _frames[_currentFrame + 1].Keyframe.time - _frames[_currentFrame].Keyframe.time;
+                delay = nextFrameDelay;
+            }
 
             while(timer < delay) {
                 timer += Time.deltaTime;
-                _time += Time.deltaTime;
-                yield return 0f;
+                yield return null;
             }
-            while(timer > delay) {
-                timer -= delay;
+            while(timer > fixedDelay) {
+                timer -= fixedDelay;
                 NextFrame(animation);
             }
-            _renderer.sprite = _frames[_currentFrame];
+
+            delay = 1f / (float) animation.frameRate;
+            
+            _renderer.sprite = _frames[_currentFrame].Sprite;
         }
 
-        _time = animation.length;
+        _playing = false;
     }
 
     private void NextFrame(AnimationClip animation) {
         _currentFrame++;
         
-        if(_currentFrame >= _frames.Count) {
+        if(_currentFrame >= _frames.Count - 1) {
             if(_loop) {
                 _currentFrame = 0;
             } else {
                 _currentFrame = _frames.Count - 1;
-                _playing = false;
             }
         }
     }
@@ -113,17 +132,21 @@ public class CustomAnimator : MonoBehaviour
         return anim;
     }
 
-    public List<Sprite> GetSprites(AnimationClip clip) {
-        List<Sprite> sprites = new List<Sprite>();
+    public List<Frame> GetFrames(AnimationClip animation) {
+        List<Frame> frames = new List<Frame>();
 
-        foreach(EditorCurveBinding binding in AnimationUtility.GetObjectReferenceCurveBindings(clip)) {
-            ObjectReferenceKeyframe[] keyframes = AnimationUtility.GetObjectReferenceCurve(clip, binding);
-
+        foreach(EditorCurveBinding binding in AnimationUtility.GetObjectReferenceCurveBindings(animation)) {
+            ObjectReferenceKeyframe[] keyframes = AnimationUtility.GetObjectReferenceCurve(animation, binding);
+        
             foreach(ObjectReferenceKeyframe frame in keyframes) {
-                sprites.Add((Sprite) frame.value);
+                Frame newFrame = new Frame();
+                newFrame.Sprite = (Sprite) frame.value;
+                newFrame.Keyframe = frame;
+
+                frames.Add(newFrame);
             }
         }
         
-        return sprites;
+        return frames;
     }
 }

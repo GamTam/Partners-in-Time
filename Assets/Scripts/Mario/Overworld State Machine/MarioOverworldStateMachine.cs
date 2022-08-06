@@ -137,7 +137,7 @@ public class MarioOverworldStateMachine : Billboard
             _sprite.color = new Color(1f, 1f, 1f, 1f);
             _luigiSM.Sprite.color = new Color(1f, 1f, 1f, 1f);
         }
-
+        
         if(_lastPosition == new Vector3(transform.position.x, 0f, transform.position.z) ||
         (Vector3.Distance(transform.position, _luigiPos.position) < (_maxDistance / 2) && IsHittingWall() &&
         Mathf.Abs(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward))) > 0.7f)) {

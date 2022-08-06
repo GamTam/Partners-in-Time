@@ -24,7 +24,6 @@ public class MarioOverworldSpinAndJumpState : MarioOverworldBaseState, IMarioOve
 
     public override void CheckSwitchStates()
     {
-        Debug.Log(_ctx.CAnimator.NormalizedTime);
         if (_ctx.CAnimator.NormalizedTime >= 1)
         {
             SwitchState(_factory.Grounded());
