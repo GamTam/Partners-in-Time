@@ -48,6 +48,7 @@ public class BMarioOverworldStateMachine : Billboard
 
     // Adults
     [SerializeField] private GameObject _marioRef;
+    [SerializeField] private GameObject _luigiRef;
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
@@ -121,20 +122,14 @@ public class BMarioOverworldStateMachine : Billboard
     
     void Update()
     {
-        if(_lastPosition == new Vector3(transform.position.x, 0f, transform.position.z) ||
-        (Vector3.Distance(transform.position, _luigiPos.position) < (_maxDistance / 2) && IsHittingWall() &&
-        Mathf.Abs(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward))) > 0.7f)) {
-            _luigiSM.StopMovement = true;
-        } else {
-            _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
-            _luigiSM.StopMovement = false;
-        }
-
         if(_mAction.triggered || _lAction.triggered) {
             MarioOverworldStateMachine marioSM = _marioRef.GetComponent<MarioOverworldStateMachine>();
+            LuigiOverworldStateMachine luigiSM = _luigiRef.GetComponent<LuigiOverworldStateMachine>();
 
             marioSM.InputDisabled = false;
+            luigiSM.InputDisabled = false;
             _inputDisabled = true;
+            _luigiSM.InputDisabled = true;
             _virtualCam.Follow = _marioRef.transform;
         }
 
@@ -144,6 +139,13 @@ public class BMarioOverworldStateMachine : Billboard
         } else {
             _sprite.color = new Color(1f, 1f, 1f, 1f);
             _luigiSM.Sprite.color = new Color(1f, 1f, 1f, 1f);
+        }
+
+         if(Vector3.Distance(new Vector3(transform.position.x, 0f, transform.position.z), new Vector3(_luigiPos.position.x, 0f, _luigiPos.position.z)) < (_maxDistance / 2) && IsHittingWall() &&
+        Mathf.Abs(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward))) > 0.7f) {
+            _luigiSM.StopMovement = true;
+        } else {
+            _luigiSM.StopMovement = false;
         }
 
         if(!_fovDisabled) {

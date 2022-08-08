@@ -14,6 +14,7 @@ public class LuigiOverworldStateMachine : Billboard
     private InputAction _switchAction;
     private InputAction _jump;
     private InputAction _moveVector;
+    private bool _inputDisabled = false;
 
     // Stats
     [SerializeField] private int moveSpeed = 5;
@@ -57,7 +58,7 @@ public class LuigiOverworldStateMachine : Billboard
     public bool Jump { get { return !_marioSM.InputDisabled ? _jump.triggered : false; } }
     public Animator Animator { get { return _animator; } }
     public string Facing { get { return _facing; } }
-    public Vector2 MoveVector { get {return _moveVector.ReadValue<Vector2>().normalized; } }
+    public Vector2 MoveVector { get {return !_inputDisabled ? _moveVector.ReadValue<Vector2>().normalized : Vector3.zero; } }
     public float MoveAngle {get {return _moveAngle;} set {_moveAngle = value;} }
     public CharacterController Controller {get {return _controller;}}
     public int MoveSpeed {get {return moveSpeed;}}
@@ -74,6 +75,7 @@ public class LuigiOverworldStateMachine : Billboard
     public bool StopMovement { get {return _stopMovement;} set {_stopMovement = value;}}
     public SpriteRenderer Sprite { get { return _sprite; } }
     public CustomAnimator CAnimator { get { return _cAnimator; } }
+    public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; } }
 
     private void Awake()
     {

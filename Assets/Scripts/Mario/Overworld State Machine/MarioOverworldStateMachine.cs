@@ -48,6 +48,7 @@ public class MarioOverworldStateMachine : Billboard
 
     // Babies
     [SerializeField] private GameObject _babyMarioRef;
+    [SerializeField] private GameObject _babyLuigiRef;
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
@@ -124,9 +125,12 @@ public class MarioOverworldStateMachine : Billboard
     {   
         if(_bmAction.triggered || _blAction.triggered) {
             BMarioOverworldStateMachine babyMarioSM = _babyMarioRef.GetComponent<BMarioOverworldStateMachine>();
+            BLuigiOverworldStateMachine babyLuigiSM = _babyLuigiRef.GetComponent<BLuigiOverworldStateMachine>();
 
             babyMarioSM.InputDisabled = false;
+            babyLuigiSM.InputDisabled = false;
             _inputDisabled = true;
+            _luigiSM.InputDisabled = true;
             _virtualCam.Follow = _babyMarioRef.transform;
         }
 
@@ -138,12 +142,10 @@ public class MarioOverworldStateMachine : Billboard
             _luigiSM.Sprite.color = new Color(1f, 1f, 1f, 1f);
         }
         
-        if(_lastPosition == new Vector3(transform.position.x, 0f, transform.position.z) ||
-        (Vector3.Distance(transform.position, _luigiPos.position) < (_maxDistance / 2) && IsHittingWall() &&
-        Mathf.Abs(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward))) > 0.7f)) {
+        if(Vector3.Distance(new Vector3(transform.position.x, 0f, transform.position.z), new Vector3(_luigiPos.position.x, 0f, _luigiPos.position.z)) < (_maxDistance / 2) && IsHittingWall() &&
+        Mathf.Abs(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward))) > 0.7f) {
             _luigiSM.StopMovement = true;
         } else {
-            _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
             _luigiSM.StopMovement = false;
         }
 

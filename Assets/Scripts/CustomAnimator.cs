@@ -89,14 +89,16 @@ public class CustomAnimator : MonoBehaviour
             if((_currentFrame + 1) < _frames.Count) {
                 float nextFrameDelay = _frames[_currentFrame + 1].Keyframe.time - _frames[_currentFrame].Keyframe.time;
                 delay = nextFrameDelay;
+            } else {
+                delay = fixedDelay;
             }
 
             while(timer < delay) {
                 timer += Time.deltaTime;
                 yield return null;
             }
-            while(timer > fixedDelay) {
-                timer -= fixedDelay;
+            while(timer > delay) {
+                timer -= delay;
                 NextFrame(animation);
             }
 
