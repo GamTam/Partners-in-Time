@@ -66,7 +66,7 @@ public class TextBoxSettings : MonoBehaviour
         _tailRect.anchorMin = new Vector2(0.5f, 0);
         _tailRect.rotation = Quaternion.Euler(0f, 0f, 180);
 
-        if (_rectTransform.anchoredPosition.y + _backgroundRectTransform.sizeDelta.y / 1.5f >= _screenSize.y) {
+        if (_rectTransform.anchoredPosition.y + _backgroundRectTransform.sizeDelta.y >= _screenSize.y) {
             // Bubble Below Head
             _rectTransform.anchoredPosition = new Vector3(pos.x, pos.y - (_backgroundRectTransform.sizeDelta.y / 2 + _tailRect.sizeDelta.y + parentHeight / 1.5f * _screenFactor), pos.z);
             
