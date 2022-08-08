@@ -44,7 +44,6 @@ public class MarioOverworldStateMachine : Billboard
     private RaycastHit _hit;
     private Vector3 _lastPosition;
     private bool _fovDisabled = false;
-    private Transform _wallTransform;
 
     // Babies
     [SerializeField] private GameObject _babyMarioRef;
@@ -141,9 +140,8 @@ public class MarioOverworldStateMachine : Billboard
             _sprite.color = new Color(1f, 1f, 1f, 1f);
             _luigiSM.Sprite.color = new Color(1f, 1f, 1f, 1f);
         }
-        
-        if(Vector3.Distance(new Vector3(transform.position.x, 0f, transform.position.z), new Vector3(_luigiPos.position.x, 0f, _luigiPos.position.z)) < (_maxDistance / 2) && IsHittingWall() &&
-        Mathf.Abs(Vector3.Dot(transform.TransformDirection(Vector3.forward), _wallTransform.TransformDirection(Vector3.forward))) > 0.7f) {
+
+        if(Vector3.Distance(new Vector3(transform.position.x, 0f, transform.position.z), new Vector3(_luigiPos.position.x, 0f, _luigiPos.position.z)) < (_maxDistance / 2) && IsHittingWall()) {
             _luigiSM.StopMovement = true;
         } else {
             _luigiSM.StopMovement = false;
@@ -212,7 +210,6 @@ public class MarioOverworldStateMachine : Billboard
          _controller.radius + _controller.skinWidth)) {
             if(hit.transform.gameObject.tag == "Wall") {
                 IsHitting = true;
-                _wallTransform = hit.transform;
             }
         }
 
@@ -220,7 +217,6 @@ public class MarioOverworldStateMachine : Billboard
          _controller.radius + _controller.skinWidth)) {
             if(hit.transform.gameObject.tag == "Wall") {
                 IsHitting = true;
-                _wallTransform = hit.transform;
             }
         }
 
@@ -228,7 +224,6 @@ public class MarioOverworldStateMachine : Billboard
          _controller.radius + _controller.skinWidth)) {
             if(hit.transform.gameObject.tag == "Wall") {
                 IsHitting = true;
-                _wallTransform = hit.transform;
             }
         }
 
@@ -236,7 +231,6 @@ public class MarioOverworldStateMachine : Billboard
          _controller.radius + _controller.skinWidth)) {
             if(hit.transform.gameObject.tag == "Wall") {
                 IsHitting = true;
-                _wallTransform = hit.transform;
             }
         }
 
