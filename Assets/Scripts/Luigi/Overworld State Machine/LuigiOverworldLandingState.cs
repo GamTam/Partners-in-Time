@@ -7,7 +7,7 @@ public class LuigiOverworldLandingState : LuigiOverworldBaseState, ILuigiOverwor
     
     public override void EnterState()
     {
-        _ctx.Animator.Play("l_land" + _ctx.Facing);
+        _ctx.CAnimator.Play("l_land" + _ctx.Facing);
         _ctx.Velocity = _ctx.Gravity;
         _isRootState = true;
         InitializeSubState();
@@ -31,7 +31,7 @@ public class LuigiOverworldLandingState : LuigiOverworldBaseState, ILuigiOverwor
     {
         
         if (_ctx.MoveVector.magnitude > Globals.DeadZone || 
-            _ctx.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+            _ctx.CAnimator.NormalizedTime >= 1)
         {
             SwitchState(_factory.Grounded());
         } 

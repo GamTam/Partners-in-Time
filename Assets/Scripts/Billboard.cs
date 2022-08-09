@@ -12,11 +12,13 @@ public abstract class Billboard : MonoBehaviour
     protected SpriteRenderer _sprite;
     protected Animator _animator;
     protected int _offset = 0;
+    protected CustomAnimator _cAnimator;
 
     protected void Init(GameObject child)
     {
         _spriteTransform = child.transform;
         _animator = child.GetComponent<Animator>();
+        _cAnimator = child.GetComponent<CustomAnimator>();
         _sprite = child.GetComponent<SpriteRenderer>();
         _cam = Camera.main.transform;
     }

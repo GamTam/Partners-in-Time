@@ -49,7 +49,7 @@ public class MarioOverworldJumpState : MarioOverworldBaseState, IMarioOverworldR
 
     public override void AnimateState()
     {
-       _ctx.Animator.Play("m_jump" + _ctx.Facing);
+       _ctx.CAnimator.Play("m_jump" + _ctx.Facing);
     }
 
     public void HandleGravity()

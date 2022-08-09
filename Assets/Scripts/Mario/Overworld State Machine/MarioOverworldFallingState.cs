@@ -44,7 +44,7 @@ public class MarioOverworldFallingState : MarioOverworldBaseState, IMarioOverwor
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("m_fall" + _ctx.Facing);
+        _ctx.CAnimator.Play("m_fall" + _ctx.Facing);
     }
 
     public void HandleGravity()

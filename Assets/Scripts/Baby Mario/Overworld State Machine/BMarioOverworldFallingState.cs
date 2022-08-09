@@ -44,7 +44,7 @@ public class BMarioOverworldFallingState : BMarioOverworldBaseState, IBMarioOver
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("bm_fall" + _ctx.Facing);
+        _ctx.CAnimator.Play("bm_fall" + _ctx.Facing);
     }
 
     public void HandleGravity()

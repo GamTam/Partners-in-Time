@@ -36,12 +36,15 @@ public class EnemyEditor : Editor
             Raycast(t.transform, t.StartingPos, out pos);
         }
 
+        float xLimit = Mathf.Clamp(t.XLimit, 3f, Mathf.Infinity);
+        float zLimit = Mathf.Clamp(t.ZLimit, 3f, Mathf.Infinity);
+
         Vector3[] verts = new Vector3[]
         {
-            new Vector3(pos.x - t.XLimit, pos.y, pos.z - t.ZLimit),
-            new Vector3(pos.x - t.XLimit, pos.y, pos.z + t.ZLimit),
-            new Vector3(pos.x + t.XLimit, pos.y, pos.z + t.ZLimit),
-            new Vector3(pos.x + t.XLimit, pos.y, pos.z - t.ZLimit)
+            new Vector3(pos.x - xLimit, pos.y, pos.z - zLimit),
+            new Vector3(pos.x - xLimit, pos.y, pos.z + zLimit),
+            new Vector3(pos.x + xLimit, pos.y, pos.z + zLimit),
+            new Vector3(pos.x + xLimit, pos.y, pos.z - zLimit)
         };
 
         Handles.DrawSolidRectangleWithOutline(verts, new Color(0.5f, 0.5f, 0.5f, 0.1f), new Color(0, 0, 0, 1));

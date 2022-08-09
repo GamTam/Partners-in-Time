@@ -22,51 +22,51 @@ public class BMarioOverworldWalkState : BMarioOverworldBaseState
         if (_ctx.MoveVector.magnitude > Globals.DeadZone) {
             _ctx.MoveAngle = targetAngle;
 
-            // Vector3 tempMarioPos = _ctx.transform.position;
-            // Vector3 tempLuigiPos = _ctx.LuigiPos.position;
+            Vector3 tempMarioPos = _ctx.transform.position;
+            Vector3 tempLuigiPos = _ctx.LuigiPos.position;
 
-            // tempMarioPos.y = 0f;
-            // tempLuigiPos.y = 0f;
+            tempMarioPos.y = 0f;
+            tempLuigiPos.y = 0f;
 
-            // float distance = Vector3.Distance(tempMarioPos, tempLuigiPos);
+            float distance = Vector3.Distance(tempMarioPos, tempLuigiPos);
 
             _newMove = _newMove * _ctx.MoveSpeed * Time.deltaTime;
-            // if(distance >= _ctx.MaxDistance) {
-            //     Vector3 moveN = _newMove.normalized;
-            //     float dotDirection = Vector3.Dot(_ctx.transform.TransformDirection(Vector3.forward).normalized, _ctx.LuigiPos.TransformDirection(Vector3.forward).normalized);
+            if(distance >= _ctx.MaxDistance) {
+                Vector3 moveN = _newMove.normalized;
+                float dotDirection = Vector3.Dot(_ctx.transform.TransformDirection(Vector3.forward).normalized, _ctx.LuigiPos.TransformDirection(Vector3.forward).normalized);
 
                 
-            //     if(!_ctx.LuigiAngleColliding) {
-            //         if(dotDirection >= 0f) {
-            //             if(moveN.z != 0f && Mathf.Abs(_ctx.CollisionDot) >= 0.9f) {
-            //                 _newMove.z = 0f;
-            //             }
+                if(!_ctx.LuigiAngleColliding) {
+                    if(dotDirection >= 0f) {
+                        if(moveN.z != 0f && Mathf.Abs(_ctx.CollisionDot) >= 0.9f) {
+                            _newMove.z = 0f;
+                        }
 
-            //             if(moveN.x != 0f && Mathf.Abs(_ctx.CollisionDot) < 0.5f) {
-            //                 _newMove.x = 0f;
-            //             }
-            //         }
-            //     } else {
-            //         Vector3 maxAngleVector = _ctx.LuigiPos.position + (Vector3.right * _ctx.MaxDistance) + (Vector3.forward * _ctx.MaxDistance);
-            //         Vector3 minAngleVector = _ctx.LuigiPos.position + (Vector3.left * _ctx.MaxDistance) + (Vector3.back * _ctx.MaxDistance);
+                        if(moveN.x != 0f && Mathf.Abs(_ctx.CollisionDot) < 0.5f) {
+                            _newMove.x = 0f;
+                        }
+                    }
+                } else {
+                    Vector3 maxAngleVector = _ctx.LuigiPos.position + (Vector3.right * _ctx.MaxDistance) + (Vector3.forward * _ctx.MaxDistance);
+                    Vector3 minAngleVector = _ctx.LuigiPos.position + (Vector3.left * _ctx.MaxDistance) + (Vector3.back * _ctx.MaxDistance);
                         
-            //         if(_ctx.transform.position.x >= maxAngleVector.x && _newMove.x > 0) {
-            //             _newMove.x = 0f;
-            //         }
+                    if(_ctx.transform.position.x >= maxAngleVector.x && _newMove.x > 0) {
+                        _newMove.x = 0f;
+                    }
                         
-            //         if(_ctx.transform.position.z >= maxAngleVector.z && _newMove.z > 0) {
-            //             _newMove.z = 0f;
-            //         }
+                    if(_ctx.transform.position.z >= maxAngleVector.z && _newMove.z > 0) {
+                        _newMove.z = 0f;
+                    }
 
-            //         if(_ctx.transform.position.x <= minAngleVector.x && _newMove.x < 0) {
-            //             _newMove.x = 0f;
-            //         }
+                    if(_ctx.transform.position.x <= minAngleVector.x && _newMove.x < 0) {
+                        _newMove.x = 0f;
+                    }
 
-            //         if(_ctx.transform.position.z <= minAngleVector.z && _newMove.z < 0) {
-            //             _newMove.z = 0f;
-            //         }
-            //     }
-            // }
+                    if(_ctx.transform.position.z <= minAngleVector.z && _newMove.z < 0) {
+                        _newMove.z = 0f;
+                    }
+                }
+            }
 
             _ctx.Controller.Move(_newMove);
         }
@@ -93,6 +93,6 @@ public class BMarioOverworldWalkState : BMarioOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("bm_walk" + _ctx.Facing);
+        _ctx.CAnimator.Play("bm_walk" + _ctx.Facing);
     }
 }

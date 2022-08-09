@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   _marioPos: {fileID: 0}
+  _marioSM: {fileID: 0}
   _queueDelay: 5
   child: {fileID: 1147006386284068801}
   _debugData: {fileID: 0}
@@ -81,6 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1147006386284068812}
   - component: {fileID: 1147006386284068803}
+  - component: {fileID: 3104703185043137266}
   - component: {fileID: 1147006386284068802}
   m_Layer: 6
   m_Name: Sprite
@@ -156,6 +158,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3104703185043137266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147006386284068801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c49c66c02cc37d43bdb90c13ed21009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1147006386284068802
 Animator:
   serializedVersion: 4

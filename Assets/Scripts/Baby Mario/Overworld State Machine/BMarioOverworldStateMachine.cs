@@ -32,8 +32,8 @@ public class BMarioOverworldStateMachine : Billboard
     private float _gravity;
     private float _initialJumpVelocity;
     private float _fallMultiplier = 2f;
-    private float _maxJumpHeight = 4f;
-    private float _maxJumpTime = 0.75f;
+    private float _maxJumpHeight = 2f;
+    private float _maxJumpTime = 0.5f;
 
     // Misc.
     private CharacterController _controller;
@@ -47,10 +47,12 @@ public class BMarioOverworldStateMachine : Billboard
 
     // Adults
     [SerializeField] private GameObject _marioRef;
+    [SerializeField] private GameObject _luigiRef;
 
     // Luigi
     [SerializeField] private Transform _luigiPos;
-    private float _maxDistance = 1.8f;
+    private BLuigiOverworldStateMachine _luigiSM;
+    private float _maxDistance = 1.6f;
     private float _collisionDot;
     private bool _angleColliding;
     
@@ -62,7 +64,7 @@ public class BMarioOverworldStateMachine : Billboard
     public bool SwitchAction { get { return _switchAction.triggered; } }
     public int CurrentAction { get { return _currentAction; } set { _currentAction = value; } }
     public ArrayList Actions { get { return _actions; } }
-    public bool Jump { get { return _jump.triggered; } }
+    public bool Jump { get { return !_inputDisabled ? _jump.triggered : false; } }
     public Animator Animator { get { return _animator; } }
     public string Facing { get { return _facing; } }
     public Vector2 MoveVector { get {return !_inputDisabled ? _moveVector.ReadValue<Vector2>().normalized : Vector3.zero; } }
@@ -80,12 +82,15 @@ public class BMarioOverworldStateMachine : Billboard
     public bool LuigiAngleColliding {get {return _angleColliding;}}
     public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; }}
     public bool FovDisabled { get { return _fovDisabled; } set { _fovDisabled = value; }}
+    public CustomAnimator CAnimator { get { return _cAnimator; } }
     
     private void Awake()
     {
         base.Init(child);
 
         _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
+
+        _luigiSM = _luigiPos.GetComponent<BLuigiOverworldStateMachine>();
 
         // Input Setup
         _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
@@ -116,17 +121,29 @@ public class BMarioOverworldStateMachine : Billboard
     
     void Update()
     {
-        // if(_lastPosition != new Vector3(transform.position.x, 0f, transform.position.z)) {
-        //     _lastPosition = new Vector3(transform.position.x, 0f, transform.position.z);
-        //     _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = false;
-        // } else {
-        //     _luigiPos.gameObject.GetComponent<LuigiOverworldStateMachine>().StopMovement = true;
-        // }
-
         if(_mAction.triggered || _lAction.triggered) {
-            _marioRef.GetComponent<MarioOverworldStateMachine>().InputDisabled = false;
+            MarioOverworldStateMachine marioSM = _marioRef.GetComponent<MarioOverworldStateMachine>();
+            LuigiOverworldStateMachine luigiSM = _luigiRef.GetComponent<LuigiOverworldStateMachine>();
+
+            marioSM.InputDisabled = false;
+            luigiSM.InputDisabled = false;
             _inputDisabled = true;
+            _luigiSM.InputDisabled = true;
             _virtualCam.Follow = _marioRef.transform;
+        }
+
+        if(_inputDisabled) {
+            _sprite.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            _luigiSM.Sprite.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        } else {
+            _sprite.color = new Color(1f, 1f, 1f, 1f);
+            _luigiSM.Sprite.color = new Color(1f, 1f, 1f, 1f);
+        }
+
+         if(Vector3.Distance(new Vector3(transform.position.x, 0f, transform.position.z), new Vector3(_luigiPos.position.x, 0f, _luigiPos.position.z)) < (_maxDistance / 2) && IsHittingWall()) {
+            _luigiSM.StopMovement = true;
+        } else {
+            _luigiSM.StopMovement = false;
         }
 
         if(!_fovDisabled) {
@@ -182,5 +199,40 @@ public class BMarioOverworldStateMachine : Billboard
                 }
             }
         }
+    }
+
+    private bool IsHittingWall() {
+        bool IsHitting = false;
+        RaycastHit hit;
+
+        if(Physics.Raycast(transform.position, Vector3.back, out hit,
+         _controller.radius + _controller.skinWidth)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                IsHitting = true;
+            }
+        }
+
+        if(Physics.Raycast(transform.position, Vector3.forward, out hit,
+         _controller.radius + _controller.skinWidth)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                IsHitting = true;
+            }
+        }
+
+        if(Physics.Raycast(transform.position, Vector3.left, out hit,
+         _controller.radius + _controller.skinWidth)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                IsHitting = true;
+            }
+        }
+
+        if(Physics.Raycast(transform.position, Vector3.right, out hit,
+         _controller.radius + _controller.skinWidth)) {
+            if(hit.transform.gameObject.tag == "Wall") {
+                IsHitting = true;
+            }
+        }
+
+        return IsHitting;
     }
 }

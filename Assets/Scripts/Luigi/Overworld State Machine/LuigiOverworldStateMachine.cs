@@ -14,6 +14,7 @@ public class LuigiOverworldStateMachine : Billboard
     private InputAction _switchAction;
     private InputAction _jump;
     private InputAction _moveVector;
+    private bool _inputDisabled = false;
 
     // Stats
     [SerializeField] private int moveSpeed = 5;
@@ -26,6 +27,7 @@ public class LuigiOverworldStateMachine : Billboard
     
     // Mario
     [SerializeField] public Transform _marioPos;
+    public MarioOverworldStateMachine _marioSM;
     public Queue<Vector3> _posQueue;
     private Queue<Quaternion> _rotQueue;
     [SerializeField] private int _queueDelay = 5;
@@ -37,7 +39,7 @@ public class LuigiOverworldStateMachine : Billboard
     private float _initialJumpVelocity;
     private float _fallMultiplier = 2f;
     private float _maxJumpHeight = 4f;
-    private float _maxJumpTime = 0.75f;
+    private float _maxJumpTime = 0.65f;
 
     // Misc.
     private CharacterController _controller;
@@ -53,10 +55,10 @@ public class LuigiOverworldStateMachine : Billboard
     public bool SwitchAction { get { return _switchAction.triggered; } }
     public int CurrentAction { get { return _currentAction; } set { _currentAction = value; } }
     public ArrayList Actions { get { return _actions; } }
-    public bool Jump { get { return _jump.triggered; } }
+    public bool Jump { get { return !_marioSM.InputDisabled ? _jump.triggered : false; } }
     public Animator Animator { get { return _animator; } }
     public string Facing { get { return _facing; } }
-    public Vector2 MoveVector { get {return _moveVector.ReadValue<Vector2>().normalized; } }
+    public Vector2 MoveVector { get {return !_inputDisabled ? _moveVector.ReadValue<Vector2>().normalized : Vector3.zero; } }
     public float MoveAngle {get {return _moveAngle;} set {_moveAngle = value;} }
     public CharacterController Controller {get {return _controller;}}
     public int MoveSpeed {get {return moveSpeed;}}
@@ -71,10 +73,15 @@ public class LuigiOverworldStateMachine : Billboard
     public Queue<Quaternion> RotQueue {get {return _rotQueue;} set {_rotQueue = value;}}
     public Transform Shadow {get {return _shadow;} set {_shadow = value;}}
     public bool StopMovement { get {return _stopMovement;} set {_stopMovement = value;}}
+    public SpriteRenderer Sprite { get { return _sprite; } }
+    public CustomAnimator CAnimator { get { return _cAnimator; } }
+    public bool InputDisabled { get { return _inputDisabled; } set { _inputDisabled = value; } }
 
     private void Awake()
     {
         base.Init(child);
+
+        _marioSM = _marioPos.GetComponent<MarioOverworldStateMachine>();
 
         // Input Setup
         _playerInput = GameObject.FindWithTag("Controller Manager").GetComponent<PlayerInput>();
@@ -152,22 +159,22 @@ public class LuigiOverworldStateMachine : Billboard
 
         _angleColliding = false;
 
-        if(Physics.Raycast(rayOrigin, Vector3.right, 0.5f)) {
+        if(Physics.Raycast(rayOrigin, Vector3.right, _controller.radius + _controller.skinWidth)) {
             countFR++;
             countBR++;
         }
 
-        if(Physics.Raycast(rayOrigin, Vector3.forward, 0.5f)) {
+        if(Physics.Raycast(rayOrigin, Vector3.forward, _controller.radius + _controller.skinWidth)) {
             countFL++;
             countFR++;
         }
 
-        if(Physics.Raycast(rayOrigin, Vector3.left, 0.5f)) {
+        if(Physics.Raycast(rayOrigin, Vector3.left, _controller.radius + _controller.skinWidth)) {
             countBL++;
             countFL++;
         }
 
-        if(Physics.Raycast(rayOrigin, Vector3.back, 0.5f)) {
+        if(Physics.Raycast(rayOrigin, Vector3.back, _controller.radius + _controller.skinWidth)) {
             countBL++;
             countBR++;
         }
