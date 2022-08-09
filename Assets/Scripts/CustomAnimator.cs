@@ -63,7 +63,13 @@ public class CustomAnimator : MonoBehaviour
             _playing = true;
             _frames = GetFrames(animation);
             _animator.enabled = false;
-            _renderer.sprite = _frames[_currentFrame].Sprite;
+
+            try {
+                _renderer.sprite = _frames[_currentFrame].Sprite;
+            } catch(System.Exception) {
+                Debug.Log(_currentFrame + " : " + animation.name);
+            }
+
             StopAllCoroutines();
             StartCoroutine(PlayAnimation(_currentAnimation));
             StartCoroutine(AnimationTime(animation));
@@ -92,7 +98,7 @@ public class CustomAnimator : MonoBehaviour
             } else {
                 delay = fixedDelay;
             }
-
+            
             while(timer < delay) {
                 timer += Time.deltaTime;
                 yield return null;
@@ -113,7 +119,7 @@ public class CustomAnimator : MonoBehaviour
     private void NextFrame(AnimationClip animation) {
         _currentFrame++;
         
-        if(_currentFrame >= _frames.Count - 1) {
+        if(_currentFrame > _frames.Count - 1) {
             if(_loop) {
                 _currentFrame = 0;
             } else {
