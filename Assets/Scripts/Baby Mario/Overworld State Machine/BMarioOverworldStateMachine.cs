@@ -103,7 +103,7 @@ public class BMarioOverworldStateMachine : Billboard
         _jump = _playerInput.actions["jump"];
         _moveVector = _playerInput.actions["move"];
 
-        _actions = new ArrayList(new[] {"jump", "spin and jump"});
+        _actions = new ArrayList(new[] {"jump", "spin and jump", "talk", "interact"});
         
         // Jump Setup
         _gravity = (-2 * _maxJumpHeight) / Mathf.Pow(_maxJumpTime / 2, 2);

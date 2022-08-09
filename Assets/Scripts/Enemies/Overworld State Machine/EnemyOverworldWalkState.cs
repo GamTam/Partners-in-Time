@@ -38,7 +38,7 @@ public class EnemyOverworldWalkState : EnemyOverworldBaseState, IEnemyOverworldR
     {
         if(_ctx.PlayerDetected) {
             SwitchState(_factory.Jump());
-        } else if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        } else if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SwitchState(_factory.Idle());
         }

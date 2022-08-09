@@ -40,7 +40,7 @@ public class EnemyOverworldIdleState : EnemyOverworldBaseState, IEnemyOverworldR
                 } else {
                     SwitchState(_factory.Attack());
                 }
-            } else if (_ctx.MoveVector.magnitude > Globals.deadZone && !_ctx.MoveOnDetection)
+            } else if (_ctx.MoveVector.magnitude > Globals.DeadZone && !_ctx.MoveOnDetection)
             {
                 SwitchState(_factory.Walk());
             }

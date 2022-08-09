@@ -22,7 +22,7 @@ public class BLuigiOverworldIdleState : BLuigiOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.MoveVector.magnitude > Globals.deadZone)
+        if (_ctx.MoveVector.magnitude > Globals.DeadZone)
         {
             SwitchState(_factory.Walk());
         }

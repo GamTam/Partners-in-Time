@@ -48,7 +48,7 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone || _ctx.StopMovement)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone || _ctx.StopMovement)
         {
             SwitchState(_factory.Idle());
         }

@@ -24,7 +24,7 @@ public class MarioOverworldLandingState : MarioOverworldBaseState, IMarioOverwor
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.MoveVector.magnitude > Globals.deadZone || 
+        if (_ctx.MoveVector.magnitude > Globals.DeadZone || 
             _ctx.CAnimator.NormalizedTime >= 1)
         {
             SwitchState(_factory.Grounded());
@@ -48,7 +48,7 @@ public class MarioOverworldLandingState : MarioOverworldBaseState, IMarioOverwor
 
     public override void InitializeSubState()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SetSubState(_factory.Idle());
         }

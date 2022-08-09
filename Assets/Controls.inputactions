@@ -38,7 +38,7 @@
                     "id": "44c4b23c-9f56-4231-a91f-c8507184e408",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
@@ -390,7 +390,7 @@
                 {
                     "name": "",
                     "id": "d460d7f9-159f-4093-ac38-541af24b297d",
-                    "path": "<Keyboard>/i",
+                    "path": "<Keyboard>/u",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -401,7 +401,7 @@
                 {
                     "name": "",
                     "id": "7ddb7e5e-07d1-4702-8218-0c2b82f242d0",
-                    "path": "<Keyboard>/o",
+                    "path": "<Keyboard>/i",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -429,7 +429,7 @@
                 {
                     "name": "",
                     "id": "49dbee07-9e99-430b-9cc9-902a501093a9",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",

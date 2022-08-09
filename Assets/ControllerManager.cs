@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using FMOD.Studio;
@@ -47,10 +48,15 @@ public class ControllerManager : MonoBehaviour
         var activeController = _source["controller"] as StringVariable;
         var confirmButton = _source["confirm"] as StringVariable;
         var switchAction = _source["switch_action"] as StringVariable;
+        var mAction = _source["m_action"] as StringVariable;
+        var lAction = _source["l_action"] as StringVariable;
+        var jumpAction = _source["jump"] as StringVariable;
 
         activeController.Value = _playerInput.currentControlScheme;
         confirmButton.Value = _playerInput.actions["confirm"].GetBindingDisplayString();
         switchAction.Value = _playerInput.actions["switch_action"].GetBindingDisplayString();
-        
+        mAction.Value = _playerInput.actions["m_action"].GetBindingDisplayString();
+        lAction.Value = _playerInput.actions["l_action"].GetBindingDisplayString();
+        jumpAction.Value = _playerInput.actions["jump"].GetBindingDisplayString();
     }
 }
