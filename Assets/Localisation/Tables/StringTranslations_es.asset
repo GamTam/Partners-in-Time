@@ -44,16 +44,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
-  - m_Id: 1119172369920000
-    m_Localized: 5.26% Translated
-    m_Metadata:
-      m_Items: []
   - m_Id: 1119172407668736
     m_Localized: Open
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
-    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Localized: 
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
