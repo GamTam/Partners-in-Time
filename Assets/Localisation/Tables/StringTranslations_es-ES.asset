@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringTranslations_es-ES
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es-ES
+  m_SharedData: {fileID: 11400000, guid: e36c4b67d0b385844bc908d401e45fe2, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 1551562885755830273
+  m_TableData:
+  - m_Id: 1119172407668736
+    m_Localized: Full
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598785
+    m_Localized: "Espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668737
+    m_Localized: "Mario & Luigi: Compa\xF1eros En El Tiempo + La Furia De Fawful"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598786
+    m_Localized: Megajdg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668738
+    m_Localized: Megajdg#5913
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510246400077824
+    m_Localized: Pulsa <sprite="{global.controller}" name="{global.m_action}"> para
+      hacer que Mario salte
+    m_Metadata:
+      m_Items:
+      - rid: 1551562885755830273
+  - m_Id: 5510246400077825
+    m_Localized: Pulsa <sprite="{global.controller}" name="{global.l_action}"> para
+      hacer que Luigi salte
+    m_Metadata:
+      m_Items:
+      - rid: 1551562885755830273
+  - m_Id: 5510246404272128
+    m_Localized: "Pulsa <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
+      para cambiar de acci\xF3n"
+    m_Metadata:
+      m_Items:
+      - rid: 1551562885755830273
+  - m_Id: 5510246404272129
+    m_Localized: Pulsa <sprite="{global.controller}" name="{global.jump}"> para hacer
+      que los dos hermanos salten
+    m_Metadata:
+      m_Items:
+      - rid: 1551562885755830273
+  - m_Id: 6215980339245056
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
+    m_Metadata:
+      m_Items:
+      - rid: 1551562885755830273
+  - m_Id: 6210973573394432
+    m_Localized: "Esto es un texto de prueba. Si est\xE1s \nleyendo esto, algo ha
+      ido extremadamente mal. \nPor favor reporta las acciones que te han hecho llegar
+      a este evento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598788
+    m_Localized: Pulsa <sprite="{global.controller}" name="{global.confirm}"> Para
+      Empezar
+    m_Metadata:
+      m_Items:
+      - rid: 1551562885755830273
+  - m_Id: 212437396598789
+    m_Localized: "2022 GammaDream\nJuego Original \xA9Nintendo 2005"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809012932608
+    m_Localized: "<sp:50><anim:shake>PERO SI ESTAMOS VIVIENDO EN LA LUZ,<p:normal>
+      YA QUE DIOS EST\xC1 EN LA LUZ, \n<p:normal>ENTONCES TENEMOS COMPA\xD1EROS,
+      <p:normal>\nY LA SANGRE DE JES\xDAS,<p:short> SU HIJO,<p:short> NOS LIBRA DE
+      NUESTROS PECADOS</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Localized: "<sp:50><anim:shake>SI AFIRMAMOS QUE NO TENEMOS PECADOS,<p:normal>
+      SOLO NOS ESTAMOS ENGA\xD1ADO,<p:normal> Y NO VIVIENDO EN LA VERDAD</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Localized: "<sp:50><anim:shake>PERO SI LE CONFESAMOS NUESTROS PECADOS,<p:normal>
+      \xC9L ES FIEL Y SOLO PARA PERDONAR NUESTROS PECADOS <p:normal>\nY LIMPIARNOS
+      DE TODA LA MALDAD</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Localized: "<sp:50><anim:shake>Y AS\xCD TE LO DIGO,<p:normal> TODO TIPO DE
+      PECADOS Y CALUMNIAS\nSER\xC1N PERDONADOS,<p:normal> PERO <color=red>UNA BLASFEMIA
+      CONTRA EL ESP\xCDRITU</color> \nNO SER\xC1 PERDONADA</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Localized: "<sp:50><anim:shake>IMPUREZA,<p:normal> LUJURIA,<p:normal> Y DESEOS
+      MALVADOS;<p:normal> \nNO SEAS CODICIOSO,<p:normal> PARA UNA PERSONA CODICIOSA
+      ES UN ID\xD3LATRA,<p:normal>\nADORANDO LAS COSAS DE ESTE MUNDO</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Localized: "<sp:50><anim:shake>POR ESTOS PECADOS,<p:normal> \n<color=red><size=200%>LA
+      IRA DE DIOS SE ACERCA!</color></anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Localized: "<sp:50><anim:shake>NINGUNA TENTACI\xD3N TE HA SUPERADO \nEXCEPTO
+      LO QUE ES COM\xDAN PARA LA HUMANIDAD.<p:normal> \nY DIOS ES FIEL;<p:normal>
+      \nNO TE DEJAR\xC1 SER TENTADO M\xC1S ALL\xC1 DE LO QUE PUEDES SOPORTAR!</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Localized: "\xA1Ah! <p:short> \xA1Pero si son los maestros \n<color=red>Mario</color>
+      y <color=green>Luigi</color>!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Localized: "Bienvenido a la primera alpha de\n<color=red>Mario & Luigi: Compa\xF1eros
+      En El Tiempo + La Furia De Fawful!</color>\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Localized: "Se supon\xEDa que esta iba a ser una buena ocasi\xF3n \npara celebrar
+      y disfrutar,<p:short>\npero..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Localized: "Parece que los j\xF3venes maestros \nhan <color=red>desaparecido</color>
+      sin dejar rastro."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Localized: "Hemos bloqueado el \xE1rea,<p:short> as\xED que \nlos peque\xF1os
+      deber\xEDan estar por aqu\xED,<\np:short> en las <color=red>afueras de Navivilla</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Localized: "As\xED que,<p:short> si los encuentras,\n<p:short> \xA1H\xE1zmelo
+      saber!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Localized: "Ya veo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Localized: "As\xED que los peque\xF1os estaban saltando \nen unos champi\xF1ones..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Localized: "Bueno, eso aclara muchas cosas,<p:short>\n\xA1Muchas gracias!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Localized: Bueno...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Localized: "Creo que aqu\xED acaba la demo..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Localized: Mmm...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Localized: "\xBFPorque no corres por el campo\ne intentas encontrar algunos
+      bugs\npara que los desarrolladores los arreglen?"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1551562885755830273
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 04b08fef35c1000000300db46615160001308d378a93130000308d378a93130001304d378a93130000304d378a931300
