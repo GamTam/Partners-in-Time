@@ -51,6 +51,10 @@ MonoBehaviour:
     m_Key: dbg_jump_action
     m_Metadata:
       m_Items: []
+  - m_Id: 10921245819088896
+    m_Key: dbg_pause_action
+    m_Metadata:
+      m_Items: []
   - m_Id: 6215980339245056
     m_Key: ui_advance_dialogue
     m_Metadata:

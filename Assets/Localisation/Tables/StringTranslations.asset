@@ -20,12 +20,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 916e2f450706ab64284f12bc5f74f4c6, type: 2}
   - {fileID: 11400000, guid: a41bd47dbe827004e9dcd105e7768d63, type: 2}
   - {fileID: 11400000, guid: facafeeb3c22dfd4fbf2cf08e24aab05, type: 2}
+  - {fileID: 11400000, guid: 8fb4341e39742b14ea79064e2dd46ee7, type: 2}
   m_Extensions:
   - rid: 7564701837450543135
   m_Group: String Table
   references:
     version: 2
     RefIds:
+    - rid: 1551562885755830272
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: F
+        m_LocaleIdentifier:
+          m_Code: es-ES
+        m_IncludeComments: 0
     - rid: 7564701837450543135
       type: {class: GoogleSheetsExtension, ns: UnityEditor.Localization.Plugins.Google, asm: Unity.Localization.Editor}
       data:
@@ -38,6 +46,7 @@ MonoBehaviour:
         - rid: 7564701837450543137
         - rid: 7564701837450543138
         - rid: 7564702225955553284
+        - rid: 1551562885755830272
         - rid: 7564702225955553285
         - rid: 7564702225955553286
         - rid: 7564702225955553287
@@ -70,21 +79,21 @@ MonoBehaviour:
     - rid: 7564702225955553285
       type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
       data:
-        m_Column: F
+        m_Column: G
         m_LocaleIdentifier:
           m_Code: fr
         m_IncludeComments: 0
     - rid: 7564702225955553286
       type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
       data:
-        m_Column: G
+        m_Column: H
         m_LocaleIdentifier:
           m_Code: nl
         m_IncludeComments: 0
     - rid: 7564702225955553287
       type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
       data:
-        m_Column: H
+        m_Column: I
         m_LocaleIdentifier:
           m_Code: de
         m_IncludeComments: 0

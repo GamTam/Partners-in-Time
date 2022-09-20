@@ -20,8 +20,8 @@ MonoBehaviour:
     - rid: 7564701837450543130
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.confirm}\">
-      Per Iniziare
+    m_Localized: Premi <sprite="{global.controller}" name="{global.confirm}"> Per
+      Iniziare
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
@@ -38,11 +38,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598786
-    m_Localized: Simo
+    m_Localized: Simo, Appe
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668738
-    m_Localized: Simo_#6397
+    m_Localized: Simo_#6397, Appe#6494
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598789
@@ -50,31 +50,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5510246400077824
-    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.m_action}\">
-      per far saltare Mario
+    m_Localized: Premi <sprite="{global.controller}" name="{global.m_action}"> per
+      far saltare Mario
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
   - m_Id: 5510246400077825
-    m_Localized: 'Premi <sprite=\"{global.controller}\" name=\"{global.l_action}\">
-      per far saltare Luigi '
+    m_Localized: 'Premi <sprite="{global.controller}" name="{global.l_action}"> per
+      far saltare Luigi '
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
   - m_Id: 5510246404272128
-    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
+    m_Localized: Premi <sprite="{global.controller}" name="{global.switch_action}">
       per cambiare azione
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
   - m_Id: 5510246404272129
-    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.jump}\""> per
-      far saltare entrambi i fratelli
+    m_Localized: Premi <sprite="{global.controller}" name="{global.jump}""> per far
+      saltare entrambi i fratelli
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
   - m_Id: 6215980339245056
-    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
@@ -123,6 +123,81 @@ MonoBehaviour:
     m_Localized: "<sp:50><anim:shake>NESSUNA TENTAZIONE TI HA PRESO\nTRANNE QUELLO
       CHE \xC8 COMUNE NELLA NATURA UMANA.<p:normal> \nE DIO \xC8 FEDELE;<p:normal>
       \nNON LASCIER\xC0 CHE TJ VENGA TENTATO\nOLTRE A QUELLP CHE TU PUOI SOSTENERE!</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Localized: 'Oho! <p:short> Se non siete i signori
+
+      <color=red>Mario</color>
+      e <color=green>Luigi</color>!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Localized: 'Benvenuti nel primo alpha test di
+
+      <color=red>Mario & Luigi:
+      Fratelli Nel Tempo + La Furia Di Sogghigno!</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Localized: "Questa sarebbe dovuta essere un' occasione\nper festeggiare,<p:short>\npurtroppo
+      per\xF2..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Localized: "Sembra proprio che i signorini \nsiano <color=red>scomparsi </color>
+      senza lasciare traccia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Localized: Abbiamo chiuso l'area,<p:short> quindi i ragazzini dovrebbero essere
+      qui da qualche parte,<p:short> nei <color=red> Sobborghi del Villaggio Olligiolli
+      </color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Localized: Quindi,<p:short> se li trovate,<p:short> fatemelo sapere!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Localized: Capisco...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Localized: 'Quindi i piccolini stavano rimbalzando
+
+      su alcuni funghi...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Localized: 'Bene, questo spiega molte cose<p:short>
+
+      grazie mille!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Localized: Dunque...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Localized: Suppongo che questa sia la demo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Localized: Uh...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Localized: "Perch\xE8 non andate in giro e cercate qualche bug da far sistemare
+      agli sviluppatori?"
     m_Metadata:
       m_Items: []
   references:

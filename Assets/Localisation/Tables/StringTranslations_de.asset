@@ -20,31 +20,31 @@ MonoBehaviour:
     - rid: 7564702225955553283
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: "Dr\xFCcke <sprite=\\\"{global.controller}\\\"name=\\\"{global.confirm}\\\">
+    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\"name=\"{global.confirm}\">
       um zu starten"
     m_Metadata:
       m_Items:
       - rid: 7564702225955553283
   - m_Id: 5510246404272129
-    m_Localized: "Dr\xFCcke <sprite=\\\"{global.controller}\\\" name=\\\"{global.jump}\\\">
+    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\" name=\"{global.jump}\">
       damit die Br\xFCder gleichzeitig springen"
     m_Metadata:
       m_Items:
       - rid: 7564702225955553283
   - m_Id: 5510246404272128
-    m_Localized: "Dr\xFCcke <sprite=\\\"{global.controller}\\\" name=\\\"{global.switch_action}\\\">
+    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
       um die Aktionen zu wechseln"
     m_Metadata:
       m_Items:
       - rid: 7564702225955553283
   - m_Id: 5510246400077825
-    m_Localized: "Dr\xFCcke <sprite=\\\"{global.controller}\\\" name=\\\"{global.l_action}\\\">
+    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\" name=\"{global.l_action}\">
       damit Luigi springt"
     m_Metadata:
       m_Items:
       - rid: 7564702225955553283
   - m_Id: 5510246400077824
-    m_Localized: "Dr\xFCcke <sprite=\\\"{global.controller}\\\" name=\\\"{global.m_action}\\\">
+    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\" name=\"{global.m_action}\">
       damit Mario springt"
     m_Metadata:
       m_Items:
@@ -62,15 +62,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598786
-    m_Localized: law
+    m_Localized: law, Domniak
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668738
-    m_Localized: law#4701
+    m_Localized: law#4701, Domniak#6274
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
-    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
     m_Metadata:
       m_Items:
       - rid: 7564702225955553283
@@ -122,6 +122,27 @@ MonoBehaviour:
     m_Localized: "<sp:50><anim:shake>KEINE VERSUCHUNG HAT DICH \xDCBERKOMMEN, AU\xDFER
       DAS \xDCBLICHE DER MENSCHHEIT.<p:normal>UND GOTT IST GL\xC4UBIG;<p:normal>ER
       L\xC4SST DICH NICHTS VERSUCHEN WAS DU NICHT ERTRAGEN KANNST!</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Localized: "Hoho! <p:short> Wenn das nicht Meister \n<color=red>Mario</color>
+      und Meister<color=green>Luigi</color>sind!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Localized: 'Willkommen zum ersten Alpha Test von
+
+      <color=red>Mario &
+      Luigi: Zusammen durch die Zeit + Krankfrieds Wut!</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Localized: "Dies sollte ein fr\xF6hlicher Anlass werden, voller Feier und Wow-Effekten,<p:short>jedoch..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Localized: Es scheint das unsere Jungen Meister spurlos <color=red>verschwunden
+      sind</color> ohne jegliche Spur von ihnen.
     m_Metadata:
       m_Items: []
   references:

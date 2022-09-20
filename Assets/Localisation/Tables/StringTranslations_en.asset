@@ -24,8 +24,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598788
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.confirm}\">
-      To Start
+    m_Localized: Press <sprite="{global.controller}" name="{global.confirm}"> To
+      Start
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -50,26 +50,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5510246400077824
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.m_action}\">
-      to make Mario jump
+    m_Localized: Press <sprite="{global.controller}" name="{global.m_action}"> to
+      make Mario jump
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
   - m_Id: 5510246400077825
-    m_Localized: 'Press <sprite=\"{global.controller}\" name=\"{global.l_action}\">
-      to make Luigi jump '
+    m_Localized: 'Press <sprite="{global.controller}" name="{global.l_action}"> to
+      make Luigi jump '
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
   - m_Id: 5510246404272128
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
+    m_Localized: Press <sprite="{global.controller}" name="{global.switch_action}">
       to switch action
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
   - m_Id: 5510246404272129
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.jump}\"> to
-      make both bros. jump
+    m_Localized: Press <sprite="{global.controller}" name="{global.jump}"> to make
+      both bros. jump
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -80,7 +80,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
-    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -202,7 +202,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788295
-    m_Localized: Um...
+    m_Localized: Uh...
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788296
@@ -212,6 +212,11 @@ MonoBehaviour:
       pesky bugs
 
       for the devs to fix?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: Press <sprite="{global.controller}" name="{global.pause}"> to open
+      the menu.
     m_Metadata:
       m_Items: []
   references:
