@@ -24,8 +24,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598788
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.confirm}\">
-      To Start
+    m_Localized: Press <sprite="{global.controller}" name="{global.confirm}"> To
+      Start
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -50,26 +50,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5510246400077824
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.m_action}\">
-      to make Mario jump
+    m_Localized: Press <sprite="{global.controller}" name="{global.m_action}"> to
+      make Mario jump
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
   - m_Id: 5510246400077825
-    m_Localized: 'Press <sprite=\"{global.controller}\" name=\"{global.l_action}\">
-      to make Luigi jump '
+    m_Localized: 'Press <sprite="{global.controller}" name="{global.l_action}"> to
+      make Luigi jump '
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
   - m_Id: 5510246404272128
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
+    m_Localized: Press <sprite="{global.controller}" name="{global.switch_action}">
       to switch action
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
   - m_Id: 5510246404272129
-    m_Localized: Press <sprite=\"{global.controller}\" name=\"{global.jump}\"> to
-      make both bros. jump
+    m_Localized: Press <sprite="{global.controller}" name="{global.jump}"> to make
+      both bros. jump
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -80,7 +80,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
-    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -127,6 +127,96 @@ MonoBehaviour:
     m_Localized: "<sp:50><anim:shake>NO TEMPTATION HAS OVERTAKEN YOU \nEXCEPT WHAT
       IS COMMON TO MANKIND.<p:normal> \nAND GOD IS FAITHFUL;<p:normal> \nHE WILL
       NOT LET YOU BE TEMPTED \nBEYOND WHAT YOU CAN BEAR!</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Localized: "Oho! <p:short> If it isn't masters \n<color=red>Mario</color> and
+      <color=green>Luigi</color>!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Localized: 'Welcome to the first alpha test for
+
+      <color=red>Mario & Luigi:
+      Partners in Time + Fawful''s Fury!</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Localized: 'This was supposed to be a joyous occasion
+
+      filled with celebration
+      and wow,<p:short>
+
+      however...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Localized: "It appears that the young masters \nseemed to have <color=red>vanished</color>
+      without a trace."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Localized: 'We''ve locked down the area,<p:short> so
+
+      the tykes should
+      be somewhere
+
+      here,<p:short> in the <color=red>Hollijolli Village Outskirts</color>.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Localized: 'So,<p:short> if you find them,<p:short> be sure to
+
+      let me
+      know!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Localized: I see...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Localized: "So the little ones were bouncing \non some of the mushrooms..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Localized: 'Well, that clears things up,<p:short>
+
+      thank you!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Localized: So...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Localized: Guess that's the demo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Localized: Uh...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Localized: 'Why don''t you run around the field
+
+      and try to spot some
+      pesky bugs
+
+      for the devs to fix?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: Press <sprite="{global.controller}" name="{global.pause}"> to open
+      the menu.
     m_Metadata:
       m_Items: []
   references:

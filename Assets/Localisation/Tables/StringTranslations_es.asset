@@ -20,43 +20,169 @@ MonoBehaviour:
     - rid: 7564702225955553280
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: 
+    m_Localized: Presiona <sprite="{global.controller}" name="{global.confirm}">
+      para empezar
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
   - m_Id: 5510246400077824
-    m_Localized: 
+    m_Localized: Presiona  <sprite="{global.controller}" name="{global.m_action}">
+      para hacer a Mario saltar
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
   - m_Id: 5510246400077825
-    m_Localized: 
+    m_Localized: Presiona  <sprite="{global.controller}" name="{global.m_action}">
+      para hacer a Luigi saltar
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
   - m_Id: 5510246404272128
-    m_Localized: 
+    m_Localized: "Presiona  <sprite=\"{global.controller}\" name=\"{global.l_action}\">
+      para cambiar la acci\xF3n"
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
   - m_Id: 5510246404272129
-    m_Localized: 
+    m_Localized: Presiona  <sprite="{global.controller}" name="{global.jump}"> para
+      que los dos hermanos salten a la vez
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
-  - m_Id: 1119172369920000
-    m_Localized: 5.26% Translated
-    m_Metadata:
-      m_Items: []
   - m_Id: 1119172407668736
     m_Localized: Open
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
-    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
+  - m_Id: 212437396598785
+    m_Localized: "Espa\xF1ol Latino"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668737
+    m_Localized: "Mario & Luigi: Compa\xF1eros En Tiempo + La Furia de Fawful"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598786
+    m_Localized: Maro, Walimer Ricarod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668738
+    m_Localized: Maro#1196, Walimer Ricarod#6048
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6210973573394432
+    m_Localized: 'Este es un texto de prueba.
+
+      Si estas leyendo esto, algo
+      tuvo que ir terriblemente mal-
+
+      Por favor reporta las acciones que llevaron
+      a este evento.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598789
+    m_Localized: "2022 GammaDream Juego Original \xA9Nintendo 2005"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809012932608
+    m_Localized: Not Needed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Localized: Not Needed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Localized: Not Needed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Localized: Not Needed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Localized: Not Needed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Localized: Not Needed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Localized: Not Needed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Localized: "\xA1Oh! <p:short> \xA1Pero si son los maestros\n<color=red>Mario</color>
+      y <color=green>Luigi!</color>!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Localized: "Bienvenido a la primera prueba en la alfa para\n<color=red>Mario
+      & Luigi: Compa\xF1eros en el Tiempo + La furia de Gracov\xEDtz!</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Localized: "Esta se supon\xEDa que fuera una divertida ocasi\xF3n \nllena de
+      celebraci\xF3n y sorpresas, <p:short> \nSin embargo...\n  \n\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Localized: "Parece que los j\xF3venes maestros \nhan <color=red>desaparecido</color>
+      sin dejar rastro."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Localized: "Hemos cerrado el \xE1rea,<p:short> as\xED que\nLos peque\xF1os
+      deben de estar aqu\xED\nen alguna parte,<p:short> en la <color=red>Navivilla</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Localized: "As\xED que,<p:short> si los encuentran<p:short> \xA1asegurense
+      de\nhacermelo saber!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Localized: Ya veo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Localized: "Asi que los peque\xF1os estaban rebotando \nen algunos champi\xF1ones..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Localized: "Bueno, eso explica muchas cosas,<p:short>\n\xA1Muchas gracias!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Localized: Bueno...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Localized: Supongo que eso fue la demo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Localized: Mm...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Localized: "\xBFPor que no corres por el campo\ny intentas encontrar algunos
+      errores para que\nlos desarrolladores los arreglen?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

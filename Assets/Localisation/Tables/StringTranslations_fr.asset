@@ -20,39 +20,35 @@ MonoBehaviour:
     - rid: 7564702225955553281
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: Appuyez sur <sprite=\"{global.controller}\" name=\"{global.confirm}\">
-      Pour Commencer
+    m_Localized: Appuyez sur <sprite="{global.controller}" name="{global.confirm}">
+      Pour Commencer.
     m_Metadata:
       m_Items:
       - rid: 7564702225955553281
   - m_Id: 5510246404272129
-    m_Localized: "Appuyez sur <sprite=\\\"{global.controller}\\\" name=\\\"{global.jump}\\\">
-      pour faire sauter les deux fr\xE8res"
+    m_Localized: "Appuyez sur <sprite=\"{global.controller}\" name=\"{global.jump}\">
+      pour faire sauter les deux fr\xE8res."
     m_Metadata:
       m_Items:
       - rid: 7564702225955553281
   - m_Id: 5510246404272128
-    m_Localized: Appuyez sur <sprite=\"{global.controller}\" name=\"{global.switch_action}\">
-      pour changer d'action
+    m_Localized: Appuyez sur <sprite="{global.controller}" name="{global.switch_action}">
+      pour changer d'action.
     m_Metadata:
       m_Items:
       - rid: 7564702225955553281
   - m_Id: 5510246400077825
-    m_Localized: Appuyez sur <sprite=\"{global.controller}\" name=\"{global.l_action}\">
-      pour faire sauter Luigi
+    m_Localized: Appuyez sur <sprite="{global.controller}" name="{global.l_action}">
+      pour faire sauter Luigi.
     m_Metadata:
       m_Items:
       - rid: 7564702225955553281
   - m_Id: 5510246400077824
-    m_Localized: Appuyez sur <sprite=\"{global.controller}\" name=\"{global.m_action}\">
-      pour faire sauter Mario
+    m_Localized: Appuyez sur <sprite="{global.controller}" name="{global.m_action}">
+      pour faire sauter Mario.
     m_Metadata:
       m_Items:
       - rid: 7564702225955553281
-  - m_Id: 1119172369920000
-    m_Localized: 57.89% Translated
-    m_Metadata:
-      m_Items: []
   - m_Id: 1119172407668736
     m_Localized: Open
     m_Metadata:
@@ -66,20 +62,136 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598786
-    m_Localized: Shroob
+    m_Localized: Shroob, Bienheureuxlebon, Cantharellus
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668738
-    m_Localized: Shroob#0032
+    m_Localized: Shroob#0032 / Bienheureuxlebon#2742 / Cantharellus#4869
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
-    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">.
     m_Metadata:
       m_Items:
       - rid: 7564702225955553281
   - m_Id: 212437396598789
-    m_Localized: "2022 GammaDream\nOriginal Game \xA9Nintendo 2005-2006"
+    m_Localized: "2022 GammaDream\nOriginal Game \xA9Nintendo 2005-2006."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6210973573394432
+    m_Localized: "\nCeci est un texte factice. Si vous lisez ceci,\nalors quelque
+      chose a horriblement mal tourn\xE9.\nPouvez-vous signaler au plus vite vos
+      actions menant \xE0 cet \xE9v\xE9nement."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809012932608
+    m_Localized: "<sp:50><anim:shake>MAIS SI NOUS VIVONS DANS LA LUMIERE,<p:normal>\xC0
+      LA MANI\xC8RE DE DIEU QUI VIS DANS CELLE-CI,<p:normal> ALORS NOUS AVONS R\xC9USSI
+      A COMMUNIQUER LES UNS AVEC LES AUTRES, <p:normal> ET LE SANG DE J\xC9SUS, <p:short>
+      SON FILS,<p:short> NOUS NETTOIE DE TOUS LES P\xC9CH\xC9S COMMIS.</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Localized: "<sp:50><anim:shake>SI NOUS AFFIRMONS QUE NOUS N'AVONS NULLEMENT
+      COMMIS DE P\xC9CH\xC9S,<p:normal> ALORS NOUS NOUS MENTONS \xC0 NOUS-M\xCAMES,<p:normal>
+      ET NOUS VIVONS DANS CE MENSONGE.</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Localized: "<sp:50><anim:shake>MAIS SI NOUS CONFESSONS TOUS NOS P\xC9CH\xC9S
+      \xC0 LUI,<p:normal> IL EST FIDELE ET JUSTE POUR PARDONNER LES PECHES COMMIS<p:normal>
+      ET POUR NETTOYER EN NOUS TOUTES FORMES DE M\xC9CHANCET\xC9S.</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Localized: "<sp:50><anim:shake>ET DU-COUP JE VAIS VOUS LE DIRE,<p:normal> CHAQUE
+      TYPE DE P\xC9CH\xC9S ET DE CALOMNIES SERONT PARDONN\xC9S,<p:normal> MAIS <coor=red>BLASPH\xC8MER
+      ENVERS NOTRE SAINT-ESPRIT</color> NE SERA PAS PARONN\xC9.</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Localized: "<sp:50><anim:shake>IMPURET\xC9,<p:normal>LUXURE<p:normal> ET D\xC9SIR
+      MALIN;<p:normal>NE SOYE PAS GOURMAND,<p:normal> POUR NOUS UNE PERSONNE GOURMANDE
+      EST \xC0 ID\xD4LATRER,<p:normal> ADORANT TOUTE CHOSES DANS LE MONDE</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Localized: "<sp:50><anim:shake> \xC0 CAUSE DE CES P\xC9CH\xC9S; <p:normal><color=red><size=200%>
+      LA COL\xC8RE DE DIEU ARRIVE!</color></anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Localized: "<sp:50><anim:shake> AUCUNE TENTATION NE VOUS A D\xC9PASS\xC9\nSAUF
+      CE QUI EST COMMUN \xC0 L'HUMANIT\xC9.<p:normal>\nET DIEU EST FID\xC8LE ;<p:normal>\nIL
+      NE VOUS LAISSERA PAS TENTER CE QUI EST\nAU-DEL\xC0 DE CE QUE VOUS POUVEZ SUPPORTER
+      !</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Localized: "Hoho! <p:short> Si ce ne sont pas<color=red>Ma\xEEtre Mario</color>
+      et <color=green>Ma\xEEtre Luigi</color>!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Localized: "Bienvenue dans le tout premier test alpha pour <color=red>Mario
+      & Luigi: Les fr\xE8res du Temps + La Furie de Gracowitz!</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Localized: "C'\xE9tait cens\xE9 \xEAtre une joyeuse occasion de faire la f\xEAte
+      avec c\xE9l\xE9bration et amiti\xE9,<p:short> cependant..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Localized: "Il me semblerait que les jeunes ma\xEEtres ont l'air d'avoir <color=red>disparus</color>
+      sans laisser de trace."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Localized: "Nous avons bloqu\xE9 toute la zone,<p:short> donc les enfants devraient
+      \xEAtre quelque part ici,<p:short> dans les <color=red>Faubourgs du village
+      Hollijolli.</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Localized: Alors,<p:short> si vous les trouvez,<p:short> faites-le moi savoir!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Localized: Je vois...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Localized: "Alors le petit \xE9tait en train de rebondir sur quelques champignons..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Localized: "Bien, cela \xE9claircit les choses,<p:short> Merci beaucoup!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Localized: Alors...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Localized: "Cela doit s\xFBrement \xEAtre la fin de la d\xE9mo..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Localized: Euh...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Localized: "Pourquoi ne pas courir autour de la zone et essayer de d\xE9nicher
+      des bugs pour que les d\xE9veloppeurs puissent les corriger?"
     m_Metadata:
       m_Items: []
   references:

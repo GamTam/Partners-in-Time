@@ -20,43 +20,227 @@ MonoBehaviour:
     - rid: 7564702225955553282
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: 
+    m_Localized: Druk <sprite="{global.controller}" name="{global.confirm}"> Om Te
+      Beginnen
     m_Metadata:
       m_Items:
       - rid: 7564702225955553282
   - m_Id: 5510246400077824
-    m_Localized: 
+    m_Localized: Druk <sprite="global.controller}" name="{global.m_action}"> om Mario
+      te laten springen
     m_Metadata:
       m_Items:
       - rid: 7564702225955553282
   - m_Id: 5510246400077825
-    m_Localized: 
+    m_Localized: 'Druk <sprite="{global.controller}" name="{global.l_action}"> om
+      Luigi te laten springen '
     m_Metadata:
       m_Items:
       - rid: 7564702225955553282
   - m_Id: 5510246404272128
-    m_Localized: 
+    m_Localized: Druk <sprite="{global.controller}" name="{global.switch_action}">
+      om van acties te verwisselen
     m_Metadata:
       m_Items:
       - rid: 7564702225955553282
   - m_Id: 5510246404272129
-    m_Localized: 
+    m_Localized: Druk <sprite="{global.controller}" name="{global.jump}"> om beide
+      de broers te laten springen
     m_Metadata:
       m_Items:
       - rid: 7564702225955553282
-  - m_Id: 1119172369920000
-    m_Localized: 5.26% Translated
-    m_Metadata:
-      m_Items: []
   - m_Id: 1119172407668736
     m_Localized: Open
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
-    m_Localized: <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
     m_Metadata:
       m_Items:
       - rid: 7564702225955553282
+  - m_Id: 212437396598785
+    m_Localized: Nederlands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668737
+    m_Localized: Mario & Luigi Partners in Tijd + De Woede Van Fawful
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598786
+    m_Localized: Darkman_Bree, error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119172407668738
+    m_Localized: Darkman_Bree#3764,Intrepid Sword#0001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6210973573394432
+    m_Localized: 'Dit is een dummy tekst.
+
+      Als je dit leest, is er iets vreselijk
+      misgelopen.
+
+      Rapporteer uw acties dat dit heeft veroorzaakt.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212437396598789
+    m_Localized: "2022 GammaDream\nOriginele Spel \xA9Nintendo 2005"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809012932608
+    m_Localized: "<sp:50><anim:shake>MAAR ALS WE LEVEN IN HET LICHT,<p:normal> ALS
+      GOD IN HET LICHT IS, \r\n<p:normal>DAN HEBBEN WE DE GEMEENSCHAP VAN ELKAAR,
+      <p:normal>\r\nEN HET BLOED VAN JESUS,<p:short> ZIJN ZOON,<p:short> REINIGT
+      ONS VAN ALLE ZONDEN</anim>\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Localized: '<sp:50><anim:shake>ALS WE ZEGGEN DAT WE GEEN ZONDEN HEBBEN,<p:normal>
+      DAN HEBBEN WE ALLEEN ONSZELF IN DE MAALING,<p:normal> EN LEVEN WE NIET IN DE
+      WAARHEID</anim>
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Localized: '<sp:50><anim:shake>MAAR ALS WIJ ONZE ZONDEN AAN HEM BEKENEN,<p:normal>
+      HIJ IS GETROUW
+
+      EN ALLEEN OM ONS ONZE ZONDEN TE VERGEVEN <p:normal>
+
+      EN
+      OM ONS TE REINIGEN VAN ALLE SLECHTHEID</anim>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Localized: '<sp:50><anim:shake>EN DAAROM VERTEL IK JE,<p:normal> ELKE SOORT
+      ZONDE EN LATERDAG
+
+      ZAL VERGEVEN WORDEN,<p:normal> MAAR <color=red>Godslastering
+      TEGEN DE GEEST</color>
+
+      ZAL NIET VERGEVEN WORDEN</anim>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Localized: '<sp:50><anim:shake>ONZUIVERHEID,<p:normal> LUST,<p:normal> EN KWADE
+      VERLANGEN;<p:normal>
+
+      WEES NIET GULZIG,<p:normal> VOOR EEN GULZIG PERSOON
+      IS EEN IDOLATER,<p:normal>
+
+      DE DINGEN VAN DEZE WERELD AANBIDDEN</anim>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Localized: '<sp:50><anim:shake>VOOR DEZE ZONDEN,<p:normal>
+
+      <color=red><size=200%>DE
+      WOORD VAN GOD KOMT!</color></anim>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Localized: '<sp:50><anim:shake>GEEN VERLEIDING HEEFT JE OVERGEHAALD
+
+      BEHALVE
+      WAT DE MENSHEID GEWOON IS.<p:normal>
+
+      EN GOD IS GETROUW;<p:normal>
+
+      HIJ
+      LAAT JE NIET IN DE VERLEIDING WORDEN
+
+      MEER DAN WAT JE KUNT VERDRAGEN!</anim>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Localized: "Oh o! <p:short> Als het niet de meesters \n<color=red>Mario</color>
+      en <color=green>Luigi</color> zijn!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Localized: 'Welkom bij de eerste alfa test voor
+
+      <color=red>Mario & Luigi
+      Partners in Tijd + De Woede Van Fawful!</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Localized: 'Dit had een feestelijke gelegenheid moeten worden
+
+      vol feest
+      en plezier,<p:short>
+
+      Maar...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Localized: "Het lijkt erop dat de jonge meesters \r\n<color=red>spoorloos</color>
+      zijn verdwenen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Localized: 'We hebben het gebied afgesloten,<p:short> dus
+
+      de tykes
+      moeten ergens zijn
+
+      hier,<p:short> in de <color=red>Holli jolli Village
+      Outskirts</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Localized: 'Dus,<p:short> als je ze vindt,<p:short> zorg ervoor dat je
+
+      het
+      me laat weten!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Localized: ik weet het nu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Localized: 'Dus de kleintjes waren aan het stuiteren
+
+      op een paar paddenstoelen...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Localized: 'Nou, dat verheldert alles,<p:short>
+
+      bedankt!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Localized: dus...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Localized: ik denk dat dat de demo is...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Localized: uhm...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Localized: 'Waarom ren je niet nog rond in het veld?
+
+      en probeer wat
+      vervelende bugs of glitches te vinden
+
+      voor de ontwikkelaars om te repareren?'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
