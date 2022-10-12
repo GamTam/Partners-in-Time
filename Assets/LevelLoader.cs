@@ -23,14 +23,15 @@ public class LevelLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().Equals("TestRoom"))
+        if (SceneManager.GetActiveScene().Equals("TestRoom - Holijoli"))
         {
             StartCoroutine(Kill());
         }
         if (_start.triggered)
         {
+            Debug.Log("works maybe");
             AudioManager.FadeoutAll();
-            StartCoroutine(LoadSceneTransition("TestRoom"));
+            StartCoroutine(LoadSceneTransition("TestRoom - Holijoli"));
         }
     }
 

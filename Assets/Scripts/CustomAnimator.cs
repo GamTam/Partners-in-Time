@@ -119,7 +119,7 @@ public class CustomAnimator : MonoBehaviour
     private void NextFrame(AnimationClip animation) {
         _currentFrame++;
         
-        if(_currentFrame > _frames.Count - 1) {
+        if(_currentFrame >= _frames.Count - 1) {
             if(_loop) {
                 _currentFrame = 0;
             } else {

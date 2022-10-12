@@ -67,8 +67,9 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
                     }
                 }
             }
-
-            _ctx.Controller.Move(_newMove);
+            //if(!_ctx.InputDisabled) {
+                _ctx.Controller.Move(_newMove);
+            //} 
         }
 
         CheckSwitchStates();

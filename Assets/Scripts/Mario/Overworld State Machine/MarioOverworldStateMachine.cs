@@ -16,7 +16,9 @@ public class MarioOverworldStateMachine : Billboard
     private InputAction _switchAction;
     private InputAction _jump;
     private InputAction _moveVector;
+    private Vector2 _cMoveVector;
     private bool _inputDisabled = false;
+    private bool _onCutscene = false;
 
     // Stats
     [SerializeField] private int moveSpeed = 5;
@@ -66,7 +68,8 @@ public class MarioOverworldStateMachine : Billboard
     public bool Jump { get { return !_inputDisabled ? _jump.triggered : false; } }
     public Animator Animator { get { return _animator; } }
     public string Facing { get { return _facing; } }
-    public Vector2 MoveVector { get {return !_inputDisabled ? _moveVector.ReadValue<Vector2>().normalized : Vector3.zero; } }
+    public Vector2 MoveVector { get { return !_onCutscene ? _moveVector.ReadValue<Vector2>().normalized : _cMoveVector; } set { _cMoveVector = value; } }
+    public bool OnCutscene { get { return _onCutscene; } set { _onCutscene = value; }}
     public float MoveAngle {get {return _moveAngle;} set {_moveAngle = value;} }
     public CharacterController Controller {get {return _controller;}}
     public int MoveSpeed {get {return moveSpeed;}}

@@ -12,6 +12,7 @@ TagManager:
   - Wall
   - Floor
   - 2D Cam
+  - Pathways
   layers:
   - Default
   - TransparentFX
