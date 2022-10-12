@@ -21,7 +21,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private Animator _transition;
     [SerializeField] private float _transitionTime = 1;
     [SerializeField] private string _destination;
-    [SerializeField] private Directions _transDir = Directions.Right;
+    [SerializeField] private Directions _movementDirection = Directions.Right;
 
     private Vector3 _destVector = Vector3.zero;
 
@@ -37,7 +37,7 @@ public class RoomManager : MonoBehaviour
 
     private void Start()
     {
-        switch (_transDir)
+        switch (_movementDirection)
         {
             case Directions.Down:
                 _destVector = new Vector3(0f, 0f, -20);
