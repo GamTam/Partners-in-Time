@@ -797,7 +797,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17fceb62db5ffdd4996829683daa7b2a, type: 2}
+  - {fileID: 2100000, guid: 850a1a07bd7c8e24a8e518501c065b86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31473,7 +31473,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17fceb62db5ffdd4996829683daa7b2a, type: 2}
+  - {fileID: 2100000, guid: 850a1a07bd7c8e24a8e518501c065b86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32671,6 +32671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9316da312456a74c90519cbce200b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMaskOffset: 1
 --- !u!212 &240595120
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32881,6 +32882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   _marioPos: {fileID: 1097153016}
+  _marioSM: {fileID: 0}
   _queueDelay: 7
   child: {fileID: 360729861}
   _debugData: {fileID: 197809452}
@@ -33563,7 +33565,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17fceb62db5ffdd4996829683daa7b2a, type: 2}
+  - {fileID: 2100000, guid: 850a1a07bd7c8e24a8e518501c065b86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33576,7 +33578,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -36826,6 +36828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9316da312456a74c90519cbce200b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMaskOffset: 1
 --- !u!212 &696859539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37825,6 +37828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9316da312456a74c90519cbce200b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMaskOffset: 1
 --- !u!212 &1013382208
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38171,6 +38175,7 @@ MonoBehaviour:
   _debugData: {fileID: 1380163675}
   _shadow: {fileID: 0}
   _babyMarioRef: {fileID: 0}
+  _babyLuigiRef: {fileID: 0}
   _luigiPos: {fileID: 263155428}
 --- !u!143 &1097153019
 CharacterController:
@@ -39320,6 +39325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _localize: 0
+  _spriteRenderer: {fileID: 0}
   _dialogue:
   - Memories broken
   - The truth goes unspoken
@@ -39356,9 +39362,6 @@ MonoBehaviour:
   - 'It''s the only thing I''ve ever
 
     <anim:wave>knoooooooooooooooooooooown!</anim>'
-  _stringTable:
-    m_TableReference:
-      m_TableCollectionName: StringTranslations
 --- !u!136 &1334838294
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -39558,7 +39561,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45752
+  m_Name: pb_Mesh28232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40147,6 +40150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _localize: 1
+  _spriteRenderer: {fileID: 0}
   _dialogue:
   - msg_living_in_the_light_1
   - msg_living_in_the_light_2
@@ -40155,9 +40159,6 @@ MonoBehaviour:
   - msg_living_in_the_light_5
   - msg_living_in_the_light_6
   - msg_living_in_the_light_7
-  _stringTable:
-    m_TableReference:
-      m_TableCollectionName: GUID:e36c4b67d0b385844bc908d401e45fe2
 --- !u!136 &1549008254
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40222,7 +40223,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28058
+  m_Name: pb_Mesh28332
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40517,7 +40518,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45738
+  m_Name: pb_Mesh28218
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40769,6 +40770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _localize: 0
+  _spriteRenderer: {fileID: 0}
   _dialogue:
   - <anim:wave>Welcome<p:short> to the internet!</anim>
   - Have a look around
@@ -40870,9 +40872,6 @@ MonoBehaviour:
 '
   - <sp:100>Obama sent the immigrants to <p:normal>vac<p:short>ci<p:short>nate<p:short>
     your<p:short> kids.
-  _stringTable:
-    m_TableReference:
-      m_TableCollectionName: StringTranslations
 --- !u!136 &1694865896
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -41283,7 +41282,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
-  m_LocalRotation: {x: 0.378829, y: 0.000000015923938, z: -0.0000000065182792, w: 0.9254667}
+  m_LocalRotation: {x: 0.378829, y: -0.000000015923927, z: 0.0000000065182744, w: 0.9254667}
   m_LocalPosition: {x: 8.3, y: 11.933001, z: -25.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41747,7 +41746,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938000780}
-  m_LocalRotation: {x: 0.378829, y: 0.000000015923938, z: -0.0000000065182792, w: 0.9254667}
+  m_LocalRotation: {x: 0.378829, y: -0.000000015923927, z: 0.0000000065182744, w: 0.9254667}
   m_LocalPosition: {x: 8.3, y: 11.933001, z: -25.79}
   m_LocalScale: {x: 1.9366077, y: 0.83533406, z: 1.556065}
   m_ConstrainProportionsScale: 0
