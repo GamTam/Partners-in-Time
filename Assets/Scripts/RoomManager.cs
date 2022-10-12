@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 enum Directions
 {
@@ -90,6 +91,7 @@ public class RoomManager : MonoBehaviour
         if(!_debounce) {
             if(other.gameObject.CompareTag("Player"))
             {
+                StartCoroutine(OnDebounce());
                 StartCoroutine(LoadSceneTransition(_destination));
             }
         }
