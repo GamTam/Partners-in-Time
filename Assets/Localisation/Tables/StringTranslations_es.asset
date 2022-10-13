@@ -21,7 +21,7 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 212437396598788
     m_Localized: "Presiona <sprite=\"{global.controller}\" name=\"{global.confirm}\">
-      \npara Empezar"
+      \nPara Empezar"
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
