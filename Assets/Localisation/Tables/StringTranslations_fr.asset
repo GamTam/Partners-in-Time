@@ -20,8 +20,10 @@ MonoBehaviour:
     - rid: 7564702225955553281
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: Appuyez sur <sprite="{global.controller}" name="{global.confirm}">
-      Pour Commencer.
+    m_Localized: 'Appuyez sur <sprite="{global.controller}" name="{global.confirm}">
+
+      Pour
+      Commencer'
     m_Metadata:
       m_Items:
       - rid: 7564702225955553281
@@ -50,7 +52,7 @@ MonoBehaviour:
       m_Items:
       - rid: 7564702225955553281
   - m_Id: 1119172407668736
-    m_Localized: Open
+    m_Localized: Full
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598785
@@ -66,11 +68,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668738
-    m_Localized: Shroob#0032 / Bienheureuxlebon#2742 / Cantharellus#4869
+    m_Localized: Shroob#0032 / Bienheureuxlecouillon#2742 / Cantharellus#4869
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
-    m_Localized: <sprite="{global.controller}" name="{global.confirm}">.
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
     m_Metadata:
       m_Items:
       - rid: 7564702225955553281
@@ -80,8 +82,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6210973573394432
     m_Localized: "\nCeci est un texte factice. Si vous lisez ceci,\nalors quelque
-      chose a horriblement mal tourn\xE9.\nPouvez-vous signaler au plus vite vos
-      actions menant \xE0 cet \xE9v\xE9nement."
+      chose a horriblement mal tourn\xE9.\nVeuillez signaler au plus vite vos actions
+      menant \xE0 cet \xE9v\xE9nement."
     m_Metadata:
       m_Items: []
   - m_Id: 6264809012932608
@@ -123,8 +125,8 @@ MonoBehaviour:
   - m_Id: 6264809042292741
     m_Localized: "<sp:50><anim:shake> AUCUNE TENTATION NE VOUS A D\xC9PASS\xC9\nSAUF
       CE QUI EST COMMUN \xC0 L'HUMANIT\xC9.<p:normal>\nET DIEU EST FID\xC8LE ;<p:normal>\nIL
-      NE VOUS LAISSERA PAS TENTER CE QUI EST\nAU-DEL\xC0 DE CE QUE VOUS POUVEZ SUPPORTER
-      !</anim>"
+      NE VOUS LAISSERA PAS TENTER CE QUI EST\nAU-DEL\xC0 DE CE QUE VOUS NE POURREZ
+      SUPPORTER !</anim>"
     m_Metadata:
       m_Items: []
   - m_Id: 10685455222517760
@@ -162,7 +164,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788289
-    m_Localized: "Alors le petit \xE9tait en train de rebondir sur quelques champignons..."
+    m_Localized: "Alors les petits \xE9taient en train de rebondir sur quelques champignons..."
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788290
@@ -178,7 +180,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788293
-    m_Localized: "Cela doit s\xFBrement \xEAtre la fin de la d\xE9mo..."
+    m_Localized: "Cela doit s\xFBrement \xEAtre la fin de la d\xE9mo...Dommage"
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788294
@@ -186,12 +188,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788295
-    m_Localized: Euh...
+    m_Localized: Hmm...
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788296
     m_Localized: "Pourquoi ne pas courir autour de la zone et essayer de d\xE9nicher
       des bugs pour que les d\xE9veloppeurs puissent les corriger?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: Appuyez sur <sprite="{global.controller}" name="{global.pause}">
+      pour ouvrir le menu
     m_Metadata:
       m_Items: []
   references:

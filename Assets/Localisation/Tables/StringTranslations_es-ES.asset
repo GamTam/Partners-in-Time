@@ -75,8 +75,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598788
-    m_Localized: Pulsa <sprite="{global.controller}" name="{global.confirm}"> Para
-      Empezar
+    m_Localized: "Pulsa <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+      \nPara Empezar"
     m_Metadata:
       m_Items:
       - rid: 1551562885755830273
@@ -190,6 +190,11 @@ MonoBehaviour:
   - m_Id: 10689039179788296
     m_Localized: "\xBFPorque no corres por el campo\ne intentas encontrar algunos
       bugs\npara que los desarrolladores los arreglen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: "Pulsa <sprite=\"{global.controller}\" name=\"{global.pause}\">
+      \npara abrir el men\xFA"
     m_Metadata:
       m_Items: []
   references:

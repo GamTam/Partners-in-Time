@@ -4099,7 +4099,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press <sprite="Xbox Controller" name="A"> To Start
+  m_text: Press <sprite="Xbox Controller" name="buttonSouth"> To Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e757cc9f95611b74da8d017a67059ae5, type: 2}
   m_sharedMaterial: {fileID: -8043167168089830999, guid: e757cc9f95611b74da8d017a67059ae5, type: 2}

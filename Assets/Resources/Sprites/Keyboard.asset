@@ -121,56 +121,56 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 13
     m_Scale: 1.25
-    m_Name: A
-    m_HashCode: 65
+    m_Name: a
+    m_HashCode: 97
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 14
     m_Scale: 1.25
-    m_Name: Alt
-    m_HashCode: 68057
+    m_Name: alt
+    m_HashCode: 109305
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 15
     m_Scale: 1.25
-    m_Name: Down
-    m_HashCode: 2420114
+    m_Name: downArrow
+    m_HashCode: 1771612171
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 16
     m_Scale: 1.25
-    m_Name: Left
-    m_HashCode: 2692347
+    m_Name: leftArrow
+    m_HashCode: -1622292926
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 17
     m_Scale: 1.25
-    m_Name: Right
-    m_HashCode: 100985888
+    m_Name: rightArrow
+    m_HashCode: -106223559
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 18
     m_Scale: 1.25
-    m_Name: Up
-    m_HashCode: 2693
+    m_Name: upArrow
+    m_HashCode: -312149700
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 19
     m_Scale: 1.25
-    m_Name: '*'
-    m_HashCode: 42
+    m_Name: numpadMultiply
+    m_HashCode: -2072976273
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 20
     m_Scale: 1.25
-    m_Name: B
-    m_HashCode: 66
+    m_Name: b
+    m_HashCode: 98
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 21
     m_Scale: 1.25
-    m_Name: Backspace
-    m_HashCode: 1848822959
+    m_Name: backspace
+    m_HashCode: -1695224369
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 22
@@ -181,68 +181,68 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 23
     m_Scale: 1.25
-    m_Name: '['
-    m_HashCode: 91
+    m_Name: leftBracket
+    m_HashCode: -98071373
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 24
     m_Scale: 1.25
-    m_Name: ']'
-    m_HashCode: 93
+    m_Name: rightBracket
+    m_HashCode: -1060981560
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 25
     m_Scale: 1.25
-    m_Name: C
-    m_HashCode: 67
+    m_Name: c
+    m_HashCode: 99
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 26
     m_Scale: 1.25
-    m_Name: Caps Lock
-    m_HashCode: -425592502
+    m_Name: capsLock
+    m_HashCode: -1291584150
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 27
     m_Scale: 1.25
-    m_Name: Command
-    m_HashCode: -2113125113
+    m_Name: command
+    m_HashCode: -1871845849
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 28
     m_Scale: 1.25
-    m_Name: Control
-    m_HashCode: -2114001209
+    m_Name: ctrl
+    m_HashCode: 3547369
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 29
     m_Scale: 1.25
-    m_Name: D
-    m_HashCode: 68
+    m_Name: d
+    m_HashCode: 100
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 30
     m_Scale: 1.25
-    m_Name: Delete
-    m_HashCode: -1676025159
+    m_Name: delete
+    m_HashCode: -497359207
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 31
     m_Scale: 1.25
-    m_Name: E
-    m_HashCode: 69
+    m_Name: e
+    m_HashCode: 101
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 32
     m_Scale: 1.25
-    m_Name: End
-    m_HashCode: 72079
+    m_Name: end
+    m_HashCode: 113327
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 33
     m_Scale: 1.25
-    m_Name: Enter
-    m_HashCode: 78508072
+    m_Name: enter
+    m_HashCode: 123433544
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 34
@@ -253,14 +253,14 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 35
     m_Scale: 1.25
-    m_Name: Numpad Enter
-    m_HashCode: 2061625003
+    m_Name: numpadEnter
+    m_HashCode: 1405418379
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 36
     m_Scale: 1.25
-    m_Name: Escape
-    m_HashCode: -1689534303
+    m_Name: escape
+    m_HashCode: -207272575
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 37
@@ -337,62 +337,62 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 49
     m_Scale: 1.25
-    m_Name: F
-    m_HashCode: 70
+    m_Name: f
+    m_HashCode: 102
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 50
     m_Scale: 1.25
-    m_Name: G
-    m_HashCode: 71
+    m_Name: g
+    m_HashCode: 103
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 51
     m_Scale: 1.25
-    m_Name: H
-    m_HashCode: 72
+    m_Name: h
+    m_HashCode: 104
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 52
     m_Scale: 1.25
-    m_Name: Home
-    m_HashCode: 2554831
+    m_Name: home
+    m_HashCode: 3628719
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 53
     m_Scale: 1.25
-    m_Name: I
-    m_HashCode: 73
+    m_Name: i
+    m_HashCode: 105
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 54
     m_Scale: 1.25
-    m_Name: Insert
-    m_HashCode: -1557182665
+    m_Name: insert
+    m_HashCode: -74929385
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 55
     m_Scale: 1.25
-    m_Name: J
-    m_HashCode: 74
+    m_Name: j
+    m_HashCode: 106
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 56
     m_Scale: 1.25
-    m_Name: K
-    m_HashCode: 75
+    m_Name: k
+    m_HashCode: 107
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 57
     m_Scale: 1.25
-    m_Name: L
-    m_HashCode: 76
+    m_Name: l
+    m_HashCode: 108
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 58
     m_Scale: 1.25
-    m_Name: M
-    m_HashCode: 77
+    m_Name: m
+    m_HashCode: 109
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 59
@@ -415,20 +415,20 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 62
     m_Scale: 1.25
-    m_Name: Left Button
-    m_HashCode: -405367443
+    m_Name: <Mouse>/leftButton
+    m_HashCode: 738976673
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 63
     m_Scale: 1.25
-    m_Name: MMB
-    m_HashCode: 81378
+    m_Name: <Mouse>/middleButton
+    m_HashCode: 1877521943
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 64
     m_Scale: 1.25
-    m_Name: Right Button
-    m_HashCode: -724204970
+    m_Name: <Mouse>/rightButton
+    m_HashCode: -1100884742
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 65
@@ -439,32 +439,32 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 66
     m_Scale: 1.25
-    m_Name: N
-    m_HashCode: 78
+    m_Name: n
+    m_HashCode: 110
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 67
     m_Scale: 1.25
-    m_Name: Num Lock
-    m_HashCode: 1781507293
+    m_Name: numLock
+    m_HashCode: 2123214429
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 68
     m_Scale: 1.25
-    m_Name: O
-    m_HashCode: 79
+    m_Name: o
+    m_HashCode: 111
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 69
     m_Scale: 1.25
-    m_Name: P
-    m_HashCode: 80
+    m_Name: p
+    m_HashCode: 112
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 70
     m_Scale: 1.25
-    m_Name: Page Down
-    m_HashCode: -1015471295
+    m_Name: pageDown
+    m_HashCode: 682618145
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 71
@@ -487,14 +487,14 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 74
     m_Scale: 1.25
-    m_Name: Print Screen
-    m_HashCode: -918914115
+    m_Name: printScreen
+    m_HashCode: 651107101
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 75
     m_Scale: 1.25
-    m_Name: Q
-    m_HashCode: 81
+    m_Name: q
+    m_HashCode: 113
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 76
@@ -505,20 +505,20 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 77
     m_Scale: 1.25
-    m_Name: Quotation
-    m_HashCode: 650628034
+    m_Name: quotation
+    m_HashCode: -1996150302
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 78
     m_Scale: 1.25
-    m_Name: R
-    m_HashCode: 82
+    m_Name: r
+    m_HashCode: 114
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 79
     m_Scale: 1.25
-    m_Name: S
-    m_HashCode: 83
+    m_Name: s
+    m_HashCode: 115
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 80
@@ -535,8 +535,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 82
     m_Scale: 1.25
-    m_Name: Shift
-    m_HashCode: 99897088
+    m_Name: shift
+    m_HashCode: 135614240
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 83
@@ -547,20 +547,20 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 84
     m_Scale: 1.5
-    m_Name: Space
-    m_HashCode: 99043428
+    m_Name: space
+    m_HashCode: 134760324
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 85
     m_Scale: 1.25
-    m_Name: T
-    m_HashCode: 84
+    m_Name: t
+    m_HashCode: 116
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 86
     m_Scale: 1.25
-    m_Name: Tab
-    m_HashCode: 90423
+    m_Name: tab
+    m_HashCode: 123223
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 87
@@ -571,44 +571,44 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 88
     m_Scale: 1.25
-    m_Name: U
-    m_HashCode: 85
+    m_Name: u
+    m_HashCode: 117
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 89
     m_Scale: 1.25
-    m_Name: V
-    m_HashCode: 86
+    m_Name: v
+    m_HashCode: 118
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 90
     m_Scale: 1.25
-    m_Name: W
-    m_HashCode: 87
+    m_Name: w
+    m_HashCode: 119
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 91
     m_Scale: 1.25
-    m_Name: Windows
-    m_HashCode: -1986073377
+    m_Name: windows
+    m_HashCode: -2039477249
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 92
     m_Scale: 1.25
-    m_Name: X
-    m_HashCode: 88
+    m_Name: x
+    m_HashCode: 120
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 93
     m_Scale: 1.25
-    m_Name: Y
-    m_HashCode: 89
+    m_Name: y
+    m_HashCode: 121
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 94
     m_Scale: 1.25
-    m_Name: Z
-    m_HashCode: 90
+    m_Name: z
+    m_HashCode: 122
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 11

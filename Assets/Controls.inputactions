@@ -151,7 +151,7 @@
                     "path": "<XInputController>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox Control Scheme",
+                    "groups": "Xbox Controller",
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -162,7 +162,7 @@
                     "path": "<XInputController>/dpad",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox Control Scheme",
+                    "groups": "Xbox Controller",
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -206,7 +206,7 @@
                     "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox Control Scheme",
+                    "groups": "Xbox Controller",
                     "action": "m_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -239,7 +239,7 @@
                     "path": "<XInputController>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox Control Scheme",
+                    "groups": "Xbox Controller",
                     "action": "l_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -272,7 +272,7 @@
                     "path": "<XInputController>/buttonWest",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox Control Scheme",
+                    "groups": "Xbox Controller",
                     "action": "jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -349,7 +349,7 @@
                     "path": "<XInputController>/rightStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox Control Scheme",
+                    "groups": "Xbox Controller",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -382,7 +382,7 @@
                     "path": "<XInputController>/rightShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox Control Scheme",
+                    "groups": "Xbox Controller",
                     "action": "switch_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -429,7 +429,7 @@
                 {
                     "name": "",
                     "id": "49dbee07-9e99-430b-9cc9-902a501093a9",
-                    "path": "<Keyboard>/j",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -451,10 +451,10 @@
                 {
                     "name": "",
                     "id": "0555aaba-19eb-4f7a-92ad-a7fb69264de2",
-                    "path": "<XInputController>/buttonSouth",
+                    "path": "<XInputController>/rightShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Xbox",
+                    "groups": "Xbox Controller",
                     "action": "confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -475,8 +475,8 @@
             ]
         },
         {
-            "name": "Xbox Control Scheme",
-            "bindingGroup": "Xbox Control Scheme",
+            "name": "Xbox Controller",
+            "bindingGroup": "Xbox Controller",
             "devices": [
                 {
                     "devicePath": "<XInputController>",

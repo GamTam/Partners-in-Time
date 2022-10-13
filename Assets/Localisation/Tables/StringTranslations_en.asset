@@ -24,8 +24,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598788
-    m_Localized: Press <sprite="{global.controller}" name="{global.confirm}"> To
-      Start
+    m_Localized: 'Press <sprite="{global.controller}" name="{global.confirm}">
+
+      To
+      Start'
     m_Metadata:
       m_Items:
       - rid: 7564701837450543129
@@ -168,7 +170,9 @@ MonoBehaviour:
     m_Localized: 'So,<p:short> if you find them,<p:short> be sure to
 
       let me
-      know!'
+      know!
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788288
@@ -216,7 +220,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 10921245819088896
     m_Localized: Press <sprite="{global.controller}" name="{global.pause}"> to open
-      the menu.
+      the menu
     m_Metadata:
       m_Items: []
   references:

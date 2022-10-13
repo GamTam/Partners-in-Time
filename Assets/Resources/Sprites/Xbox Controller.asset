@@ -81,14 +81,14 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 0
     m_Scale: 1.25
-    m_Name: A
-    m_HashCode: 65
+    m_Name: buttonSouth
+    m_HashCode: -301299069
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1
     m_Scale: 1.25
-    m_Name: B
-    m_HashCode: 66
+    m_Name: buttonEast
+    m_HashCode: -1440147051
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 2
@@ -99,32 +99,32 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 3
     m_Scale: 1.25
-    m_Name: D-Pad Down
-    m_HashCode: 2036954446
+    m_Name: dpad/down
+    m_HashCode: -1335094900
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 4
     m_Scale: 1.25
-    m_Name: D-Pad Left
-    m_HashCode: 2036678311
+    m_Name: dpad/left
+    m_HashCode: -1335366683
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 5
     m_Scale: 1.25
-    m_Name: D-Pad Right
-    m_HashCode: -1516502276
+    m_Name: dpad/right
+    m_HashCode: -1120372482
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 6
     m_Scale: 1.25
-    m_Name: D-Pad Up
-    m_HashCode: -1784741799
+    m_Name: dpad/up
+    m_HashCode: 1580299547
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 7
     m_Scale: 1.25
-    m_Name: LB
-    m_HashCode: 2446
+    m_Name: leftShoulder
+    m_HashCode: -169271035
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 8
@@ -135,26 +135,26 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 9
     m_Scale: 1.25
-    m_Name: LS Down
-    m_HashCode: 1865357261
+    m_Name: leftStickPress
+    m_HashCode: 1095762970
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 10
     m_Scale: 1.25
-    m_Name: Left Trigger
-    m_HashCode: -130475453
+    m_Name: leftTrigger
+    m_HashCode: 248695587
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 11
     m_Scale: 1.25
-    m_Name: Menu
-    m_HashCode: 2660307
+    m_Name: start
+    m_HashCode: 134904608
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 12
     m_Scale: 1.25
-    m_Name: RB
-    m_HashCode: 2768
+    m_Name: rightShoulder
+    m_HashCode: 1279373598
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 13
@@ -165,38 +165,38 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 14
     m_Scale: 1.25
-    m_Name: RS Down
-    m_HashCode: 325416915
+    m_Name: rightStickPress
+    m_HashCode: -1064336319
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 15
     m_Scale: 1.25
-    m_Name: RT
-    m_HashCode: 2758
+    m_Name: rightTrigger
+    m_HashCode: 342981208
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 16
     m_Scale: 1.25
-    m_Name: Share
-    m_HashCode: 99905165
+    m_Name: share
+    m_HashCode: 135622317
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 17
     m_Scale: 1.25
-    m_Name: View
-    m_HashCode: 3203597
+    m_Name: select
+    m_HashCode: 167878536
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 18
     m_Scale: 1.25
-    m_Name: X
-    m_HashCode: 88
+    m_Name: buttonEast
+    m_HashCode: -1440147051
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 19
     m_Scale: 1.25
-    m_Name: Y
-    m_HashCode: 89
+    m_Name: buttonNorth
+    m_HashCode: -276584103
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:

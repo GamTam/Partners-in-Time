@@ -20,8 +20,8 @@ MonoBehaviour:
     - rid: 7564701837450543130
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: Premi <sprite="{global.controller}" name="{global.confirm}"> Per
-      Iniziare
+    m_Localized: "Premi <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+      \nPer Iniziare"
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
@@ -87,8 +87,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6210973573394432
     m_Localized: "Questo \xE8 un testo prova. Se lo stai leggendo, \nallora qualcosa
-      \xE8 andato orribilmente, orribilmente storto. \nPer favore notifica le tue
-      azioni che hanno portato a questo evento"
+      \xE8 andato storto. \nPer favore notifica le tue azioni che hanno portato a
+      questo evento"
     m_Metadata:
       m_Items: []
   - m_Id: 6264809042292736
@@ -122,7 +122,7 @@ MonoBehaviour:
   - m_Id: 6264809042292741
     m_Localized: "<sp:50><anim:shake>NESSUNA TENTAZIONE TI HA PRESO\nTRANNE QUELLO
       CHE \xC8 COMUNE NELLA NATURA UMANA.<p:normal> \nE DIO \xC8 FEDELE;<p:normal>
-      \nNON LASCIER\xC0 CHE TJ VENGA TENTATO\nOLTRE A QUELLP CHE TU PUOI SOSTENERE!</anim>"
+      \nNON LASCER\xC0 CHE TI VENGA TENTATO\nOLTRE A QUELLO CHE TU PUOI SOSTENERE!</anim>"
     m_Metadata:
       m_Items: []
   - m_Id: 10685455222517760
@@ -198,6 +198,11 @@ MonoBehaviour:
   - m_Id: 10689039179788296
     m_Localized: "Perch\xE8 non andate in giro e cercate qualche bug da far sistemare
       agli sviluppatori?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: Premi <sprite="{global.controller}" name="{global.pause}"> per aprire
+      il menu
     m_Metadata:
       m_Items: []
   references:

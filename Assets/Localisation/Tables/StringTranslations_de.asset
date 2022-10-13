@@ -20,8 +20,8 @@ MonoBehaviour:
     - rid: 7564702225955553283
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\"name=\"{global.confirm}\">
-      um zu starten"
+    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\"name=\"{global.confirm}\">\nUm
+      Zu Starten"
     m_Metadata:
       m_Items:
       - rid: 7564702225955553283
@@ -38,8 +38,8 @@ MonoBehaviour:
       m_Items:
       - rid: 7564702225955553283
   - m_Id: 5510246400077825
-    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\" name=\"{global.l_action}\">
-      damit Luigi springt"
+    m_Localized: "Dr\xFCcke<sprite=\"{global.controller}\" name=\"{global.l_action}\">
+      damit Luigi springt "
     m_Metadata:
       m_Items:
       - rid: 7564702225955553283
@@ -141,8 +141,60 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10685455251877890
-    m_Localized: Es scheint das unsere Jungen Meister spurlos <color=red>verschwunden
-      sind</color> ohne jegliche Spur von ihnen.
+    m_Localized: Es scheint das unsere Jungen Meister <color=red>verschwunden sind</color>
+      ohne jegliche Spur von ihnen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: "Dr\xFCcke  <sprite=\"{global.controller}\" name=\"{global.pause}\">
+      um das Men\xFC zu \xF6ffnen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Localized: "Wir haben die ganze Umgebung abgesperrt,<p:short> also m\xFCssen
+      diese G\xF6ren irgendwo hier, <p:short> au\xDFerhalb von Dorf <color=red> Kuddelmuddel</color>
+      sein."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Localized: Also,<p:short> wenn du sie findest,<p:short> lass es mich wissen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Localized: Ich verstehe...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Localized: Also die Kleinen sprangen auf ein paar Pilze...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Localized: "Nun, damit ist das Problem gel\xF6st,<p:short> danke sehr!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Localized: Also...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Localized: Das war die Demo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Localized: Ehh...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Localized: "Warum l\xE4ufst du nicht einfach hier in der Gegend herum und suchst
+      nach ein paar nervenden Bugs f\xFCr unsere Entwickler zum reparieren?"
     m_Metadata:
       m_Items: []
   references:

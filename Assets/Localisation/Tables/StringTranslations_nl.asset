@@ -20,8 +20,10 @@ MonoBehaviour:
     - rid: 7564702225955553282
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: Druk <sprite="{global.controller}" name="{global.confirm}"> Om Te
-      Beginnen
+    m_Localized: 'Druk <sprite="{global.controller}" name="{global.confirm}">
+
+      Om
+      Te Beginnen'
     m_Metadata:
       m_Items:
       - rid: 7564702225955553282
@@ -63,7 +65,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668737
-    m_Localized: Mario & Luigi Partners in Tijd + De Woede Van Fawful
+    m_Localized: 'Mario & Luigi: Partners in Tijd + De Woede Van Fawful'
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598786
@@ -71,7 +73,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668738
-    m_Localized: Darkman_Bree#3764,Intrepid Sword#0001
+    m_Localized: Darkman_Bree#3764, your guardian angel#1592
     m_Metadata:
       m_Items: []
   - m_Id: 6210973573394432
@@ -159,10 +161,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10685455251877888
-    m_Localized: 'Welkom bij de eerste alfa test voor
+    m_Localized: 'Welkom bij de eerste Alpha test voor
 
-      <color=red>Mario & Luigi
-      Partners in Tijd + De Woede Van Fawful!</color>'
+      <color=red>Mario &
+      Luigi Partners in Tijd + De Woede Van Fawful!</color>'
     m_Metadata:
       m_Items: []
   - m_Id: 10685455251877889
@@ -182,10 +184,10 @@ MonoBehaviour:
   - m_Id: 10685455251877891
     m_Localized: 'We hebben het gebied afgesloten,<p:short> dus
 
-      de tykes
+      de kleine
       moeten ergens zijn
 
-      hier,<p:short> in de <color=red>Holli jolli Village
+      hier,<p:short> in de <color=red>Hollijolli Village
       Outskirts</color>'
     m_Metadata:
       m_Items: []
@@ -197,7 +199,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788288
-    m_Localized: ik weet het nu
+    m_Localized: aha...
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788289
@@ -217,11 +219,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788292
-    m_Localized: dus...
+    m_Localized: Dus...
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788293
-    m_Localized: ik denk dat dat de demo is...
+    m_Localized: Ik denk dat dat de demo is...
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788294
@@ -229,7 +231,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788295
-    m_Localized: uhm...
+    m_Localized: Uhm...
     m_Metadata:
       m_Items: []
   - m_Id: 10689039179788296
@@ -239,6 +241,11 @@ MonoBehaviour:
       vervelende bugs of glitches te vinden
 
       voor de ontwikkelaars om te repareren?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: Druk <sprite="{global.controller}" name="{global.pause}"> om de
+      menu te openen
     m_Metadata:
       m_Items: []
   references:

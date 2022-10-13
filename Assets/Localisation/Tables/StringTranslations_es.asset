@@ -20,8 +20,8 @@ MonoBehaviour:
     - rid: 7564702225955553280
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: Presiona <sprite="{global.controller}" name="{global.confirm}">
-      para empezar
+    m_Localized: "Presiona <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+      \npara Empezar"
     m_Metadata:
       m_Items:
       - rid: 7564702225955553280
@@ -50,7 +50,7 @@ MonoBehaviour:
       m_Items:
       - rid: 7564702225955553280
   - m_Id: 1119172407668736
-    m_Localized: Open
+    m_Localized: Full
     m_Metadata:
       m_Items: []
   - m_Id: 6215980339245056
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_Localized: 'Este es un texto de prueba.
 
       Si estas leyendo esto, algo
-      tuvo que ir terriblemente mal-
+      tuvo que ir terriblemente mal.
 
       Por favor reporta las acciones que llevaron
       a este evento.'
@@ -123,12 +123,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 10685455251877888
     m_Localized: "Bienvenido a la primera prueba en la alfa para\n<color=red>Mario
-      & Luigi: Compa\xF1eros en el Tiempo + La furia de Gracov\xEDtz!</color>"
+      & Luigi: Compa\xF1eros en el Tiempo + La furia de Fawful!</color>"
     m_Metadata:
       m_Items: []
   - m_Id: 10685455251877889
     m_Localized: "Esta se supon\xEDa que fuera una divertida ocasi\xF3n \nllena de
-      celebraci\xF3n y sorpresas, <p:short> \nSin embargo...\n  \n\n"
+      celebraci\xF3n y sorpresas, <p:short> \nSin embargo..."
     m_Metadata:
       m_Items: []
   - m_Id: 10685455251877890
@@ -181,6 +181,11 @@ MonoBehaviour:
   - m_Id: 10689039179788296
     m_Localized: "\xBFPor que no corres por el campo\ny intentas encontrar algunos
       errores para que\nlos desarrolladores los arreglen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: "Presiona <sprite=\"{global.controller}\" name=\"{global.pause}\">
+      Para abrir el men\xFA"
     m_Metadata:
       m_Items: []
   references:
