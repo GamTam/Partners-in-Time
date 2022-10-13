@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 using System.Dynamic;
 using Cinemachine;
 
-public class MarioOverworldStateMachine : Billboard
+public class MarioOverworldStateMachine : Billboard, IStateMachine
 {
     // Input
     private PlayerInput _playerInput;
@@ -180,8 +180,6 @@ public class MarioOverworldStateMachine : Billboard
             _velocity = 0;
             hit.gameObject.SendMessage("OnBlockHit", "Mario");
         }
-
-        Debug.Log(hit.gameObject.name);
     }
 
     public void OnTriggerEnter(Collider other)
@@ -203,7 +201,8 @@ public class MarioOverworldStateMachine : Billboard
         }
     }
 
-    public void OnCollision(object[] args) {
+    public void OnCollision(object[] args)
+    {
         _collisionDot = (float) args[0];
         _angleColliding = (bool) args[1];
     }
@@ -262,5 +261,15 @@ public class MarioOverworldStateMachine : Billboard
         }
 
         return IsHitting;
+    }
+
+    public void SetOnCutscene(bool value)
+    {
+        _onCutscene = value;
+    }
+
+    public void SetCMoveVector(Vector2 value)
+    {
+        _cMoveVector = value;
     }
 }

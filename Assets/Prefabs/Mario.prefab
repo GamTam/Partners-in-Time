@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 110968905797429751}
   - component: {fileID: 110968905797429749}
-  - component: {fileID: 1554791853290106903}
+  - component: {fileID: 2029278466790901202}
   - component: {fileID: 110968905797429748}
   - component: {fileID: 110968905797429747}
   - component: {fileID: 110968905797429746}
@@ -290,7 +290,7 @@ MonoBehaviour:
   _babyMarioRef: {fileID: 0}
   _babyLuigiRef: {fileID: 0}
   _luigiPos: {fileID: 0}
---- !u!114 &1554791853290106903
+--- !u!114 &2029278466790901202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 110968905797429752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dc47f66530d8e94aa2e27579443ea26, type: 3}
+  m_Script: {fileID: 11500000, guid: 62bcc95cbb38dbb4ea5a26f8e20ba092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!143 &110968905797429748
