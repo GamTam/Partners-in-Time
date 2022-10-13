@@ -46,6 +46,8 @@ public class RoomManager : MonoBehaviour
         if(!_debounce) {
             if(other.gameObject.CompareTag("Player"))
             {
+                StartCoroutine(OnDebounce());
+                Debug.Log("Triggered");
                 StartCoroutine(LoadSceneTransition(_destination));
             }
         }
@@ -56,7 +58,9 @@ public class RoomManager : MonoBehaviour
         _transition.SetTrigger("Start");
 
         _players[0].GetComponent<CharCutsceneInput>().MoveToTarget(transform.position + new Vector3(20f, 0f, 0f));
+        _players[1].GetComponent<CharCutsceneInput>().MoveToTarget(transform.position + new Vector3(20f, 0f, 0f));
         
+        Destroy(gameObject);
         yield return new WaitForSeconds(_transitionTime);
         
         Scene scene = SceneManager.GetActiveScene();

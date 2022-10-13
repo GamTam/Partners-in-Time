@@ -27,7 +27,6 @@ public class CharCutsceneInput : MonoBehaviour
         while(true)
         {
             Vector3 offset = target - transform.position;
-            Debug.Log(target + " : " + transform.position);
 
             if(offset.magnitude > 0.1f)
             {

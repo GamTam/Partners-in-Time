@@ -180,6 +180,8 @@ public class MarioOverworldStateMachine : Billboard
             _velocity = 0;
             hit.gameObject.SendMessage("OnBlockHit", "Mario");
         }
+
+        Debug.Log(hit.gameObject.name);
     }
 
     public void OnTriggerEnter(Collider other)
