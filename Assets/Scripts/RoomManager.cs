@@ -34,35 +34,33 @@ public class RoomManager : MonoBehaviour
 
     private static string _lastScene = "";
 
-    public string Destination { get { return _destination; }}
-
     private void Start()
     {
         switch (_movementDirection)
         {
             case Directions.Down:
-                _destVector = new Vector3(0f, 0f, -20);
+                _destVector = new Vector3(0f, 0f, -4);
                 break;
             case Directions.Up:
-                _destVector = new Vector3(0f, 0f, 20f);
+                _destVector = new Vector3(0f, 0f, 4f);
                 break;
             case Directions.Right:
-                _destVector = new Vector3(20f, 0f, 0f);
+                _destVector = new Vector3(4f, 0f, 0f);
                 break;
             case Directions.Left:
-                _destVector = new Vector3(-20f, 0f, 0f);
+                _destVector = new Vector3(-4f, 0f, 0f);
                 break;
             case Directions.DownLeft:
-                _destVector = new Vector3(-20f, 0f, -20);
+                _destVector = new Vector3(-4f, 0f, -4);
                 break;
             case Directions.DownRight:
-                _destVector = new Vector3(20f, 0f, -20f);
+                _destVector = new Vector3(4f, 0f, -4f);
                 break;
             case Directions.UpLeft:
-                _destVector = new Vector3(-20f, 0f, 20);
+                _destVector = new Vector3(-4f, 0f, 4f);
                 break;
             case Directions.UpRight:
-                _destVector = new Vector3(20f, 0f, 20f);
+                _destVector = new Vector3(4f, 0f, 4f);
                 break;
         }
         
@@ -76,12 +74,16 @@ public class RoomManager : MonoBehaviour
             
             Transform pathway = _pathways.transform.GetChild(i);
 
-            if(pathway.GetComponent<RoomManager>().Destination == _lastScene)
+            if(_destination == _lastScene)
             {
                 StartCoroutine(OnDebounce());
+                _lastScene = "";
                 
-                // _players[0].position = pathway.position;
-                // _players[1].position = pathway.position;
+                _players[0].position = pathway.position + _destVector;
+                _players[1].position = pathway.position + _destVector;
+
+                _players[0].GetComponent<CutsceneController>().MoveToTarget(transform.position - _destVector);
+                _players[1].GetComponent<CutsceneController>().MoveToTarget(transform.position - _destVector);
             }
         }
     }
@@ -100,9 +102,9 @@ public class RoomManager : MonoBehaviour
     {
         _transition.SetTrigger("Start");
 
-        _players[0].GetComponent<CharCutsceneInput>().MoveToTarget(transform.position + new Vector3(20f, 0f, 0f));
-        
-        Destroy(gameObject);
+        _players[0].GetComponent<CutsceneController>().MoveToTarget(transform.position + _destVector);
+        _players[1].GetComponent<CutsceneController>().MoveToTarget(transform.position + _destVector);
+
         yield return new WaitForSeconds(_transitionTime);
         
         Scene scene = SceneManager.GetActiveScene();

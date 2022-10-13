@@ -3850,6 +3850,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 110968905797429751, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
   m_PrefabInstance: {fileID: 110968904709197839}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1097153017 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 110968905797429749, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
+  m_PrefabInstance: {fileID: 110968904709197839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f739e1bd3f423e248b90164bb3664af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1099644251
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,8 +4778,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372729784}
   m_LocalRotation: {x: -0.38268343, y: -0, z: -0, w: 0.92387956}
-  m_LocalScale: {x: 0.22342658, y: 8.48, z: 4.065513}
-  m_LocalPosition: {x: 5.731092, y: 2.3933542, z: -22.563356}
+  m_LocalPosition: {x: 10.7731085, y: 2.3933542, z: -22.563356}
+  m_LocalScale: {x: 0.40817803, y: 8.48, z: 10.058892}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2054122012}
@@ -4801,7 +4812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transition: {fileID: 1156539222}
   _transitionTime: 2
-  _destination: asdf
+  _destination: TestRoom - Holijoli Platforming Room
   _movementDirection: 0
 --- !u!23 &1372729789
 MeshRenderer:
@@ -6733,7 +6744,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7786188, y: 1}
+    m_SensorSize: {x: 1.7760253, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7309,6 +7320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mario
       objectReference: {fileID: 0}
+    - target: {fileID: 2029278466790901202, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
+      propertyPath: _stateMachine
+      value: 
+      objectReference: {fileID: 1097153017}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1dc0cb740f5a014b98a769238408ca3, type: 3}
 --- !u!1001 &1147006386057556676

@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Dynamic;
 
-public class LuigiOverworldStateMachine : Billboard
+public class LuigiOverworldStateMachine : Billboard, IStateMachine
 {
     // Input
     private PlayerInput _playerInput;
@@ -185,5 +185,15 @@ public class LuigiOverworldStateMachine : Billboard
         if(countFR == 2 || countBL == 2 || countBR == 2 || countFL == 2) {
             _angleColliding = true;
         }
+    }
+    
+    public void SetOnCutscene(bool value)
+    {
+        _onCutscene = value;
+    }
+
+    public void SetCMoveVector(Vector2 value)
+    {
+        _cMoveVector = value;
     }
 }

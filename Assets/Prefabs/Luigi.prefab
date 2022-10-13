@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1147006386186476576}
   - component: {fileID: 1147006386186476577}
+  - component: {fileID: 2411215569831831360}
   - component: {fileID: 1147006386186476581}
   m_Layer: 6
   m_Name: Luigi
@@ -54,6 +55,19 @@ MonoBehaviour:
   child: {fileID: 1147006386284068801}
   _debugData: {fileID: 0}
   _shadow: {fileID: 1147006387401130564}
+--- !u!114 &2411215569831831360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147006386186476580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62bcc95cbb38dbb4ea5a26f8e20ba092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateMachine: {fileID: 1147006386186476577}
 --- !u!143 &1147006386186476581
 CharacterController:
   m_ObjectHideFlags: 0
@@ -288,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9316da312456a74c90519cbce200b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMaskOffset: 1
 --- !u!114 &1147006387401130567
 MonoBehaviour:
   m_ObjectHideFlags: 0
