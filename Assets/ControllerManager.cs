@@ -73,12 +73,10 @@ public class ControllerManager : MonoBehaviour
                 break;
         }
         
-        Debug.Log($"{_playerInput.actions["confirm"].GetBindingDisplayString()}, {_playerInput.actions["confirm"].bindings[_currentControlInt].ToString().Replace($"confirm:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "")}");
-
         confirmButton.Value = _playerInput.actions["confirm"].bindings[_currentControlInt].ToString().Replace($"confirm:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
-        switchAction.Value = _playerInput.actions["switch_action"].GetBindingDisplayString();
-        mAction.Value = _playerInput.actions["m_action"].GetBindingDisplayString();
-        lAction.Value = _playerInput.actions["l_action"].GetBindingDisplayString();
+        switchAction.Value = _playerInput.actions["switch_action"].bindings[_currentControlInt].ToString().Replace($"switch_action:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
+        mAction.Value = _playerInput.actions["m_action"].bindings[_currentControlInt].ToString().Replace($"m_action:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
+        lAction.Value = _playerInput.actions["l_action"].bindings[_currentControlInt].ToString().Replace($"l_action:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
         jumpAction.Value = _playerInput.actions["jump"].bindings[_currentControlInt].ToString().Replace($"jump:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
     }
 }
