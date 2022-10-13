@@ -1,13 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
+
+enum Directions
+{
+    Right,
+    Left,
+    Up,
+    Down,
+    DownLeft,
+    DownRight,
+    UpLeft,
+    UpRight
+}
 
 public class RoomManager : MonoBehaviour
 {
     [SerializeField] private Animator _transition;
     [SerializeField] private float _transitionTime = 1;
     [SerializeField] private string _destination;
+    [SerializeField] private Directions _movementDirection = Directions.Right;
+
+    private Vector3 _destVector = Vector3.zero;
 
     private Transform[] _players = new Transform[2];
     private GameObject _pathways;
@@ -21,6 +38,34 @@ public class RoomManager : MonoBehaviour
 
     private void Start()
     {
+        switch (_movementDirection)
+        {
+            case Directions.Down:
+                _destVector = new Vector3(0f, 0f, -20);
+                break;
+            case Directions.Up:
+                _destVector = new Vector3(0f, 0f, 20f);
+                break;
+            case Directions.Right:
+                _destVector = new Vector3(20f, 0f, 0f);
+                break;
+            case Directions.Left:
+                _destVector = new Vector3(-20f, 0f, 0f);
+                break;
+            case Directions.DownLeft:
+                _destVector = new Vector3(-20f, 0f, -20);
+                break;
+            case Directions.DownRight:
+                _destVector = new Vector3(20f, 0f, -20f);
+                break;
+            case Directions.UpLeft:
+                _destVector = new Vector3(-20f, 0f, 20);
+                break;
+            case Directions.UpRight:
+                _destVector = new Vector3(20f, 0f, 20f);
+                break;
+        }
+        
         _players[0] = GameObject.FindGameObjectsWithTag("Player")[0].transform;
         _players[1] = GameObject.FindGameObjectsWithTag("Player")[1].transform;
 
@@ -46,8 +91,6 @@ public class RoomManager : MonoBehaviour
         if(!_debounce) {
             if(other.gameObject.CompareTag("Player"))
             {
-                StartCoroutine(OnDebounce());
-                Debug.Log("Triggered");
                 StartCoroutine(LoadSceneTransition(_destination));
             }
         }
@@ -58,7 +101,6 @@ public class RoomManager : MonoBehaviour
         _transition.SetTrigger("Start");
 
         _players[0].GetComponent<CharCutsceneInput>().MoveToTarget(transform.position + new Vector3(20f, 0f, 0f));
-        _players[1].GetComponent<CharCutsceneInput>().MoveToTarget(transform.position + new Vector3(20f, 0f, 0f));
         
         Destroy(gameObject);
         yield return new WaitForSeconds(_transitionTime);

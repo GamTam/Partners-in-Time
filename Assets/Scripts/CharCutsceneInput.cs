@@ -35,7 +35,7 @@ public class CharCutsceneInput : MonoBehaviour
                 transform.GetComponent<MarioOverworldStateMachine>().MoveVector = new Vector2(offset.x, offset.z);
             }
 
-            yield return new WaitForSeconds(Time.deltaTime);
+            yield break;
         }
     }
 }

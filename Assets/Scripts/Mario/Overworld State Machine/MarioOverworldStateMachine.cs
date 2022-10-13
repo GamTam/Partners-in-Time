@@ -229,7 +229,7 @@ public class MarioOverworldStateMachine : Billboard
         }
     }
 
-    private bool IsHittingWall() {
+    public bool IsHittingWall() {
         bool IsHitting = false;
         RaycastHit hit;
 
