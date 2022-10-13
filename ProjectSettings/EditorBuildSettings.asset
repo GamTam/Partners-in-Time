@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test Stuff/TestRoom.unity
     guid: a58db1ad84b34354990e3a231cfce721
+  - enabled: 1
+    path: Assets/Scenes/Pre-Alpha 0.1 Demo/TestRoom - Holijoli.unity
+    guid: 81a5445018bb15c43a20d6c35569befb
+  - enabled: 1
+    path: Assets/Scenes/Pre-Alpha 0.1 Demo/TestRoom - Holijoli Platforming Room.unity
+    guid: d061c2aca425f394b8963a273eadb1b3
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 8383a00d238ed6245be1108e1f2e52da, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 1a268976f4d7a8a47988808f4703543e, type: 2}

@@ -14,6 +14,8 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
 
     public override void UpdateState()
     {
+        if (_ctx.OnCutscene) Debug.Log(_ctx.IsHittingWall());
+        
         float targetAngle = Mathf.Atan2(_ctx.MoveVector.x, _ctx.MoveVector.y) * Mathf.Rad2Deg + _ctx.Cam.eulerAngles.y;
         _ctx.transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
@@ -67,7 +69,7 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
                     }
                 }
             }
-
+            
             _ctx.Controller.Move(_newMove);
         }
 

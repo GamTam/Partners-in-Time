@@ -3,8 +3,8 @@ using UnityEngine;
 public class TestNPC : Billboard
 {
     // Animation States
-    private const string STAND = "mnt_todd_stand";
-    private const string WALK  = "mnt_todd_walk";
+    private const string STAND = "old_toad_stand";
+    private const string WALK  = "old_toad_walk";
     [SerializeField] private GameObject child;
 
     private void Start()
@@ -14,6 +14,6 @@ public class TestNPC : Billboard
 
     protected override void SetAnimation()
     {
-        _animator.Play(STAND + _facing);
+        _cAnimator.Play(STAND + _facing);
     }
 }

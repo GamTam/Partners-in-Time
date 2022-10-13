@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9316da312456a74c90519cbce200b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMaskOffset: 1
 --- !u!114 &110968905371429707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 110968905797429751}
   - component: {fileID: 110968905797429749}
+  - component: {fileID: 1554791853290106903}
   - component: {fileID: 110968905797429748}
   - component: {fileID: 110968905797429747}
   - component: {fileID: 110968905797429746}
@@ -286,7 +288,20 @@ MonoBehaviour:
   _debugData: {fileID: 0}
   _shadow: {fileID: 110968905371429708}
   _babyMarioRef: {fileID: 0}
+  _babyLuigiRef: {fileID: 0}
   _luigiPos: {fileID: 0}
+--- !u!114 &1554791853290106903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110968905797429752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc47f66530d8e94aa2e27579443ea26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!143 &110968905797429748
 CharacterController:
   m_ObjectHideFlags: 0
