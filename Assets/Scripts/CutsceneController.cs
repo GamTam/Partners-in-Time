@@ -23,7 +23,7 @@ public class CutsceneController : MonoBehaviour
         while(true)
         {
             Vector3 offset = target - transform.position;
-            Debug.Log(offset.magnitude);
+            
             if(offset.magnitude > 5f)
             {
                 offset = offset.normalized;

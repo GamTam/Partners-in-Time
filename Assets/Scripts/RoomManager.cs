@@ -33,6 +33,7 @@ public class RoomManager : MonoBehaviour
     private bool _triggered = false;
 
     private static string _lastScene = "";
+    private static Vector3 _lastDestVector;
 
     private void Start()
     {
@@ -79,11 +80,13 @@ public class RoomManager : MonoBehaviour
                 StartCoroutine(OnDebounce());
                 _lastScene = "";
                 
-                _players[0].position = pathway.position + _destVector;
-                _players[1].position = pathway.position + _destVector;
+                _players[0].position = pathway.position - _lastDestVector;
+                _players[1].position = pathway.position - _lastDestVector;
 
-                _players[0].GetComponent<CutsceneController>().MoveToTarget(transform.position - _destVector);
-                _players[1].GetComponent<CutsceneController>().MoveToTarget(transform.position - _destVector);
+                _players[0].GetComponent<CutsceneController>().MoveToTarget(pathway.position + _lastDestVector);
+                _players[1].GetComponent<CutsceneController>().MoveToTarget(pathway.position + _lastDestVector);
+
+                _lastDestVector = Vector3.zero;
             }
         }
     }
@@ -101,7 +104,7 @@ public class RoomManager : MonoBehaviour
     private IEnumerator LoadSceneTransition(string sceneName)
     {
         _transition.SetTrigger("Start");
-
+        Debug.Log(_destVector + " : " + transform.position);
         _players[0].GetComponent<CutsceneController>().MoveToTarget(transform.position + _destVector);
         _players[1].GetComponent<CutsceneController>().MoveToTarget(transform.position + _destVector);
 
@@ -109,7 +112,8 @@ public class RoomManager : MonoBehaviour
         
         Scene scene = SceneManager.GetActiveScene();
         _lastScene = scene.name;
-        
+        _lastDestVector = _destVector;
+
         SceneManager.LoadSceneAsync(sceneName);
     }
 
