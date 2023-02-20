@@ -37,7 +37,7 @@ MonoBehaviour:
     - rid: 7564701837450543150
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: Space
+        m_Value: space
     - rid: 7564701837450543151
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
@@ -45,16 +45,16 @@ MonoBehaviour:
     - rid: 7564701837450543166
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: Shift
+        m_Value: shift
     - rid: 7564702225955553294
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: J
+        m_Value: j
     - rid: 7564702225955553295
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: K
+        m_Value: k
     - rid: 7564702225955553296
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: Space
+        m_Value: space

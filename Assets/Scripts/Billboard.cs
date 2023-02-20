@@ -8,7 +8,7 @@ public abstract class Billboard : MonoBehaviour
     protected float _displayAngle;
     protected string _facing = "_down";
     protected Transform _cam;
-    protected Transform _spriteTransform;
+    private Transform _spriteTransform;
     protected SpriteRenderer _sprite;
     protected Animator _animator;
     protected int _offset = 0;
@@ -29,11 +29,11 @@ public abstract class Billboard : MonoBehaviour
         
         SetAnimation();
 
-        // Quaternion rot = Sprite.transform.rotation;
+        Quaternion rot = _spriteTransform.rotation;
         _spriteTransform.transform.rotation = _cam.rotation;
-        _sprite.sortingOrder =  1000000 - (int) (_spriteTransform.transform.position.z * 100) - _offset;
+        // _sprite.sortingOrder =  1000000 - (int) (_spriteTransform.transform.position.z * 100) - _offset;
 
-        // Sprite.transform.rotation = Quaternion.Euler(rot.eulerAngles.x, Sprite.transform.rotation.eulerAngles.y, rot.eulerAngles.z);
+        _spriteTransform.rotation = Quaternion.Euler(rot.eulerAngles.x, _spriteTransform.rotation.eulerAngles.y, rot.eulerAngles.z);
     }
     
     private string SetFacing(float moveAngle)

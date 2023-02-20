@@ -67,7 +67,7 @@ public class CustomAnimator : MonoBehaviour
             try {
                 _renderer.sprite = _frames[_currentFrame].Sprite;
             } catch(System.Exception) {
-                Debug.Log(_currentFrame + " : " + animation.name);
+                Debug.LogError("Could not render animation " + animation.name + " frame index "+ _currentFrame);
             }
 
             StopAllCoroutines();
