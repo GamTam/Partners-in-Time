@@ -554,7 +554,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773224, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -928,6 +928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8fad11474629c4492d3744c2fe1a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  STAND: mnt_todd_stand
+  WALK: mnt_todd_stand_walk
   child: {fileID: 436754521}
 --- !u!4 &59953141
 Transform:
@@ -1364,6 +1366,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7471489789758403370, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Switch Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471489789758403370, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7471489789758403371, guid: 4c5f4a8c69eeac14c92f29f8fe8984f9, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -1509,6 +1519,7 @@ GameObject:
   - component: {fileID: 263178878}
   - component: {fileID: 263178877}
   - component: {fileID: 263178876}
+  - component: {fileID: 263178879}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -1518,7 +1529,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &263178876
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1535,7 +1546,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!212 &263178877
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1603,6 +1614,18 @@ Transform:
   m_Father: {fileID: 450329507}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
+--- !u!114 &263178879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263178875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c49c66c02cc37d43bdb90c13ed21009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &264830814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,6 +1949,7 @@ GameObject:
   - component: {fileID: 436754524}
   - component: {fileID: 436754523}
   - component: {fileID: 436754522}
+  - component: {fileID: 436754525}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -1935,7 +1959,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &436754522
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1952,7 +1976,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!212 &436754523
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2020,6 +2044,18 @@ Transform:
   m_Father: {fileID: 59953141}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
+--- !u!114 &436754525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436754521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c49c66c02cc37d43bdb90c13ed21009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &441224967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2077,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &441224968
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2058,7 +2094,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!212 &441224969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2248,6 +2284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8fad11474629c4492d3744c2fe1a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  STAND: mnt_todd_stand
+  WALK: mnt_todd_stand_walk
   child: {fileID: 263178875}
 --- !u!4 &450329507
 Transform:
@@ -2385,7 +2423,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &473826084
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2402,7 +2440,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!212 &473826085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2846,7 +2884,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773224, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3072,7 +3110,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777193, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3359,7 +3397,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773224, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5630,7 +5668,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7780488, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5703,7 +5741,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777193, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5792,7 +5830,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777193, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5926,6 +5964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8fad11474629c4492d3744c2fe1a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  STAND: mnt_todd_stand
+  WALK: mnt_todd_stand_walk
   child: {fileID: 1896633406}
 --- !u!4 &1344724532
 Transform:
@@ -6452,6 +6492,7 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &1490338169
 GameObject:
   m_ObjectHideFlags: 0
@@ -6594,7 +6635,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7490,7 +7531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800496810}
   m_LocalRotation: {x: 0.37905726, y: 0.000000075150226, z: -0.000000030783514, w: 0.92537326}
-  m_LocalPosition: {x: 8.603653, y: 11.933001, z: 2.4100006}
+  m_LocalPosition: {x: 8.602772, y: 15.328175, z: 5.805179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7941,6 +7982,7 @@ GameObject:
   - component: {fileID: 1896633409}
   - component: {fileID: 1896633408}
   - component: {fileID: 1896633407}
+  - component: {fileID: 1896633410}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -7950,7 +7992,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &1896633407
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7967,7 +8009,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!212 &1896633408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8035,6 +8077,18 @@ Transform:
   m_Father: {fileID: 1344724532}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
+--- !u!114 &1896633410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896633406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c49c66c02cc37d43bdb90c13ed21009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1938000780
 GameObject:
   m_ObjectHideFlags: 0
@@ -8099,7 +8153,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7780634, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8436,7 +8490,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773224, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

@@ -10,7 +10,7 @@
                     "type": "Value",
                     "id": "bfd3cb2e-33b8-461b-b289-db1650c4ded3",
                     "expectedControlType": "Vector2",
-                    "processors": "",
+                    "processors": "StickDeadzone",
                     "interactions": "",
                     "initialStateCheck": true
                 },
@@ -180,6 +180,28 @@
                 },
                 {
                     "name": "",
+                    "id": "5439cf2e-223c-4340-b1e0-71a49ed52c85",
+                    "path": "<SwitchProControllerHID>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52e6a67d-f504-457b-bd37-847541c53d4a",
+                    "path": "<SwitchProControllerHID>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e9323672-865b-42d9-b899-3dd4e62a6bc7",
                     "path": "<Keyboard>/j",
                     "interactions": "",
@@ -207,6 +229,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Xbox Controller",
+                    "action": "m_action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9a6881d8-0248-4e63-870d-3e8fd5cb4165",
+                    "path": "<SwitchProControllerHID>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
                     "action": "m_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -246,6 +279,17 @@
                 },
                 {
                     "name": "",
+                    "id": "75836c3b-893d-40c2-b51c-f4c8b3a72bc6",
+                    "path": "<SwitchProControllerHID>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
+                    "action": "l_action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "543e7380-27a0-4edf-864d-0b04903f6dac",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -273,6 +317,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Xbox Controller",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "826dd5cc-308b-40d2-936f-503bda4d2485",
+                    "path": "<SwitchProControllerHID>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
                     "action": "jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -356,6 +411,17 @@
                 },
                 {
                     "name": "",
+                    "id": "89f04b5c-f4f2-47a6-b2fe-de7ccf860505",
+                    "path": "<SwitchProControllerHID>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "bd653589-fa91-42c2-8b5f-addb3a9d135a",
                     "path": "<Keyboard>/shift",
                     "interactions": "",
@@ -389,6 +455,17 @@
                 },
                 {
                     "name": "",
+                    "id": "339f0824-cd73-456d-aad4-a6836b02455c",
+                    "path": "<SwitchProControllerHID>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
+                    "action": "switch_action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d460d7f9-159f-4093-ac38-541af24b297d",
                     "path": "<Keyboard>/u",
                     "interactions": "",
@@ -400,11 +477,33 @@
                 },
                 {
                     "name": "",
+                    "id": "7bb32196-0c94-4ffb-bd55-bdaed48f71ca",
+                    "path": "<SwitchProControllerHID>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
+                    "action": "bm_action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "7ddb7e5e-07d1-4702-8218-0c2b82f242d0",
                     "path": "<Keyboard>/i",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
+                    "action": "bl_action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c26e03ab-7664-4522-bc34-a86f4f0f900d",
+                    "path": "<SwitchProControllerHID>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
                     "action": "bl_action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -458,6 +557,17 @@
                     "action": "confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e025f0c-1934-44a1-b3d3-f646dc939e1a",
+                    "path": "<SwitchProControllerHID>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Switch Controller",
+                    "action": "confirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -496,6 +606,17 @@
                 },
                 {
                     "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Switch Controller",
+            "bindingGroup": "Switch Controller",
+            "devices": [
+                {
+                    "devicePath": "<SwitchProControllerHID>",
                     "isOptional": false,
                     "isOR": false
                 }
