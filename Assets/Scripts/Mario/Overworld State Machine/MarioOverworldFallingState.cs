@@ -27,12 +27,12 @@ public class MarioOverworldFallingState : MarioOverworldBaseState, IMarioOverwor
     public override void CheckSwitchStates()
     {
         if (!_ctx.Controller.isGrounded) return;
-        SwitchState(_ctx.MoveVector.magnitude > Globals.deadZone ? _factory.Grounded() : _factory.Landing());
+        SwitchState(_ctx.MoveVector.magnitude > Globals.DeadZone ? _factory.Grounded() : _factory.Landing());
     }
 
     public override void InitializeSubState()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SetSubState(_factory.Idle());
         }
@@ -44,7 +44,7 @@ public class MarioOverworldFallingState : MarioOverworldBaseState, IMarioOverwor
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("m_fall" + _ctx.Facing);
+        _ctx.CAnimator.Play("m_fall" + _ctx.Facing);
     }
 
     public void HandleGravity()

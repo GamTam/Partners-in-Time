@@ -2,136 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/TestNPC.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TestNPC.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/Mountain Toad.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/Mountain Toad.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_d.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_d.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_dl.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_dl.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_dr.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_dr.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_l.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_l.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_r.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_r.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_u.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_u.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_ul.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_ul.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_ur.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Animations/mnt_todd_stand_ur.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Mountain Toad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Mountain Toad.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Mountain Toad.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Mountain Toad.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_d_6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dl_6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_dr_6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_l_6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_r_6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_u_6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ul_6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/sprites/Mountain Toad/Unpacked/mnt_todd_stand_ur_6.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Billboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Billboard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/marioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MarioController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/sprites/mario.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/sprites/mario.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/sprites/mario/Materials/m_3ds.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/sprites/mario/Materials/m_3ds.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Dutch (nl).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Dutch (nl).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-French (fr).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-French (fr).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-German (de).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-German (de).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Italian (it).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Italian (it).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Spanish (Spain) (es-ES).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Spanish (Spain) (es-ES).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Spanish (es).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Spanish (es).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Controls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Controls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Switch.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Switch.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Pre-Alpha 0.1 Demo/TestRoom - Holijoli.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Pre-Alpha 0.1 Demo/TestRoom - Holijoli.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom - Holijoli.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom - Holijoli.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestNPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestNPC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/sprites/Npcs/Mountain Toad/Mountain Toad.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/sprites/Npcs/Mountain Toad/Mountain Toad.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,15 +36,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Dutch (nl).asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestNPC.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/80/01ed6ba9/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/0e/3532b5f7/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/cd/15a0a5a3/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/TestNPC.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="28ZhLqk0A5kjuYFvKanH8JUpXZ0" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -157,18 +62,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\lucca\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\lucca\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\lucca\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\lucca\RiderProjects\Partners-in-Time-Remake -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\lucca\RiderProjects\Partners-in-Time-Remake" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\lucca\RiderProjects\Partners-in-Time-Remake -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\lucca\RiderProjects\Partners-in-Time-Remake" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -203,6 +129,10 @@
       <workItem from="1655609424059" duration="215000" />
       <workItem from="1656279502429" duration="843000" />
       <workItem from="1656291166577" duration="4645000" />
+      <workItem from="1672353635571" duration="811000" />
+      <workItem from="1673060494744" duration="885000" />
+      <workItem from="1673067718836" duration="122000" />
+      <workItem from="1676754016000" duration="2283000" />
     </task>
     <task id="LOCAL-00001" summary="Character Billboarding">
       <created>1651430605299</created>
@@ -258,7 +188,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

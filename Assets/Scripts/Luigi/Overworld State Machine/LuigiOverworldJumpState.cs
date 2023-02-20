@@ -42,7 +42,7 @@ public class LuigiOverworldJumpState : LuigiOverworldBaseState, ILuigiOverworldR
 
     public override void InitializeSubState()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SetSubState(_factory.Idle());
         }
@@ -54,7 +54,7 @@ public class LuigiOverworldJumpState : LuigiOverworldBaseState, ILuigiOverworldR
 
     public override void AnimateState()
     {
-       _ctx.Animator.Play("l_jump" + _ctx.Facing);
+       _ctx.CAnimator.Play("l_jump" + _ctx.Facing);
     }
 
     public void HandleGravity()

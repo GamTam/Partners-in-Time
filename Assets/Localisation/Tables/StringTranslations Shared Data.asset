@@ -15,10 +15,6 @@ MonoBehaviour:
   m_TableCollectionName: StringTranslations
   m_TableCollectionNameGuidString: e36c4b67d0b385844bc908d401e45fe2
   m_Entries:
-  - m_Id: 1119172369920000
-    m_Key: Progress
-    m_Metadata:
-      m_Items: []
   - m_Id: 1119172407668736
     m_Key: more_translators_needed
     m_Metadata:
@@ -39,6 +35,34 @@ MonoBehaviour:
     m_Key: translator_discord
     m_Metadata:
       m_Items: []
+  - m_Id: 5510246400077824
+    m_Key: dbg_m_action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510246400077825
+    m_Key: dbg_l_action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510246404272128
+    m_Key: dbg_switch_action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510246404272129
+    m_Key: dbg_jump_action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Key: dbg_pause_action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6215980339245056
+    m_Key: ui_advance_dialogue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6210973573394432
+    m_Key: msg_dummy_text
+    m_Metadata:
+      m_Items: []
   - m_Id: 212437396598788
     m_Key: msg_press_to_start
     m_Metadata:
@@ -47,8 +71,92 @@ MonoBehaviour:
     m_Key: msg_copyright_info
     m_Metadata:
       m_Items: []
-  - m_Id: 1119683437473792
-    m_Key: msg_switch_action
+  - m_Id: 6264809012932608
+    m_Key: msg_living_in_the_light_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Key: msg_living_in_the_light_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Key: msg_living_in_the_light_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Key: msg_living_in_the_light_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Key: msg_living_in_the_light_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Key: msg_living_in_the_light_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Key: msg_living_in_the_light_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Key: msg_toadsworth_demo_start_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Key: msg_toadsworth_demo_start_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Key: msg_toadsworth_demo_start_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Key: msg_toadsworth_demo_start_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Key: msg_toadsworth_demo_start_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Key: msg_toadsworth_demo_start_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Key: msg_toadsworth_demo_end_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Key: msg_toadsworth_demo_end_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Key: msg_toadsworth_demo_end_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Key: msg_toadsworth_demo_end_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Key: msg_toadsworth_demo_end_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Key: msg_toadsworth_demo_end_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Key: msg_toadsworth_demo_end_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Key: msg_toadsworth_demo_end_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Key: msg_toadsworth_demo_end_9
     m_Metadata:
       m_Items: []
   m_Metadata:

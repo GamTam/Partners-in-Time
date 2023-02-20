@@ -17,7 +17,7 @@ public class MarioOverworldIdleState : MarioOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.MoveVector.magnitude > Globals.deadZone)
+        if (_ctx.MoveVector.magnitude > Globals.DeadZone)
         {
             SwitchState(_factory.Walk());
         }
@@ -27,6 +27,6 @@ public class MarioOverworldIdleState : MarioOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("m_stand" + _ctx.Facing);
+        _ctx.CAnimator.Play("m_stand" + _ctx.Facing);
     }
 }

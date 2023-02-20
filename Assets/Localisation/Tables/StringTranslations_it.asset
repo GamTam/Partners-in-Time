@@ -19,21 +19,12 @@ MonoBehaviour:
     m_Items:
     - rid: 7564701837450543130
   m_TableData:
-  - m_Id: 1119683437473792
-    m_Localized: 
-    m_Metadata:
-      m_Items:
-      - rid: 7564701837450543130
   - m_Id: 212437396598788
-    m_Localized: Premi <sprite=\"{global.controller}\" name=\"{global.confirm}\">
-      Per Iniziare
+    m_Localized: "Premi <sprite=\"{global.controller}\" name=\"{global.confirm}\">
+      \nPer Iniziare"
     m_Metadata:
       m_Items:
       - rid: 7564701837450543130
-  - m_Id: 1119172369920000
-    m_Localized: 100% Translated
-    m_Metadata:
-      m_Items: []
   - m_Id: 1119172407668736
     m_Localized: Open
     m_Metadata:
@@ -47,15 +38,171 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598786
-    m_Localized: Simo
+    m_Localized: Simo, Appe
     m_Metadata:
       m_Items: []
   - m_Id: 1119172407668738
-    m_Localized: Simo_#6397
+    m_Localized: Simo_#6397, Appe#6494
     m_Metadata:
       m_Items: []
   - m_Id: 212437396598789
     m_Localized: "2022 GammaDream\nGioco Originale \xA9Nintendo 2005"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510246400077824
+    m_Localized: Premi <sprite="{global.controller}" name="{global.m_action}"> per
+      far saltare Mario
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 5510246400077825
+    m_Localized: 'Premi <sprite="{global.controller}" name="{global.l_action}"> per
+      far saltare Luigi '
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 5510246404272128
+    m_Localized: Premi <sprite="{global.controller}" name="{global.switch_action}">
+      per cambiare azione
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 5510246404272129
+    m_Localized: Premi <sprite="{global.controller}" name="{global.jump}""> per far
+      saltare entrambi i fratelli
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 6215980339245056
+    m_Localized: <sprite="{global.controller}" name="{global.confirm}">
+    m_Metadata:
+      m_Items:
+      - rid: 7564701837450543130
+  - m_Id: 6264809012932608
+    m_Localized: "<sp:50><anim:shake> MA SE NOI VIVIAMO NELLA LUCE, <p:normal> ESSENDO
+      CHE DIO \xC8 NELLA LUCE, <p:normal>ALLORA DOBBIAMO RIMANERE IN COMUNIONE TRA
+      NOI, <p:normal> E IL SANGUE DI GES\xD9,<p:short> DI SUO FIGLIO,<p:short> CI
+      PULIR\xC0 DA TUTTI I NOSTRI PECCATI</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6210973573394432
+    m_Localized: "Questo \xE8 un testo prova. Se lo stai leggendo, \nallora qualcosa
+      \xE8 andato storto. \nPer favore notifica le tue azioni che hanno portato a
+      questo evento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292736
+    m_Localized: "<sp:50><anim:shake> SE DICIAMO DI NON AVERE PECCATI, <p:normal>STIAMO
+      SOLO PRENDENDO IN GIRO NOI STESSI,<p:normal> E NON STIAMO VIVENDO NELLA VERIT\xC0</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292737
+    m_Localized: "<sp:50><anim:shake>MA SE GLI CONFESSIAMO I NOSTRI PECCATI,<p:normal>
+      LUI HA FEDE IN NOI E PERDONA I NOSTRI PECCATI <p:normal>\nE CI PULIR\xC0 DA
+      TUTTA LA MALVAGIT\xC0 </anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292738
+    m_Localized: "<sp:50><anim:shake>E ALLORA IO TI DICO,<p:normal> OGNI TIPO DI
+      PECCATO E DI DIFFAMAZIONE VERR\xC0 PERDONATA ,<p:normal> MA <color=red>LA BESTEMMIA</color>
+      \nNO VERR\xC0 PERDONATA</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292739
+    m_Localized: "<sp:50><anim:shake>IMPURIT\xC0,<p:normal> LUSSURIA,<p:normal> E
+      I DESIDERI MALVAGI;<p:normal> \nNON ESSERE AVIDO,<p:normal> PER UNA PERSONA
+      AVIDA \xC8 UNA IDOLATRICE,<p:normal>\nADORARE LE COSE DI QUESTO MONDO</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292740
+    m_Localized: "<sp:50><anim:shake>PER VIA DI QUESTI PECCATI,<p:normal> \n<color=red><size=200%>LA
+      RABBIA DI DIO STA ARRIVANDO!</color></anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6264809042292741
+    m_Localized: "<sp:50><anim:shake>NESSUNA TENTAZIONE TI HA PRESO\nTRANNE QUELLO
+      CHE \xC8 COMUNE NELLA NATURA UMANA.<p:normal> \nE DIO \xC8 FEDELE;<p:normal>
+      \nNON LASCER\xC0 CHE TI VENGA TENTATO\nOLTRE A QUELLO CHE TU PUOI SOSTENERE!</anim>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455222517760
+    m_Localized: 'Oho! <p:short> Se non siete i signori
+
+      <color=red>Mario</color>
+      e <color=green>Luigi</color>!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877888
+    m_Localized: 'Benvenuti nel primo alpha test di
+
+      <color=red>Mario & Luigi:
+      Fratelli Nel Tempo + La Furia Di Sogghigno!</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877889
+    m_Localized: "Questa sarebbe dovuta essere un' occasione\nper festeggiare,<p:short>\npurtroppo
+      per\xF2..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877890
+    m_Localized: "Sembra proprio che i signorini \nsiano <color=red>scomparsi </color>
+      senza lasciare traccia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877891
+    m_Localized: Abbiamo chiuso l'area,<p:short> quindi i ragazzini dovrebbero essere
+      qui da qualche parte,<p:short> nei <color=red> Sobborghi del Villaggio Olligiolli
+      </color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10685455251877892
+    m_Localized: Quindi,<p:short> se li trovate,<p:short> fatemelo sapere!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788288
+    m_Localized: Capisco...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788289
+    m_Localized: 'Quindi i piccolini stavano rimbalzando
+
+      su alcuni funghi...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788290
+    m_Localized: 'Bene, questo spiega molte cose<p:short>
+
+      grazie mille!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788291
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788292
+    m_Localized: Dunque...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788293
+    m_Localized: Suppongo che questa sia la demo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788294
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788295
+    m_Localized: Uh...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10689039179788296
+    m_Localized: "Perch\xE8 non andate in giro e cercate qualche bug da far sistemare
+      agli sviluppatori?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10921245819088896
+    m_Localized: Premi <sprite="{global.controller}" name="{global.pause}"> per aprire
+      il menu
     m_Metadata:
       m_Items: []
   references:
@@ -64,4 +211,4 @@ MonoBehaviour:
     - rid: 7564701837450543130
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00308dc60800000005300deb990100000230cd640492000006b08fef35c1000004b08fef35c100000030cd2aebf9030000308d9d58fa0300
+        m_Entries: 00308dc60800000005300deb990100000230cd640492000006b08fef35c1000004b08fef35c100000030cd2aebf9030000308d9d58fa030000308d358a93130001304d378a93130000304d378a93130000308d378a93130001308d378a93130000308d9fe1f9030000300db466151600

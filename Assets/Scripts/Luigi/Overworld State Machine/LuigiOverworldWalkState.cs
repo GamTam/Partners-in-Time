@@ -29,8 +29,10 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
 
             _ctx.MoveAngle = targetAngle;
         }
-
-        _ctx.Controller.Move(_newMove * _ctx.MoveSpeed * Time.deltaTime);
+        
+        if(!_ctx.StopMovement) {
+            _ctx.Controller.Move(_newMove * _ctx.MoveSpeed * Time.deltaTime);
+        }
         
         CheckSwitchStates();
     }
@@ -46,7 +48,7 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone || _ctx.StopMovement)
         {
             SwitchState(_factory.Idle());
         }
@@ -59,6 +61,6 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("l_walk" + _ctx.Facing);
+        _ctx.CAnimator.Play("l_walk" + _ctx.Facing);
     }
 }

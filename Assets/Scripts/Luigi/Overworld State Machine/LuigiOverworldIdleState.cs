@@ -22,7 +22,7 @@ public class LuigiOverworldIdleState : LuigiOverworldBaseState
 
     public override void CheckSwitchStates()
     {
-        if (_ctx.MoveVector.magnitude > Globals.deadZone)
+        if (_ctx.MoveVector.magnitude > Globals.DeadZone)
         {
             SwitchState(_factory.Walk());
         }
@@ -32,6 +32,6 @@ public class LuigiOverworldIdleState : LuigiOverworldBaseState
 
     public override void AnimateState()
     {
-        _ctx.Animator.Play("l_stand" + _ctx.Facing);
+        _ctx.CAnimator.Play("l_stand" + _ctx.Facing);
     }
 }

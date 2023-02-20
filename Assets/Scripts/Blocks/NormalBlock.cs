@@ -17,7 +17,7 @@ public class NormalBlock : Billboard, Block
     private bool _hit = false;
 
     private float _hitDelay = 0.05f;
-    private float _hitTime = 0.1f;
+    private float _hitTime = 0.075f;
     private float _timer = 0;
 
     private void Start()
@@ -52,7 +52,7 @@ public class NormalBlock : Billboard, Block
             child.transform.position += Vector3.up * 7f * Time.deltaTime;
         } else {
             if(child.transform.position.y > _originalY) {
-                child.transform.position += Vector3.down * 2f * Time.deltaTime;
+                child.transform.position += Vector3.down * 5f * Time.deltaTime;
             }
         }
         _hitDelay = 0f;

@@ -11,11 +11,14 @@ public abstract class Billboard : MonoBehaviour
     protected Transform _spriteTransform;
     protected SpriteRenderer _sprite;
     protected Animator _animator;
+    protected int _offset = 0;
+    protected CustomAnimator _cAnimator;
 
     protected void Init(GameObject child)
     {
         _spriteTransform = child.transform;
         _animator = child.GetComponent<Animator>();
+        _cAnimator = child.GetComponent<CustomAnimator>();
         _sprite = child.GetComponent<SpriteRenderer>();
         _cam = Camera.main.transform;
     }
@@ -28,7 +31,7 @@ public abstract class Billboard : MonoBehaviour
 
         // Quaternion rot = Sprite.transform.rotation;
         _spriteTransform.transform.rotation = _cam.rotation;
-        _sprite.sortingOrder =  1000000 - (int) (_spriteTransform.transform.position.z * 100);
+        _sprite.sortingOrder =  1000000 - (int) (_spriteTransform.transform.position.z * 100) - _offset;
 
         // Sprite.transform.rotation = Quaternion.Euler(rot.eulerAngles.x, Sprite.transform.rotation.eulerAngles.y, rot.eulerAngles.z);
     }

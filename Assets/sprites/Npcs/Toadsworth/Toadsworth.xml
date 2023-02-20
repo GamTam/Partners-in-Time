@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:97f5f9efb0a86aece6a4357c4d7e7207:b18a823e7d993a8377937df14f48bc0d:c6c13d8ae38e96af23e77b06c0c54297$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Toadsworth.png" width="32" height="300">
+    <sprite n="old_toad_stand_d_1.png" x="0" y="0" w="32" h="50"/>
+    <sprite n="old_toad_stand_d_2.png" x="0" y="50" w="32" h="50"/>
+    <sprite n="old_toad_stand_d_3.png" x="0" y="100" w="32" h="50"/>
+    <sprite n="old_toad_stand_d_4.png" x="0" y="150" w="32" h="50"/>
+    <sprite n="old_toad_stand_d_5.png" x="0" y="200" w="32" h="50"/>
+    <sprite n="old_toad_stand_d_6.png" x="0" y="250" w="32" h="50"/>
+</TextureAtlas>

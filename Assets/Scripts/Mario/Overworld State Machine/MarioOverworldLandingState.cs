@@ -7,7 +7,7 @@ public class MarioOverworldLandingState : MarioOverworldBaseState, IMarioOverwor
     
     public override void EnterState()
     {
-        _ctx.Animator.Play("m_land" + _ctx.Facing);
+        _ctx.CAnimator.Play("m_land" + _ctx.Facing);
         _ctx.Velocity = _ctx.Gravity;
         _isRootState = true;
         InitializeSubState();
@@ -24,20 +24,31 @@ public class MarioOverworldLandingState : MarioOverworldBaseState, IMarioOverwor
 
     public override void CheckSwitchStates()
     {
-        
-        if (_ctx.MoveVector.magnitude > Globals.deadZone || 
-            _ctx.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+        if (_ctx.MoveVector.magnitude > Globals.DeadZone || 
+            _ctx.CAnimator.NormalizedTime >= 1)
         {
             SwitchState(_factory.Grounded());
         } else if (_ctx.Jump)
         {
             SwitchState(_factory.Jump());
         }
+        else if (_ctx.MAction)
+        {
+            switch (_ctx.Actions[_ctx.CurrentAction])
+            {
+                case "jump":
+                    SwitchState(_factory.Jump());
+                    break;
+                case "spin and jump":
+                    SwitchState(_factory.SpinAndJump());
+                    break;
+            }
+        }
     }
 
     public override void InitializeSubState()
     {
-        if (_ctx.MoveVector.magnitude < Globals.deadZone)
+        if (_ctx.MoveVector.magnitude < Globals.DeadZone)
         {
             SetSubState(_factory.Idle());
         }

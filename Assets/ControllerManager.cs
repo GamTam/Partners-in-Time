@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using FMOD.Studio;
@@ -13,6 +14,9 @@ public class ControllerManager : MonoBehaviour
     [SerializeField] private VariablesGroupAsset _source;
     private PlayerInput _playerInput;
     private string _currentPlayerInput;
+
+    private int _currentControlInt = 0;
+    private string _currentControlerName = "Keyboard";
     
     // Start is called before the first frame update
     void Start()
@@ -47,10 +51,32 @@ public class ControllerManager : MonoBehaviour
         var activeController = _source["controller"] as StringVariable;
         var confirmButton = _source["confirm"] as StringVariable;
         var switchAction = _source["switch_action"] as StringVariable;
+        var mAction = _source["m_action"] as StringVariable;
+        var lAction = _source["l_action"] as StringVariable;
+        var jumpAction = _source["jump"] as StringVariable;
 
         activeController.Value = _playerInput.currentControlScheme;
-        confirmButton.Value = _playerInput.actions["confirm"].GetBindingDisplayString();
-        switchAction.Value = _playerInput.actions["switch_action"].GetBindingDisplayString();
+
+        switch (_playerInput.currentControlScheme)
+        {
+            case "Keyboard":
+                _currentControlInt = 0;
+                _currentControlerName = "Keyboard";
+                break;
+            case "PS4 Controller":
+                _currentControlInt = 1;
+                _currentControlerName = "DualShockGamepad";
+                break;
+            case "Xbox Controller":
+                _currentControlInt = 2;
+                _currentControlerName = "XInputController";
+                break;
+        }
         
+        confirmButton.Value = _playerInput.actions["confirm"].bindings[_currentControlInt].ToString().Replace($"confirm:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
+        switchAction.Value = _playerInput.actions["switch_action"].bindings[_currentControlInt].ToString().Replace($"switch_action:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
+        mAction.Value = _playerInput.actions["m_action"].bindings[_currentControlInt].ToString().Replace($"m_action:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
+        lAction.Value = _playerInput.actions["l_action"].bindings[_currentControlInt].ToString().Replace($"l_action:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
+        jumpAction.Value = _playerInput.actions["jump"].bindings[_currentControlInt].ToString().Replace($"jump:<{_currentControlerName}>/", "").Replace($"[{_playerInput.currentControlScheme}]", "");
     }
 }
