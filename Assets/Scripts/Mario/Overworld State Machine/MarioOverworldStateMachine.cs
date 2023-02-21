@@ -162,12 +162,12 @@ public class MarioOverworldStateMachine : Billboard, IStateMachine
         //                    + _playerInput.actions["m_action"].GetBindingDisplayString() + 
         //                    "\"> To " + _actions[_currentAction]);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, _moveAngle, transform.eulerAngles.z);
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out _hit,
-            Mathf.Infinity))
-        {
-            _shadow.transform.position = new Vector3(_shadow.transform.position.x, _hit.point.y,
-                _shadow.transform.position.z);
-        }
+        // if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out _hit,
+        //     Mathf.Infinity))
+        // {
+        //     _shadow.transform.position = new Vector3(_shadow.transform.position.x, _hit.point.y,
+        //         _shadow.transform.position.z);
+        // }
     }
 
     protected override void SetAnimation()

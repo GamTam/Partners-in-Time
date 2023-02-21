@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class LuigiOverworldIdleState : LuigiOverworldBaseState
 {
     public LuigiOverworldIdleState(LuigiOverworldStateMachine currentContext, LuigiOverworldStateFactory LuigiOverworldStateFactory) 
