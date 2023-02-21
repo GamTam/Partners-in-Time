@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="Backup in case things go wrong when bringing back 3D">
+    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GlobalTranslationVars.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GlobalTranslationVars.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/2dMat 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/2dMat 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/.sample.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/.sample.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Material.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Material.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Material/ProBuilder Default HDRP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Material/ProBuilder Default HDRP.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Material/ProBuilder Default HDRP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Material/ProBuilder Default HDRP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Shader/Standard Vertex Color.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Shader/Standard Vertex Color.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Shader/Standard Vertex Color.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/ProBuilder/5.0.4/High Definition Render Pipeline Support/Shader/Standard Vertex Color.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingSettings4Ultra.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingSettings4Ultra.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Billboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Billboard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldIdleState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/2dShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/2dShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Transparent With Shadow.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Transparent With Shadow.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP Asset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP Asset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP Asset_Renderer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP Asset_Renderer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +105,7 @@
       <workItem from="1673060494744" duration="885000" />
       <workItem from="1673067718836" duration="122000" />
       <workItem from="1676754016000" duration="3498000" />
-      <workItem from="1676928084859" duration="3483000" />
+      <workItem from="1676928084859" duration="4122000" />
     </task>
     <task id="LOCAL-00001" summary="Character Billboarding">
       <created>1651430605299</created>
@@ -185,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676928121342</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="3D's back, bay-beeeeeeee">
+      <created>1676932961196</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676932961196</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +193,7 @@
     <MESSAGE value="It was Y When it should have been Z.&#10;literally stumped me for a month and a half." />
     <MESSAGE value="Minor Changes" />
     <MESSAGE value="Backup in case things go wrong when bringing back 3D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backup in case things go wrong when bringing back 3D" />
+    <MESSAGE value="3D's back, bay-beeeeeeee" />
+    <option name="LAST_COMMIT_MESSAGE" value="3D's back, bay-beeeeeeee" />
   </component>
 </project>
