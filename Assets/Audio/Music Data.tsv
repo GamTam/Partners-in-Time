@@ -1,0 +1,162 @@
+File Name	Song Name	Intro Point	Loop Point	Redirect Name
+
+#Defendant's Lobby
+Lobby	Defendant Lobby ~ So it Begins	2.396	35.993
+Lobby_PWAA				Lobby
+Lobby_JFA	Defendant Lobby ~ So it Begins Again	5.086	43.488
+Lobby_AJAA	Defendant Lobby ~ So it Begins Anew	0	-1
+Lobby_PLVPW	Deathknell Dungeon ~ The Magical Prelude	4.364085	74.182244
+
+#Court Theme
+Court	Phoenix Wright: Ace Attorney ~ Court is Now in Session	10.536	58.533
+Court_PWAA				Court
+Court_JFA	Justice for All ~ Court is Now in Session	1.797839	49.798245
+Court_TT	Trials and Tribulations ~ Court is Now in Session	0.469702	64.142226
+Court_AJAA	Apollo Justice: Ace Attorney ~ Court is in Session	8.160	63.028572
+Court_AAI	Courtroom ~ Guardians of the Law	0.925848	132.329301
+Court_AAI2				Court_AAI
+Court_PLVPW	Witches' Court Convenes	1.775212	100.730210
+Court_GAA	The Great Ace Attorney ~ Court is Now in Session	1.122932	91.852718
+
+#Cross Examination - Moderato
+CrossEx	Cross-Examination ~ Moderato 2001	1.424201	47.138592
+CrossEx_PWAA				CrossEx
+CrossEx_JFA	Cross-Examination ~ Moderato 2002	3.385	42.567
+CrossEx_TT	Cross-Examination ~ Moderato 2004	1.473	96.886
+CrossEx_AJAA	Cross-Examination ~ Moderato 2007	1.353	35.720
+CrossEx_AAI	Confrontation ~ Moderato 2009	2.784502	98.398962
+CrossEx_PLVPW	Mass Inquisition ~ Moderato	1.298531	66.935070
+CrossEx_GAA	Great Cross-Examination ~ Moderato	6.326458	59.206145
+
+#Cross Examination - Allegro
+CrossExFast	Cross-Examination ~ Allegro 2001	1.341	58.656445
+CrossExFast_PWAA				CrossExFast
+CrossExFast_JFA	Cross-Examination ~ Allegro 2002	2.998	47.572
+CrossExFast_TT	Cross-Examination ~ Allegro 2004	1.385	75.229
+CrossExFast_AJAA	Cross-Examination ~ Allegro 2007	0.727625	46.182160
+CrossExFast_AAI	Confrontation ~ Allegro 2009	1.048297	87.838335
+CrossExFast_PLVPW	Mass Inquisition ~ Allegro	0.460509	65.423218
+CrossExFast_GAA	Great Cross-Examination ~ Allegro	2.725718	74.040685
+
+#Logic and Tricks
+Explain	Tricks and Deductions	2.176	71.994
+Explain_PWAA				Explain
+Explain_JFA	Magic and Tricks	1.274	49.277
+Explain_AJAA	Trance Magic	2.170962	49.749247
+Explain_PLVPW	Logic and Witchcraft	15.003848	65.006674
+
+#Objection
+Objection	Phoenix Wright ~ Objection! 2001	24.5	48.505
+Objection_PWAA				Objection
+Objection_JFA	Phoenix Wright ~ Objection! 2002	16.531366	48.530365
+Objection_AJAA	Apollo Justice ~ A New Era Begins!	11.433952	57.148448
+Objection_PLVPW	Phoenix Wright ~ Objection! 2012	3.402215	61.837566
+
+#Pursuit
+Pursuit	Pursuit ~ Corner the Culprit	7.799	46.198
+Pursuit_PWAA				Pursuit
+Pursuit_JFA	Pursuit ~ Confront the Culprit	6.406	38.403
+Pursuit_TT	Pursuit ~ Catch the Culprit	6.486	60.001
+Pursuit_AJAA	Pursuit ~ Overtaken	7.917	53.322
+Pursuit_AAI	Pursuit ~ Lying Coldly	7.366851	100.288520
+Pursuit_PLVPW	Pursuit ~ Spell-Breaker	7.099744	77.172733	
+Pursuit_GAA	Pursuit ~ A Great Turnabout	7.459103	94.977778	
+
+#Pursuit - Variation
+PursuitVariation	Pursuit ~ Corner the Culprit (Variation)	2.218	40.618
+PursuitVariation_PWAA				PursuitVariation
+PursuitVariation_JFA	Pursuit ~ Confront the Culprit (Variation)	6.406	38.403
+PursuitVariation_TT	Pursuit ~ Catch the Culprit (Variation)	1.340	54.855
+PursuitVariation_AJAA	Pursuit ~ Overtaken (Variation)	3.052	48.463
+PursuitVariation_PLVPW				Pursuit_PLVPW
+PursuitVariation_GAA	Great Pursuit ~ The Resolve of Ryunosuke Naruhodo	8.105	63.483
+
+#Suspense
+Suspense	Suspense	7.928590	35.357207
+Suspense_PWAA				Suspense
+Suspense_JFA				Suspense
+Suspense_TT				Suspense
+Suspense_AJAA				Suspense
+Suspense_GAA	A Great Twist ~ Suspense II	29.085884	91.698559
+
+#The Truth Revealed
+Twist	The Truth Revealed 2001	1.328	34.662
+Twist_PWAA				Twist
+Twist_JFA	The Truth Revealed 2002	0	-1
+Twist_TT	The Truth Revealed 2004	3.941748	60.608409
+Twist_AJAA	The Truth Revealed 2007	0.586666	48.305567
+Twist_AAI	The Truth Revealed 2009	2.676192	70.696001
+Twist_PLVPW	The Truth Revealed 2012	9.694929	91.646176
+Twist_GAA	The Truth Revealed (Adventures Version)	24.974315	116.557762
+
+#Heart of the Investigation
+TwistInvestigation	Heart of the Investigation 2001	5.496000	57.495433
+TwistInvestigation_PWAA				TwistInvestigation
+
+#Won the Lawsuit
+Win	Victory! ~ Our First Win	1.537	50.771
+Win_PWAA				Win
+Win_JFA	Victory! ~ Another Win	9.035874	62.403003
+
+#Detention Center
+DetentionCenter	Detention Center ~ The Security Guard's Elegy	13.705	61.71
+DetentionCenter_PWAA				DetentionCenter
+
+#Investigation
+Explore	Initial Investigation 2001	2.397	50.388
+Explore_PWAA				Explore
+Explore_AAI	Initial Investigation 2009	2.316169	94.638039
+
+#Investigation 2
+Explore2_AAI2	Deduction ~ Truth About the Crime Scene	0.749479	90.369545
+
+#Maya
+Maya	Maya Fey ~ Turnabout Sisters 2001	0.284	74.128
+Maya_PWAA				Maya
+Maya_JFA	Maya Fey ~ Turnabout Sisters 2002	0	-1
+Maya_TT				Maya_JFA
+
+#Psyche-Lock
+PsycheLock	Psyche-Locks	11.698331	40.966546
+PsycheLock_PWAA				PsycheLock
+PsycheLock_JFA				PsycheLock
+PsycheLock_TT				PsycheLock
+
+#Title Screen
+Title	Phoenix Wright ~ Objection! (Phoenix Wright: Ace Attorney Trilogy)	8.867086	75.649933
+Title_PLVPW	Professor Layton VS Phoenix Wright: Ace Attorney ~ Opening Theme	0	-1
+
+#Only one version
+Gumshoe	Dick Gumshoe ~ That's "Detective Gumshoe," Pal!	0.270	54.821
+Opening	Phoenix Wright: Ace Attorney ~ Opening	0	-1
+Ringtone	Ringtone (Phoenix Wright)	0.552	19.411
+SteelSamurai	The Steel Samurai: Warrior of Neo Olde Tokyo	3.209	56.352
+VonKarma	Triumphant Return ~ Franziska von Karma	12.871	46.558
+HotlineOfFate	Hotline of Fate	4.037	23.237
+Edgeworth	Triumphant Return ~ Miles Edgeworth	13.451	46.843
+SteelSamuraiSlow	Reminiscences ~ Ballad of The Steel Samurai	3.203097	63.806619
+Godot	Godot ~ The Fragrance of Darkness; That is Coffee	6.126695	73.732544
+Gant	Damon Gant ~ Swimming, Anyone?	16.029770	67.956717
+Atmey	Luke Atmey ~ Look at Me	12.535932	52.533341
+Sahdmadi	Nahyuta Sahdmadi ~ The Last Rites Prosecutor	1.607904	93.179898
+Stronghart	Lord Chief Justice Stronghart ~ Time-Keeper of the Law	10.875473	97.031946
+Shamspeare	William Shamspeare ~ Back Alley Bard	5.251685	56.020129
+Kay	Kay Faraday ~ The Great Truth Thief	3.562583	71.134837
+DL6	Reminiscences ~ The DL-6 Incident	0	-1
+Ema	Ema Skye ~ Turnabout Sisters 2005	1.140446	49.140854
+Courtney	Justine Courtney ~ Goddess of Law	0	-1
+Layton	Professor Layton's Theme ~ PL vs PW-AA Version	0	-1
+Mimi	Reminiscences ~ Fire-Licked Scars	0.715397	69.286963
+Kurain	Kurain Village	4.283933	49.713343
+MayaSad	The Ballad of Turnabout Sisters	2.685945	51.919017
+Circus	Berry Big Circus	0	-1
+
+#Not From Ace Attorney
+Pursuit_AJAA_Rock	Pursuit ~ Overtaken (Rock)	3.539712	155.032942
+PursuitOrchestra	Pursuit ~ Corner the Culprit (Orchestra)	4.613781	129.393121
+PursuitBigShot	Pursuit ~ Big Shot	0	-1
+Eminem	Without Me	0	-1
+Saul	Better Call Saul Main Title Theme	0	-1
+Jena		1.732311	164.859664
+HarrysGame	Theme From Harry's Game	4.159509	150.517551
+Miguel	Spider-Man 2099 (Miguel O'Hara)	38.714468	61.031496

@@ -1,0 +1,63 @@
+﻿Sound Name	Loop	loopStart	loopEnd
+select	false
+confirm	false
+checkpoint	false
+blipmale	false
+blipfemale	false
+typewriter	false
+back	false
+evidence	false
+textboxAdvance	false
+court record	false
+cross examination	false
+gavel	false
+realization	false
+reveal	false
+deskSlam	false
+faceReveal	false
+hit	false
+objectionPhoenix Wright	false
+holdItPhoenix Wright	false
+takeThatPhoenix Wright	false
+interjection	false
+record flip	false
+objectionMiles Edgeworth	false
+holdItMiles Edgeworth	false
+takeThatMiles Edgeworth	false
+bigHit	false
+massiveHit	false
+reverseWind	false
+gun	false
+gallery	false
+explosion	false
+objectionManfred von Karma	false
+objectionGodot	false
+ringtoneConfirm	false
+gantClap	false
+failure	false
+psycheLockHit	false
+evidenceImage	false
+lockChain1	false
+lockChain2	false
+lockChain3	false
+lockChain4	false
+lockChain5	false
+lockSet	false
+lockBreak	false
+healthRefill	true
+galleryCheer	false
+blipLayton	false
+whipThrow	false
+whipStance	false
+objectionFranziska von Karma	false
+objectionHershel Layton	false
+holdItHershel Layton	false
+takeThatHershel Layton	false
+carCrash	false
+car	false
+carQuick	false
+carApproach	false
+medHit	false
+camera	false
+checkpoint_JFA	false
+blipPaperMario	false

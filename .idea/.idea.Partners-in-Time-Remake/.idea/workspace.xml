@@ -3,8 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localisation/Tables/StringTranslations_de.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localisation/Tables/StringTranslations_de.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maps/Holijoli Outskirts/Outskirts.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maps/Holijoli Outskirts/Outskirts.blend.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Pre-Alpha 0.1 Demo/TitleScreen - Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Pre-Alpha 0.1 Demo/TitleScreen - Demo.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextBoxSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextBoxSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Globals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Globals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/font/Press Start.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/font/Press Start.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/sprites/Npcs/Mountain Toad/Mountain Toad.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/sprites/Npcs/Mountain Toad/Mountain Toad.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +65,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\lucca\RiderProjects\Partners-in-Time-Remake -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\lucca\RiderProjects\Partners-in-Time-Remake" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -62,7 +73,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\lucca\RiderProjects\Partners-in-Time-Remake -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\lucca\RiderProjects\Partners-in-Time-Remake" />
       <option name="PASS_PARENT_ENVS" value="1" />
