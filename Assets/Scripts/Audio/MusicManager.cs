@@ -120,7 +120,6 @@ public class MusicManager : MonoBehaviour
 
         string s = allMusic.ElementAt(rand.Next(0, allMusic.Count)).fileName;
 
-        Debug.Log(s);
         return Play(s);
     }
 

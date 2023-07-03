@@ -82,6 +82,10 @@ public class LuigiOverworldGroundedState : LuigiOverworldBaseState, ILuigiOverwo
 
     public void HandleGravity()
     {
-        _ctx.Controller.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
+        RaycastHit hit;
+        if (Physics.Raycast(_ctx.transform.position, _ctx.transform.TransformDirection(Vector3.down), out hit, 0.5f))
+        {
+            _ctx.Controller.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
+        }
     }
 }
