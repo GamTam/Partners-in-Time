@@ -88,8 +88,6 @@ public class MusicManager : MonoBehaviour
                 }
             }
             
-            Debug.Log(music);
-            
             allMusic.Add(music);
         }
 
@@ -120,8 +118,9 @@ public class MusicManager : MonoBehaviour
     {
         System.Random rand = new System.Random();
 
-        Music s = allMusic.ElementAt(rand.Next(0, allMusic.Count));
+        string s = allMusic.ElementAt(rand.Next(0, allMusic.Count)).fileName;
 
+        Debug.Log(s);
         return Play(s);
     }
 
