@@ -10,6 +10,7 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
     public override void EnterState()
     {
         _newMove = new Vector3(0f, 0f, 0f);
+        _ctx.CAnimator.OnFrameChange += PlayWalkSound;
     }
 
     public override void UpdateState()
@@ -76,6 +77,7 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
 
     public override void ExitState()
     {
+        _ctx.CAnimator.OnFrameChange -= PlayWalkSound;
     }
 
     public override void CheckSwitchStates()
@@ -93,7 +95,14 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
 
     public override void AnimateState()
     {
-        
         _ctx.CAnimator.Play("m_walk" + _ctx.Facing);
+    }
+
+    private void PlayWalkSound(int currentFrame)
+    {
+        if (currentFrame is 5 or 10 && _ctx.CAnimator.CurrentAnimation.name == "m_walk" + _ctx.Facing)
+        {
+            Globals.SoundManager.Play("walk_grass");
+        }
     }
 }

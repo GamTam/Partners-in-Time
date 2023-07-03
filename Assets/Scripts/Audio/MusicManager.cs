@@ -10,7 +10,6 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField] private string song;
     [SerializeField] private AudioMixerGroup group;
     [SerializeField] private List<Music> allMusic;
     
@@ -36,8 +35,6 @@ public class MusicManager : MonoBehaviour
 
         Globals.MusicManager = this;
         LoadSongs();
-        
-        PlayRandom();
     }
     
     public void LoadSongs() {
@@ -167,6 +164,7 @@ public class MusicManager : MonoBehaviour
 
         prevSongName = s.fileName;
 
+        Debug.Log(s.fileName);
         return s;
     }
 

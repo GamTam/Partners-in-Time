@@ -2,12 +2,12 @@
 
 public class MarioOverworldJumpState : MarioOverworldBaseState, IMarioOverworldRootState
 {
-
     public MarioOverworldJumpState(MarioOverworldStateMachine currentContext, MarioOverworldStateFactory marioOverworldStateFactory) 
         : base(currentContext, marioOverworldStateFactory) {}
     
     public override void EnterState()
     {
+        Globals.SoundManager.Play("jump");
         _ctx.Velocity = _ctx.InitialJumpVelocity;
         _isRootState = true;
         InitializeSubState();
