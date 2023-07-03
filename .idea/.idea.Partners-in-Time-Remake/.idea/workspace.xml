@@ -1,11 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="Mario &amp; Luigi no longer teleport to the ground">
+    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="Mario &amp; Luigi make noise when they jump">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/MusicManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/MusicManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldGroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldGroundedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldGroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldGroundedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music Data.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Music Data.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Atmey.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Atmey.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Circus.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Circus.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_AAI.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_AAI.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_GAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_GAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_TT.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Court_TT.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Courtney.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Courtney.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_AAI.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_AAI.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_GAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_GAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_TT.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossExFast_TT.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_AAI.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_AAI.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_GAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_GAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_TT.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/CrossEx_TT.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/DL6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/DL6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/DetentionCenter.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/DetentionCenter.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Edgeworth.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Edgeworth.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Ema.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Ema.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Eminem.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Eminem.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explain.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explain.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explain_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explain_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explain_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explain_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explain_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explain_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explore.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explore.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explore2_AAI2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explore2_AAI2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explore_AAI.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Explore_AAI.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Gant.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Gant.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Godot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Godot.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Gumshoe.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Gumshoe.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/HarrysGame.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/HarrysGame.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/HotlineOfFate.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/HotlineOfFate.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Jena.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Jena.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Kay.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Kay.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Kurain.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Kurain.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Layton.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Layton.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Lobby.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Lobby.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Lobby_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Lobby_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Lobby_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Lobby_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Lobby_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Lobby_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Maya.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Maya.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/MayaSad.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/MayaSad.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Maya_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Maya_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Miguel.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Miguel.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Mimi.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Mimi.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Objection.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Objection.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Objection_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Objection_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Objection_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Objection_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Objection_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Objection_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Opening.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Opening.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PsycheLock.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PsycheLock.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitBigShot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitBigShot.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitOrchestra.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitOrchestra.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation_GAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation_GAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation_TT.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/PursuitVariation_TT.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_AAI.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_AAI.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_AJAA_Rock.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_AJAA_Rock.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_GAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_GAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_TT.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Pursuit_TT.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Sahdmadi.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Sahdmadi.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Saul.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Saul.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Shamspeare.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Shamspeare.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/SteelSamurai.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/SteelSamurai.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/SteelSamuraiSlow.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/SteelSamuraiSlow.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Stronghart.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Stronghart.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Suspense.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Suspense.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Suspense_GAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Suspense_GAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Title.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Title.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Title_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Title_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/TwistInvestigation.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/TwistInvestigation.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_AAI.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_AAI.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_AJAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_AJAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_GAA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_GAA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_PLVPW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_PLVPW.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_TT.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Twist_TT.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/VonKarma.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/VonKarma.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Win.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Win.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Win_JFA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Win_JFA.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/ringtone.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/ringtone.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Globals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Globals.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688354841567</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Mario &amp; Luigi make noise when they jump">
+      <created>1688355727173</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688355727173</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +450,7 @@
     <MESSAGE value="i can hear once again" />
     <MESSAGE value="playing a random song will always work now" />
     <MESSAGE value="Mario &amp; Luigi no longer teleport to the ground" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mario &amp; Luigi no longer teleport to the ground" />
+    <MESSAGE value="Mario &amp; Luigi make noise when they jump" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mario &amp; Luigi make noise when they jump" />
   </component>
 </project>

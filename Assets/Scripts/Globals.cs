@@ -7,7 +7,7 @@ public static class Globals
 {
     public static float DeadZone = 0.1f;
     public static MarioOverworldStateMachine Mario;
-    public static SoundtrackTypes Soundtrack = SoundtrackTypes.NEW;
+    public static SoundtrackTypes Soundtrack = SoundtrackTypes.DS;
 
     public static MusicManager MusicManager;
     public static SoundManager SoundManager;
@@ -40,6 +40,5 @@ public static class Globals
 
 public enum SoundtrackTypes
 {
-    NEW,
-    OLD
+    DS
 }
