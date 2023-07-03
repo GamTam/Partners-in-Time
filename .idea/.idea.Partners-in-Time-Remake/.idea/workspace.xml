@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="Mario &amp; Luigi make sounds when they step on the floor">
+    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldStateMachine.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +31,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/AnimationEffectTriggers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Audio/MusicManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Globals.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestNPC.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Editor/UI/Smart Format/SmartFormatField.cs" root0="SKIP_HIGHLIGHTING" />
@@ -240,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688365653552</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="FPS is no longer locked to 60">
+      <created>1688366184142</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688366184142</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +287,7 @@
     <MESSAGE value="Mario &amp; Luigi make noise when they jump" />
     <MESSAGE value="Added music from PiT" />
     <MESSAGE value="Mario &amp; Luigi make sounds when they step on the floor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mario &amp; Luigi make sounds when they step on the floor" />
+    <MESSAGE value="FPS is no longer locked to 60" />
+    <option name="LAST_COMMIT_MESSAGE" value="FPS is no longer locked to 60" />
   </component>
 </project>
