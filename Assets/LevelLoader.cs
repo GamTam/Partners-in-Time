@@ -30,7 +30,6 @@ public class LevelLoader : MonoBehaviour
         if (_start.triggered)
         {
             Debug.Log("works maybe");
-            AudioManager.FadeoutAll();
             StartCoroutine(LoadSceneTransition("TestRoom - Holijoli"));
         }
     }

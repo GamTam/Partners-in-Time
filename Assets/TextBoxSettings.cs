@@ -1,10 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Localization.Plugins.XLIFF.V20;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class TextBoxSettings : MonoBehaviour
 {
@@ -20,6 +15,9 @@ public class TextBoxSettings : MonoBehaviour
     private RectTransform _rectTransform;
     private Vector2 _screenSize;
     private float _screenFactor;
+
+    private string _text;
+    private float _time;
     
     private Transform _parentPos;
     private SpriteRenderer _spriteRenderer;
@@ -41,7 +39,7 @@ public class TextBoxSettings : MonoBehaviour
         
         _cam = Camera.main;
         _parentPos = transform;
-        
+
         LateUpdate();
     }
     
@@ -55,7 +53,15 @@ public class TextBoxSettings : MonoBehaviour
         
         float parentHeight = screenMax.y - screenMin.y;
 
-        _backgroundRectTransform.sizeDelta = new Vector2(_textMeshPro.textBounds.size.x + _minWidth, _textMeshPro.textBounds.size.y + _minHeight);
+        if (_text != _textMeshPro.text)
+        {
+            _text = _textMeshPro.text;
+            _time = 0;
+        }
+
+        _time += Time.deltaTime;
+        
+        _backgroundRectTransform.sizeDelta = Vector2.Lerp(_backgroundRectTransform.sizeDelta, new Vector2(_textMeshPro.textBounds.size.x + _minWidth, _textMeshPro.textBounds.size.y + _minHeight), _time);
 
         Vector3 pos = _cam.WorldToScreenPoint(_spriteRenderer.bounds.center) * _screenFactor;
         
@@ -77,7 +83,7 @@ public class TextBoxSettings : MonoBehaviour
         
         float xpos = _rectTransform.anchoredPosition.x;
         xpos = Mathf.Clamp(xpos, _backgroundRectTransform.sizeDelta.x + 15, _screenSize.x - _backgroundRectTransform.sizeDelta.x - 15);
-        Debug.Log((pos.x - xpos) / 2);
+        
         _tailRect.anchoredPosition = new Vector2((pos.x - xpos) / 2, 0);
         _rectTransform.anchoredPosition = new Vector2(xpos, _rectTransform.anchoredPosition.y);
     }

@@ -20,7 +20,7 @@ MonoBehaviour:
     - rid: 7564702225955553283
   m_TableData:
   - m_Id: 212437396598788
-    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\"name=\"{global.confirm}\">\nUm
+    m_Localized: "Dr\xFCcke <sprite=\"{global.controller}\" name=\"{global.confirm}\">\nUm
       Zu Starten"
     m_Metadata:
       m_Items:

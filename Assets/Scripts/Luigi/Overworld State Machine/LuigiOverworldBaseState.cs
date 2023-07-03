@@ -14,6 +14,7 @@ public abstract class LuigiOverworldBaseState
         _factory = LuigiOverworldStateFactory;
     }
     
+    public LuigiOverworldBaseState CurrentSubState => _currentSubState;
     public abstract void EnterState();
 
     public abstract void UpdateState();
