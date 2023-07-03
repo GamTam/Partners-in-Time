@@ -27,6 +27,7 @@ public class LuigiOverworldGroundedState : LuigiOverworldBaseState, ILuigiOverwo
             {
                 _ctx.CurrentAction = 0;
             }
+            Debug.Log(_ctx.Actions[_ctx.CurrentAction]);
         }
         HandleGravity();
         CheckSwitchStates();
@@ -37,6 +38,8 @@ public class LuigiOverworldGroundedState : LuigiOverworldBaseState, ILuigiOverwo
 
     public override void CheckSwitchStates()
     {
+        InitializeSubState();
+
         if (_ctx.Jump)
         {
             SwitchState(_factory.Jump());
@@ -79,10 +82,6 @@ public class LuigiOverworldGroundedState : LuigiOverworldBaseState, ILuigiOverwo
 
     public void HandleGravity()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(_ctx.transform.position, _ctx.transform.TransformDirection(Vector3.down), out hit, 0.5f))
-        {
-            _ctx.Controller.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
-        }
+        _ctx.Controller.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
     }
 }
