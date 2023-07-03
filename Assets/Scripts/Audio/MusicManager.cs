@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Audio;
@@ -50,6 +51,8 @@ public class MusicManager : MonoBehaviour
         }
         
         musicDict = Globals.LoadTSV(tsvHandler);
+
+        allMusic = new List<Music>();
 
         foreach(KeyValuePair<string, ArrayList> entry in musicDict) {
             if (entry.Key == "" || entry.Key[0] == '#' || (string) entry.Value[1] == "Intro Point") continue;
@@ -114,6 +117,7 @@ public class MusicManager : MonoBehaviour
         if (song == musicPlaying) musicPlaying = null;
     }
 
+    [Button]
     public Music PlayRandom()
     {
         System.Random rand = new System.Random();

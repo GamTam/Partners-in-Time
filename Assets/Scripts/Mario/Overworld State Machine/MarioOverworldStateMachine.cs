@@ -91,7 +91,7 @@ public class MarioOverworldStateMachine : Billboard, IStateMachine
         Globals.Mario = this;
         
         // I have no idea why, but having a framerate higher than 60
-        // breaks Mario & Luigi's movement
+        // breaks Mario & Luigi's movement.
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
         

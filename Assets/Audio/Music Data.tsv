@@ -1,4 +1,39 @@
 File Name	Song Name	Intro Point	Loop Point	Redirect Name
-
-#Listen Up, Now
+Title_DS	Hello! Time Travellers	0	-1
+FileSelect_DS	File Select	2.688780	49.269878
+Intro_DS	Shroobs!	9.305330	49.931643
+Bad_DS	Shroob Attack	6.100898	78.121835
+SmallBowser_DS	Prince Bowser is Here	3.000889	25.507397
+Bowser_DS	King Bowser is Here	16.226049	25.839114
+Gadd_DS	Professor E. Gadd	2.753026	30.345531
+Panic_DS	Serious Trouble!	2.831029	26.842784
 Tutorial_DS	Listen Up, Now	4.814259	50.113866
+Holijoli_DS	Holijoli Village	2.185928	68.871262
+PeachCastle_DS	Peach's Castle	0	-1
+BowserCastle_DS	Prince Bowser's Castle	0	-1
+Forest_DS	Toadwood Forest	10.387274	76.609189
+Factory_DS	Vim Factory	6.100898	78.121835
+Yoshi_DS	The Yoshi Village	9.702694	58.200884
+YoshiMountain_DS	Yoshi Mountain	8.892626	84.470887
+Yoob_DS	Yoob's Belly	5.609861	72.608849
+Desert_DS	Gritzy Desert	7.801382	70.263159
+Koopaseum_DS	Koopaseum	3.807641	49.534382
+Underground_DS	Dark Dungeons	8.998542	57.017160
+ThwompVolcano_DS	Thwomp Volcano	0	-1
+ThwompCaverns_DS	Thwomp Caverns	35.043540	115.059731
+ToadTown_DS	Toad Town	1.815228	55.565159
+StarHill_DS	Star Hill	1.752770	73.773681
+StarShrine_DS	Star Shrine	16.034497	88.056915
+ShroobCastle_DS	Shroob Castle	8.533904	52.543657
+Battle_DS	Attack the Enemy	6.548899	80.418279
+Boss_DS	Boss Battle	3.526782	64.942093
+BowserFight_DS	Bowser & Bowser	13.018216	61.687977
+FakeFinalBoss_DS	Overture to the End	5.186762	74.543670
+PreFinalBoss_DS	DESTROY!!!	13.011756	25.989198
+FinalBoss_DS	Another's Requiem	3.647924	65.085634
+BattleWin_DS	Victory!	3.618416	17.947631
+Celebrate_DS	Bye-Bye, Babies!	7.624426	38.110985
+Credits_DS	Dance With Babies	0	-1
+End_DS	The End	0.673524	33.412197
+PastHole_DS	Time Hole (To Past)	0	-1
+FutureHole_DS	Time Hole (To Present)	0	-1

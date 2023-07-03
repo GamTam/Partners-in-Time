@@ -45,6 +45,8 @@ public class SoundManager : MonoBehaviour
         
         musicDict = Globals.LoadTSV(tsvHandler);
 
+        sounds = new List<Sound>();
+
         int i = 0;
         foreach(KeyValuePair<string, ArrayList> entry in musicDict) {
             if (i != 0) {
