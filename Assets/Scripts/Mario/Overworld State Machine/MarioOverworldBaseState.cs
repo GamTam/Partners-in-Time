@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public abstract class MarioOverworldBaseState
 {
     protected bool _isRootState = false;
@@ -15,8 +13,6 @@ public abstract class MarioOverworldBaseState
         _ctx = currentContext;
         _factory = marioOverworldStateFactory;
     }
-    
-    public MarioOverworldBaseState CurrentSubState => _currentSubState;
     
     public abstract void EnterState();
 
@@ -59,10 +55,10 @@ public abstract class MarioOverworldBaseState
         _currentSuperState = newSuperState;
     }
 
-    protected void SetSubState(MarioOverworldBaseState newSubState, bool enterState=false)
+    protected void SetSubState(MarioOverworldBaseState newSubState)
     {
         _currentSubState = newSubState;
         newSubState.SetSuperState(this);
-        if (enterState) newSubState.EnterState();
+        
     }
 }

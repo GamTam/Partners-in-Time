@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,11 +13,10 @@ public class CustomAnimator : MonoBehaviour
     private int _currentFrame = 0;
 
     private float _time;
+    
 
     private bool _loop;
     private bool _playing = false;
-    
-    public event Action<int> OnFrameChange;
 
     public class Frame {
         public Sprite Sprite;
@@ -28,8 +26,6 @@ public class CustomAnimator : MonoBehaviour
     public bool Playing { get { return _playing; } }
     public float NormalizedTime { get { return _currentAnimation ? (_time / _currentAnimation.length) : 0f; } }
     public float TimeStamp { get { return _time; } }
-    public int CurrentFrame => _currentFrame;
-    public AnimationClip CurrentAnimation => _currentAnimation;
 
     private void Awake() {
         _renderer = GetComponent<SpriteRenderer>();
@@ -130,10 +126,9 @@ public class CustomAnimator : MonoBehaviour
                 _currentFrame = _frames.Count - 1;
             }
         }
-        OnFrameChange?.Invoke(_currentFrame);
     }
 
-    private AnimationClip GetAnimation(string name) { 
+    public AnimationClip GetAnimation(string name) { 
         AnimationClip anim = null;
 
         foreach (AnimationClip animation in _animator.runtimeAnimatorController.animationClips) {
@@ -145,7 +140,7 @@ public class CustomAnimator : MonoBehaviour
         return anim;
     }
 
-    private List<Frame> GetFrames(AnimationClip animation) {
+    public List<Frame> GetFrames(AnimationClip animation) {
         List<Frame> frames = new List<Frame>();
 
         foreach(EditorCurveBinding binding in AnimationUtility.GetObjectReferenceCurveBindings(animation)) {

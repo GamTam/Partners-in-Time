@@ -27,6 +27,7 @@ public class BLuigiOverworldGroundedState : BLuigiOverworldBaseState, IBLuigiOve
             {
                 _ctx.CurrentAction = 0;
             }
+            Debug.Log(_ctx.Actions[_ctx.CurrentAction]);
         }
         HandleGravity();
         CheckSwitchStates();

@@ -3,17 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/MusicManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/MusicManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextBoxSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextBoxSettings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -22,17 +18,10 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="SOFT" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69c0ac029a6e4a708e1f794f9c0582a327000/c7/dc342a5f/Animator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/afb51423a29947c09a21689e8d96b70a1a000/d6/9a964125/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/b7/1fdf3659/QualitySettings.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/AnimationEffectTriggers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Audio/MusicManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestNPC.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Editor/UI/Smart Format/SmartFormatField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Smart Format/Extensions/Persistent Variables/VariablesGroupAsset.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -53,7 +42,6 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -66,7 +54,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\lucca\RiderProjects\Partners-in-Time-Remake -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\lucca\RiderProjects\Partners-in-Time-Remake" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -74,7 +62,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\lucca\RiderProjects\Partners-in-Time-Remake -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\lucca\RiderProjects\Partners-in-Time-Remake" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -124,7 +112,6 @@
       <workItem from="1677107360333" duration="702000" />
       <workItem from="1677575986992" duration="48000" />
       <workItem from="1678314555273" duration="1607000" />
-      <workItem from="1688416199913" duration="1558000" />
     </task>
     <task id="LOCAL-00001" summary="Character Billboarding">
       <created>1651430605299</created>
@@ -196,84 +183,7 @@
       <option name="project" value="LOCAL" />
       <updated>1677113822247</updated>
     </task>
-    <task id="LOCAL-00011" summary="i can hear once again">
-      <created>1688340084415</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1688340084415</updated>
-    </task>
-    <task id="LOCAL-00012" summary="playing a random song will always work now">
-      <created>1688344443580</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1688344443580</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Mario &amp; Luigi no longer teleport to the ground">
-      <created>1688354841566</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1688354841567</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Mario &amp; Luigi make noise when they jump">
-      <created>1688355727173</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1688355727173</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Added music from PiT">
-      <created>1688358085602</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1688358085602</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Mario &amp; Luigi make sounds when they step on the floor">
-      <created>1688365653552</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1688365653552</updated>
-    </task>
-    <task id="LOCAL-00017" summary="FPS is no longer locked to 60">
-      <created>1688366184142</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1688366184142</updated>
-    </task>
-    <task id="LOCAL-00018" summary="ok everything broke. setting it back to 60.">
-      <created>1688366447319</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1688366447319</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Import Soundtrack - Part 1">
-      <created>1688376473954</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1688376473954</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Import Soundtrack - Part 2">
-      <created>1688376789475</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1688376789475</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Import Soundtrack - Part 3">
-      <created>1688376964380</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1688376964380</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,17 +216,6 @@
     <MESSAGE value="3D's back, bay-beeeeeeee" />
     <MESSAGE value="a" />
     <MESSAGE value="Removed FMOD" />
-    <MESSAGE value="i can hear once again" />
-    <MESSAGE value="playing a random song will always work now" />
-    <MESSAGE value="Mario &amp; Luigi no longer teleport to the ground" />
-    <MESSAGE value="Mario &amp; Luigi make noise when they jump" />
-    <MESSAGE value="Added music from PiT" />
-    <MESSAGE value="Mario &amp; Luigi make sounds when they step on the floor" />
-    <MESSAGE value="FPS is no longer locked to 60" />
-    <MESSAGE value="ok everything broke. setting it back to 60." />
-    <MESSAGE value="Import Soundtrack - Part 1" />
-    <MESSAGE value="Import Soundtrack - Part 2" />
-    <MESSAGE value="Import Soundtrack - Part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Import Soundtrack - Part 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed FMOD" />
   </component>
 </project>

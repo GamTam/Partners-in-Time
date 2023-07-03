@@ -30,7 +30,7 @@ public class LevelLoader : MonoBehaviour
         if (_start.triggered)
         {
             Debug.Log("works maybe");
-            StartCoroutine(LoadSceneTransition("TestRoom - Holijoli"));
+            StartCoroutine(LoadSceneTransition("TestRoom"));
         }
     }
 
