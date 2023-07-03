@@ -90,8 +90,7 @@ public class MarioOverworldStateMachine : Billboard, IStateMachine
     {
         Globals.Mario = this;
         
-        QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = -1;
         
         base.Init(child);
 
