@@ -38,7 +38,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        Debug.Log(_stringTable.GetTable().GetEntry("game_name"));
         string[] dialogue = (string[]) _dialogue.Clone();
         
         if (_localize)

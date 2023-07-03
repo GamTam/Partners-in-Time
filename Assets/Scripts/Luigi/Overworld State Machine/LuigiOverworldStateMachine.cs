@@ -109,6 +109,7 @@ public class LuigiOverworldStateMachine : Billboard, IStateMachine
         _states = new LuigiOverworldStateFactory(this);
         _currentState = _states.Grounded();
         _currentState.EnterState();
+        _currentState.CurrentSubState.EnterState();
     }
     
     void Update()
