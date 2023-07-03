@@ -45,7 +45,7 @@ public class MusicManager : MonoBehaviour
 
         if (tsvHandler == null)
         {
-            Debug.LogError("Could Not Load Music Data");
+            Debug.LogError("Failed to load music data");
             return;
         }
         

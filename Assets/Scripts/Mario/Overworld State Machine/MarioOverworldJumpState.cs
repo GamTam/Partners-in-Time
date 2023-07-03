@@ -7,6 +7,7 @@ public class MarioOverworldJumpState : MarioOverworldBaseState, IMarioOverworldR
     
     public override void EnterState()
     {
+        Globals.SoundManager.Play("jump");
         _ctx.Velocity = _ctx.InitialJumpVelocity;
         _isRootState = true;
         InitializeSubState();

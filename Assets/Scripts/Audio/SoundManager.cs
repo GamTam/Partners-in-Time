@@ -27,22 +27,23 @@ public class SoundManager : MonoBehaviour
         }
         
         Globals.SoundManager = this;
+        LoadSounds();
     }
 
-    public IEnumerator LoadSounds() {
+    public void LoadSounds() {
 
         Dictionary<string, ArrayList> musicDict = new Dictionary<string, ArrayList>();
         
-        AsyncOperationHandle<TextAsset> tsvHandler = Addressables.LoadAssetAsync<TextAsset>("Assets/Audio/Sound Data.tsv");
-        yield return tsvHandler;
+        TextAsset tsvHandler = Addressables.LoadAssetAsync<TextAsset>("Assets/Audio/Sound Data.tsv").WaitForCompletion();
 
-        if (tsvHandler.Status == AsyncOperationStatus.Failed)
+        if (tsvHandler == null)
         {
             DoneLoading = true;
-            yield break;
+            Debug.LogError("Failed to load sound info");
+            return;
         }
         
-        musicDict = Globals.LoadTSV(tsvHandler.Result);
+        musicDict = Globals.LoadTSV(tsvHandler);
 
         int i = 0;
         foreach(KeyValuePair<string, ArrayList> entry in musicDict) {
@@ -53,13 +54,12 @@ public class SoundManager : MonoBehaviour
 
                 String path = "Assets/Sound/" + sound.name + ".wav";
                 
-                AsyncOperationHandle<AudioClip> clipHandler = Addressables.LoadAssetAsync<AudioClip>(path);
-                yield return clipHandler;
+                AudioClip clipHandler = Addressables.LoadAssetAsync<AudioClip>(path).WaitForCompletion();
 
-                if (clipHandler.Status == AsyncOperationStatus.Succeeded)
+                if (clipHandler != null)
                 {
                     sound.source = gameObject.AddComponent<AudioSource>();
-                    sound.source.clip = clipHandler.Result;
+                    sound.source.clip = clipHandler;
                     sound.source.pitch = sound.pitch;
                     sound.source.loop = Convert.ToBoolean(entry.Value[0]);
                     sound.source.outputAudioMixerGroup = group;

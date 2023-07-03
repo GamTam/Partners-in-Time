@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="playing a random song will always work now">
+    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="Mario &amp; Luigi no longer teleport to the ground">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/MusicManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/MusicManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldGroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldGroundedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldGroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldGroundedState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688344443580</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Mario &amp; Luigi no longer teleport to the ground">
+      <created>1688354841566</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688354841567</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +249,7 @@
     <MESSAGE value="Removed FMOD" />
     <MESSAGE value="i can hear once again" />
     <MESSAGE value="playing a random song will always work now" />
-    <option name="LAST_COMMIT_MESSAGE" value="playing a random song will always work now" />
+    <MESSAGE value="Mario &amp; Luigi no longer teleport to the ground" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mario &amp; Luigi no longer teleport to the ground" />
   </component>
 </project>
