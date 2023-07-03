@@ -124,6 +124,7 @@ public class MarioOverworldStateMachine : Billboard, IStateMachine
         _states = new MarioOverworldStateFactory(this);
         _currentState = _states.Grounded();
         _currentState.EnterState();
+        _currentState.CurrentSubState.EnterState();
     }
     
     void Update()

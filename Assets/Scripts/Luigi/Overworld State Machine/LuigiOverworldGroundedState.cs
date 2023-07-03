@@ -27,7 +27,6 @@ public class LuigiOverworldGroundedState : LuigiOverworldBaseState, ILuigiOverwo
             {
                 _ctx.CurrentAction = 0;
             }
-            Debug.Log(_ctx.Actions[_ctx.CurrentAction]);
         }
         HandleGravity();
         CheckSwitchStates();
@@ -38,8 +37,6 @@ public class LuigiOverworldGroundedState : LuigiOverworldBaseState, ILuigiOverwo
 
     public override void CheckSwitchStates()
     {
-        InitializeSubState();
-
         if (_ctx.Jump)
         {
             SwitchState(_factory.Jump());

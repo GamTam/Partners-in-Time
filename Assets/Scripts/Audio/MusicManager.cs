@@ -135,7 +135,6 @@ public class MusicManager : MonoBehaviour
         }
 
         if (!string.IsNullOrEmpty(s.redirect)) return Play(s.redirect, false);
-        Debug.Log(s.songName);
         return Play(s);
     }
     

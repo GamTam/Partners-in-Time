@@ -36,6 +36,15 @@ public static class Globals
 
         return dictionary;
     }
+    
+    public static bool IsAnimationPlaying(Animator anim, string stateName, int animLayer=0)
+    {
+        if (anim.GetCurrentAnimatorStateInfo(animLayer).IsName(stateName) &&
+            anim.GetCurrentAnimatorStateInfo(animLayer).normalizedTime < 1.0f)
+            return true;
+        
+        return false;
+    }
 }
 
 public enum SoundtrackTypes

@@ -33093,7 +33093,6 @@ GameObject:
   - component: {fileID: 263155428}
   - component: {fileID: 263155429}
   - component: {fileID: 263155425}
-  - component: {fileID: 263155431}
   m_Layer: 6
   m_Name: Luigi
   m_TagString: Player
@@ -33154,18 +33153,6 @@ MonoBehaviour:
   child: {fileID: 360729861}
   _debugData: {fileID: 197809452}
   _shadow: {fileID: 0}
---- !u!114 &263155431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263155424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c49c66c02cc37d43bdb90c13ed21009, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &264830814
 GameObject:
   m_ObjectHideFlags: 0
@@ -33695,6 +33682,7 @@ GameObject:
   - component: {fileID: 463006564}
   - component: {fileID: 463006565}
   - component: {fileID: 463006566}
+  - component: {fileID: 463006567}
   m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
@@ -33800,6 +33788,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c49c66c02cc37d43bdb90c13ed21009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &463006567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463006562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b998cededbef574ab5b6533b5e5cbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &478637461 stripped
@@ -36685,7 +36685,6 @@ GameObject:
   - component: {fileID: 1097153016}
   - component: {fileID: 1097153018}
   - component: {fileID: 1097153019}
-  - component: {fileID: 1097153020}
   - component: {fileID: 1097153021}
   m_Layer: 6
   m_Name: Mario
@@ -36747,27 +36746,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!95 &1097153020
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097153015}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1dc1625546ff6b546a2c9453262b73e9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1097153021
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37566,7 +37544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1275422785
 Transform:
   m_ObjectHideFlags: 0
@@ -38372,7 +38350,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh84070
+  m_Name: pb_Mesh29528
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39695,7 +39673,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh84056
+  m_Name: pb_Mesh29502
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39870,7 +39848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1672499366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42601,7 +42579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2110346870
 MonoBehaviour:
   m_ObjectHideFlags: 0

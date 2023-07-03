@@ -10,6 +10,7 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
     public override void EnterState()
     {
         _newMove = new Vector3(0f, 0f, 0f);
+        _ctx.CAnimator.OnFrameChange += PlayWalkSound;
     }
 
     public override void UpdateState()
@@ -44,6 +45,7 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
 
     public override void ExitState()
     {
+        _ctx.CAnimator.OnFrameChange -= PlayWalkSound;
     }
 
     public override void CheckSwitchStates()
@@ -62,5 +64,13 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
     public override void AnimateState()
     {
         _ctx.CAnimator.Play("l_walk" + _ctx.Facing);
+    }
+    
+    private void PlayWalkSound(int currentFrame)
+    {
+        if (currentFrame is 0 or 6 && _ctx.CAnimator.CurrentAnimation.name == "l_walk" + _ctx.Facing)
+        {
+            Globals.SoundManager.Play("walk_grass");
+        }
     }
 }
