@@ -3,14 +3,17 @@ using UnityEngine;
 public class MarioOverworldWalkState : MarioOverworldBaseState
 {
     private Vector3 _newMove;
-    
-    public MarioOverworldWalkState(MarioOverworldStateMachine currentContext, MarioOverworldStateFactory marioOverworldStateFactory) 
-        : base(currentContext, marioOverworldStateFactory) {}
+
+    public MarioOverworldWalkState(MarioOverworldStateMachine currentContext,
+        MarioOverworldStateFactory marioOverworldStateFactory)
+        : base(currentContext, marioOverworldStateFactory)
+    {
+        _ctx.CAnimator.OnFrameChange += PlayWalkSound;
+    }
     
     public override void EnterState()
     {
         _newMove = new Vector3(0f, 0f, 0f);
-        _ctx.CAnimator.OnFrameChange += PlayWalkSound;
     }
 
     public override void UpdateState()
@@ -77,7 +80,6 @@ public class MarioOverworldWalkState : MarioOverworldBaseState
 
     public override void ExitState()
     {
-        _ctx.CAnimator.OnFrameChange -= PlayWalkSound;
     }
 
     public override void CheckSwitchStates()
