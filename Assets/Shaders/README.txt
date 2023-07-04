@@ -1,0 +1,3 @@
+Drag and drop all the folders in the archive (Except for this, the Hatchback Models, and the example photo) into your Unity Main Assets folder then goto the model you want to rainbowafie and click Shaders drop down menu> goto _Shaders>click rainbow. If you want the exact settings for the sliders to replicate the rainbow hatchback then look at the sample photo. Habe Noice Dey :))))))))))))
+
+Step 9. Profit $$$

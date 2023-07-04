@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9088977513299016012}
   - component: {fileID: 7145478256835266795}
-  - component: {fileID: 7108839877098909339}
-  - component: {fileID: 1597934539877155714}
+  - component: {fileID: 8745161184485073761}
+  - component: {fileID: 8662173051089334746}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775e4defc0bcdad48b826e3da03c01c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7108839877098909339
+--- !u!114 &8745161184485073761
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,7 +58,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7ee14b96ba9fbf43bc9218e7ced34a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  song: 
   group: {fileID: -6858190185496689155, guid: dcb05321a2977b540a5c48cfef4a3087, type: 2}
   allMusic: []
   musicPlaying:
@@ -71,7 +70,7 @@ MonoBehaviour:
     loopEnd: 0
     redirect: 
   DoneLoading: 0
---- !u!114 &1597934539877155714
+--- !u!114 &8662173051089334746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

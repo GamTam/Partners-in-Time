@@ -5,12 +5,15 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
     private Vector3 _newMove;
     
     public LuigiOverworldWalkState(LuigiOverworldStateMachine currentContext, LuigiOverworldStateFactory LuigiOverworldStateFactory) 
-        : base(currentContext, LuigiOverworldStateFactory) {}
+        : base(currentContext, LuigiOverworldStateFactory) 
+    {
+        _ctx.CAnimator.OnFrameChange += PlayWalkSound;
+        
+    }
     
     public override void EnterState()
     {
         _newMove = new Vector3(0f, 0f, 0f);
-        _ctx.CAnimator.OnFrameChange += PlayWalkSound;
     }
 
     public override void UpdateState()
@@ -45,7 +48,6 @@ public class LuigiOverworldWalkState : LuigiOverworldBaseState
 
     public override void ExitState()
     {
-        _ctx.CAnimator.OnFrameChange -= PlayWalkSound;
     }
 
     public override void CheckSwitchStates()
