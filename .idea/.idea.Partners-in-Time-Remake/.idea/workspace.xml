@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="minor changes">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom/OcclusionCullingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom/OcclusionCullingData.asset.meta" afterDir="false" />
+    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldWalkState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldWalkState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldWalkState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldWalkState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,27 +26,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/afb51423a29947c09a21689e8d96b70a1a000/d6/9a964125/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/b7/1fdf3659/QualitySettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scenes/Test Stuff/TestRoom.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scenes/Test Stuff/TestRoom.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/AnimationEffectTriggers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Audio/MusicManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Audio/MusicManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Audio/MusicManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Baby Mario/Overworld State Machine/BMarioOverworldGroundedState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Baby Mario/Overworld State Machine/BMarioOverworldGroundedState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Editor/TSVImporter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Globals.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldBaseState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Luigi/Overworld State Machine/LuigiOverworldBaseState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldBaseState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Mario/Overworld State Machine/MarioOverworldBaseState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestNPC.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/sprites/Npcs/Mountain Toad/Mountain Toad.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/sprites/Npcs/Mountain Toad/Mountain Toad.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Editor/UI/Smart Format/SmartFormatField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Smart Format/Extensions/Persistent Variables/VariablesGroupAsset.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/ProjectSettings/ShaderGraphSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -135,6 +119,7 @@
       <workItem from="1677107360333" duration="702000" />
       <workItem from="1677575986992" duration="48000" />
       <workItem from="1678314555273" duration="1607000" />
+      <workItem from="1688433120276" duration="1346000" />
     </task>
     <task id="LOCAL-00001" summary="Character Billboarding">
       <created>1651430605299</created>
@@ -234,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688429172753</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added occlusion culling for the test room">
+      <created>1688430128408</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688430128408</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +263,7 @@
     <MESSAGE value="who wants to jump off a bridge with me?" />
     <MESSAGE value="fixed Vim Factory theme" />
     <MESSAGE value="minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
+    <MESSAGE value="added occlusion culling for the test room" />
+    <option name="LAST_COMMIT_MESSAGE" value="added occlusion culling for the test room" />
   </component>
 </project>
