@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="fixed Vim Factory theme">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Partners-in-Time-Remake/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3fd3250c-853f-46f5-9d71-730b0fcfc5c4" name="Changes" comment="minor changes">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom/OcclusionCullingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom/OcclusionCullingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Stuff/TestRoom.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/b7/1fdf3659/QualitySettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scenes/Test Stuff/TestRoom.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scenes/Test Stuff/TestRoom.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/AnimationEffectTriggers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lucca/RiderProjects/Partners-in-Time-Remake/Assets/Scripts/Audio/MusicManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -224,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688428393063</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="minor changes">
+      <created>1688429172753</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688429172753</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +270,7 @@
     <MESSAGE value="Everything was broken. Everything is no longer broken." />
     <MESSAGE value="who wants to jump off a bridge with me?" />
     <MESSAGE value="fixed Vim Factory theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed Vim Factory theme" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
 </project>
